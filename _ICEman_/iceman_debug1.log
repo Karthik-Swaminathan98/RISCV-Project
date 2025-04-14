@@ -1,0 +1,709 @@
+Error: 373 61 mpsse.c:250 open_matching_device(): libusb_open() failed with LIBUSB_ERROR_NOT_SUPPORTED
+Error: 374 62 mpsse.c:372 open_matching_device(): unsupported FTDI chip type: 0x0000, set to FT2232H
+Info : 390 65 ftdi.c:305 ftdi_speed(): ftdi: if you experience problems at higher adapter clocks, try the command "ftdi_tdo_sample_edge falling"
+Info : 393 65 core.c:1485 adapter_init(): clock speed 10000 kHz
+Info : 402 851 core.c:1043 jtag_examine_chain_display(): JTAG tap: nds.tap tap/device found: 0x1000563d (mfg: 0x31e (Andes Technology Corporation), part: 0x0005, ver: 0x1)
+User : 408 855 command.c:773 jim_echo(): set_dmcontrol: 0x1
+User : 414 861 command.c:773 jim_echo(): read_dmcontrol2: 0x1
+User : 418 865 command.c:773 jim_echo(): dmstatus:  0x004c03a2
+User : 422 867 command.c:773 jim_echo(): set_dmcontrol: 0x10001
+User : 428 873 command.c:773 jim_echo(): read_dmcontrol2: 0x10001
+User : 432 875 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 436 877 command.c:773 jim_echo(): set_dmcontrol: 0x20001
+User : 442 883 command.c:773 jim_echo(): read_dmcontrol2: 0x20001
+User : 446 886 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 450 888 command.c:773 jim_echo(): set_dmcontrol: 0x30001
+User : 456 893 command.c:773 jim_echo(): read_dmcontrol2: 0x30001
+User : 460 898 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 464 900 command.c:773 jim_echo(): set_dmcontrol: 0x40001
+User : 470 905 command.c:773 jim_echo(): read_dmcontrol2: 0x40001
+User : 474 907 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 478 909 command.c:773 jim_echo(): set_dmcontrol: 0x50001
+User : 484 917 command.c:773 jim_echo(): read_dmcontrol2: 0x50001
+User : 488 919 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 492 921 command.c:773 jim_echo(): set_dmcontrol: 0x60001
+User : 498 929 command.c:773 jim_echo(): read_dmcontrol2: 0x60001
+User : 502 932 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 506 934 command.c:773 jim_echo(): set_dmcontrol: 0x70001
+User : 512 938 command.c:773 jim_echo(): read_dmcontrol2: 0x70001
+User : 516 942 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 520 945 command.c:773 jim_echo(): set_dmcontrol: 0x80001
+User : 526 951 command.c:773 jim_echo(): read_dmcontrol2: 0x80001
+User : 530 953 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 534 956 command.c:773 jim_echo(): set_dmcontrol: 0x90001
+User : 540 962 command.c:773 jim_echo(): read_dmcontrol2: 0x90001
+User : 544 964 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 548 967 command.c:773 jim_echo(): set_dmcontrol: 0xa0001
+User : 554 974 command.c:773 jim_echo(): read_dmcontrol2: 0xa0001
+User : 558 977 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 562 981 command.c:773 jim_echo(): set_dmcontrol: 0xb0001
+User : 568 986 command.c:773 jim_echo(): read_dmcontrol2: 0xb0001
+User : 572 994 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 576 997 command.c:773 jim_echo(): set_dmcontrol: 0xc0001
+User : 583 1003 command.c:773 jim_echo(): read_dmcontrol2: 0xc0001
+User : 587 1007 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 591 1010 command.c:773 jim_echo(): set_dmcontrol: 0xd0001
+User : 597 1017 command.c:773 jim_echo(): read_dmcontrol2: 0xd0001
+User : 601 1021 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 605 1024 command.c:773 jim_echo(): set_dmcontrol: 0xe0001
+User : 611 1030 command.c:773 jim_echo(): read_dmcontrol2: 0xe0001
+User : 615 1032 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 619 1037 command.c:773 jim_echo(): set_dmcontrol: 0xf0001
+User : 625 1045 command.c:773 jim_echo(): read_dmcontrol2: 0xf0001
+User : 629 1047 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 633 1049 command.c:773 jim_echo(): set_dmcontrol: 0x100001
+User : 639 1054 command.c:773 jim_echo(): read_dmcontrol2: 0x100001
+User : 643 1056 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 647 1059 command.c:773 jim_echo(): set_dmcontrol: 0x110001
+User : 653 1063 command.c:773 jim_echo(): read_dmcontrol2: 0x110001
+User : 657 1065 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 661 1071 command.c:773 jim_echo(): set_dmcontrol: 0x120001
+User : 667 1076 command.c:773 jim_echo(): read_dmcontrol2: 0x120001
+User : 671 1079 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 675 1086 command.c:773 jim_echo(): set_dmcontrol: 0x130001
+User : 681 1091 command.c:773 jim_echo(): read_dmcontrol2: 0x130001
+User : 685 1094 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 689 1098 command.c:773 jim_echo(): set_dmcontrol: 0x140001
+User : 695 1105 command.c:773 jim_echo(): read_dmcontrol2: 0x140001
+User : 699 1107 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 703 1109 command.c:773 jim_echo(): set_dmcontrol: 0x150001
+User : 709 1114 command.c:773 jim_echo(): read_dmcontrol2: 0x150001
+User : 713 1116 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 717 1119 command.c:773 jim_echo(): set_dmcontrol: 0x160001
+User : 723 1124 command.c:773 jim_echo(): read_dmcontrol2: 0x160001
+User : 727 1126 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 731 1130 command.c:773 jim_echo(): set_dmcontrol: 0x170001
+User : 737 1134 command.c:773 jim_echo(): read_dmcontrol2: 0x170001
+User : 741 1137 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 745 1139 command.c:773 jim_echo(): set_dmcontrol: 0x180001
+User : 751 1147 command.c:773 jim_echo(): read_dmcontrol2: 0x180001
+User : 755 1150 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 759 1154 command.c:773 jim_echo(): set_dmcontrol: 0x190001
+User : 765 1159 command.c:773 jim_echo(): read_dmcontrol2: 0x190001
+User : 769 1162 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 773 1167 command.c:773 jim_echo(): set_dmcontrol: 0x1a0001
+User : 779 1171 command.c:773 jim_echo(): read_dmcontrol2: 0x1a0001
+User : 783 1174 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 787 1177 command.c:773 jim_echo(): set_dmcontrol: 0x1b0001
+User : 793 1182 command.c:773 jim_echo(): read_dmcontrol2: 0x1b0001
+User : 797 1185 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 801 1187 command.c:773 jim_echo(): set_dmcontrol: 0x1c0001
+User : 807 1193 command.c:773 jim_echo(): read_dmcontrol2: 0x1c0001
+User : 811 1198 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 815 1199 command.c:773 jim_echo(): set_dmcontrol: 0x1d0001
+User : 821 1200 command.c:773 jim_echo(): read_dmcontrol2: 0x1d0001
+User : 825 1201 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 829 1202 command.c:773 jim_echo(): set_dmcontrol: 0x1e0001
+User : 835 1204 command.c:773 jim_echo(): read_dmcontrol2: 0x1e0001
+User : 839 1205 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 843 1207 command.c:773 jim_echo(): set_dmcontrol: 0x1f0001
+User : 849 1209 command.c:773 jim_echo(): read_dmcontrol2: 0x1f0001
+User : 853 1210 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 857 1211 command.c:773 jim_echo(): set_dmcontrol: 0x200001
+User : 863 1213 command.c:773 jim_echo(): read_dmcontrol2: 0x200001
+User : 867 1214 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 871 1215 command.c:773 jim_echo(): set_dmcontrol: 0x210001
+User : 877 1216 command.c:773 jim_echo(): read_dmcontrol2: 0x210001
+User : 881 1217 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 885 1218 command.c:773 jim_echo(): set_dmcontrol: 0x220001
+User : 891 1220 command.c:773 jim_echo(): read_dmcontrol2: 0x220001
+User : 895 1221 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 899 1223 command.c:773 jim_echo(): set_dmcontrol: 0x230001
+User : 905 1225 command.c:773 jim_echo(): read_dmcontrol2: 0x230001
+User : 909 1226 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 913 1227 command.c:773 jim_echo(): set_dmcontrol: 0x240001
+User : 919 1229 command.c:773 jim_echo(): read_dmcontrol2: 0x240001
+User : 923 1231 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 927 1232 command.c:773 jim_echo(): set_dmcontrol: 0x250001
+User : 933 1235 command.c:773 jim_echo(): read_dmcontrol2: 0x250001
+User : 937 1236 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 941 1237 command.c:773 jim_echo(): set_dmcontrol: 0x260001
+User : 947 1240 command.c:773 jim_echo(): read_dmcontrol2: 0x260001
+User : 951 1241 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 955 1242 command.c:773 jim_echo(): set_dmcontrol: 0x270001
+User : 961 1244 command.c:773 jim_echo(): read_dmcontrol2: 0x270001
+User : 965 1245 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 969 1246 command.c:773 jim_echo(): set_dmcontrol: 0x280001
+User : 975 1248 command.c:773 jim_echo(): read_dmcontrol2: 0x280001
+User : 979 1249 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 983 1250 command.c:773 jim_echo(): set_dmcontrol: 0x290001
+User : 989 1252 command.c:773 jim_echo(): read_dmcontrol2: 0x290001
+User : 993 1253 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 997 1254 command.c:773 jim_echo(): set_dmcontrol: 0x2a0001
+User : 1003 1256 command.c:773 jim_echo(): read_dmcontrol2: 0x2a0001
+User : 1007 1257 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1011 1258 command.c:773 jim_echo(): set_dmcontrol: 0x2b0001
+User : 1017 1260 command.c:773 jim_echo(): read_dmcontrol2: 0x2b0001
+User : 1021 1261 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1025 1263 command.c:773 jim_echo(): set_dmcontrol: 0x2c0001
+User : 1031 1264 command.c:773 jim_echo(): read_dmcontrol2: 0x2c0001
+User : 1035 1265 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1039 1266 command.c:773 jim_echo(): set_dmcontrol: 0x2d0001
+User : 1045 1268 command.c:773 jim_echo(): read_dmcontrol2: 0x2d0001
+User : 1049 1270 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1053 1271 command.c:773 jim_echo(): set_dmcontrol: 0x2e0001
+User : 1059 1273 command.c:773 jim_echo(): read_dmcontrol2: 0x2e0001
+User : 1063 1273 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1067 1274 command.c:773 jim_echo(): set_dmcontrol: 0x2f0001
+User : 1073 1276 command.c:773 jim_echo(): read_dmcontrol2: 0x2f0001
+User : 1077 1277 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1081 1278 command.c:773 jim_echo(): set_dmcontrol: 0x300001
+User : 1087 1280 command.c:773 jim_echo(): read_dmcontrol2: 0x300001
+User : 1091 1281 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1095 1282 command.c:773 jim_echo(): set_dmcontrol: 0x310001
+User : 1101 1284 command.c:773 jim_echo(): read_dmcontrol2: 0x310001
+User : 1105 1285 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1109 1286 command.c:773 jim_echo(): set_dmcontrol: 0x320001
+User : 1115 1288 command.c:773 jim_echo(): read_dmcontrol2: 0x320001
+User : 1119 1289 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1123 1290 command.c:773 jim_echo(): set_dmcontrol: 0x330001
+User : 1129 1292 command.c:773 jim_echo(): read_dmcontrol2: 0x330001
+User : 1133 1293 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1137 1294 command.c:773 jim_echo(): set_dmcontrol: 0x340001
+User : 1143 1295 command.c:773 jim_echo(): read_dmcontrol2: 0x340001
+User : 1147 1296 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1151 1298 command.c:773 jim_echo(): set_dmcontrol: 0x350001
+User : 1157 1301 command.c:773 jim_echo(): read_dmcontrol2: 0x350001
+User : 1161 1302 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1165 1303 command.c:773 jim_echo(): set_dmcontrol: 0x360001
+User : 1171 1305 command.c:773 jim_echo(): read_dmcontrol2: 0x360001
+User : 1175 1306 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1179 1306 command.c:773 jim_echo(): set_dmcontrol: 0x370001
+User : 1185 1308 command.c:773 jim_echo(): read_dmcontrol2: 0x370001
+User : 1189 1309 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1193 1310 command.c:773 jim_echo(): set_dmcontrol: 0x380001
+User : 1199 1312 command.c:773 jim_echo(): read_dmcontrol2: 0x380001
+User : 1203 1313 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1207 1314 command.c:773 jim_echo(): set_dmcontrol: 0x390001
+User : 1213 1317 command.c:773 jim_echo(): read_dmcontrol2: 0x390001
+User : 1217 1318 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1221 1319 command.c:773 jim_echo(): set_dmcontrol: 0x3a0001
+User : 1227 1321 command.c:773 jim_echo(): read_dmcontrol2: 0x3a0001
+User : 1231 1322 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1235 1323 command.c:773 jim_echo(): set_dmcontrol: 0x3b0001
+User : 1241 1325 command.c:773 jim_echo(): read_dmcontrol2: 0x3b0001
+User : 1245 1326 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1249 1327 command.c:773 jim_echo(): set_dmcontrol: 0x3c0001
+User : 1255 1328 command.c:773 jim_echo(): read_dmcontrol2: 0x3c0001
+User : 1259 1330 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1263 1331 command.c:773 jim_echo(): set_dmcontrol: 0x3d0001
+User : 1269 1334 command.c:773 jim_echo(): read_dmcontrol2: 0x3d0001
+User : 1273 1335 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1277 1336 command.c:773 jim_echo(): set_dmcontrol: 0x3e0001
+User : 1283 1337 command.c:773 jim_echo(): read_dmcontrol2: 0x3e0001
+User : 1287 1338 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1291 1339 command.c:773 jim_echo(): set_dmcontrol: 0x3f0001
+User : 1297 1341 command.c:773 jim_echo(): read_dmcontrol2: 0x3f0001
+User : 1301 1342 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1305 1343 command.c:773 jim_echo(): set_dmcontrol: 0x400001
+User : 1311 1345 command.c:773 jim_echo(): read_dmcontrol2: 0x400001
+User : 1315 1346 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1319 1347 command.c:773 jim_echo(): set_dmcontrol: 0x410001
+User : 1325 1350 command.c:773 jim_echo(): read_dmcontrol2: 0x410001
+User : 1329 1350 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1333 1351 command.c:773 jim_echo(): set_dmcontrol: 0x420001
+User : 1339 1353 command.c:773 jim_echo(): read_dmcontrol2: 0x420001
+User : 1343 1354 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1347 1355 command.c:773 jim_echo(): set_dmcontrol: 0x430001
+User : 1353 1357 command.c:773 jim_echo(): read_dmcontrol2: 0x430001
+User : 1357 1358 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1361 1359 command.c:773 jim_echo(): set_dmcontrol: 0x440001
+User : 1367 1361 command.c:773 jim_echo(): read_dmcontrol2: 0x440001
+User : 1371 1362 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1375 1363 command.c:773 jim_echo(): set_dmcontrol: 0x450001
+User : 1381 1366 command.c:773 jim_echo(): read_dmcontrol2: 0x450001
+User : 1385 1367 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1389 1368 command.c:773 jim_echo(): set_dmcontrol: 0x460001
+User : 1395 1369 command.c:773 jim_echo(): read_dmcontrol2: 0x460001
+User : 1399 1370 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1403 1371 command.c:773 jim_echo(): set_dmcontrol: 0x470001
+User : 1409 1373 command.c:773 jim_echo(): read_dmcontrol2: 0x470001
+User : 1413 1374 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1417 1375 command.c:773 jim_echo(): set_dmcontrol: 0x480001
+User : 1423 1377 command.c:773 jim_echo(): read_dmcontrol2: 0x480001
+User : 1427 1378 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1431 1379 command.c:773 jim_echo(): set_dmcontrol: 0x490001
+User : 1437 1381 command.c:773 jim_echo(): read_dmcontrol2: 0x490001
+User : 1441 1382 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1445 1383 command.c:773 jim_echo(): set_dmcontrol: 0x4a0001
+User : 1451 1385 command.c:773 jim_echo(): read_dmcontrol2: 0x4a0001
+User : 1455 1386 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1459 1387 command.c:773 jim_echo(): set_dmcontrol: 0x4b0001
+User : 1465 1389 command.c:773 jim_echo(): read_dmcontrol2: 0x4b0001
+User : 1469 1390 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1473 1391 command.c:773 jim_echo(): set_dmcontrol: 0x4c0001
+User : 1479 1393 command.c:773 jim_echo(): read_dmcontrol2: 0x4c0001
+User : 1483 1394 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1487 1395 command.c:773 jim_echo(): set_dmcontrol: 0x4d0001
+User : 1493 1397 command.c:773 jim_echo(): read_dmcontrol2: 0x4d0001
+User : 1497 1398 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1501 1399 command.c:773 jim_echo(): set_dmcontrol: 0x4e0001
+User : 1507 1400 command.c:773 jim_echo(): read_dmcontrol2: 0x4e0001
+User : 1511 1401 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1515 1402 command.c:773 jim_echo(): set_dmcontrol: 0x4f0001
+User : 1521 1404 command.c:773 jim_echo(): read_dmcontrol2: 0x4f0001
+User : 1525 1405 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1529 1406 command.c:773 jim_echo(): set_dmcontrol: 0x500001
+User : 1535 1408 command.c:773 jim_echo(): read_dmcontrol2: 0x500001
+User : 1539 1409 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1543 1411 command.c:773 jim_echo(): set_dmcontrol: 0x510001
+User : 1549 1413 command.c:773 jim_echo(): read_dmcontrol2: 0x510001
+User : 1553 1414 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1557 1415 command.c:773 jim_echo(): set_dmcontrol: 0x520001
+User : 1563 1416 command.c:773 jim_echo(): read_dmcontrol2: 0x520001
+User : 1567 1417 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1571 1418 command.c:773 jim_echo(): set_dmcontrol: 0x530001
+User : 1577 1420 command.c:773 jim_echo(): read_dmcontrol2: 0x530001
+User : 1581 1421 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1585 1422 command.c:773 jim_echo(): set_dmcontrol: 0x540001
+User : 1591 1424 command.c:773 jim_echo(): read_dmcontrol2: 0x540001
+User : 1595 1426 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1599 1427 command.c:773 jim_echo(): set_dmcontrol: 0x550001
+User : 1605 1430 command.c:773 jim_echo(): read_dmcontrol2: 0x550001
+User : 1609 1432 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1613 1433 command.c:773 jim_echo(): set_dmcontrol: 0x560001
+User : 1619 1435 command.c:773 jim_echo(): read_dmcontrol2: 0x560001
+User : 1623 1436 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1627 1437 command.c:773 jim_echo(): set_dmcontrol: 0x570001
+User : 1633 1438 command.c:773 jim_echo(): read_dmcontrol2: 0x570001
+User : 1637 1439 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1641 1441 command.c:773 jim_echo(): set_dmcontrol: 0x580001
+User : 1647 1443 command.c:773 jim_echo(): read_dmcontrol2: 0x580001
+User : 1651 1444 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1655 1445 command.c:773 jim_echo(): set_dmcontrol: 0x590001
+User : 1661 1447 command.c:773 jim_echo(): read_dmcontrol2: 0x590001
+User : 1665 1448 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1669 1449 command.c:773 jim_echo(): set_dmcontrol: 0x5a0001
+User : 1675 1451 command.c:773 jim_echo(): read_dmcontrol2: 0x5a0001
+User : 1679 1452 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1683 1453 command.c:773 jim_echo(): set_dmcontrol: 0x5b0001
+User : 1689 1454 command.c:773 jim_echo(): read_dmcontrol2: 0x5b0001
+User : 1693 1455 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1697 1456 command.c:773 jim_echo(): set_dmcontrol: 0x5c0001
+User : 1703 1458 command.c:773 jim_echo(): read_dmcontrol2: 0x5c0001
+User : 1707 1459 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1711 1460 command.c:773 jim_echo(): set_dmcontrol: 0x5d0001
+User : 1717 1462 command.c:773 jim_echo(): read_dmcontrol2: 0x5d0001
+User : 1721 1463 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1725 1464 command.c:773 jim_echo(): set_dmcontrol: 0x5e0001
+User : 1731 1466 command.c:773 jim_echo(): read_dmcontrol2: 0x5e0001
+User : 1735 1467 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1739 1468 command.c:773 jim_echo(): set_dmcontrol: 0x5f0001
+User : 1745 1470 command.c:773 jim_echo(): read_dmcontrol2: 0x5f0001
+User : 1749 1471 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1753 1472 command.c:773 jim_echo(): set_dmcontrol: 0x600001
+User : 1759 1474 command.c:773 jim_echo(): read_dmcontrol2: 0x600001
+User : 1763 1475 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1767 1476 command.c:773 jim_echo(): set_dmcontrol: 0x610001
+User : 1773 1478 command.c:773 jim_echo(): read_dmcontrol2: 0x610001
+User : 1777 1480 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1781 1481 command.c:773 jim_echo(): set_dmcontrol: 0x620001
+User : 1787 1482 command.c:773 jim_echo(): read_dmcontrol2: 0x620001
+User : 1791 1483 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1795 1484 command.c:773 jim_echo(): set_dmcontrol: 0x630001
+User : 1801 1486 command.c:773 jim_echo(): read_dmcontrol2: 0x630001
+User : 1805 1487 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1809 1489 command.c:773 jim_echo(): set_dmcontrol: 0x640001
+User : 1815 1491 command.c:773 jim_echo(): read_dmcontrol2: 0x640001
+User : 1819 1492 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1823 1493 command.c:773 jim_echo(): set_dmcontrol: 0x650001
+User : 1829 1494 command.c:773 jim_echo(): read_dmcontrol2: 0x650001
+User : 1833 1495 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1837 1497 command.c:773 jim_echo(): set_dmcontrol: 0x660001
+User : 1843 1499 command.c:773 jim_echo(): read_dmcontrol2: 0x660001
+User : 1847 1501 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1851 1502 command.c:773 jim_echo(): set_dmcontrol: 0x670001
+User : 1858 1505 command.c:773 jim_echo(): read_dmcontrol2: 0x670001
+User : 1862 1506 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1866 1507 command.c:773 jim_echo(): set_dmcontrol: 0x680001
+User : 1872 1509 command.c:773 jim_echo(): read_dmcontrol2: 0x680001
+User : 1876 1510 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1880 1511 command.c:773 jim_echo(): set_dmcontrol: 0x690001
+User : 1886 1513 command.c:773 jim_echo(): read_dmcontrol2: 0x690001
+User : 1890 1514 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1894 1515 command.c:773 jim_echo(): set_dmcontrol: 0x6a0001
+User : 1900 1517 command.c:773 jim_echo(): read_dmcontrol2: 0x6a0001
+User : 1904 1518 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1908 1521 command.c:773 jim_echo(): set_dmcontrol: 0x6b0001
+User : 1914 1523 command.c:773 jim_echo(): read_dmcontrol2: 0x6b0001
+User : 1918 1524 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1922 1524 command.c:773 jim_echo(): set_dmcontrol: 0x6c0001
+User : 1928 1526 command.c:773 jim_echo(): read_dmcontrol2: 0x6c0001
+User : 1932 1527 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1936 1528 command.c:773 jim_echo(): set_dmcontrol: 0x6d0001
+User : 1942 1531 command.c:773 jim_echo(): read_dmcontrol2: 0x6d0001
+User : 1946 1532 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1950 1533 command.c:773 jim_echo(): set_dmcontrol: 0x6e0001
+User : 1956 1535 command.c:773 jim_echo(): read_dmcontrol2: 0x6e0001
+User : 1960 1536 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1964 1537 command.c:773 jim_echo(): set_dmcontrol: 0x6f0001
+User : 1970 1539 command.c:773 jim_echo(): read_dmcontrol2: 0x6f0001
+User : 1974 1540 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1978 1541 command.c:773 jim_echo(): set_dmcontrol: 0x700001
+User : 1984 1543 command.c:773 jim_echo(): read_dmcontrol2: 0x700001
+User : 1988 1544 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 1992 1545 command.c:773 jim_echo(): set_dmcontrol: 0x710001
+User : 1998 1547 command.c:773 jim_echo(): read_dmcontrol2: 0x710001
+User : 2002 1548 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2006 1549 command.c:773 jim_echo(): set_dmcontrol: 0x720001
+User : 2012 1552 command.c:773 jim_echo(): read_dmcontrol2: 0x720001
+User : 2016 1553 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2020 1553 command.c:773 jim_echo(): set_dmcontrol: 0x730001
+User : 2026 1555 command.c:773 jim_echo(): read_dmcontrol2: 0x730001
+User : 2030 1556 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2034 1557 command.c:773 jim_echo(): set_dmcontrol: 0x740001
+User : 2040 1559 command.c:773 jim_echo(): read_dmcontrol2: 0x740001
+User : 2044 1560 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2048 1561 command.c:773 jim_echo(): set_dmcontrol: 0x750001
+User : 2054 1563 command.c:773 jim_echo(): read_dmcontrol2: 0x750001
+User : 2058 1565 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2062 1567 command.c:773 jim_echo(): set_dmcontrol: 0x760001
+User : 2068 1569 command.c:773 jim_echo(): read_dmcontrol2: 0x760001
+User : 2072 1570 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2076 1571 command.c:773 jim_echo(): set_dmcontrol: 0x770001
+User : 2082 1573 command.c:773 jim_echo(): read_dmcontrol2: 0x770001
+User : 2086 1574 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2090 1575 command.c:773 jim_echo(): set_dmcontrol: 0x780001
+User : 2096 1576 command.c:773 jim_echo(): read_dmcontrol2: 0x780001
+User : 2100 1577 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2104 1578 command.c:773 jim_echo(): set_dmcontrol: 0x790001
+User : 2110 1581 command.c:773 jim_echo(): read_dmcontrol2: 0x790001
+User : 2114 1582 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2118 1583 command.c:773 jim_echo(): set_dmcontrol: 0x7a0001
+User : 2124 1585 command.c:773 jim_echo(): read_dmcontrol2: 0x7a0001
+User : 2128 1586 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2132 1587 command.c:773 jim_echo(): set_dmcontrol: 0x7b0001
+User : 2138 1589 command.c:773 jim_echo(): read_dmcontrol2: 0x7b0001
+User : 2142 1590 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2146 1591 command.c:773 jim_echo(): set_dmcontrol: 0x7c0001
+User : 2152 1593 command.c:773 jim_echo(): read_dmcontrol2: 0x7c0001
+User : 2156 1594 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2160 1595 command.c:773 jim_echo(): set_dmcontrol: 0x7d0001
+User : 2166 1598 command.c:773 jim_echo(): read_dmcontrol2: 0x7d0001
+User : 2170 1599 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2174 1600 command.c:773 jim_echo(): set_dmcontrol: 0x7e0001
+User : 2180 1602 command.c:773 jim_echo(): read_dmcontrol2: 0x7e0001
+User : 2184 1603 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2188 1604 command.c:773 jim_echo(): set_dmcontrol: 0x7f0001
+User : 2194 1605 command.c:773 jim_echo(): read_dmcontrol2: 0x7f0001
+User : 2198 1606 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2202 1607 command.c:773 jim_echo(): set_dmcontrol: 0x800001
+User : 2208 1609 command.c:773 jim_echo(): read_dmcontrol2: 0x800001
+User : 2212 1610 command.c:773 jim_echo(): dmstatus:  0x0040cca2
+User : 2214 1610 command.c:773 jim_echo(): count_cores:  0x00000001
+User : 2216 1610 command.c:773 jim_echo(): There is 1 core in tap
+User : 2225 1610 command.c:546 command_print(): configure: bak_debug_buf = 0x00200000
+Debug: 2226 1610 nds32_v5_cmd.c:545 handle_ndsv5_configure_command(): p_nds_bak_debug_buffer_start = 0xffc60008, p_nds_bak_debug_buffer_end = 0xffe60008
+User : 2229 1610 command.c:546 command_print(): configure: tdesc_bit ndsv5_tdesc_bitfield.xml
+User : 2232 1610 command.c:546 command_print(): configure: aligned_access
+User : 2235 1610 command.c:546 command_print(): configure: reg_symbolic_name
+User : 2238 1610 command.c:546 command_print(): configure: scan_retry_times = 0x00000003
+User : 2241 1610 command.c:546 command_print(): configure: jtag_scans_optimize = 0x00000004
+User : 2246 1610 command.c:546 command_print(): configure: jtag_max_scans = 0x00000040
+Info : 2247 1610 nds32_v5_cmd.c:370 handle_ndsv5_configure_command(): nds_ftdi_devices=1 and user defined jtag_max_scans >= 32,no update nds_jtag_max_scans
+Info : 2248 1610 nds32_v5_cmd.c:371 handle_ndsv5_configure_command(): nds_jtag_max_scans: 32
+User : 2251 1610 command.c:546 command_print(): configure: dis_condition_break = 0x00000001
+User : 2254 1610 command.c:546 command_print(): configure: wip_bytes_per_dot = 0x00002000
+User : 2257 1610 command.c:546 command_print(): configure: dmi_quick_access = 0x00000000
+User : 2260 1610 command.c:546 command_print(): configure: dmi_access_mem = 0x00000001
+User : 2263 1611 command.c:546 command_print(): configure: sys_bus_access = 0x00000001
+User : 2267 1611 command.c:546 command_print(): configure: log_file_size = 0x00a00000
+User : 2270 1611 command.c:546 command_print(): configure: desc Andes_v4.6.3_BUILD_ID_2020090411
+User : 2273 1611 command.c:546 command_print(): configure: burn_port 9900
+Info : 2275 1613 server.c:373 add_service(): Listening on port 9900 for burner connections
+User : 2278 1613 command.c:546 command_print(): configure: halt_on_reset = 0x00000000
+Info : 2283 1613 server.c:373 add_service(): Listening on port 6666 for tcl connections
+Info : 2284 1614 server.c:373 add_service(): Listening on port 9901 for telnet connections
+Info : 2331 1617 core.c:1043 jtag_examine_chain_display(): JTAG tap: nds.tap tap/device found: 0x1000563d (mfg: 0x31e (Andes Technology Corporation), part: 0x0005, ver: 0x1)
+Error: 2411 1625 riscv-013.c:950 execute_abstract_command(): command 0x321008 failed; abstractcs=0x8000304
+Debug: 2428 1634 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[misa] = 0x40801125 
+Debug: 2430 1635 nds32_v5_cmd.c:2029 ndsv5_redefine_CSR_name(): ndsv5_redefine_CSR_name
+Debug: 2431 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3857, mvendorid
+Debug: 2432 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3858, marchid
+Debug: 2433 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3859, mimpid
+Debug: 2434 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3860, mhartid
+Debug: 2435 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 768, mstatus
+Debug: 2436 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 769, misa
+Debug: 2437 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 770, medeleg
+Debug: 2438 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 771, mideleg
+Debug: 2439 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 772, mie
+Debug: 2440 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 773, mtvec
+Debug: 2441 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 832, mscratch
+Debug: 2442 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 833, mepc
+Debug: 2443 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 834, mcause
+Debug: 2444 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 835, mtval
+Debug: 2445 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 836, mip
+Debug: 2446 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 928, pmpcfg0
+Debug: 2447 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 929, pmpcfg1
+Debug: 2448 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 930, pmpcfg2
+Debug: 2449 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 931, pmpcfg3
+Debug: 2450 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 944, pmpaddr0
+Debug: 2451 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 945, pmpaddr1
+Debug: 2452 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 946, pmpaddr2
+Debug: 2453 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 947, pmpaddr3
+Debug: 2454 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 948, pmpaddr4
+Debug: 2455 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 949, pmpaddr5
+Debug: 2456 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 950, pmpaddr6
+Debug: 2457 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 951, pmpaddr7
+Debug: 2458 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 952, pmpaddr8
+Debug: 2459 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 953, pmpaddr9
+Debug: 2460 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 954, pmpaddr10
+Debug: 2461 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 955, pmpaddr11
+Debug: 2462 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 956, pmpaddr12
+Debug: 2463 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 957, pmpaddr13
+Debug: 2464 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 958, pmpaddr14
+Debug: 2465 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 959, pmpaddr15
+Debug: 2466 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2816, mcycle
+Debug: 2467 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2818, minstret
+Debug: 2468 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2819, mhpmcounter3
+Debug: 2469 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2820, mhpmcounter4
+Debug: 2470 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2821, mhpmcounter5
+Debug: 2471 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2822, mhpmcounter6
+Debug: 2472 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2944, mcycleh
+Debug: 2473 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2946, minstreth
+Debug: 2474 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2947, mhpmcounter3h
+Debug: 2475 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2948, mhpmcounter4h
+Debug: 2476 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2949, mhpmcounter5h
+Debug: 2477 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2950, mhpmcounter6h
+Debug: 2478 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 803, mhpmevent3
+Debug: 2479 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 804, mhpmevent4
+Debug: 2480 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 805, mhpmevent5
+Debug: 2481 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 806, mhpmevent6
+Debug: 2482 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 774, mcounteren
+Debug: 2483 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1952, tselect
+Debug: 2484 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1953, tdata1
+Debug: 2485 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1954, tdata2
+Debug: 2486 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1955, tdata3
+Debug: 2487 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1968, dcsr
+Debug: 2488 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1969, dpc
+Debug: 2489 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1970, dscratch0
+Debug: 2490 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1971, dscratch1
+Debug: 2491 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4032, micm_cfg
+Debug: 2492 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4033, mdcm_cfg
+Debug: 2493 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4034, mmsc_cfg
+Debug: 2494 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4035, mmsc_cfg2
+Debug: 2495 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4039, mvec_cfg
+Debug: 2496 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4040, mcrash_statesave
+Debug: 2497 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4041, mstatus_crashsave
+Debug: 2498 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1984, milmb
+Debug: 2499 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1985, mdlmb
+Debug: 2500 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1986, mecc_code
+Debug: 2501 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1987, mnvec
+Debug: 2502 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1994, mcache_ctl
+Debug: 2503 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1995, mcctlbeginaddr
+Debug: 2504 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1996, mcctlcommand
+Debug: 2505 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1997, mcctldata
+Debug: 2506 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2032, mppib
+Debug: 2507 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2033, mfiob
+Debug: 2508 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1990, mhsp_ctl
+Debug: 2509 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1991, msp_bound
+Debug: 2510 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1992, msp_base
+Debug: 2511 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1988, mxstatus
+Debug: 2512 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1993, mdcause
+Debug: 2513 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1989, mpft_ctl
+Debug: 2514 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2000, mmisc_ctl
+Debug: 2515 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2015, mclk_ctl
+Debug: 2516 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1998, mcounterwen
+Debug: 2517 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1999, mcounterinten
+Debug: 2518 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2001, mcountermask_m
+Debug: 2519 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2002, mcountermask_s
+Debug: 2520 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2003, mcountermask_u
+Debug: 2521 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2004, mcounterovf
+Debug: 2522 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2016, dexc2dbg
+Debug: 2523 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2017, ddcause
+Debug: 2524 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 256, sstatus
+Debug: 2525 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 260, sie
+Debug: 2526 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 261, stvec
+Debug: 2527 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 262, scounteren
+Debug: 2528 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 320, sscratch
+Debug: 2529 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 321, sepc
+Debug: 2530 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 322, scause
+Debug: 2531 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 323, stval
+Debug: 2532 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 324, sip
+Debug: 2533 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 384, satp
+Debug: 2534 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2505, sdcause
+Debug: 2535 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2511, scounterinten
+Debug: 2536 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2513, scountermask_m
+Debug: 2537 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2514, scountermask_s
+Debug: 2538 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2515, scountermask_u
+Debug: 2539 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2516, scounterovf
+Debug: 2540 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2509, scctldata
+Debug: 2541 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2509, smisc_ctl
+Debug: 2542 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3072, cycle
+Debug: 2543 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3074, instret
+Debug: 2544 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3075, hpmcounter3
+Debug: 2545 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3076, hpmcounter4
+Debug: 2546 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3077, hpmcounter5
+Debug: 2547 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3078, hpmcounter6
+Debug: 2548 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3200, cycleh
+Debug: 2549 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3202, instreth
+Debug: 2550 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3203, hpmcounter3h
+Debug: 2551 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3204, hpmcounter4h
+Debug: 2552 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3205, hpmcounter5h
+Debug: 2553 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3206, hpmcounter6h
+Debug: 2554 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 1, fflags
+Debug: 2555 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2, frm
+Debug: 2556 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3, fcsr
+Debug: 2557 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2048, uitb
+Debug: 2558 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2059, ucctlbeginaddr
+Debug: 2559 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2060, ucctlcommand
+Debug: 2560 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2005, mslideleg
+Debug: 2561 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2500, slie
+Debug: 2562 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2501, slip
+Debug: 2563 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2531, shpmevent3
+Debug: 2564 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2532, shpmevent4
+Debug: 2565 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2533, shpmevent5
+Debug: 2566 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2534, shpmevent6
+Debug: 2567 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2006, msavestatus
+Debug: 2568 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2007, msaveepc1
+Debug: 2569 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2008, msavecause1
+Debug: 2570 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2009, msaveepc2
+Debug: 2571 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2010, msavecause2
+Debug: 2572 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2011, msavedcause1
+Debug: 2573 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2012, msavedcause2
+Debug: 2574 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 800, mcountinhibit
+Debug: 2575 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2528, scountinhibit
+Debug: 2576 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 0, ustatus
+Debug: 2577 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 4, uie
+Debug: 2578 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 5, utvec
+Debug: 2579 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 64, uscratch
+Debug: 2580 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 65, uepc
+Debug: 2581 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 66, ucause
+Debug: 2582 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 67, utval
+Debug: 2583 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 68, uip
+Debug: 2584 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2057, udcause
+Debug: 2585 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2064, wfe
+Debug: 2586 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2065, sleepvalue
+Debug: 2587 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2066, txevt
+Debug: 2588 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 775, mtvt
+Debug: 2589 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 837, mnxti
+Debug: 2590 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 838, mintstatus
+Debug: 2591 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 840, mscratchcsw
+Debug: 2592 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 841, mscratchcswl
+Debug: 2593 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2049, ucode
+Debug: 2594 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 2028, mirq_entry
+Debug: 2595 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 8, vstart
+Debug: 2596 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 9, vxsat
+Debug: 2597 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 10, vxrm
+Debug: 2598 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3104, vl
+Debug: 2599 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3105, vtype
+Debug: 2600 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3008, pmacfg0
+Debug: 2601 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3009, pmacfg1
+Debug: 2602 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3010, pmacfg2
+Debug: 2603 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3011, pmacfg3
+Debug: 2604 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3024, pmaaddr0
+Debug: 2605 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3025, pmaaddr1
+Debug: 2606 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3026, pmaaddr2
+Debug: 2607 1636 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3027, pmaaddr3
+Debug: 2608 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3028, pmaaddr4
+Debug: 2609 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3029, pmaaddr5
+Debug: 2610 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3030, pmaaddr6
+Debug: 2611 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3031, pmaaddr7
+Debug: 2612 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3032, pmaaddr8
+Debug: 2613 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3033, pmaaddr9
+Debug: 2614 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3034, pmaaddr10
+Debug: 2615 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3035, pmaaddr11
+Debug: 2616 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3036, pmaaddr12
+Debug: 2617 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3037, pmaaddr13
+Debug: 2618 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3038, pmaaddr14
+Debug: 2619 1637 nds32_v5_cmd.c:2040 ndsv5_redefine_CSR_name(): 3039, pmaaddr15
+Debug: 2622 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 0, zero
+Debug: 2623 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 1, ra
+Debug: 2624 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 2, sp
+Debug: 2625 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 3, gp
+Debug: 2626 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 4, tp
+Debug: 2627 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 5, t0
+Debug: 2628 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 6, t1
+Debug: 2629 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 7, t2
+Debug: 2630 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 8, fp
+Debug: 2631 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 9, s1
+Debug: 2632 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 10, a0
+Debug: 2633 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 11, a1
+Debug: 2634 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 12, a2
+Debug: 2635 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 13, a3
+Debug: 2636 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 14, a4
+Debug: 2637 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 15, a5
+Debug: 2638 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 16, a6
+Debug: 2639 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 17, a7
+Debug: 2640 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 18, s2
+Debug: 2641 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 19, s3
+Debug: 2642 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 20, s4
+Debug: 2643 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 21, s5
+Debug: 2644 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 22, s6
+Debug: 2645 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 23, s7
+Debug: 2646 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 24, s8
+Debug: 2647 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 25, s9
+Debug: 2648 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 26, s10
+Debug: 2649 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 27, s11
+Debug: 2650 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 28, t3
+Debug: 2651 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 29, t4
+Debug: 2652 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 30, t5
+Debug: 2653 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 31, t6
+Debug: 2654 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 32, pc
+Debug: 2655 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 33, ft0
+Debug: 2656 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 34, ft1
+Debug: 2657 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 35, ft2
+Debug: 2658 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 36, ft3
+Debug: 2659 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 37, ft4
+Debug: 2660 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 38, ft5
+Debug: 2661 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 39, ft6
+Debug: 2662 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 40, ft7
+Debug: 2663 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 41, fs0
+Debug: 2664 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 42, fs1
+Debug: 2665 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 43, fa0
+Debug: 2666 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 44, fa1
+Debug: 2667 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 45, fa2
+Debug: 2668 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 46, fa3
+Debug: 2669 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 47, fa4
+Debug: 2670 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 48, fa5
+Debug: 2671 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 49, fa6
+Debug: 2672 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 50, fa7
+Debug: 2673 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 51, fs2
+Debug: 2674 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 52, fs3
+Debug: 2675 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 53, fs4
+Debug: 2676 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 54, fs5
+Debug: 2677 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 55, fs6
+Debug: 2678 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 56, fs7
+Debug: 2679 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 57, fs8
+Debug: 2680 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 58, fs9
+Debug: 2681 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 59, fs10
+Debug: 2682 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 60, fs11
+Debug: 2683 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 61, ft8
+Debug: 2684 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 62, ft9
+Debug: 2685 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 63, ft10
+Debug: 2686 1637 nds32_v5_cmd.c:2104 ndsv5_redefine_GPR_FPU_name(): 64, ft11
+Debug: 2705 1639 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[tselect] = 0x0 
+Debug: 2716 1639 riscv-013.c:1375 register_write_direct(): [nds.tap] hart[0] reg[tselect] <- 0x0 
+Debug: 2741 1642 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[tselect] = 0x0 
+Debug: 2759 1644 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[tdata1] = 0x21800000 
+Debug: 2770 1645 riscv-013.c:1375 register_write_direct(): [nds.tap] hart[0] reg[tselect] <- 0x1 
+Debug: 2795 1647 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[tselect] = 0x1 
+Debug: 2813 1649 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[tdata1] = 0x21800000 
+Debug: 2824 1650 riscv-013.c:1375 register_write_direct(): [nds.tap] hart[0] reg[tselect] <- 0x2 
+Debug: 2849 1652 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[tselect] = 0x0 
+Debug: 2860 1653 riscv-013.c:1375 register_write_direct(): [nds.tap] hart[0] reg[tselect] <- 0x0 
+Info : 2869 1654 riscv.c:2424 riscv_enumerate_triggers(): [0] Found 2 triggers
+Debug: 2904 1656 riscv-013.c:1559 register_read_direct(): [nds.tap] hart[0] reg[dcsr] = 0x400006c3  xdebugver=0x1 stopcycle stoptime cause=0x3 prv=0x3
+Debug: 2915 1657 riscv-013.c:1375 register_write_direct(): [nds.tap] hart[0] reg[dcsr] <- 0x400006c3  xdebugver=0x1 stopcycle stoptime cause=0x3 prv=0x3
+Info : 2955 1678 riscv-013.c:2068 examine(): Examined RISC-V core; found 1 harts
+Info : 2956 1678 riscv-013.c:2073 examine():  [nds.tap] hart 0: XLEN=32, 2 triggers
+Debug: 2957 1678 nds32_v5_cmd.c:2793 ndsv5_handle_examine(): ndsv5_handle_examine
+Debug: 2959 1678 nds32_v5_cmd.c:2769 ndsv5_callback_event_handler(): event = 0x00000012, EXAMINE_END
+Debug: 2973 1681 nds32_v5_cmd.c:1488 ndsv5_handle_poll(): target->state = running
+Info : 3032 1689 server.c:373 add_service(): Listening on port 9902 for gdb connections
+Info : 3033 1689 server.c:101 add_connection(): accepting 'telnet' connection on tcp/9901
+Info : 3034 1689 telnet_server.c:209 telnet_new_connection(): Establising Telnet connection
+Info : 3035 1689 telnet_server.c:237 telnet_new_connection(): Negotiate telnet options
+Info : 3036 1690 telnet_server.c:247 telnet_new_connection(): telnet banner: Open On-Chip Debugger
+Info : 3085 2144 server.c:101 add_connection(): accepting 'telnet' connection on tcp/9901
+Info : 3086 2145 telnet_server.c:209 telnet_new_connection(): Establising Telnet connection
+Info : 3087 2147 telnet_server.c:237 telnet_new_connection(): Negotiate telnet options
+Info : 3088 2147 telnet_server.c:247 telnet_new_connection(): telnet banner: Open On-Chip Debugger
+Info : 3185 3009 server.c:101 add_connection(): accepting 'burner' connection on tcp/9900
+Debug: 3220 3029 nds32_v5_cmd.c:2769 ndsv5_callback_event_handler(): event = 0x00000000, TARGET_EVENT_GDB_HALT
+Debug: 3223 3029 nds32_v5_cmd.c:2769 ndsv5_callback_event_handler(): event = 0x00000001, HALTED
+Debug: 3234 3032 nds32_v5_cmd.c:1485 ndsv5_handle_poll(): target->state = halted, target->debug_reason = debug-request
+Debug: 3235 3032 nds32_v5_cmd.c:1513 ndsv5_handle_halt(): target->state = halted
+Debug: 3236 3032 nds32_v5_cmd.c:1521 ndsv5_handle_halt(): target->debug_reason = debug-request
+Info : 3245 20923 server.c:601 server_loop(): dropped 'burner' connection
+Debug: 3258 21041 nds32_v5_cmd.c:1488 ndsv5_handle_poll(): target->state = running

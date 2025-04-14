@@ -1,0 +1,14 @@
+drivers/stimer.o: ../drivers/stimer.c ../drivers/stimer.h \
+ C:\Users\SwaminathanK\AndeSight3\workspace\DSP_cfft_q15_benchmark_N\common/compiler.h \
+ ../drivers/reg_include/stimer_reg.h ../drivers/reg_include/soc.h \
+ C:\Users\SwaminathanK\AndeSight3\workspace\DSP_cfft_q15_benchmark_N\common/bit.h
+
+../drivers/stimer.h:
+
+C:\Users\SwaminathanK\AndeSight3\workspace\DSP_cfft_q15_benchmark_N\common/compiler.h:
+
+../drivers/reg_include/stimer_reg.h:
+
+../drivers/reg_include/soc.h:
+
+C:\Users\SwaminathanK\AndeSight3\workspace\DSP_cfft_q15_benchmark_N\common/bit.h:

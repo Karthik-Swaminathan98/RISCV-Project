@@ -1,0 +1,7 @@
+/cygdrive/C/Users/SwaminathanK/AndeSight3_New/workspace/_ICEman_/iceman_debug0.log
+User : 101 4 command.c:546 command_print(): debug_level: 2
+User : 109 4 command.c:546 command_print(): adapter speed: 10000 kHz
+User : 111 4 command.c:546 command_print(): adapter_nsrst_delay: 500
+User : 131 8 command.c:546 command_print(): srst_only separate srst_gates_jtag srst_open_drain connect_deassert_srst
+Info : 136 25 transport.c:286 jim_transport_select(): auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+Debug: 258 28 nds32_v5_cmd.c:1445 ndsv5_target_create(): ndsv5_target_create

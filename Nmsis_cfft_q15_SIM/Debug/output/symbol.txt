@@ -1,0 +1,131 @@
+00000000 a _ITB_BASE_
+00000000 a _RELAX_END_
+000100f8 R riscv_cfft_sR_q15_len4096
+000100fc A __global_pointer$
+00010108 R riscv_cfft_sR_q15_len2048
+00010118 R riscv_cfft_sR_q15_len1024
+00010128 R riscv_cfft_sR_q15_len512
+00010138 R riscv_cfft_sR_q15_len256
+00010148 R riscv_cfft_sR_q15_len128
+00010158 R riscv_cfft_sR_q15_len64
+00010168 R riscv_cfft_sR_q15_len32
+00010178 R riscv_cfft_sR_q15_len16
+00010188 R riscvBitRevIndexTable_fixed_4096
+00012108 R riscvBitRevIndexTable_fixed_2048
+00013088 R riscvBitRevIndexTable_fixed_1024
+00013848 R riscvBitRevIndexTable_fixed_512
+00013c08 R riscvBitRevIndexTable_fixed_256
+00013de8 R riscvBitRevIndexTable_fixed_128
+00013ec8 R riscvBitRevIndexTable_fixed_64
+00013f38 R riscvBitRevIndexTable_fixed_32
+00013f68 R riscvBitRevIndexTable_fixed_16
+00013f80 R twiddleCoef_4096_q15
+00016f80 R twiddleCoef_2048_q15
+00018780 R twiddleCoef_1024_q15
+00019380 R twiddleCoef_512_q15
+00019980 R twiddleCoef_256_q15
+00019c80 R twiddleCoef_128_q15
+00019e00 R twiddleCoef_64_q15
+00019ec0 R twiddleCoef_32_q15
+00019f20 R twiddleCoef_16_q15
+0001a030 R cst_libm_rredf
+0001a048 r twooverpi.2618
+0001a068 R __digits
+0001a1c0 T _start
+0001a210 T _fini
+0001a210 T _init
+0001a214 t $x
+0001a214 W riscv_cfft_radix4by2_q15
+0001a324 t $x
+0001a324 W riscv_cfft_radix4by2_inverse_q15
+0001a434 t $x
+0001a434 W riscv_cfft_q15
+0001a564 t $x
+0001a564 W riscv_radix4_butterfly_q15
+0001a850 t $x
+0001a850 W riscv_radix4_butterfly_inverse_q15
+0001ab3c t $x
+0001ab3c W riscv_cfft_init_4096_q15
+0001ab5c t $x
+0001ab5c W riscv_cfft_init_2048_q15
+0001ab80 t $x
+0001ab80 W riscv_cfft_init_1024_q15
+0001aba0 t $x
+0001aba0 W riscv_cfft_init_512_q15
+0001abc0 t $x
+0001abc0 W riscv_cfft_init_256_q15
+0001abe0 t $x
+0001abe0 W riscv_cfft_init_128_q15
+0001ac00 t $x
+0001ac00 W riscv_cfft_init_64_q15
+0001ac20 t $x
+0001ac20 W riscv_cfft_init_32_q15
+0001ac40 t $x
+0001ac40 W riscv_cfft_init_16_q15
+0001ac60 t $x
+0001ac60 W riscv_cfft_init_q15
+0001acd8 t $x
+0001acd8 W riscv_bitreversal_16
+0001ad32 T memset
+0001adda W _exit
+0001adf8 T main	/cygdrive/c/Users/SwaminathanK/AndeSight3_New/New folder/Nmsis_cfft_q15_SIM/Debug/../NMS.c:24
+0001af88 t __floatunsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatunsidf.c:36
+0001afec t __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
+0001b638 t __truncdfsf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
+0001b938 t __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
+0001ba48 T sinf
+0001bba0 T ref__mathlib_rredf2
+0001bcd4 T puts
+0001bd02 t __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+0001bd0a t __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0001bd0a t __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0001bd0a t __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0001bd0a t __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0001bd18 t __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0001bd18 t __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0001bd18 t __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0001bd18 t __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0001bd32 t __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0001bd32 t __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0001bd32 t __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0001bd32 t __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0001bd3e t __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+0001bd42 t __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0001bd42 t __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0001bd42 t __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0001bd42 t __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0001bd4c t __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0001bd4c t __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0001bd4c t __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0001bd4c t __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0001bd56 t __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0001bd56 t __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0001bd56 t __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0001bd56 t __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0001bd64 T strlen
+0001bdc4 W _write
+0001bde4 T printf
+0001be02 t __vprintf_help
+0001be38 T vprintf
+0001be82 T __print_integral
+0001bec8 T __printf_impl
+0001c338 T __int_to_poly
+0001c356 T __print_integral_poly
+0001c3e6 T __printf_float_impl
+0001c7dc t __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+0001c80c t __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+0001c83c T strcpy
+0001c8ba T strnlen
+0001c8d4 T sqrtf
+0001c97c t __divdf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/divdf3.c:35
+0001d168 T __ieee754_sqrtf
+0001d236 T matherr
+0001d240 D cst_libm_sincosf
+0001d25c G __fdlib_version
+0001d260 S __mculib_REENT_errno
+0001d260 G _edata
+0001d264 s __vprintf_buf
+0001d268 s __vprintf_buf_len
+0001d26c S __printf_count
+0001d270 S _end
+03000000 a _stack

@@ -1,0 +1,242 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x1a1c0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          116072 (bytes into file)
+  Flags:                             0x3, RVC, single-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         6
+  Size of section headers:           40 (bytes)
+  Number of section headers:         20
+  Section header string table index: 17
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .rodata           PROGBITS        000100f8 0000f8 009fc0 00 AMS  0   0  8
+  [ 2] .eh_frame         PROGBITS        0001a0b8 00a0b8 0000fc 00   A  0   0  4
+  [ 3] .text             PROGBITS        0001a1c0 00a1c0 00307a 00  AX  0   0  4
+  [ 4] .data             PROGBITS        0001d240 00e000 00001c 00  WA  0   0  4
+  [ 5] .sdata            PROGBITS        0001d25c 00e01c 000004 00  WA  0   0  4
+  [ 6] .sbss             NOBITS          0001d260 00e020 000010 00  WA  0   0  4
+  [ 7] .comment          PROGBITS        00000000 00e020 000087 01  MS  0   0  1
+  [ 8] .debug_info       PROGBITS        00000000 00e0a7 00316a 00      0   0  1
+  [ 9] .debug_abbrev     PROGBITS        00000000 011211 000cd8 00      0   0  1
+  [10] .debug_loc        PROGBITS        00000000 011ee9 0050f4 00      0   0  1
+  [11] .debug_aranges    PROGBITS        00000000 016fe0 000120 00      0   0  8
+  [12] .debug_ranges     PROGBITS        00000000 017100 0006f0 00      0   0  1
+  [13] .debug_line       PROGBITS        00000000 0177f0 0020b6 00      0   0  1
+  [14] .debug_str        PROGBITS        00000000 0198a6 00172b 01  MS  0   0  1
+  [15] .debug_frame      PROGBITS        00000000 01afd4 0001a0 00      0   0  4
+  [16] .symtab           SYMTAB          00000000 01b174 0009e0 10     18  83  4
+  [17] .shstrtab         STRTAB          00000000 01bb54 0000c7 00      0   0  1
+  [18] .strtab           STRTAB          00000000 01bc1b 00090e 00      0   0  1
+  [19] .riscv.attributes RISCV_ATTRIBUTE 00000000 01c529 00003d 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  PHDR           0x000034 0x00010034 0x00010034 0x000c0 0x000c0 R   0x4
+  LOAD           0x000000 0x00010000 0x00010000 0x0a1b4 0x0a1b4 R   0x10
+  LOAD           0x00a1c0 0x0001a1c0 0x0001a1c0 0x0307a 0x0307a R E 0x10
+  LOAD           0x00e000 0x0001d240 0x0001d240 0x00020 0x00030 RW  0x10
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0
+  RISCV_ATTRIBUT 0x01c529 0x00000000 0x00000000 0x0003d 0x00000 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .rodata .eh_frame 
+   02     .text 
+   03     .data .sdata .sbss 
+   04     
+   05     .riscv.attributes 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type RISC-V is not currently supported.
+
+Symbol table '.symtab' contains 158 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0001a214     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     2: 0001a324     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     3: 0001a434     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     4: 0001a564     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     5: 0001a850     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     6: 0001ab3c     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     7: 0001ab5c     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     8: 0001ab80     0 NOTYPE  LOCAL  DEFAULT    3 $x
+     9: 0001aba0     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    10: 0001abc0     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    11: 0001abe0     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    12: 0001ac00     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    13: 0001ac20     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    14: 0001ac40     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    15: 0001ac60     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    16: 0001acd8     0 NOTYPE  LOCAL  DEFAULT    3 $x
+    17: 00000000     0 FILE    LOCAL  DEFAULT  ABS _exit.c
+    18: 00000000     0 FILE    LOCAL  DEFAULT  ABS errno.c
+    19: 00000000     0 FILE    LOCAL  DEFAULT  ABS <artificial>
+    20: 00000000     0 FILE    LOCAL  DEFAULT  ABS floatunsidf.c
+    21: 0001af88   100 FUNC    LOCAL  HIDDEN     3 __floatunsidf
+    22: 00000000     0 FILE    LOCAL  DEFAULT  ABS muldf3.c
+    23: 0001afec  1608 FUNC    LOCAL  HIDDEN     3 __muldf3
+    24: 00000000     0 FILE    LOCAL  DEFAULT  ABS truncdfsf2.c
+    25: 0001b638   768 FUNC    LOCAL  HIDDEN     3 __truncdfsf2
+    26: 00000000     0 FILE    LOCAL  DEFAULT  ABS extendsfdf2.c
+    27: 0001b938   272 FUNC    LOCAL  HIDDEN     3 __extendsfdf2
+    28: 00000000     0 FILE    LOCAL  DEFAULT  ABS sinf.c
+    29: 00000000     0 FILE    LOCAL  DEFAULT  ABS ref_rredf.c
+    30: 0001a048    32 OBJECT  LOCAL  DEFAULT    1 twooverpi.2618
+    31: 00000000     0 FILE    LOCAL  DEFAULT  ABS puts.c
+    32: 00000000     0 FILE    LOCAL  DEFAULT  ABS strlen.c
+    33: 00000000     0 FILE    LOCAL  DEFAULT  ABS _write.c
+    34: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf.c
+    35: 00000000     0 FILE    LOCAL  DEFAULT  ABS vprintf.c
+    36: 0001be02    54 FUNC    LOCAL  DEFAULT    3 __vprintf_help
+    37: 0001d264     4 OBJECT  LOCAL  DEFAULT    6 __vprintf_buf
+    38: 0001d268     4 OBJECT  LOCAL  DEFAULT    6 __vprintf_buf_len
+    39: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_impl.c
+    40: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_impl_float.c
+    41: 00000000     0 FILE    LOCAL  DEFAULT  ABS libgcc2.c
+    42: 0001c7dc    46 FUNC    LOCAL  HIDDEN     3 __ashldi3
+    43: 00000000     0 FILE    LOCAL  DEFAULT  ABS libgcc2.c
+    44: 0001c80c    46 FUNC    LOCAL  HIDDEN     3 __lshrdi3
+    45: 00000000     0 FILE    LOCAL  DEFAULT  ABS strcpy.c
+    46: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_data.c
+    47: 00000000     0 FILE    LOCAL  DEFAULT  ABS strnlen.c
+    48: 00000000     0 FILE    LOCAL  DEFAULT  ABS wf_sqrt.c
+    49: 00000000     0 FILE    LOCAL  DEFAULT  ABS divdf3.c
+    50: 0001c97c  2026 FUNC    LOCAL  HIDDEN     3 __divdf3
+    51: 00000000     0 FILE    LOCAL  DEFAULT  ABS ef_sqrt.c
+    52: 00000000     0 FILE    LOCAL  DEFAULT  ABS s_lib_ver.c
+    53: 00000000     0 FILE    LOCAL  DEFAULT  ABS s_matherr.c
+    54: 03000000     0 NOTYPE  LOCAL  HIDDEN   ABS _stack
+    55: 00000000     0 NOTYPE  LOCAL  HIDDEN   ABS _ITB_BASE_
+    56: 00000000     0 NOTYPE  LOCAL  HIDDEN   ABS _RELAX_END_
+    57: 0001bd02     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_12
+    58: 0001bd0a     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_11
+    59: 0001bd0a     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_10
+    60: 0001bd0a     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_9
+    61: 0001bd0a     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_8
+    62: 0001bd18     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_7
+    63: 0001bd18     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_6
+    64: 0001bd18     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_5
+    65: 0001bd18     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_4
+    66: 0001bd32     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_3
+    67: 0001bd32     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_2
+    68: 0001bd32     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_1
+    69: 0001bd32     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_save_0
+    70: 0001bd3e     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_12
+    71: 0001bd42     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_11
+    72: 0001bd42     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_10
+    73: 0001bd42     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_9
+    74: 0001bd42     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_8
+    75: 0001bd4c     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_7
+    76: 0001bd4c     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_6
+    77: 0001bd4c     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_5
+    78: 0001bd4c     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_4
+    79: 0001bd56     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_3
+    80: 0001bd56     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_2
+    81: 0001bd56     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_1
+    82: 0001bd56     0 NOTYPE  LOCAL  HIDDEN     3 __riscv_restore_0
+    83: 0001a1c0    80 FUNC    GLOBAL DEFAULT    3 _start
+    84: 000100fc     0 NOTYPE  GLOBAL DEFAULT  ABS __global_pointer$
+    85: 0001d260     0 NOTYPE  GLOBAL DEFAULT    5 _edata
+    86: 0001d270     0 NOTYPE  GLOBAL DEFAULT    6 _end
+    87: 0001ad32   168 FUNC    GLOBAL DEFAULT    3 memset
+    88: 0001adf8   396 FUNC    GLOBAL DEFAULT    3 main
+    89: 0001adda    30 FUNC    WEAK   DEFAULT    3 _exit
+    90: 0001a210     2 FUNC    GLOBAL DEFAULT    3 _init
+    91: 0001a210     2 FUNC    GLOBAL DEFAULT    3 _fini
+    92: 0001d168   204 FUNC    GLOBAL DEFAULT    3 __ieee754_sqrtf
+    93: 0001bba0   306 FUNC    GLOBAL DEFAULT    3 ref__mathlib_rredf2
+    94: 0001a030    24 OBJECT  GLOBAL DEFAULT    1 cst_libm_rredf
+    95: 0001d25c     4 OBJECT  GLOBAL DEFAULT    5 __fdlib_version
+    96: 0001d236     4 FUNC    GLOBAL DEFAULT    3 matherr
+    97: 0001ba48   342 FUNC    GLOBAL DEFAULT    3 sinf
+    98: 0001d240    28 OBJECT  GLOBAL DEFAULT    4 cst_libm_sincosf
+    99: 0001c8d4   166 FUNC    GLOBAL DEFAULT    3 sqrtf
+   100: 0001a434   302 FUNC    WEAK   DEFAULT    3 riscv_cfft_q15
+   101: 0001ac60   118 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_q15
+   102: 000100f8    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len4096
+   103: 00010108    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len2048
+   104: 00010118    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len1024
+   105: 00010128    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len512
+   106: 00010138    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len256
+   107: 00010148    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len128
+   108: 00010158    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len64
+   109: 00010168    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len32
+   110: 00010178    16 OBJECT  GLOBAL DEFAULT    1 riscv_cfft_sR_q15_len16
+   111: 00010188  8064 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   112: 00012108  3968 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   113: 00013088  1984 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   114: 00013848   960 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   115: 00013c08   480 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   116: 00013de8   224 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   117: 00013ec8   112 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   118: 00013f38    48 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   119: 00013f68    24 OBJECT  GLOBAL DEFAULT    1 riscvBitRevIndexTable_fix
+   120: 00013f80 12288 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_4096_q15
+   121: 00016f80  6144 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_2048_q15
+   122: 00018780  3072 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_1024_q15
+   123: 00019380  1536 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_512_q15
+   124: 00019980   768 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_256_q15
+   125: 00019c80   384 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_128_q15
+   126: 00019e00   192 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_64_q15
+   127: 00019ec0    96 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_32_q15
+   128: 00019f20    48 OBJECT  GLOBAL DEFAULT    1 twiddleCoef_16_q15
+   129: 0001a214   270 FUNC    WEAK   DEFAULT    3 riscv_cfft_radix4by2_q15
+   130: 0001a324   270 FUNC    WEAK   DEFAULT    3 riscv_cfft_radix4by2_inve
+   131: 0001a564   748 FUNC    WEAK   DEFAULT    3 riscv_radix4_butterfly_q1
+   132: 0001a850   748 FUNC    WEAK   DEFAULT    3 riscv_radix4_butterfly_in
+   133: 0001acd8    90 FUNC    WEAK   DEFAULT    3 riscv_bitreversal_16
+   134: 0001ab3c    30 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_4096_q15
+   135: 0001ab5c    34 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_2048_q15
+   136: 0001ab80    32 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_1024_q15
+   137: 0001aba0    32 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_512_q15
+   138: 0001abc0    32 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_256_q15
+   139: 0001abe0    32 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_128_q15
+   140: 0001ac00    32 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_64_q15
+   141: 0001ac20    32 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_32_q15
+   142: 0001ac40    30 FUNC    WEAK   DEFAULT    3 riscv_cfft_init_16_q15
+   143: 0001d260     4 OBJECT  GLOBAL DEFAULT    6 __mculib_REENT_errno
+   144: 0001bde4    30 FUNC    GLOBAL DEFAULT    3 printf
+   145: 0001a068    16 OBJECT  GLOBAL DEFAULT    1 __digits
+   146: 0001d26c     4 OBJECT  GLOBAL DEFAULT    6 __printf_count
+   147: 0001be82    70 FUNC    GLOBAL DEFAULT    3 __print_integral
+   148: 0001bec8  1136 FUNC    GLOBAL DEFAULT    3 __printf_impl
+   149: 0001c338    30 FUNC    GLOBAL DEFAULT    3 __int_to_poly
+   150: 0001c356   144 FUNC    GLOBAL DEFAULT    3 __print_integral_poly
+   151: 0001c3e6  1014 FUNC    GLOBAL DEFAULT    3 __printf_float_impl
+   152: 0001bcd4    46 FUNC    GLOBAL DEFAULT    3 puts
+   153: 0001c83c   124 FUNC    GLOBAL DEFAULT    3 strcpy
+   154: 0001bd64    94 FUNC    GLOBAL DEFAULT    3 strlen
+   155: 0001c8ba    24 FUNC    GLOBAL DEFAULT    3 strnlen
+   156: 0001be38    74 FUNC    GLOBAL DEFAULT    3 vprintf
+   157: 0001bdc4    32 FUNC    WEAK   DEFAULT    3 _write
+
+No version information found in this file.
+Attribute Section: riscv
+File Attributes
+  Tag_RISCV_arch: "RV32I2p0m2p0f2p0c2p0p0p5xdsp2p0_xv5-1p1"
+  Tag_RISCV_unaligned_access: Unaligned access
+  Tag_RISCV_stack_align: 16-bytes

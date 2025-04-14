@@ -1,0 +1,261 @@
+00000000 T _IRESET_ENTRY	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:253
+00000000 W _ITB_BASE_
+00000000 T _RETENTION_RESET_VMA_START	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:253
+00000022 t _ISTART	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:267
+0000002a t _ISWS_USB_DIS	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:275
+00000040 a irqno
+00000088 t _WAKEUP_FLASH	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:320
+000000a2 t _MSPI_WAIT	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:328
+000000bc t _WAIT_EFUSE_LOAD_AND_FLASH_WAKEUP_FINISH	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:347
+000000c2 t _MULTI_ADDRESS_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:358
+000000d2 t _IZERO_BSS	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:365
+000000e6 t _IZERO_BSS_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:369
+000000f2 t _IZERO_AES	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:376
+00000106 t _IZERO_AES_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:380
+00000112 t _IDATA_INIT	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:402
+00000112 t _IFILL_STK	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:402
+0000012a t _IDATA_INIT_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:406
+0000013c t _IMAIN_FUNC	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:415
+00000152 t _IEND	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:426
+00000154 T _RETENTION_RESET_VMA_END
+00000158 D _AES_VMA_END
+00000158 D _AES_VMA_START
+00000158 D _RETENTION_DATA_VMA_START
+00000158 d flash_read_page	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:46
+0000015c d g_pm_long_suspend	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:54
+00000160 d pmcd	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:59
+0000018c d g_pm_tick_32k_calib	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:51
+00000190 d g_pm_tick_cur	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:52
+00000194 d g_plic_preempt_en	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/plic.c:33
+00000198 d s_flash_preempt_config	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:49
+0000019a d g_pm_suspend_power_cfg	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:57
+0000019c d g_pm_early_wakeup_time_us	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:61
+000001a4 d g_pm_tick_32k_cur	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:53
+000001a8 d g_pm_tick_update_en	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:56
+000001ac d g_pm_r_delay_cycle	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:76
+000001b0 d g_pm_longsleep_early_wakeup_time_us	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:68
+000001b8 D g_pm_mspi_cfg	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:58
+000001bc D _RETENTION_DATA_VMA_END
+00000200 T _RAMCODE_VMA_START	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/stimer.h:180
+00000200 t delay_ms	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/stimer.c:42
+00000224 t flash_send_addr	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:112
+00000268 t flash_send_cmd	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:98
+000002b0 t clock_set_32k_tick	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/clock.c:203
+00000310 t analog_read_reg32.constprop.4	/cygdrive/C/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/drivers/core.h:114
+0000035c t clock_get_32k_tick	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/clock.c:241
+00000380 t pm_stimer_recover	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:112
+00000410 t plic_exit_critical_sec	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/plic.c:78
+00000468 t plic_enter_critical_sec	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/plic.c:47
+000004c8 t flash_mspi_read_ram	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:152
+00000648 t analog_write_reg8	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/analog.c:123
+0000068c t analog_read_reg8	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/analog.c:105
+000006d8 t clock_init_ram.constprop.10	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/clock.c:285
+00000818 t pm_wait_bbpll_done	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:188
+000008cc t pm_sleep_start	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:253
+00000a60 t pm_sleep_wakeup_ram.constprop.3	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:431
+00000d68 T trap_entry	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/exception.c:91
+00000f00 T __vectors
+00001004 t flash_read_uid.constprop.6	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:590
+0000102c t flash_read_mid	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:565
+00001054 t flash_read_mid_uid_with_check	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:688
+000010e0 t flash_dread	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/flash.c:306
+00001108 t clock_init.constprop.9	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/clock.c:370
+00001120 t pm_sleep_wakeup.constprop.2	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:790
+00001138 t user_calib_adc_vref.constprop.8	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/calibration/calibration.c:32
+00001234 t user_calib_freq_offset.constprop.7	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/calibration/calibration.c:120
+0000128c t gpio_input_dis	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/gpio.c:91
+000012a8 T _write	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/printf.c:29
+000012d0 T main	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../Debug_Demo/main.c:39
+00001a50 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq1	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq10	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq11	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq12	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq13	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq14	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq15	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq16	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq17	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq18	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq19	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq2	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq20	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq21	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq22	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq23	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq24	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq25	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq26	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq27	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq28	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq29	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq3	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq30	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq31	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq32	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq33	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq34	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq35	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq36	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq37	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq38	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq39	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq4	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq40	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq41	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq42	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq43	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq44	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq45	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq46	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq47	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq48	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq49	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq5	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq50	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq51	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq52	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq53	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq54	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq55	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq56	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq57	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq58	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq59	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq6	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq60	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq61	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq62	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq63	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq7	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq8	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a50 W entry_irq9	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:434
+00001a52 W trap_handler	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:439
+00001a58 T riscv_dsp_cfft_q15
+00001a78 T riscv_dsp_cfft_rd2_q15
+00001dfc T riscv_dsp_cfft_rd4_q15
+000024e8 T riscv_dsp_cmag_q15
+00002588 T riscv_dsp_sqrt_q15
+00002634 T log
+00002a94 t with_errno
+00002a9a T __math_divzero
+00002ad8 T __math_invalid
+00002b18 T sinf
+00002ca0 T ref__mathlib_rredf2
+00002de8 T __adddf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/adddf3.c:35
+000037cc T __divdf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/divdf3.c:35
+00003fb8 T __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
+00004604 T __subdf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/subdf3.c:35
+0000500c T __unorddf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/unorddf2.c:34
+00005078 T __fixdfsi	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/fixdfsi.c:35
+00005140 T __floatsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatsidf.c:36
+000051bc T __truncdfsf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
+000054bc T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+000054c4 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000054c4 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000054c4 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000054c4 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000054d2 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000054d2 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000054d2 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000054d2 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000054ec T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000054ec T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000054ec T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000054ec T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000054f8 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+000054fc T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000054fc T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000054fc T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000054fc T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00005506 T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00005506 T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00005506 T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00005506 T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00005510 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00005510 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00005510 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00005510 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0000551c T malloc
+00005524 T free
+0000552c T memcpy
+0000559e T _free_r
+0000562e T _malloc_r
+000056d6 T iprintf
+000056d6 T printf
+000056f4 T putchar
+0000571a T puts
+0000574c T strlen
+00005776 t __vprintf_help
+000057ae T viprintf
+000057ae T vprintf
+000057f6 T __print_integral
+0000583c T __printf_impl
+0000583c T __printf_impl_lite
+00005c96 T __int_to_poly
+00005cb6 T __print_integral_poly
+00005d3e T __printf_float_impl
+0000613c T strcpy
+00006172 T strnlen
+0000618c T memset
+00006212 W _sbrk
+00006240 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+00006270 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+00006398 T _RAMCODE_VMA_END
+00007b7a A BIN_SIZE
+00080000 D _DATA_VMA_START
+00080000 D cst_libm_sincosf
+0008023c D riscv_dsp_cos_table_q15_1024
+00080460 D __log_data
+00080800 D __global_pointer$
+00081510 D cst_libm_rredf
+00081528 d twooverpi.0
+000815c8 D __digits
+00081664 d sys_clk	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../drivers/clock.c:46
+0008166c D _impure_ptr
+00081670 S _BSS_VMA_START
+00081670 D _DATA_VMA_END
+00081670 s exception_mcause	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/exception.c:44
+00081674 s exception_mdcause	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/exception.c:49
+00081678 s exception_mepc	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/exception.c:34
+0008167c s exception_mstatus	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/exception.c:39
+00081680 s exception_mtval	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../vendor/common/exception.c:29
+00081684 s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
+00081688 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
+0008168c S __mculib_REENT_errno
+00081690 S __malloc_sbrk_start
+00081694 S __malloc_free_list
+00081698 s __vprintf_buf_len
+0008169c s __vprintf_buf
+000816a0 S __printf_count
+000816a4 s heap_end.0
+000816a8 B _BSS_VMA_END
+000816a8 b impure_data
+000816a8 d sdk_version	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../common/sdk_version.c:26
+000816d0 D _end
+000a0000 A _STACK_TOP
+00100000 A FLASH_SIZE
+20000000 T BIN_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:59
+20000000 A NDS_SAG_LMA_FLASH
+20000000 W _RELAX_END_	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:59
+20000000 T _RESET_ENTRY	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:59
+20000028 t _START	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:90
+2000008e t _RETENTION_RESET_INIT	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:138
+200000a6 t _RETENTION_RESET_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:142
+200000b8 t _RETENTION_DATA_INIT	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:152
+200000cc t _RETENTION_DATA_INIT_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:156
+200000de t _RAMCODE_INIT	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:166
+200000f6 t _RAMCODE_INIT_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:170
+20000108 t _DATA_INIT	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:180
+20000120 t _DATA_INIT_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:184
+20000132 t _ZERO_BSS	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:195
+20000146 t _ZERO_BSS_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:199
+20000152 t _ZERO_AES	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:206
+20000166 t _ZERO_AES_BEGIN	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:210
+20000172 t _FILL_STK	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:230
+20000172 t _MAIN_FUNC	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:230
+20000188 t _END	/cygdrive/c/Users/SwaminathanK/AndeSight3/workspace/DSP_cmag_q15_benchmark_N/Debug/../boot/cstartup_flash.S:241
+20000190 A _RETENTION_RESET_LMA_START
+200002e8 A _RETENTION_DATA_LMA_START
+20000350 A _RAMCODE_LMA_START
+200064e8 A _DATA_LMA_START

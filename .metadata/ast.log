@@ -1,0 +1,34 @@
+
+[INFO ] 25/04/13-20:43:22:022 - LogPlugin.setLoggerProperties(LogPlugin.java:134) 
+[main]: << Workspace / astlog.home>> : C:\Users\SwaminathanK\AndeSight3_New\workspace
+===========================================================
+
+[INFO ] 25/04/13-20:43:26:026 - Log4A.logInfo(Log4A.java:34) 
+[Worker-2]: ##Detail Info : Check Job (mode is Activation File,File is C:\Users\SwaminathanK\.andesight\ast3.2.3_rds\configuration\com.andestech.ide.license.ui\license.lic)
+
+[INFO ] 25/04/13-20:43:26:026 - Log4A.logInfo(Log4A.java:34) 
+[Worker-2]: call TRUE_LICENSE license
+
+[INFO ] 25/04/13-20:43:30:030 - Log4A.logInfo(Log4A.java:34) 
+[main]: call TRUE_LICENSE license
+
+[INFO ] 25/04/13-20:45:41:041 - OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:95) 
+[ModalContext]: connected: true
+
+[INFO ] 25/04/13-20:45:41:041 - OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:95) 
+[ModalContext]: connected: true
+
+[INFO ] 25/04/13-20:54:20:020 - OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:95) 
+[ModalContext]: connected: true
+
+[INFO ] 25/04/13-20:54:20:020 - OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:95) 
+[ModalContext]: connected: true
+
+[INFO ] 25/04/13-21:05:18:018 - OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:95) 
+[ModalContext]: connected: true
+
+[INFO ] 25/04/13-21:05:19:019 - OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:95) 
+[ModalContext]: connected: true
+
+[INFO ] 25/04/13-21:13:39:039 - Log4A.logInfo(Log4A.java:34) 
+[Framework stop]: call TRUE_LICENSE license

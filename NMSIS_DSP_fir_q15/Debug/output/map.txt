@@ -1,0 +1,603 @@
+Archive member included to satisfy reference by file (symbol)
+
+/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+                              ./Debug_Demo/main.o (symbol from plugin) (riscv_fir_init_q15)
+/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+                              ./Debug_Demo/main.o (symbol from plugin) (riscv_fir_q15)
+/cygdrive/C/Users/SwaminathanK/AndeSight3_New/workspace/NMSIS_DSP_fir_q15/drivers/lib/libdriver.a(pm.o)
+                              ./boot/cstartup_flash.o (g_pm_mspi_cfg)
+/cygdrive/C/Users/SwaminathanK/AndeSight3_New/workspace/NMSIS_DSP_fir_q15/drivers/lib/libdriver.a(rf.o)
+                              ./drivers/emi.o (symbol from plugin) (rf_set_chn)
+/cygdrive/C/Users/SwaminathanK/AndeSight3_New/workspace/NMSIS_DSP_fir_q15/drivers/lib/libdriver.a(sys.o)
+                              ./vendor/common/common.o (symbol from plugin) (sys_init)
+/cygdrive/C/Users/SwaminathanK/AndeSight3_New/workspace/NMSIS_DSP_fir_q15/drivers/lib/libdriver.a(plic.o)
+                              ./drivers/flash.o (symbol from plugin) (plic_enter_critical_sec)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-memset.o)
+                              /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o) (memset)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o)
+                              /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o (printf)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o)
+                              /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o (puts)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strlen.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o) (strlen)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o) (vprintf)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o) (__printf_count)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o) (__printf_impl)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o) (__int_to_poly)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strcpy.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o) (strcpy)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strnlen.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o) (strnlen)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o) (__lshrdi3)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o) (__ashldi3)
+/cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+                              /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o) (__riscv_save_12)
+
+Allocating common symbols
+Common symbol       size              file
+
+s7816_vcc_pin       0x4               ./drivers/s7816.o (symbol from plugin)
+audio_rx_dma_chn    0x1               ./drivers/audio.o (symbol from plugin)
+g_pm_status_info    0x4               pm.o (symbol from plugin)
+para_buff           0x40              ./vendor/common/auto_test/pc_interface.o (symbol from plugin)
+g_adc_pre_scale     0x1               ./drivers/adc.o (symbol from plugin)
+buff                0x140             ./common/usb_dbg/myudb_usb.o (symbol from plugin)
+g_rfmode            0x2               rf.o (symbol from plugin)
+g_clk_32k_src       0x1               ./drivers/clock.o (symbol from plugin)
+command_buff        0x100             ./vendor/common/auto_test/pc_interface.o (symbol from plugin)
+audio_tx_dma_chn    0x1               ./drivers/audio.o (symbol from plugin)
+myudb_txfifo_b      0x1180            ./common/usb_dbg/myudb_usb.o (symbol from plugin)
+S                   0xa               ./Debug_Demo/main.o (symbol from plugin)
+par_addr            0x14              ./vendor/common/auto_test/pc_interface.o (symbol from plugin)
+s7816_rst_time      0x4               ./drivers/s7816.o (symbol from plugin)
+g_adc_vbat_divider  0x1               ./drivers/adc.o (symbol from plugin)
+g_audio_tx_dma_list_cfg
+                    0x14              ./drivers/audio.o (symbol from plugin)
+g_audio_rx_dma_list_cfg
+                    0x14              ./drivers/audio.o (symbol from plugin)
+result_buff         0x100             ./vendor/common/auto_test/pc_interface.o (symbol from plugin)
+s7816_rtx_pin       0x4               ./drivers/s7816.o (symbol from plugin)
+s7816_rst_pin       0x4               ./drivers/s7816.o (symbol from plugin)
+s7816_clock         0x1               ./drivers/s7816.o (symbol from plugin)
+adc_dma_chn         0x1               ./drivers/adc.o (symbol from plugin)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .bss.par_addr  0x0000000000000000       0x14 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.g_adc_pre_scale
+                0x0000000000000000        0x1 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.g_adc_vbat_divider
+                0x0000000000000000        0x1 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.g_single_tong_freqoffset
+                0x0000000000000000        0x1 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.s7816_clock
+                0x0000000000000000        0x1 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.s7816_rst_pin
+                0x0000000000000000        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.s7816_rst_time
+                0x0000000000000000        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.s7816_rtx_pin
+                0x0000000000000000        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.s7816_vcc_pin
+                0x0000000000000000        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sdata.mtime_clock_source
+                0x0000000000000000        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 ./boot/cstartup_flash.o
+ .bss           0x0000000000000000        0x0 ./boot/cstartup_flash.o
+ .text          0x0000000000000000        0x0 ./boot/cstartup_ram.o
+ .data          0x0000000000000000        0x0 ./boot/cstartup_ram.o
+ .bss           0x0000000000000000        0x0 ./boot/cstartup_ram.o
+ .riscv.attributes
+                0x0000000000000000       0x39 ./boot/cstartup_ram.o
+ .text          0x0000000000000000        0x0 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .data          0x0000000000000000        0x0 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .text          0x0000000000000000        0x0 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .data          0x0000000000000000        0x0 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ COMMON         0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strcpy.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strcpy.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strcpy.o)
+ .text          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strnlen.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strnlen.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strnlen.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+ .data          0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+ .bss           0x0000000000000000        0x0 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libdsp.a
+LOAD /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libm.a
+LOAD /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+LOAD ./boot/cstartup_flash.o
+LOAD ./boot/cstartup_ram.o
+LOAD /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libm.a
+LOAD /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a
+LOAD /cygdrive/C/Users/SwaminathanK/AndeSight3_New/workspace/NMSIS_DSP_fir_q15/drivers/lib/libdriver.a
+LOAD /cygdrive/C/Users/SwaminathanK/AndeSight3_New/workspace/NMSIS_DSP_fir_q15/drivers/lib/libaxon_driver_lib.a
+LOAD /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a
+START GROUP
+LOAD /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a
+LOAD /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libgloss.a
+END GROUP
+LOAD /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a
+                0x0000000020000000                NDS_SAG_LMA_FLASH = 0x20000000
+                0x0000000020000000                . = 0x20000000
+                0x0000000020000000                PROVIDE (BIN_BEGIN = .)
+
+.vectors        0x0000000020000000      0x18a
+ *(.vectors)
+ .vectors       0x0000000020000000      0x18a ./boot/cstartup_flash.o
+                0x0000000020000000                _RESET_ENTRY
+                0x0000000000000000                . = 0x0
+
+.retention_reset
+                0x0000000000000000      0x154 load address 0x0000000020000190
+ *(.retention_reset)
+ .retention_reset
+                0x0000000000000000      0x154 ./boot/cstartup_flash.o
+                0x0000000000000000                _IRESET_ENTRY
+                0x0000000000000000                PROVIDE (_RETENTION_RESET_VMA_START = ADDR (.retention_reset))
+                0x0000000020000190                PROVIDE (_RETENTION_RESET_LMA_START = LOADADDR (.retention_reset))
+                0x0000000000000154                PROVIDE (_RETENTION_RESET_VMA_END = .)
+                0x0000000000000158                . = ALIGN (0x8)
+                0x0000000000000158                PROVIDE (_AES_VMA_START = .)
+
+.aes_data
+ *(.aes_data)
+                0x0000000000000158                PROVIDE (_AES_VMA_END = .)
+                0x0000000000000158                . = ALIGN (0x8)
+
+.retention_data
+                0x0000000000000158       0x64 load address 0x00000000200002e8
+ *(.retention_data)
+ .retention_data
+                0x0000000000000158       0x64 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+                0x00000000000001b8                g_pm_mspi_cfg
+                0x0000000000000158                PROVIDE (_RETENTION_DATA_VMA_START = ADDR (.retention_data))
+                0x00000000200002e8                PROVIDE (_RETENTION_DATA_LMA_START = LOADADDR (.retention_data))
+                0x00000000000001bc                PROVIDE (_RETENTION_DATA_VMA_END = .)
+                0x00000000000001c0                . = ALIGN (0x8)
+
+.ram_code       0x0000000000000200     0x2884 load address 0x0000000020000350
+ *(.ram_code)
+ .ram_code      0x0000000000000200      0xdda /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+                0x0000000000000ed8                trap_entry
+ *fill*         0x0000000000000fda       0x26 
+ .ram_code      0x0000000000001000      0x102 ./boot/cstartup_flash.o
+                0x0000000000001000                __vectors
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ *fill*         0x0000000000001102        0x2 
+ .text          0x0000000000001104      0x208 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .text.user_calib_adc_vref.constprop.9
+                0x000000000000130c       0xfc /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .text.user_calib_freq_offset.constprop.8
+                0x0000000000001408       0x56 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *fill*         0x000000000000145e        0x2 
+ .text.gpio_input_dis
+                0x0000000000001460       0x1a /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *fill*         0x000000000000147a        0x2 
+ .text._write   0x000000000000147c       0x28 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+                0x000000000000147c                _write
+ .text.startup.main
+                0x00000000000014a4      0x590 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+                0x00000000000014a4                main
+ .text          0x0000000000001a34        0x6 ./boot/cstartup_flash.o
+                0x0000000000001a34                entry_irq25
+                0x0000000000001a34                entry_irq13
+                0x0000000000001a34                entry_irq15
+                0x0000000000001a34                entry_irq27
+                0x0000000000001a34                entry_irq60
+                0x0000000000001a34                entry_irq1
+                0x0000000000001a34                entry_irq52
+                0x0000000000001a34                entry_irq50
+                0x0000000000001a34                entry_irq62
+                0x0000000000001a34                entry_irq58
+                0x0000000000001a34                entry_irq10
+                0x0000000000001a34                entry_irq21
+                0x0000000000001a34                entry_irq48
+                0x0000000000001a34                entry_irq8
+                0x0000000000001a34                entry_irq33
+                0x0000000000001a34                entry_irq12
+                0x0000000000001a34                entry_irq14
+                0x0000000000001a34                entry_irq2
+                0x0000000000001a34                entry_irq51
+                0x0000000000001a34                entry_irq28
+                0x0000000000001a34                entry_irq43
+                0x0000000000001a34                entry_irq20
+                0x0000000000001a34                entry_irq63
+                0x0000000000001a34                entry_irq46
+                0x0000000000001a34                entry_irq31
+                0x0000000000001a34                entry_irq16
+                0x0000000000001a34                entry_irq53
+                0x0000000000001a34                entry_irq11
+                0x0000000000001a34                entry_irq5
+                0x0000000000001a34                entry_irq23
+                0x0000000000001a34                entry_irq55
+                0x0000000000001a34                entry_irq34
+                0x0000000000001a34                entry_irq36
+                0x0000000000001a34                entry_irq44
+                0x0000000000001a34                entry_irq45
+                0x0000000000001a34                entry_irq26
+                0x0000000000001a34                entry_irq41
+                0x0000000000001a34                entry_irq61
+                0x0000000000001a34                entry_irq38
+                0x0000000000001a34                entry_irq59
+                0x0000000000001a34                entry_irq6
+                0x0000000000001a34                default_irq_entry
+                0x0000000000001a34                entry_irq3
+                0x0000000000001a34                entry_irq39
+                0x0000000000001a34                entry_irq49
+                0x0000000000001a34                entry_irq57
+                0x0000000000001a34                entry_irq47
+                0x0000000000001a34                entry_irq4
+                0x0000000000001a34                entry_irq22
+                0x0000000000001a34                entry_irq30
+                0x0000000000001a34                entry_irq42
+                0x0000000000001a34                entry_irq24
+                0x0000000000001a34                entry_irq19
+                0x0000000000001a34                entry_irq17
+                0x0000000000001a34                entry_irq9
+                0x0000000000001a34                entry_irq56
+                0x0000000000001a34                entry_irq35
+                0x0000000000001a34                entry_irq37
+                0x0000000000001a34                entry_irq54
+                0x0000000000001a34                entry_irq40
+                0x0000000000001a34                entry_irq29
+                0x0000000000001a34                entry_irq7
+                0x0000000000001a34                entry_irq32
+                0x0000000000001a34                entry_irq18
+                0x0000000000001a36                trap_handler
+ *fill*         0x0000000000001a3a        0x2 
+ .text.riscv_fir_init_q15
+                0x0000000000001a3c       0x2e /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+                0x0000000000001a3c                riscv_fir_init_q15
+ *fill*         0x0000000000001a6a        0x2 
+ .text.riscv_fir_q15
+                0x0000000000001a6c      0x280 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+                0x0000000000001a6c                riscv_fir_q15
+ .text          0x0000000000001cec       0xa8 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-memset.o)
+                0x0000000000001cec                memset
+ .text.printf   0x0000000000001d94       0x1e /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o)
+                0x0000000000001d94                printf
+ .text.puts     0x0000000000001db2       0x34 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o)
+                0x0000000000001db2                puts
+ *fill*         0x0000000000001de6        0x2 
+ .text.strlen   0x0000000000001de8       0x60 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strlen.o)
+                0x0000000000001de8                strlen
+ .text.__vprintf_help
+                0x0000000000001e48       0x3a /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .text.vprintf  0x0000000000001e82       0x4c /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+                0x0000000000001e82                vprintf
+ .text.__print_integral
+                0x0000000000001ece       0x48 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+                0x0000000000001ece                __print_integral
+ .text.__printf_impl
+                0x0000000000001f16      0x470 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+                0x0000000000001f16                __printf_impl
+ .text.__int_to_poly
+                0x0000000000002386       0x1e /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+                0x0000000000002386                __int_to_poly
+ .text.__print_integral_poly
+                0x00000000000023a4       0x90 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+                0x00000000000023a4                __print_integral_poly
+ .text.__printf_float_impl
+                0x0000000000002434      0x3fe /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+                0x0000000000002434                __printf_float_impl
+ *fill*         0x0000000000002832        0x2 
+ .text.strcpy   0x0000000000002834       0x7e /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strcpy.o)
+                0x0000000000002834                strcpy
+ .text.strnlen  0x00000000000028b2       0x18 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strnlen.o)
+                0x00000000000028b2                strnlen
+ *fill*         0x00000000000028ca        0x2 
+ .text          0x00000000000028cc       0x30 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+                0x00000000000028cc                __lshrdi3
+ .text          0x00000000000028fc       0x30 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+                0x00000000000028fc                __ashldi3
+ .text          0x000000000000292c       0x60 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+                0x000000000000292c                __riscv_save_12
+                0x0000000000002934                __riscv_save_10
+                0x0000000000002934                __riscv_save_8
+                0x0000000000002934                __riscv_save_11
+                0x0000000000002934                __riscv_save_9
+                0x0000000000002942                __riscv_save_4
+                0x0000000000002942                __riscv_save_7
+                0x0000000000002942                __riscv_save_6
+                0x0000000000002942                __riscv_save_5
+                0x000000000000295c                __riscv_save_3
+                0x000000000000295c                __riscv_save_2
+                0x000000000000295c                __riscv_save_0
+                0x000000000000295c                __riscv_save_1
+                0x0000000000002968                __riscv_restore_12
+                0x000000000000296c                __riscv_restore_8
+                0x000000000000296c                __riscv_restore_10
+                0x000000000000296c                __riscv_restore_9
+                0x000000000000296c                __riscv_restore_11
+                0x0000000000002976                __riscv_restore_5
+                0x0000000000002976                __riscv_restore_7
+                0x0000000000002976                __riscv_restore_4
+                0x0000000000002976                __riscv_restore_6
+                0x0000000000002980                __riscv_restore_3
+                0x0000000000002980                __riscv_restore_1
+                0x0000000000002980                __riscv_restore_0
+                0x0000000000002980                __riscv_restore_2
+ *(.text.*personality*)
+ *(.gnu.warning)
+ *(.eh_frame)
+ .eh_frame      0x000000000000298c       0xf8 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+ *(.eh_frame_hdr)
+ *(.exec.itable)
+                0x0000000000002a84                PROVIDE (_RAMCODE_VMA_END = .)
+                0x0000000000000200                PROVIDE (_RAMCODE_VMA_START = ADDR (.ram_code))
+                0x0000000020000350                PROVIDE (_RAMCODE_LMA_START = LOADADDR (.ram_code))
+                [!provide]                        PROVIDE (_RAMCODE_SIZE = SIZEOF (.ram_code))
+
+.rela.dyn       0x0000000000002a84        0x0 load address 0x0000000020002bd4
+ .rela.vectors  0x0000000000002a84        0x0 ./boot/cstartup_flash.o
+ .rela.retention_reset
+                0x0000000000002a84        0x0 ./boot/cstartup_flash.o
+ .rela.ram_code
+                0x0000000000002a84        0x0 ./boot/cstartup_flash.o
+ .rela.text.startup.main
+                0x0000000000002a84        0x0 ./boot/cstartup_flash.o
+                0x0000000000080000                . = 0x80000
+                0x0000000000080800                PROVIDE (__global_pointer$ = (. + 0x800))
+
+.data           0x0000000000080000      0x3b6 load address 0x0000000020002bd8
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.firCoeffs
+                0x0000000000080000       0x10 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .data.signal_q15_in
+                0x0000000000080010      0x280 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *(.gnu.linkonce.d.*personality*)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000080290       0x10 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .rodata.main.str1.4
+                0x00000000000802a0       0xf6 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *fill*         0x0000000000080396        0x2 
+ .rodata.__digits
+                0x0000000000080398       0x10 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+                0x0000000000080398                __digits
+ .rodata.__printf_float_impl.str1.4
+                0x00000000000803a8        0x8 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata.sys_clk
+                0x00000000000803b0        0x6 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *(.sdata2 .sdata2.* .gnu.linkonce.s.*)
+                0x00000000000803b6                PROVIDE (_DATA_VMA_END = .)
+                0x0000000000080000                PROVIDE (_DATA_VMA_START = ADDR (.data))
+                0x0000000020002bd8                PROVIDE (_DATA_LMA_START = LOADADDR (.data))
+                0x00000000000803b8                . = ALIGN (0x8)
+                0x00000000000803b8                PROVIDE (_BSS_VMA_START = .)
+
+.sbss           0x00000000000803b8       0x28 load address 0x0000000020002f90
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss.exception_mcause
+                0x00000000000803b8        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.exception_mdcause
+                0x00000000000803bc        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.exception_mepc
+                0x00000000000803c0        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.exception_mstatus
+                0x00000000000803c4        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.exception_mtval
+                0x00000000000803c8        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.g_chip_version
+                0x00000000000803cc        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.g_pm_status_info
+                0x00000000000803d0        0x4 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .sbss.__vprintf_buf
+                0x00000000000803d4        0x4 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .sbss.__vprintf_buf_len
+                0x00000000000803d8        0x4 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .sbss.__printf_count
+                0x00000000000803dc        0x4 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+                0x00000000000803dc                __printf_count
+ *(.scommon .scommon.*)
+
+.bss            0x00000000000803e0      0x2e0 load address 0x0000000020002fb8
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.S         0x00000000000803e0        0xa /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *fill*         0x00000000000803ea        0x2 
+ .bss.firStateQ15
+                0x00000000000803ec       0x4e /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *fill*         0x000000000008043a        0x2 
+ .bss.testOutputQ15
+                0x000000000008043c      0x280 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ *(COMMON)
+                0x00000000000806c0                . = ALIGN (0x8)
+ *fill*         0x00000000000806bc        0x4 
+                0x00000000000806c0                PROVIDE (_BSS_VMA_END = .)
+
+.sdk_version    0x00000000000806c0       0x22 load address 0x0000000020002f8e
+ *(.sdk_version)
+ .sdk_version   0x00000000000806c0       0x22 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+                0x0000000000002fb0                PROVIDE (BIN_SIZE = ((LOADADDR (.sdk_version) + SIZEOF (.sdk_version)) - BIN_BEGIN))
+                0x00000000000806e8                . = ALIGN (0x8)
+                0x00000000000806e8                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x00000000000a0000                PROVIDE (_STACK_TOP = 0xa0000)
+                0x0000000000100000                PROVIDE (FLASH_SIZE = 0x100000)
+                0x0000000000000001                ASSERT ((BIN_SIZE <= FLASH_SIZE), BIN FILE OVERFLOW)
+OUTPUT(NMSIS_DSP_fir_q15.adx elf32-littleriscv)
+
+.debug_info     0x0000000000000000     0x57a3
+ .debug_info    0x0000000000000000     0x2ea5 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .debug_info    0x0000000000002ea5       0x22 ./boot/cstartup_flash.o
+ .debug_info    0x0000000000002ec7      0x242 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .debug_info    0x0000000000003109      0xf9e /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .debug_info    0x00000000000040a7      0xb6b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .debug_info    0x0000000000004c12      0xb6b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+ .debug_info    0x000000000000577d       0x26 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+
+.debug_abbrev   0x0000000000000000      0xd5c
+ .debug_abbrev  0x0000000000000000      0x5c5 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .debug_abbrev  0x00000000000005c5       0x12 ./boot/cstartup_flash.o
+ .debug_abbrev  0x00000000000005d7      0x13b /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .debug_abbrev  0x0000000000000712      0x230 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .debug_abbrev  0x0000000000000942      0x203 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x0000000000000b45      0x203 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+ .debug_abbrev  0x0000000000000d48       0x14 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+
+.debug_loc      0x0000000000000000     0x1e1a
+ .debug_loc     0x0000000000000000      0xcfa /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .debug_loc     0x0000000000000cfa       0xc9 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .debug_loc     0x0000000000000dc3      0xe8f /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .debug_loc     0x0000000000001c52       0xe4 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .debug_loc     0x0000000000001d36       0xe4 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+
+.debug_aranges  0x0000000000000000      0x1d8
+ .debug_aranges
+                0x0000000000000000      0x108 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .debug_aranges
+                0x0000000000000108       0x30 ./boot/cstartup_flash.o
+ .debug_aranges
+                0x0000000000000138       0x20 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .debug_aranges
+                0x0000000000000158       0x20 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .debug_aranges
+                0x0000000000000178       0x20 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x0000000000000198       0x20 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+ .debug_aranges
+                0x00000000000001b8       0x20 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+
+.debug_ranges   0x0000000000000000      0x8a8
+ .debug_ranges  0x0000000000000000      0x6f8 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .debug_ranges  0x00000000000006f8       0x28 ./boot/cstartup_flash.o
+ .debug_ranges  0x0000000000000720       0x10 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .debug_ranges  0x0000000000000730      0x178 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+
+.debug_line     0x0000000000000000     0x3a17
+ .debug_line    0x0000000000000000     0x1bca /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .debug_line    0x0000000000001bca      0x425 ./boot/cstartup_flash.o
+ .debug_line    0x0000000000001fef      0x31d /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .debug_line    0x000000000000230c      0xdb0 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .debug_line    0x00000000000030bc      0x3ca /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .debug_line    0x0000000000003486      0x3ca /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+ .debug_line    0x0000000000003850      0x1c7 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+
+.debug_str      0x0000000000000000     0x2a42
+ .debug_str     0x0000000000000000     0x1ab3 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+                                       0x1d29 (size before relaxing)
+ .debug_str     0x0000000000001ab3       0x77 ./boot/cstartup_flash.o
+ .debug_str     0x0000000000001b2a      0x2eb /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+                                        0x36c (size before relaxing)
+ .debug_str     0x0000000000001e15      0x133 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+                                        0x373 (size before relaxing)
+ .debug_str     0x0000000000001f48      0xa6e /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+                                        0xb55 (size before relaxing)
+ .debug_str     0x00000000000029b6        0xa /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+                                        0xb55 (size before relaxing)
+ .debug_str     0x00000000000029c0       0x82 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+                                        0x12a (size before relaxing)
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x37 /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+                                         0x38 (size before relaxing)
+ .comment       0x0000000000000037       0x12 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000049       0x13 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strlen.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strcpy.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strnlen.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .comment       0x0000000000000049       0x38 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+
+.riscv.attributes
+                0x0000000000000000       0x40
+ .riscv.attributes
+                0x0000000000000000       0x3d /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .riscv.attributes
+                0x000000000000003d       0x39 ./boot/cstartup_flash.o
+ .riscv.attributes
+                0x0000000000000076       0x32 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .riscv.attributes
+                0x00000000000000a8       0x32 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .riscv.attributes
+                0x00000000000000da       0x39 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-memset.o)
+ .riscv.attributes
+                0x0000000000000113       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf.o)
+ .riscv.attributes
+                0x000000000000014e       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-puts.o)
+ .riscv.attributes
+                0x0000000000000189       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strlen.o)
+ .riscv.attributes
+                0x00000000000001c4       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-vprintf.o)
+ .riscv.attributes
+                0x00000000000001ff       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_data.o)
+ .riscv.attributes
+                0x000000000000023a       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl.o)
+ .riscv.attributes
+                0x0000000000000275       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-printf_impl_float.o)
+ .riscv.attributes
+                0x00000000000002b0       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strcpy.o)
+ .riscv.attributes
+                0x00000000000002eb       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/../../../../riscv32-elf/lib/mext-dsp/libc.a(lib_a-strnlen.o)
+ .riscv.attributes
+                0x0000000000000326       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .riscv.attributes
+                0x0000000000000361       0x3b /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
+ .riscv.attributes
+                0x000000000000039c       0x39 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(save-restore.o)
+
+.debug_frame    0x0000000000000000      0x48c
+ .debug_frame   0x0000000000000000      0x3bc /cygdrive/c/Users/SWAMIN~1/AppData/Local/Temp/ccxnPHWA.ltrans0.ltrans.o
+ .debug_frame   0x00000000000003bc       0x30 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_init_q15.c.o)
+ .debug_frame   0x00000000000003ec       0x60 /cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC/libnmsis_dsp_rv32imfcp.a(riscv_fir_q15.c.o)
+ .debug_frame   0x000000000000044c       0x20 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_lshrdi3.o)
+ .debug_frame   0x000000000000046c       0x20 /cygdrive/c/Users/SwaminathanK/Downloads/Telink_IDE/toolchains/nds32le-elf-mculib-v5f/bin/../lib/gcc/riscv32-elf/7.4.0/mext-dsp/libgcc.a(_ashldi3.o)
