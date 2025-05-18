@@ -1,0 +1,2 @@
+   text	   code	 rodata	   data	    bss	    dec	    hex	filename
+  21670	  21670	      0	  88186	     56	 109912	  1ad58	NMSIS_DSP_cfft_f32_benchmark_N.adx

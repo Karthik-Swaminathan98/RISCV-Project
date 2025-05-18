@@ -1,0 +1,2 @@
+com.andestech.ide.dsf.console.core.model.GDBHistory={\n  "historyCommands"\: [\n    "target remote\:9902",\n    "monitor target init",\n    "monitor target",\n    "help"\n  ]\n}
+eclipse.preferences.version=1

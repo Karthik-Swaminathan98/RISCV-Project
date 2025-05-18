@@ -1,0 +1,2 @@
+   text	   code	 rodata	   data	    bss	    dec	    hex	filename
+  86898	  76414	  10484	   1018	   6216	  94132	  16fb4	DSP_cfft_f32_stack_N.adx

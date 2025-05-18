@@ -1,0 +1,2 @@
+   text	   code	 rodata	   data	    bss	    dec	    hex	filename
+  17626	  17626	      0	  41486	     56	  59168	   e720	NMSIS_DSP_cfft_q15_benchmark_N.adx

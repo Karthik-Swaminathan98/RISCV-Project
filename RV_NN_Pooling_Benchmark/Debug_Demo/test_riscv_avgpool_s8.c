@@ -1,0 +1,77 @@
+#include <stdlib.h>
+#include <riscv_nnfunctions.h>
+//#include "../Include_ARM/dw_int16xint8/test_data.h"
+#include "validate.h"
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+#include "core.h"
+#include "stimer.h"
+#include "../TestData_ARM/avgpooling/test_data.h"
+
+static void reset_cycle_count() {
+    write_csr(NDS_MCYCLE, 0);
+}
+
+static unsigned int read_cycle_counter() {
+    return read_csr(NDS_MCYCLE);
+}
+
+void avgpooling_riscv_avgpool_s8(void)
+{
+    //const arm_nmsis_nn_status expected = ARM_nmsis_NN_SUCCESS;
+    int8_t output[AVGPOOLING_OUTPUT_W * AVGPOOLING_OUTPUT_H * AVGPOOLING_BATCH_SIZE * AVGPOOLING_OUTPUT_C] = {0};
+
+    nmsis_nn_context ctx;
+    nmsis_nn_pool_params pool_params;
+    nmsis_nn_dims input_dims;
+    nmsis_nn_dims filter_dims;
+    nmsis_nn_dims output_dims;
+
+    const int8_t *input_data = avgpooling_input_tensor;
+
+    input_dims.n = AVGPOOLING_BATCH_SIZE;
+    input_dims.w = AVGPOOLING_INPUT_W;
+    input_dims.h = AVGPOOLING_INPUT_H;
+    input_dims.c = AVGPOOLING_INPUT_C;
+    filter_dims.w = AVGPOOLING_FILTER_W;
+    filter_dims.h = AVGPOOLING_FILTER_H;
+    output_dims.w = AVGPOOLING_OUTPUT_W;
+    output_dims.h = AVGPOOLING_OUTPUT_H;
+    output_dims.c = AVGPOOLING_OUTPUT_C;
+
+    pool_params.padding.w = AVGPOOLING_PADDING_W;
+    pool_params.padding.h = AVGPOOLING_PADDING_H;
+    pool_params.stride.w = AVGPOOLING_STRIDE_W;
+    pool_params.stride.h = AVGPOOLING_STRIDE_H;
+
+    pool_params.activation.min = AVGPOOLING_ACTIVATION_MIN;
+    pool_params.activation.max = AVGPOOLING_ACTIVATION_MAX;
+
+    ctx.size = riscv_avgpool_s8_get_buffer_size(AVGPOOLING_OUTPUT_W, AVGPOOLING_INPUT_C);
+    ctx.buf = malloc(ctx.size);
+
+    reset_cycle_count();
+    // Measure cycles
+    uint32_t start_cycles_s8 = read_cycle_counter();
+    riscv_avgpool_s8(&ctx, &pool_params, &input_dims, input_data, &filter_dims, &output_dims, output);
+    // Measure cycles
+    uint32_t end_cycles_s8 = read_cycle_counter();
+
+    // Calculate cycle count
+    uint32_t cycle_count_s8 = end_cycles_s8 - start_cycles_s8;
+    if (ctx.buf)
+    {
+        // The caller is responsible to clear the scratch buffers for security reasons if applicable.
+        memset(ctx.buf, 0, ctx.size);
+        free(ctx.buf);
+    }
+	if (validate(output,
+            avgpooling_output,
+            AVGPOOLING_OUTPUT_W * AVGPOOLING_OUTPUT_H * AVGPOOLING_BATCH_SIZE * AVGPOOLING_OUTPUT_C)) {
+		printf("riscv_avgpool_s8 output validation PASSED\n\r");
+		printf("Cycle Count for riscv_avgpool_s8: %lu\n\r", (unsigned long)cycle_count_s8);
+	} else {
+		printf("riscv_avgpool_s8 output validation FAILED\n\r");
+	}
+}

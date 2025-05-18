@@ -1,0 +1,2 @@
+   text	   code	 rodata	   data	    bss	    dec	    hex	filename
+  84274	  75798	   8476	   1022	   6216	  91512	  16578	DSP_cfft_q15_stack_N.adx

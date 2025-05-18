@@ -1,0 +1,2 @@
+   text	   code	 rodata	   data	    bss	    dec	    hex	filename
+  61904	  20392	  41512	    178	     64	  62146	   f2c2	NMSIS_DSP_cfft_q15_stack_N.adx
