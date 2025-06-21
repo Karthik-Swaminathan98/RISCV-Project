@@ -86,6 +86,37 @@ void reset_cycle_count() {
 unsigned int read_cycle_count() {
     return read_csr(NDS_MCYCLE);
 }
+
+#define STACK_SIZE 0x1000
+extern uint32_t _STACK_TOP;
+uint32_t stack_limit;
+uint32_t stack_top;
+
+static void fill_stack_pattern_to_sp() {
+    uint32_t *sp;
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+
+    uint32_t *p = (uint32_t*)stack_limit;
+    while (p < sp) {
+        *p++ = 0xAAAAAAAA;
+    }
+}
+
+static uint32_t measure_stack_usage() {
+    uint32_t *sp;
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+
+    uint32_t *p = (uint32_t*)stack_limit;
+    while (p < sp) {
+        if (*p != 0xAAAAAAAA) {
+            break;
+        }
+        p++;
+    }
+
+    return ((uint32_t)sp - (uint32_t)p);
+}
+
 extern void user_init(void);
 
 int main(void)
@@ -94,9 +125,12 @@ int main(void)
     CLOCK_INIT;
     user_init();
 
+    // Get stack top and calculate stack limit
+    stack_top = (uint32_t)&_STACK_TOP;
+    stack_limit = stack_top - STACK_SIZE;
+
     enable_fs_and_vs();
     printf("Start execution ANDES CNN to classify image %s\n\r", image_name);
-    delay_ms(20);
 
     q7_t *img_buffer1 = scratch_buffer;
     q7_t *img_buffer2 = img_buffer1 + 32 * 32 * 32;
@@ -105,6 +139,10 @@ int main(void)
     int mean_data[3] = INPUT_MEAN_SHIFT;
     unsigned int scale_data[3] = INPUT_RIGHT_SHIFT;
     reset_cycle_count();
+
+	// Fill stack with a known pattern
+	fill_stack_pattern_to_sp();
+
     unsigned int start_cycles = read_cycle_count();
     for (int i = 0; i < 32 * 32 * 3; i += 3)
     {
@@ -119,97 +157,145 @@ int main(void)
 #endif
     }
     unsigned int end_cycles = read_cycle_count();
+    // Measure stack usage
+    uint32_t stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Preprocess Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Preprocess cycles: %u\n\r", end_cycles - start_cycles);
-    delay_ms(20);
+
 
     // Layer 1: Conv -> ReLU -> Pool
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_conv_HWC_s8_s8_s8_RGB_sft_bias_fast(img_buffer2, CONV1_IM_DIM, conv1_wt, CONV1_OUT_CH,
         CONV1_KER_DIM, CONV1_PADDING, CONV1_STRIDE, conv1_bias, CONV1_BIAS_LSHIFT,
         CONV1_OUT_RSHIFT, img_buffer1, CONV1_OUT_DIM, (q15_t *)col_buffer, rgb_wt_buffer);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Conv1 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Conv1 cycles: %u\n\r", end_cycles - start_cycles);
-    delay_ms(20);
+
 
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_relu_s8(img_buffer1, CONV1_OUT_DIM * CONV1_OUT_DIM * CONV1_OUT_CH);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("ReLU1 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("ReLU1 cycles: %u\n\r", end_cycles - start_cycles);
-    delay_ms(20);
+
 
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_maxpool_HWC_s8(img_buffer1, CONV1_OUT_DIM, CONV1_OUT_CH,
         POOL1_KER_DIM, POOL1_PADDING, POOL1_STRIDE, POOL1_OUT_DIM, NULL, img_buffer2);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Pool1 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Pool1 cycles: %u\n\r", end_cycles - start_cycles);
-    delay_ms(20);
+
 
     // Layer 2: Conv -> ReLU -> Pool
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_conv_HWC_s8_s8_s8_sft_bias_fast(img_buffer2, CONV2_IM_DIM, CONV2_IM_CH, conv2_wt,
         CONV2_OUT_CH, CONV2_KER_DIM, CONV2_PADDING, CONV2_STRIDE, conv2_bias,
         CONV2_BIAS_LSHIFT, CONV2_OUT_RSHIFT, img_buffer1, CONV2_OUT_DIM, (q15_t *)col_buffer, NULL);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Conv2 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Conv2 cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_relu_s8(img_buffer1, CONV2_OUT_DIM * CONV2_OUT_DIM * CONV2_OUT_CH);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("ReLU2 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("ReLU2 cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_maxpool_HWC_s8(img_buffer1, CONV2_OUT_DIM, CONV2_OUT_CH,
         POOL2_KER_DIM, POOL2_PADDING, POOL2_STRIDE, POOL2_OUT_DIM, col_buffer, img_buffer2);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Pool2 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Pool2 cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 
     // Layer 3: Conv -> ReLU -> Pool
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_conv_HWC_s8_s8_s8_sft_bias_fast(img_buffer2, CONV3_IM_DIM, CONV3_IM_CH, conv3_wt,
         CONV3_OUT_CH, CONV3_KER_DIM, CONV3_PADDING, CONV3_STRIDE, conv3_bias,
         CONV3_BIAS_LSHIFT, CONV3_OUT_RSHIFT, img_buffer1, CONV3_OUT_DIM, (q15_t *)col_buffer, NULL);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Conv3 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Conv3 cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_relu_s8(img_buffer1, CONV3_OUT_DIM * CONV3_OUT_DIM * CONV3_OUT_CH);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("ReLU3 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("ReLU3 cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_maxpool_HWC_s8(img_buffer1, CONV3_OUT_DIM, CONV3_OUT_CH,
         POOL3_KER_DIM, POOL3_PADDING, POOL3_STRIDE, POOL3_OUT_DIM, col_buffer, img_buffer2);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Pool3 Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Pool3 cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 
     // Fully Connected + Softmax
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_fc_s8_s8_s8_sft_bias_fast(img_buffer2, ip1_wt, IP1_DIM, IP1_OUT,
         IP1_BIAS_LSHIFT, IP1_OUT_RSHIFT, ip1_bias, output_data, (q15_t *)img_buffer1);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("FC Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("FC cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 
     reset_cycle_count();
+    fill_stack_pattern_to_sp();
     start_cycles = read_cycle_count();
     riscv_nn_softmax_s8_fast(output_data, IP1_OUT, output_data);
     end_cycles = read_cycle_count();
+    stack_used_s8 = measure_stack_usage();
+    printf("\n\r");
+    printf("Softmax Stack Used: %lu bytes\n\r", (unsigned long)stack_used_s8);
     printf("Softmax cycles: %u\n\r", end_cycles - start_cycles);
     delay_ms(20);
 

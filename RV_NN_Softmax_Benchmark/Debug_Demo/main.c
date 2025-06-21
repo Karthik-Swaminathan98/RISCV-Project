@@ -12,6 +12,7 @@
 
 
 void softmax_riscv_softmax_s8();
+void softmax_invalid_diff_min_riscv_softmax_s8();
 void softmax_s16_riscv_softmax_s16();
 void softmax_s8_s16_riscv_softmax_s8_s16();
 
@@ -25,10 +26,15 @@ int main(void) {
     delay_ms(20);
 
 	printf("\n\r");
-    printf("Starting NMSIS-Softmax Functions benchmark\n\r");
-    delay_ms(20);
+    printf("-----Starting NMSIS-Softmax Functions benchmark-----\n\r");
+    printf("*****RISCV Softmax Functions S8*****\n\r");
     softmax_riscv_softmax_s8();
+    softmax_invalid_diff_min_riscv_softmax_s8();
+    printf("\n\r");
+    printf("*****RISCV Softmax Functions S16*****\n\r");
     softmax_s16_riscv_softmax_s16();
+    printf("\n\r");
+    printf("*****RISCV Softmax Functions S8_S16*****\n\r");
     softmax_s8_s16_riscv_softmax_s8_s16();
     printf("All tests are passed.\n\r");
     delay_ms(20);

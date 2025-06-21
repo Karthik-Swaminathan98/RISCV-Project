@@ -67,140 +67,140 @@
 00001508 t user_calib_freq_offset.constprop.8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/calibration/calibration.c:120
 00001560 t gpio_input_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../drivers/gpio.c:91
 0000157c T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/printf.c:101
-000015c4 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:65
-00001e10 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e10 W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
-00001e12 W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:439
-00001e18 t $x
-00001e18 T riscv_convolve_HWC_q7_fast
-00002680 t $x
-00002680 T riscv_convolve_HWC_q7_RGB
-0000293c t $x
-0000293c T riscv_nn_mat_mult_kernel_q7
-00002bd0 t $x
-00002bd0 T riscv_softmax_q7
-00002c68 t $x
-00002c68 T riscv_nn_fill_q7
-00002cd4 t $x
-00002cd4 T riscv_q7_to_q7_no_shift
-00002d24 t $x
-00002d24 T riscv_q7_to_q7_reordered_no_shift
-00002d74 t $x
-00002d74 T riscv_maxpool_q7_HWC
-00003000 t $x
-00003000 T riscv_fully_connected_q7_opt
-00003328 t $x
-00003328 T riscv_relu_q7
-000033b0 t $x
-000033b0 T riscv_nn_mat_mult_kernel_q7_reordered
-0000357c t $x
-0000357c T riscv_nn_copy_q7
-000035cc T __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
-000036dc T printf
-000036fa T puts
-00003730 T strlen
-00003790 t __vprintf_help
-000037ca T vprintf
-00003816 T __print_integral
-0000385e T __printf_impl
-00003cce T __int_to_poly
-00003cec T __print_integral_poly
-00003d7c T __printf_float_impl
-00004178 T strcpy
-000041f6 T strnlen
-0000420e T memset
-000042b8 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
-000042e8 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
-00004318 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
-00004320 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00004320 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00004320 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00004320 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-0000432e T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-0000432e T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-0000432e T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-0000432e T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00004348 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004348 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004348 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004348 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004354 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
-00004358 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004358 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004358 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004358 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004362 T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004362 T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004362 T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004362 T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000436c T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-0000436c T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-0000436c T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-0000436c T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004470 T _RAMCODE_VMA_END
-0000d610 A BIN_SIZE
+000015c4 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:96
+00002304 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002304 W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:434
+00002306 W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:439
+0000230c t $x
+0000230c T riscv_convolve_HWC_q7_fast
+00002b74 t $x
+00002b74 T riscv_convolve_HWC_q7_RGB
+00002e30 t $x
+00002e30 T riscv_nn_mat_mult_kernel_q7
+000030c4 t $x
+000030c4 T riscv_softmax_q7
+0000315c t $x
+0000315c T riscv_nn_fill_q7
+000031c8 t $x
+000031c8 T riscv_q7_to_q7_no_shift
+00003218 t $x
+00003218 T riscv_q7_to_q7_reordered_no_shift
+00003268 t $x
+00003268 T riscv_maxpool_q7_HWC
+000034f4 t $x
+000034f4 T riscv_fully_connected_q7_opt
+0000381c t $x
+0000381c T riscv_relu_q7
+000038a4 t $x
+000038a4 T riscv_nn_mat_mult_kernel_q7_reordered
+00003a70 t $x
+00003a70 T riscv_nn_copy_q7
+00003ac0 T __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
+00003bd0 T memset
+00003c7a T printf
+00003c98 T puts
+00003ccc T strlen
+00003d2c t __vprintf_help
+00003d66 T vprintf
+00003db2 T __print_integral
+00003dfa T __printf_impl
+0000426a T __int_to_poly
+00004288 T __print_integral_poly
+00004318 T __printf_float_impl
+00004718 T strcpy
+00004796 T strnlen
+000047b0 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+000047e0 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+00004810 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+00004818 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00004818 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00004818 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00004818 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00004826 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00004826 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00004826 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00004826 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00004840 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+00004840 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+00004840 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+00004840 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000484c T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+00004850 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00004850 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00004850 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00004850 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0000485a T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0000485a T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0000485a T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0000485a T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00004864 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00004864 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00004864 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00004864 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00004968 T _RAMCODE_VMA_END
+0000dc88 A BIN_SIZE
 00080000 D _DATA_VMA_START
 00080000 d conv1_bias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:25
 00080020 d conv1_wt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:24
@@ -213,27 +213,28 @@
 00086dbc d ip1_wt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:30
 000881d4 d cifar10_label	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:53
 000881fc d image_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:47
-0008900c D __digits
-00089024 d init_flag.4915
-00089028 d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../drivers/clock.c:46
-0008902e D _DATA_VMA_END
-00089030 S _BSS_VMA_START
-00089030 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:44
-00089034 s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:49
-00089038 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:34
-0008903c s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:39
-00089040 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:29
-00089044 s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
-00089048 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
-0008904c s __vprintf_buf
-00089050 s __vprintf_buf_len
-00089054 S __printf_count
-00089058 b col_buffer	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:51
-00089cd8 b output_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:50
-00089ce4 b scratch_buffer	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:52
-00093ce8 B _BSS_VMA_END
-00093ce8 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../common/sdk_version.c:26
-00093d10 D _end
+0008918c D __digits
+000891a4 d init_flag.4915
+000891a8 d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../drivers/clock.c:46
+000891ae D _DATA_VMA_END
+000891b0 S _BSS_VMA_START
+000891b0 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:44
+000891b4 s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:49
+000891b8 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:34
+000891bc s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:39
+000891c0 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../vendor/common/exception.c:29
+000891c4 s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
+000891c8 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
+000891cc s stack_limit	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:65
+000891d0 s __vprintf_buf
+000891d4 s __vprintf_buf_len
+000891d8 S __printf_count
+000891dc b col_buffer	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:51
+00089e5c b output_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:50
+00089e68 b scratch_buffer	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../Debug_Demo/main.c:52
+00093e68 B _BSS_VMA_END
+00093e68 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../common/sdk_version.c:26
+00093e90 D _end
 000a0000 A _STACK_TOP
 00100000 A FLASH_SIZE
 20000000 T BIN_BEGIN	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/NMSIS_CIFAR10/Debug/../boot/cstartup_flash.S:59
@@ -259,4 +260,4 @@
 20000190 A _RETENTION_RESET_LMA_START
 200002e8 A _RETENTION_DATA_LMA_START
 20000350 A _RAMCODE_LMA_START
-200045c0 A _DATA_LMA_START
+20004ab8 A _DATA_LMA_START

@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <riscv_nnfunctions.h>
-#include "../Include_ARM/basic/test_data.h"
+#include "../TestData/basic/test_data.h"
+#include "../TestData/conv_2x2_dilation/test_data.h"
+#include "../TestData/conv_3x3_dilation_5x5_input/test_data.h"
 #include "validate.h"
 #include <math.h>
 #include <stdlib.h>
@@ -16,9 +18,37 @@ static unsigned int read_cycle_counter() {
     return read_csr(NDS_MCYCLE);
 }
 
+#define STACK_SIZE 0x1000
+extern uint32_t _STACK_TOP;
+uint32_t stack_limit;
+uint32_t stack_top;
+
+static void fill_stack_pattern_to_sp() {
+    uint32_t *sp;
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+
+    uint32_t *p = (uint32_t*)stack_limit;
+    while (p < sp) {
+        *p++ = 0xAAAAAAAA;
+    }
+}
+
+static uint32_t measure_stack_usage() {
+    uint32_t *sp;
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+
+    uint32_t *p = (uint32_t*)stack_limit;
+    while (p < sp) {
+        if (*p != 0xAAAAAAAA) {
+            break;
+        }
+        p++;
+    }
+
+    return ((uint32_t)sp - (uint32_t)p);
+}
 void basic_riscv_convolve_s8(void)
 {
-    //const riscv_nmsis_nn_status expected = RISCV_NMSIS_NN_SUCCESS;
     int8_t output[BASIC_DST_SIZE] = {0};
 
     nmsis_nn_context ctx;
@@ -35,6 +65,7 @@ void basic_riscv_convolve_s8(void)
     const int8_t *output_ref = basic_output_ref;
     const int32_t output_ref_size = BASIC_DST_SIZE;
 
+    // Set input, filter, and output dimensions
     input_dims.n = BASIC_INPUT_BATCHES;
     input_dims.w = BASIC_INPUT_W;
     input_dims.h = BASIC_INPUT_H;
@@ -46,103 +77,236 @@ void basic_riscv_convolve_s8(void)
     output_dims.h = BASIC_OUTPUT_H;
     output_dims.c = BASIC_OUT_CH;
 
+    // Set convolution parameters
     conv_params.padding.w = BASIC_PAD_X;
     conv_params.padding.h = BASIC_PAD_Y;
     conv_params.stride.w = BASIC_STRIDE_X;
     conv_params.stride.h = BASIC_STRIDE_Y;
     conv_params.dilation.w = BASIC_DILATION_X;
     conv_params.dilation.h = BASIC_DILATION_Y;
-
     conv_params.input_offset = BASIC_INPUT_OFFSET;
     conv_params.output_offset = BASIC_OUTPUT_OFFSET;
     conv_params.activation.min = BASIC_OUT_ACTIVATION_MIN;
     conv_params.activation.max = BASIC_OUT_ACTIVATION_MAX;
+
     quant_params.multiplier = (int32_t *)basic_output_mult;
     quant_params.shift = (int32_t *)basic_output_shift;
 
-//    generate_rand_s8(basic_input, BASIC_INPUT_SIZE);
-//    generate_rand_s8(basic_weights, BASIC_KERNEL_SIZE);
-
-    int32_t buf_size = riscv_convolve_s8_get_buffer_size(&input_dims, &filter_dims);
+    // Get required buffer size
+    int32_t buf_size = riscv_convolve_wrapper_s8_get_buffer_size(&conv_params, &input_dims, &filter_dims, &output_dims);
     ctx.buf = malloc(buf_size);
     ctx.size = 0;
+
+	// Get stack top and calculate stack limit
+	stack_top = (uint32_t)&_STACK_TOP;
+	stack_limit = stack_top - STACK_SIZE;
 
     reset_cycle_count();
-    // Measure cycles
-    uint32_t start_cycles_s8 = read_cycle_counter();
+    fill_stack_pattern_to_sp();
+    uint32_t start_cycles = read_cycle_counter();
 
-    riscv_convolve_s8(&ctx,
-					 &conv_params,
-					 &quant_params,
-					 &input_dims,
-					 input_data,
-					 &filter_dims,
-					 kernel_data,
-					 &bias_dims,
-					 bias_data,
-					 &output_dims,
-					 output);
-    // Measure cycles
-    uint32_t end_cycles_s8 = read_cycle_counter();
+    // Run convolution
+    riscv_convolve_wrapper_s8(&ctx,
+                            &conv_params,
+                            &quant_params,
+                            &input_dims,
+                            input_data,
+                            &filter_dims,
+                            kernel_data,
+                            &bias_dims,
+                            bias_data,
+                            &output_dims,
+                            output);
 
-    // Calculate cycle count
-    uint32_t cycle_count_s8 = end_cycles_s8 - start_cycles_s8;
-
+    uint32_t end_cycles = read_cycle_counter();
+    uint32_t stack_used = measure_stack_usage();
+    uint32_t cycle_count = end_cycles - start_cycles;
 
     if (ctx.buf)
     {
-        // The caller is responsible to clear the scratch buffers for security reasons if applicable.
-        memset(ctx.buf, 0, buf_size);
+        memset(ctx.buf, 0, buf_size);  // Security wipe
         free(ctx.buf);
     }
-	if (validate(output, output_ref, output_ref_size)) {
-		printf("riscv_convolve_s8 output validation PASSED\n\r");
-		delay_ms(20);
-		printf("Cycle Count for riscv_convolve_s8: %lu\n\r", (unsigned long)cycle_count_s8);
-		delay_ms(20);
-	} else {
-		printf("riscv_convolve_s8 output validation FAILED\n\r");
-		delay_ms(20);
-	}
 
-    memset(output, 0, sizeof(output));
+    printf("\n\r");
+    if (validate(output, output_ref, output_ref_size)) {
+        printf("basic_riscv_convolve_s8 output validation PASSED\n\r");
+        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
+        printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+    } else {
+        printf("basic_riscv_convolve_s8 output validation FAILED\n\r");
+    }
+}
 
-    buf_size = riscv_convolve_wrapper_s8_get_buffer_size(&conv_params, &input_dims, &filter_dims, &output_dims);
+void conv_2x2_dilation_riscv_convolve_s8(void)
+{
+    int8_t output[CONV_2X2_DILATION_DST_SIZE] = {0};
+
+    nmsis_nn_context ctx;
+    nmsis_nn_conv_params conv_params;
+    nmsis_nn_per_channel_quant_params quant_params;
+    nmsis_nn_dims input_dims;
+    nmsis_nn_dims filter_dims;
+    nmsis_nn_dims bias_dims;
+    nmsis_nn_dims output_dims;
+
+    const int32_t *bias_data = conv_2x2_dilation_biases;
+    const int8_t *kernel_data = conv_2x2_dilation_weights;
+    const int8_t *input_data = conv_2x2_dilation_input;
+    const int8_t *output_ref = conv_2x2_dilation_output_ref;
+    const int32_t output_ref_size = CONV_2X2_DILATION_DST_SIZE;
+
+    input_dims.n = CONV_2X2_DILATION_INPUT_BATCHES;
+    input_dims.w = CONV_2X2_DILATION_INPUT_W;
+    input_dims.h = CONV_2X2_DILATION_INPUT_H;
+    input_dims.c = CONV_2X2_DILATION_IN_CH;
+    filter_dims.w = CONV_2X2_DILATION_FILTER_X;
+    filter_dims.h = CONV_2X2_DILATION_FILTER_Y;
+    filter_dims.c = CONV_2X2_DILATION_IN_CH;
+    output_dims.w = CONV_2X2_DILATION_OUTPUT_W;
+    output_dims.h = CONV_2X2_DILATION_OUTPUT_H;
+    output_dims.c = CONV_2X2_DILATION_OUT_CH;
+
+    conv_params.padding.w = CONV_2X2_DILATION_PAD_X;
+    conv_params.padding.h = CONV_2X2_DILATION_PAD_Y;
+    conv_params.stride.w = CONV_2X2_DILATION_STRIDE_X;
+    conv_params.stride.h = CONV_2X2_DILATION_STRIDE_Y;
+    conv_params.dilation.w = CONV_2X2_DILATION_DILATION_X;
+    conv_params.dilation.h = CONV_2X2_DILATION_DILATION_Y;
+    conv_params.input_offset = CONV_2X2_DILATION_INPUT_OFFSET;
+    conv_params.output_offset = CONV_2X2_DILATION_OUTPUT_OFFSET;
+    conv_params.activation.min = CONV_2X2_DILATION_OUT_ACTIVATION_MIN;
+    conv_params.activation.max = CONV_2X2_DILATION_OUT_ACTIVATION_MAX;
+
+    quant_params.multiplier = (int32_t *)conv_2x2_dilation_output_mult;
+    quant_params.shift = (int32_t *)conv_2x2_dilation_output_shift;
+
+    int32_t buf_size = riscv_convolve_wrapper_s8_get_buffer_size(&conv_params, &input_dims, &filter_dims, &output_dims);
     ctx.buf = malloc(buf_size);
     ctx.size = 0;
+	// Get stack top and calculate stack limit
+	stack_top = (uint32_t)&_STACK_TOP;
+	stack_limit = stack_top - STACK_SIZE;
 
-    // Measure cycles
-    uint32_t start_cycles_s8_w = read_cycle_counter();
+    reset_cycle_count();
+    fill_stack_pattern_to_sp();
+    uint32_t start_cycles = read_cycle_counter();
+
     riscv_convolve_wrapper_s8(&ctx,
-							 &conv_params,
-							 &quant_params,
-							 &input_dims,
-							 input_data,
-							 &filter_dims,
-							 kernel_data,
-							 &bias_dims,
-							 bias_data,
-							 &output_dims,
-							 output);
-	// Measure cycles
-	uint32_t end_cycles_s8_w = read_cycle_counter();
+                            &conv_params,
+                            &quant_params,
+                            &input_dims,
+                            input_data,
+                            &filter_dims,
+                            kernel_data,
+                            &bias_dims,
+                            bias_data,
+                            &output_dims,
+                            output);
 
-	// Calculate cycle count
-	uint32_t cycle_count_s8_w = end_cycles_s8_w - start_cycles_s8_w;
+    uint32_t end_cycles = read_cycle_counter();
+    uint32_t stack_used = measure_stack_usage();
+    uint32_t cycle_count = end_cycles - start_cycles;
 
     if (ctx.buf)
     {
         memset(ctx.buf, 0, buf_size);
         free(ctx.buf);
     }
-	if (validate(output, output_ref, output_ref_size)) {
-		printf("riscv_convolve_wrapper_s8 output validation PASSED\n\r");
-		delay_ms(20);
-		printf("Cycle Count riscv_convolve_wrapper_s8: %lu\n\r", (unsigned long)cycle_count_s8_w);
-		delay_ms(20);
-	} else {
-		printf("riscv_convolve_wrapper_s8 output validation FAILED\n\r");
-		delay_ms(20);
-	}
 
+    printf("\n\r");
+    if (validate(output, output_ref, output_ref_size)) {
+        printf("conv_2x2_dilation_riscv_convolve_s8 output validation PASSED\n\r");
+        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
+        printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+    } else {
+        printf("conv_2x2_dilation_riscv_convolve_s8 output validation FAILED\n\r");
+    }
 }
+
+void conv_3x3_dilation_5x5_input_riscv_convolve_s8(void)
+{
+    int8_t output[CONV_3X3_DILATION_5X5_INPUT_DST_SIZE] = {0};
+
+    nmsis_nn_context ctx;
+    nmsis_nn_conv_params conv_params;
+    nmsis_nn_per_channel_quant_params quant_params;
+    nmsis_nn_dims input_dims;
+    nmsis_nn_dims filter_dims;
+    nmsis_nn_dims bias_dims;
+    nmsis_nn_dims output_dims;
+
+    const int32_t *bias_data = conv_3x3_dilation_5x5_input_biases;
+    const int8_t *kernel_data = conv_3x3_dilation_5x5_input_weights;
+    const int8_t *input_data = conv_3x3_dilation_5x5_input_input;
+    const int8_t *output_ref = conv_3x3_dilation_5x5_input_output_ref;
+    const int32_t output_ref_size = CONV_3X3_DILATION_5X5_INPUT_DST_SIZE;
+
+    input_dims.n = CONV_3X3_DILATION_5X5_INPUT_INPUT_BATCHES;
+    input_dims.w = CONV_3X3_DILATION_5X5_INPUT_INPUT_W;
+    input_dims.h = CONV_3X3_DILATION_5X5_INPUT_INPUT_H;
+    input_dims.c = CONV_3X3_DILATION_5X5_INPUT_IN_CH;
+    filter_dims.w = CONV_3X3_DILATION_5X5_INPUT_FILTER_X;
+    filter_dims.h = CONV_3X3_DILATION_5X5_INPUT_FILTER_Y;
+    filter_dims.c = CONV_3X3_DILATION_5X5_INPUT_IN_CH;
+    output_dims.w = CONV_3X3_DILATION_5X5_INPUT_OUTPUT_W;
+    output_dims.h = CONV_3X3_DILATION_5X5_INPUT_OUTPUT_H;
+    output_dims.c = CONV_3X3_DILATION_5X5_INPUT_OUT_CH;
+
+    conv_params.padding.w = CONV_3X3_DILATION_5X5_INPUT_PAD_X;
+    conv_params.padding.h = CONV_3X3_DILATION_5X5_INPUT_PAD_Y;
+    conv_params.stride.w = CONV_3X3_DILATION_5X5_INPUT_STRIDE_X;
+    conv_params.stride.h = CONV_3X3_DILATION_5X5_INPUT_STRIDE_Y;
+    conv_params.dilation.w = CONV_3X3_DILATION_5X5_INPUT_DILATION_X;
+    conv_params.dilation.h = CONV_3X3_DILATION_5X5_INPUT_DILATION_Y;
+    conv_params.input_offset = CONV_3X3_DILATION_5X5_INPUT_INPUT_OFFSET;
+    conv_params.output_offset = CONV_3X3_DILATION_5X5_INPUT_OUTPUT_OFFSET;
+    conv_params.activation.min = CONV_3X3_DILATION_5X5_INPUT_OUT_ACTIVATION_MIN;
+    conv_params.activation.max = CONV_3X3_DILATION_5X5_INPUT_OUT_ACTIVATION_MAX;
+
+    quant_params.multiplier = (int32_t *)conv_3x3_dilation_5x5_input_output_mult;
+    quant_params.shift = (int32_t *)conv_3x3_dilation_5x5_input_output_shift;
+
+    int32_t buf_size = riscv_convolve_wrapper_s8_get_buffer_size(&conv_params, &input_dims, &filter_dims, &output_dims);
+    ctx.buf = malloc(buf_size);
+    ctx.size = 0;
+	// Get stack top and calculate stack limit
+	stack_top = (uint32_t)&_STACK_TOP;
+	stack_limit = stack_top - STACK_SIZE;
+
+    reset_cycle_count();
+    fill_stack_pattern_to_sp();
+    uint32_t start_cycles = read_cycle_counter();
+
+    riscv_convolve_wrapper_s8(&ctx,
+                            &conv_params,
+                            &quant_params,
+                            &input_dims,
+                            input_data,
+                            &filter_dims,
+                            kernel_data,
+                            &bias_dims,
+                            bias_data,
+                            &output_dims,
+                            output);
+
+    uint32_t end_cycles = read_cycle_counter();
+    uint32_t stack_used = measure_stack_usage();
+    uint32_t cycle_count = end_cycles - start_cycles;
+
+    if (ctx.buf)
+    {
+        memset(ctx.buf, 0, buf_size);
+        free(ctx.buf);
+    }
+
+    printf("\n\r");
+    if (validate(output, output_ref, output_ref_size)) {
+        printf("conv_3x3_dilation_5x5_input_riscv_convolve_s8 output validation PASSED\n\r");
+        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
+        printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+    } else {
+        printf("conv_3x3_dilation_5x5_input_riscv_convolve_s8 output validation FAILED\n\r");
+    }
+}
+

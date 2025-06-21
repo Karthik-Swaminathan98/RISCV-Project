@@ -1,0 +1,7 @@
+.PHONY: function-analysis
+
+FUNCTIONS := riscv_depthwise_conv_wrapper_s8 riscv_depthwise_conv_wrapper_s8_get_buffer_size riscv_convolve_wrapper_s8 riscv_convolve_wrapper_s8_get_buffer_size riscv_avgpool_s8 riscv_fully_connected_s8
+
+function-analysis: output/objdump.txt output/map.txt
+	@echo "Running function size analysis..."
+	python tools/function_size_riscv.py output/map.txt output/objdump.txt $(FUNCTIONS) > tools/code_size_report.txt || true

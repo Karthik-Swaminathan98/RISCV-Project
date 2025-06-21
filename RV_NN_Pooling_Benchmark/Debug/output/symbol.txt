@@ -37,7 +37,7 @@
 000001b8 D g_pm_mspi_cfg	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:58
 000001bc D _RETENTION_DATA_VMA_END
 00000200 T _RAMCODE_VMA_START	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/stimer.h:169
-00000200 t delay_ms.constprop.14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/stimer.h:169
+00000200 t delay_ms.constprop.12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/stimer.h:169
 00000220 t flash_send_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/flash.c:112
 00000264 t flash_send_cmd	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/flash.c:98
 000002ac t clock_set_32k_tick	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/clock.c:203
@@ -66,161 +66,173 @@
 0000140c t user_calib_adc_vref.constprop.9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/calibration/calibration.c:32
 00001508 t user_calib_freq_offset.constprop.8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/calibration/calibration.c:120
 00001560 t gpio_input_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/gpio.c:91
-0000157c t avgpooling_riscv_avgpool_s8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/test_riscv_avgpool_s8.c:20
-000016e0 t avgpooling_int16_riscv_avgpool_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/test_riscv_avgpool_s16.c:21
-00001838 T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/printf.c:101
-00001880 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/main.c:20
-00001d20 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d20 W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001d22 W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:439
-00001d28 t $x
-00001d28 T riscv_avgpool_s16_get_buffer_size
-00001d30 t $x
-00001d30 T riscv_avgpool_s8_get_buffer_size
-00001d38 t $x
-00001d38 T riscv_avgpool_s8
-00001f8c t $x
-00001f8c T riscv_avgpool_s16
-000021b6 T malloc
-000021c6 T free
-000021d6 T memset
-0000227e T _free_r
-0000230e T _malloc_r
-000023be T printf
-000023dc T puts
-00002410 T strlen
-00002470 t __vprintf_help
-000024aa T vprintf
-000024f6 T __print_integral
-0000253e T __printf_impl
-000029ae T __int_to_poly
-000029cc T __print_integral_poly
-00002a5c T __printf_float_impl
-00002e5c T strcpy
-00002eda T strnlen
-00002ef2 W _sbrk
-00002f1c T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
-00002f4c T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
-00002f7c T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
-00002f84 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00002f84 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00002f84 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00002f84 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00002f92 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00002f92 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00002f92 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00002f92 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00002fac T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00002fac T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00002fac T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00002fac T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00002fb8 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
-00002fbc T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00002fbc T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00002fbc T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00002fbc T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00002fc6 T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00002fc6 T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00002fc6 T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00002fc6 T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00002fd0 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00002fd0 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00002fd0 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00002fd0 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-000030d4 T _RAMCODE_VMA_END
-00004eb2 A BIN_SIZE
+0000157c t validate	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/validate.h:24
+000015f4 t validate_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/validate.h:49
+0000166c t avgpooling_riscv_avgpool_s8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/test_riscv_avgpool_s8.c:52
+000017dc t avgpooling_int16_2_riscv_avgpool_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/test_riscv_avgpool_s16.c:196
+00001944 t avgpooling_int16_riscv_avgpool_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/test_riscv_avgpool_s16.c:53
+00001ab0 T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/printf.c:101
+00001af8 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/main.c:24
+0000239c T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239c W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:434
+0000239e W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:439
+000023a4 t $x
+000023a4 T riscv_avgpool_s16_get_buffer_size
+000023ac t $x
+000023ac T riscv_avgpool_s8_get_buffer_size
+000023b4 t $x
+000023b4 T riscv_avgpool_s8
+000025b0 t $x
+000025b0 T riscv_avgpool_s16
+000027da T malloc
+000027ea T free
+000027fa T memset
+000028a2 T _free_r
+00002932 T _malloc_r
+000029e2 T printf
+00002a00 T puts
+00002a34 T strlen
+00002a94 t __vprintf_help
+00002ace T vprintf
+00002b1a T __print_integral
+00002b62 T __printf_impl
+00002fd2 T __int_to_poly
+00002ff0 T __print_integral_poly
+00003080 T __printf_float_impl
+00003480 T strcpy
+000034fe T strnlen
+00003516 W _sbrk
+00003540 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+00003570 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+000035a0 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+000035a8 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000035a8 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000035a8 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000035a8 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+000035b6 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000035b6 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000035b6 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000035b6 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000035d0 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000035d0 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000035d0 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000035d0 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000035dc T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+000035e0 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000035e0 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000035e0 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000035e0 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000035ea T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000035ea T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000035ea T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000035ea T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000035f4 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000035f4 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000035f4 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000035f4 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000036f8 T _RAMCODE_VMA_END
+00005c09 A BIN_SIZE
 00080000 D _DATA_VMA_START
-00080010 d avgpooling_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling/input_tensor.h:6
+00080010 d avgpooling_1_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_1/input_tensor.h:6
+00080098 d avgpooling_2_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_2/input_tensor.h:6
+000800d4 d avgpooling_2_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_2/output.h:6
+00080110 d avgpooling_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling/input_tensor.h:6
 00080800 D __global_pointer$
-000814b0 d avgpooling_int16_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16/input_tensor.h:6
-000817e0 d avgpooling_int16_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16/output.h:6
-000819fc d avgpooling_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling/output.h:6
-00081c40 D __digits
-00081c58 d init_flag.4915
-00081c5c d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/clock.c:46
-00081c64 D _impure_ptr
-00081c68 S _BSS_VMA_START
-00081c68 D _DATA_VMA_END
-00081c68 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:44
-00081c6c s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:49
-00081c70 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:34
-00081c74 s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:39
-00081c78 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:29
-00081c7c s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
-00081c80 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
-00081c84 S __malloc_free_list
-00081c88 S __malloc_sbrk_start
-00081c8c s __vprintf_buf
-00081c90 s __vprintf_buf_len
-00081c94 S __mculib_REENT_errno
-00081c98 S __printf_count
-00081c9c s heap_end.2408
-00081ca0 B _BSS_VMA_END
-00081ca0 b impure_data
-00081ca0 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../common/sdk_version.c:26
-00081cc8 D _end
+000815b0 d avgpooling_int16_1_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16_1/input_tensor.h:6
+0008161c d avgpooling_int16_1_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16_1/output.h:6
+00081658 d avgpooling_int16_2_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16_2/input_tensor.h:6
+000817c0 d avgpooling_int16_2_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16_2/output.h:6
+0008194c d avgpooling_int16_input_tensor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16/input_tensor.h:6
+00081c7c d avgpooling_int16_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_int16/output.h:6
+00081ec8 d avgpooling_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling/output.h:6
+00082374 D __digits
+0008238c d init_flag.4915
+00082390 d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../drivers/clock.c:46
+00082398 D _impure_ptr
+0008239c d avgpooling_1_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/../TestData_ARM/avgpooling_1/output.h:6
+0008239f D _DATA_VMA_END
+000823a0 S _BSS_VMA_START
+000823a0 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:44
+000823a4 s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:49
+000823a8 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:34
+000823ac s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:39
+000823b0 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../vendor/common/exception.c:29
+000823b4 s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
+000823b8 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
+000823bc s stack_limit	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../Debug_Demo/test_riscv_avgpool_s16.c:25
+000823c0 S __malloc_free_list
+000823c4 S __malloc_sbrk_start
+000823c8 s __vprintf_buf
+000823cc s __vprintf_buf_len
+000823d0 S __mculib_REENT_errno
+000823d4 S __printf_count
+000823d8 s heap_end.2408
+000823dc b impure_data
+000823e0 B _BSS_VMA_END
+000823e0 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../common/sdk_version.c:26
+00082408 D _end
 000a0000 A _STACK_TOP
 00100000 A FLASH_SIZE
 20000000 T BIN_BEGIN	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Pooling_Benchmark/Debug/../boot/cstartup_flash.S:59
@@ -246,4 +258,4 @@
 20000190 A _RETENTION_RESET_LMA_START
 200002e8 A _RETENTION_DATA_LMA_START
 20000350 A _RAMCODE_LMA_START
-20003228 A _DATA_LMA_START
+20003848 A _DATA_LMA_START

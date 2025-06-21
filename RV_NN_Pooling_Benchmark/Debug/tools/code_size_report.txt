@@ -1,0 +1,15 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_avgpool_s8
+    Own size: 508 bytes
+    Total size (with dependencies): 514 bytes
+    [*] Breakdown:
+        riscv_avgpool_s8                       508 bytes
+        riscv_avgpool_s8_get_buffer_size         6 bytes
+------------------------------------------------------------
+[*] Function: riscv_avgpool_s16
+    Own size: 554 bytes
+    Total size (with dependencies): 554 bytes
+    [*] Breakdown:
+        riscv_avgpool_s16                      554 bytes
+------------------------------------------------------------

@@ -1,0 +1,6 @@
+12:47:31 **** Incremental Build of configuration Debug for project NMSIS_DSP_cfft_q15_benchmark_N ****
+make all 
+make: Nothing to be done for 'all'.
+
+12:47:32 Build Finished (took 459ms)
+

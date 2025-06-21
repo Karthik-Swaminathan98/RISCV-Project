@@ -1,0 +1,17 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_dsp_cfft_q15
+    Own size: 30 bytes
+    Total size (with dependencies): 2702 bytes
+    [*] Breakdown:
+        riscv_dsp_cfft_rd4_q15           1772 bytes
+        riscv_dsp_cfft_rd2_q15            900 bytes
+        riscv_dsp_cfft_q15                 30 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_cmag_q15
+    Own size: 160 bytes
+    Total size (with dependencies): 332 bytes
+    [*] Breakdown:
+        riscv_dsp_sqrt_q15                172 bytes
+        riscv_dsp_cmag_q15                160 bytes
+------------------------------------------------------------

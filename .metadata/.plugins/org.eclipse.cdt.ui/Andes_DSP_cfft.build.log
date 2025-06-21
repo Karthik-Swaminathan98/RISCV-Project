@@ -1,0 +1,14 @@
+20:05:44 **** Build of configuration Debug for project Andes_DSP_cfft ****
+make all 
+Building file: ../Debug_Demo/app.c
+Invoking: Andes C Compiler
+riscv32-elf-gcc -Og -mcmodel=medium -g3 -Wall -mcpu=d25f -c -fmessage-length=0 -MMD -MP -MF"Debug_Demo/app.d" -MT"Debug_Demo/app.d Debug_Demo/app.o" -o "Debug_Demo/app.o" "../Debug_Demo/app.c"
+In file included from ../Debug_Demo/app.c:24:0:
+../Debug_Demo/app_config.h:30:10: fatal error: driver.h: No such file or directory
+ #include "driver.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [Debug_Demo/subdir.mk:23: Debug_Demo/app.o] Error 1
+
+20:05:45 Build Finished (took 1s.33ms)
+

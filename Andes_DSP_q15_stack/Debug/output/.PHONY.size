@@ -1,2 +1,2 @@
    text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  70082	  65990	   4092	   1010	   8760	  79852	  137ec	Andes_DSP_q15_stack.adx
+  69722	  65646	   4076	   1006	   8760	  79488	  13680	Andes_DSP_q15_stack.adx

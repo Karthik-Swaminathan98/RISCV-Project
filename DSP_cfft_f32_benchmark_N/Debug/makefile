@@ -67,6 +67,9 @@ $(SECONDARY_OUTPUT_PATH)/symbol.txt \
 READELF_OUTPUTS += \
 $(SECONDARY_OUTPUT_PATH)/readelf.txt \
 
+OBJDUMP_OUTPUTS += \
+$(SECONDARY_OUTPUT_PATH)/objdump.txt \
+
 OBJCOPY_OUTPUTS += \
 $(SECONDARY_OUTPUT_PATH)/$(BUILD_ARTIFACT_FILE_BASE_NAME).bin \
 
@@ -81,9 +84,10 @@ all: DSP_cfft_f32_benchmark_N.adx secondary-outputs
 DSP_cfft_f32_benchmark_N.adx: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Andes C Linker'
-	$(CROSS_COMPILE)gcc -O3 -nostartfiles -static -L"/cygdrive/C/Users/SwaminathanK/Downloads/ANDE/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/lib/mext-dsp/mno-fma" -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/DSP_cfft_f32_benchmark_N/drivers/lib" -flto -mcmodel=medium -fno-jump-tables -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,--gc-sections -mext-dsp -ldsp -lm -fpack-struct -fshort-enums -g3 -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O2 -o "DSP_cfft_f32_benchmark_N.adx" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(CROSS_COMPILE)gcc -O3 -nostartfiles -static -L"/cygdrive/C/Users/SwaminathanK/Downloads/ANDE/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/lib/mext-dsp/mno-fma" -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/DSP_cfft_f32_benchmark_N/drivers/lib" -flto -mcmodel=medium -fno-jump-tables -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,-Map -Wl,$(SECONDARY_OUTPUT_PATH)/map.txt -Wl,--gc-sections -mext-dsp -ldsp -lm -fpack-struct -fshort-enums -g3 -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O2 -o "DSP_cfft_f32_benchmark_N.adx" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
+	$(MAKE) --no-print-directory post-build
 
 $(foreach subdir,$(SUBDIRS),$(wildcard $(subdir)/*.gcda) $(wildcard $(subdir)/*.gcno)): DSP_cfft_f32_benchmark_N.adx $(OBJS) $(USER_OBJS)
 ../gmon.sum ../gmon.out: DSP_cfft_f32_benchmark_N.adx $(OBJS) $(USER_OBJS)
@@ -101,9 +105,9 @@ $(SECONDARY_OUTPUT_PATH)/readelf.txt: $(LINKER_OUTPUTS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-: $(LINKER_OUTPUTS)
+$(SECONDARY_OUTPUT_PATH)/objdump.txt: $(LINKER_OUTPUTS)
 	@echo 'Invoking: Objdump (disassembly)'
-	$(CROSS_COMPILE)objdump -x -d -C "DSP_cfft_f32_benchmark_N.adx" >
+	$(CROSS_COMPILE)objdump -x -d -C "DSP_cfft_f32_benchmark_N.adx" > $(SECONDARY_OUTPUT_PATH)/objdump.txt
 	@echo 'Finished building: $@'
 	@echo ' '
 
@@ -121,12 +125,16 @@ $(SECONDARY_OUTPUT_PATH)/.PHONY.size: $(LINKER_OUTPUTS)
 
 # Other Targets
 clean:
-	-$(RM) $(GPROF_OUT)$(PWR_OUT)$(SIZE_OUTPUTS)$(READELF_OUTPUTS)$(EXECUTABLES)$(OBJS)$(SYMBOL_OUTPUTS)$(S_UPPER_DEPS)$(GCOV_OUT)$(C_DEPS)$(OBJCOPY_OUTPUTS) DSP_cfft_f32_benchmark_N.adx
+	-$(RM) $(GPROF_OUT)$(PWR_OUT)$(SIZE_OUTPUTS)$(READELF_OUTPUTS)$(EXECUTABLES)$(OBJDUMP_OUTPUTS)$(OBJS)$(SYMBOL_OUTPUTS)$(S_UPPER_DEPS)$(GCOV_OUT)$(C_DEPS)$(OBJCOPY_OUTPUTS) DSP_cfft_f32_benchmark_N.adx
 	-@echo ' '
 
-secondary-outputs: $(SYMBOL_OUTPUTS) $(READELF_OUTPUTS) $(OBJCOPY_OUTPUTS) $(SIZE_OUTPUTS)
+post-build:
+	-$(MAKE) function-analysis
+	-@echo ' '
+
+secondary-outputs: $(SYMBOL_OUTPUTS) $(READELF_OUTPUTS) $(OBJDUMP_OUTPUTS) $(OBJCOPY_OUTPUTS) $(SIZE_OUTPUTS)
 
 .PHONY: all clean dependents
-.SECONDARY:
+.SECONDARY: post-build
 
 -include ../makefile.targets

@@ -14,7 +14,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug">
+				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug" postbuildStep="$(MAKE) function-analysis">
 					<folderInfo id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905." name="/" resourcePath="">
 						<toolChain id="nds.nds32le-elf-mculib-v5f.exe.debug.1597492003" name="nds32le-elf-mculib-v5f" superClass="nds.nds32le-elf-mculib-v5f.exe.debug">
 							<option id="nds32le-elf-mculib-v5f.managedbuild.option.toolchain.RSE_CONNECT.1651084944" name="RSE_CONNECT" superClass="nds32le-elf-mculib-v5f.managedbuild.option.toolchain.RSE_CONNECT" value="ICE" valueType="string"/>
@@ -76,6 +76,7 @@
 								<option id="nds.c.link.option.LTO.419473019" name="Link Time Optimization (-flto)" superClass="nds.c.link.option.LTO" value="true" valueType="boolean"/>
 								<option id="nds.c.link.option.other.duplacitecompiler.801272296" name="DuplaciteComplierOption" superClass="nds.c.link.option.other.duplacitecompiler" value="-mcmodel=medium -g3 -fno-jump-tables " valueType="string"/>
 								<option id="nds.c.link.option.removesections.1909352875" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" value="true" valueType="boolean"/>
+								<option id="nds.c.link.option.map.2012922562" name="Write a map file. (-Map)" superClass="nds.c.link.option.map" value="true" valueType="boolean"/>
 								<inputType id="tool.nds.c.linker.input.650120637" superClass="tool.nds.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>

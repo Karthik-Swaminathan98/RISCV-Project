@@ -1,0 +1,100 @@
+import sys
+import re
+import os
+from collections import defaultdict, deque
+
+def parse_map_file(filename):
+    functions = {}
+    current_func = None
+
+    with open(filename, 'r') as f:
+        for line in f:
+            sec_match = re.match(r'\s*\.text\.([^\s]+)', line)
+            if sec_match:
+                current_func = sec_match.group(1)
+                continue
+
+            size_match = re.match(r'\s*0x([0-9a-fA-F]+)\s+0x([0-9a-fA-F]+)', line)
+            if size_match and current_func:
+                addr = int(size_match.group(1), 16)
+                size = int(size_match.group(2), 16)
+                functions[current_func] = {'address': addr, 'size': size}
+                current_func = None
+    return functions
+
+def parse_objdump_file(filename):
+    call_graph = defaultdict(set)
+    current_func = None
+
+    with open(filename, 'r') as f:
+        for line in f:
+            header = re.match(r'^\s*[0-9a-fA-F]+ <([\w$@.]+)>:', line)
+            if header:
+                current_func = header.group(1)
+                continue
+
+            if current_func:
+                call = re.search(r'\b(?:jal|call|bl|blx|jalr)\b.*<([\w$@.]+)>', line)
+                if call:
+                    callee = call.group(1)
+                    call_graph[current_func].add(callee)
+    return call_graph
+
+def compute_total_size(functions, call_graph, root_func):
+    visited = set()
+    total_size = 0
+    queue = deque([root_func])
+    breakdown = []
+
+    while queue:
+        func = queue.popleft()
+        if func in visited:
+            continue
+        visited.add(func)
+
+        size = functions.get(func, {}).get('size', 0)
+        total_size += size
+        breakdown.append((func, size))
+
+        for callee in call_graph.get(func, []):
+            if callee not in visited:
+                queue.append(callee)
+
+    return total_size, breakdown
+
+def analyze_functions(map_file, objdump_file, root_funcs, output_file="function_size_report.txt"):
+    functions = parse_map_file(map_file)
+    call_graph = parse_objdump_file(objdump_file)
+
+    with open(output_file, "w") as out:
+        out.write(f"[*] Analyzing file: {map_file}\n")
+        out.write("[*] Detected .map file\n\n")
+
+        for root_func in root_funcs:
+            out.write(f"[*] Function: {root_func}\n")
+            if root_func not in functions:
+                out.write(f"    [!] Not found in map file.\n")
+                continue
+
+            total_size, breakdown = compute_total_size(functions, call_graph, root_func)
+            own_size = functions[root_func]['size']
+
+            out.write(f"    Own size: {own_size} bytes\n")
+            out.write(f"    Total size (with dependencies): {total_size} bytes\n\n")
+            out.write("    [*] Breakdown (including dependencies):\n")
+            for name, size in sorted(breakdown, key=lambda x: -x[1]):
+                out.write(f"        {name:<30} {size:>6} bytes\n")
+
+            out.write("-" * 60 + "\n")
+
+    print(f"[done] Report saved to '{output_file}'")
+
+if __name__ == "__main__":
+    if len(sys.argv) < 4:
+        print("Usage: python function_size.py <map_file> <objdump_file> <function1> [<function2> ...]")
+        sys.exit(1)
+
+    map_file = sys.argv[1]
+    objdump_file = sys.argv[2]
+    root_functions = sys.argv[3:]
+    analyze_functions(map_file, objdump_file, root_functions)

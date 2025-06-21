@@ -14,7 +14,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug" postannouncebuildStep="" postbuildStep="$(MAKE) function-analysis" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905." name="/" resourcePath="">
 						<toolChain errorParsers="" id="nds.nds32le-elf-mculib-v5f.exe.debug.1597492003" name="nds32le-elf-mculib-v5f" superClass="nds.nds32le-elf-mculib-v5f.exe.debug">
 							<option id="nds32le-elf-mculib-v5f.managedbuild.option.toolchain.RSE_CONNECT.1651084944" name="RSE_CONNECT" superClass="nds32le-elf-mculib-v5f.managedbuild.option.toolchain.RSE_CONNECT" value="ICE" valueType="string"/>
@@ -49,10 +49,10 @@
 								<option id="nds.c.compiler.option.misc.use-cc.toolchain.1972901053" name="Compiler to use" superClass="nds.c.compiler.option.misc.use-cc.toolchain" value="nds.c.compiler.option.misc.use-cc.gcc" valueType="enumerated"/>
 								<option id="nds.c.compiler.option.apply_hw_dsp.174085224" name="Apply HW DSP options" superClass="nds.c.compiler.option.apply_hw_dsp" value="true" valueType="boolean"/>
 								<option id="nds.c.compiler.option.misc.other.998539383" name="Other flags" superClass="nds.c.compiler.option.misc.other" value="-mext-dsp -mabi=ilp32f  -c -fmessage-length=0  -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -std=c99 -fpack-struct -fshort-enums -fno-jump-tables -mcmodel=medium -Wno-nonnull-compare -Wall -Wextra -Wshadow -Werror " valueType="string"/>
-								<option id="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level.1011096835" name="Optimization Level" superClass="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level" value="nds.c.optimization.level.most" valueType="enumerated"/>
+								<option id="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level.1011096835" name="Optimization Level" superClass="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level" value="nds.c.optimization.level.space" valueType="enumerated"/>
 								<option id="nds.c.compiler.option.optimization.removesections.function.606655064" name="Remove unused function sections (-ffunction-sections)" superClass="nds.c.compiler.option.optimization.removesections.function" value="true" valueType="boolean"/>
 								<option id="nds.c.compiler.option.optimization.removesections.data.2093653299" name="Remove unused data sections (-fdata-sections)" superClass="nds.c.compiler.option.optimization.removesections.data" value="true" valueType="boolean"/>
-								<option id="nds.c.compiler.option.optimization.lto.1912962877" name="Link Time Optimization (-flto)" superClass="nds.c.compiler.option.optimization.lto" value="true" valueType="boolean"/>
+								<option id="nds.c.compiler.option.optimization.lto.1912962877" name="Link Time Optimization (-flto)" superClass="nds.c.compiler.option.optimization.lto" value="false" valueType="boolean"/>
 								<inputType id="tool.nds.c.compiler.input.1898553034" superClass="tool.nds.c.compiler.input"/>
 							</tool>
 							<tool command="$(CROSS_COMPILE)gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser" id="tool.nds32le-elf-mculib-v5f.c.linker.exe.debug.1298538365" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v5f.c.linker.exe.debug">
@@ -73,7 +73,7 @@
 									<listOptionValue builtIn="false" value="C:\Users\SwaminathanK\Downloads\ANDE\toolchains\nds32le-elf-mculib-v5f\riscv32-elf\lib\mext-dsp\mno-fma"/>
 								</option>
 								<option id="nds.c.link.option.ldflags.1424265999" name="Linker flags" superClass="nds.c.link.option.ldflags" value="-fpack-struct -fshort-enums -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O3" valueType="string"/>
-								<option id="nds.c.link.option.LTO.419473019" name="Link Time Optimization (-flto)" superClass="nds.c.link.option.LTO" value="true" valueType="boolean"/>
+								<option id="nds.c.link.option.LTO.419473019" name="Link Time Optimization (-flto)" superClass="nds.c.link.option.LTO" value="false" valueType="boolean"/>
 								<option id="nds.c.link.option.other.duplacitecompiler.801272296" name="DuplaciteComplierOption" superClass="nds.c.link.option.other.duplacitecompiler" value="-mcmodel=medium -g3 -fno-jump-tables " valueType="string"/>
 								<option id="nds.c.link.option.removesections.1909352875" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" value="true" valueType="boolean"/>
 								<option id="nds.c.link.option.map.1836504094" name="Write a map file. (-Map)" superClass="nds.c.link.option.map" value="true" valueType="boolean"/>
@@ -189,4 +189,5 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>

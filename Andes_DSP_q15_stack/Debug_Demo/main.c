@@ -12,51 +12,47 @@
 #define M 8                 // Log2(N), since N = 256, M = 8
 #define M_PI 3.14159265358979323846
 #define Q15_SCALE (32768)   // Scaling factor for Q15 format
-#define STACK_SIZE 0x1000   // Define stack size as 4096 bytes
+#define STACK_SIZE 0x1000   // 4096 bytes stack size
 
 extern uint32_t _STACK_TOP;
-uint32_t __StackLimit;       // To store the calculated stack limit
+uint32_t __StackLimit;
 
-// Allocate input array (real + imaginary parts interleaved)
-q15_t input[2 * N];          // Interleaved input (real + imag)
-q15_t magnitude[N];          // Magnitude array
-float32_t frequency_bin[N];  // Frequency bin array
+q15_t input[2 * N];
+q15_t magnitude[N];
+float32_t frequency_bin[N];
 
-// Function to fill stack pattern
+// Fill stack pattern
 void fill_stack_pattern_to_sp() {
     uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));  // Get current stack pointer
-
-    uint32_t *p = (uint32_t*)__StackLimit;      // Start from stack limit
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+    uint32_t *p = (uint32_t*)__StackLimit;
     while (p < sp) {
-        *p++ = 0xAAAAAAAA;  // Fill stack memory with the pattern
+        *p++ = 0xAAAAAAAA;
     }
 }
 
-// Function to measure stack usage
+// Measure stack usage
 uint32_t measure_stack_usage() {
     uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));  // Get current stack pointer
-
-    uint32_t *p = (uint32_t*)__StackLimit;      // Start from stack limit
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+    uint32_t *p = (uint32_t*)__StackLimit;
     while (p < sp) {
-        if (*p != 0xAAAAAAAA) {                 // Stop at the first non-pattern value
-            break;
-        }
+        if (*p != 0xAAAAAAAA) break;
         p++;
     }
-
-    return ((uint32_t)sp - (uint32_t)p);        // Stack usage in bytes
+    return ((uint32_t)sp - (uint32_t)p);
 }
 
-// Function to reset cycle count (RISC-V processor)
-void reset_cycle_count() {
+// Reset performance counters
+void reset_counters() {
     write_csr(NDS_MCYCLE, 0);
+    write_csr(NDS_MINSTRET, 0);
 }
 
-// Function to read cycle count (32-bit)
-unsigned int read_cycle_count() {
-    return read_csr(NDS_MCYCLE);
+// Read both cycle and instruction counts
+void read_perf_counters(unsigned int *cycles, unsigned int *instructions) {
+    *cycles = read_csr(NDS_MCYCLE);
+    *instructions = read_csr(NDS_MINSTRET);
 }
 
 extern void user_init(void);
@@ -66,62 +62,52 @@ int main(void) {
     CLOCK_INIT;
     user_init();
 
-    // Get stack top and calculate stack limit
-    uint32_t stack_top = (uint32_t)&_STACK_TOP;  // Get stack top from linker script
-    __StackLimit = stack_top - STACK_SIZE;      // Calculate stack limit based on 4096-byte stack size
+    uint32_t stack_top = (uint32_t)&_STACK_TOP;
+    __StackLimit = stack_top - STACK_SIZE;
 
-
-    // Validate stack_top and __StackLimit
     if (__StackLimit >= stack_top) {
-        printf("Error: Invalid stack limit calculation. Check linker script and STACK_SIZE.\n");
+        printf("Error: Invalid stack limit.\n");
         return -1;
     }
 
-    // Generate a 50Hz sine wave signal in Q15 format
+    // Generate 50Hz sine wave
     printf("Input Sine Wave Values:\n");
     for (int i = 0; i < N; i++) {
-        input[2 * i] = (q15_t)(sinf(2 * M_PI * SINE_FREQ * i / SAMPLING_FREQ) * Q15_SCALE); // Real part in Q15 format
-        input[2 * i + 1] = 0; // Imaginary part (zero)
+        input[2 * i] = (q15_t)(sinf(2 * M_PI * SINE_FREQ * i / SAMPLING_FREQ) * Q15_SCALE);
+        input[2 * i + 1] = 0;
     }
     delay_ms(10);
     printf("Sine Wave generated\n");
     printf("START DSP PROCESS\n");
     delay_ms(10);
 
-    // Fill the stack with a pattern
     fill_stack_pattern_to_sp();
+    reset_counters();
 
-    // Reset cycle count
-    reset_cycle_count();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
-    // Start cycle count
-    unsigned int start_cycles = read_cycle_count();
-
-    // Perform FFT using the Andes DSP library
     riscv_dsp_cfft_q15(input, M);
 
-    // End cycle count
-    unsigned int end_cycles = read_cycle_count();
-
-    // Measure stack usage
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t stack_usage = measure_stack_usage();
 
-    // Calculate the total cycle count
-    unsigned int cycle_count = end_cycles - start_cycles;
+    uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t inst_count = end_inst - start_inst;
 
-    // Perform magnitude calculation
+
+    // Compute magnitudes
     riscv_dsp_cmag_q15(input, magnitude, N);
 
-    // Calculate magnitude and frequency bins
-    for (int i = 0; i < N; i++) {
-        frequency_bin[i] = i * ((float32_t)SAMPLING_FREQ / N);
-        printf("%.2f\t%.2f\n\r", frequency_bin[i], magnitude[i]/ (float32_t)Q15_SCALE);
-        delay_ms(10);
-    }
+//    for (int i = 0; i < N; i++) {
+//        frequency_bin[i] = i * ((float32_t)SAMPLING_FREQ / N);
+//        printf("%.2f\t%.2f\n\r", frequency_bin[i], magnitude[i] / (float32_t)Q15_SCALE);
+//        delay_ms(10);
+//    }
 
-    // Print results
-    printf("Cycle Count for D25F: %u\n\r", cycle_count);
-    printf("Stack Usage by riscv_dsp_cfft_q15(): %lu bytes\n\r", stack_usage);
+    printf("Cycle Count for riscv_dsp_cfft_q15(): %lu\n\r", cycle_count);
+    printf("Instruction Count for riscv_dsp_cfft_q15(): %lu\n\r", inst_count);
+    printf("Stack Usage: %lu bytes\n\r", stack_usage);
     uint32_t stack_size = stack_top - __StackLimit;
     printf("Stack Top:    0x%08lX\n\r", stack_top);
     printf("Stack Limit:  0x%08lX\n\r", __StackLimit);

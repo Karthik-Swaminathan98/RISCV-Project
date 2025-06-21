@@ -6,7 +6,7 @@
 #include "riscv_dsp_transform_math.h"
 #include "riscv_dsp_complex_math.h"
 
-#define N 1024               // Number of samples
+#define N 128               // Number of samples
 #define SAMPLING_FREQ 256   // Sampling frequency in Hz
 #define SINE_FREQ 50        // Frequency of the sine wave in Hz
 #define M 10                 // Log2(N), since N = 512, M = 9

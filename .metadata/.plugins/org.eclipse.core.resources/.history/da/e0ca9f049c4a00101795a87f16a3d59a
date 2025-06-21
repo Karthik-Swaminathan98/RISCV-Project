@@ -1,0 +1,7 @@
+.PHONY: function-analysis
+
+FUNCTIONS := riscv_dsp_cfft_q15 riscv_dsp_cmag_q15
+
+function-analysis: output/objdump.txt output/map.txt
+	@echo "Running function size analysis..."
+	python tools/function_size.py output/map.txt output/objdump.txt $(FUNCTIONS) > tools/code_size_report.txt || true

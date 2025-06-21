@@ -37,7 +37,7 @@
 000001b8 D g_pm_mspi_cfg	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:58
 000001bc D _RETENTION_DATA_VMA_END
 00000200 T _RAMCODE_VMA_START	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/stimer.h:169
-00000200 t delay_ms.constprop.14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/stimer.h:169
+00000200 t delay_ms.constprop.12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/stimer.h:169
 00000220 t flash_send_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/flash.c:112
 00000264 t flash_send_cmd	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/flash.c:98
 000002ac t clock_set_32k_tick	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/clock.c:203
@@ -66,167 +66,194 @@
 0000140c t user_calib_adc_vref.constprop.9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/calibration/calibration.c:32
 00001508 t user_calib_freq_offset.constprop.8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/calibration/calibration.c:120
 00001560 t gpio_input_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/gpio.c:91
-0000157c T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/printf.c:101
-000015c4 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/main.c:19
-00001ce0 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce0 W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
-00001ce2 W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:439
-00001ce8 t $x
-00001ce8 T riscv_fully_connected_s16
-00001d90 t $x
-00001d90 T riscv_fully_connected_s8
-00001e30 t $x
-00001e30 T riscv_fully_connected_s8_get_buffer_size
-00001e34 t $x
-00001e34 T riscv_fully_connected_s16_get_buffer_size
-00001e38 t $x
-00001e38 T riscv_nn_vec_mat_mult_t_s8
-00002f98 t $x
-00002f98 T riscv_nn_vec_mat_mult_t_s16
-00003308 T malloc
-00003318 T free
-00003328 T memset
-000033d2 T _free_r
-00003462 T _malloc_r
-00003512 T printf
-00003530 T puts
-00003564 T strlen
-000035c4 t __vprintf_help
-000035fe T vprintf
-0000364a T __print_integral
-00003692 T __printf_impl
-00003b02 T __int_to_poly
-00003b20 T __print_integral_poly
-00003bb0 T __printf_float_impl
-00003fb0 T strcpy
-0000402e T strnlen
-00004046 W _sbrk
-00004070 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
-000040a0 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
-000040d0 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
-000040d8 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-000040d8 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-000040d8 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-000040d8 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-000040e6 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-000040e6 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-000040e6 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-000040e6 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00004100 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004100 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004100 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004100 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-0000410c T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
-00004110 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004110 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004110 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004110 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-0000411a T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000411a T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000411a T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000411a T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004124 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004124 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004124 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004124 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004228 T _RAMCODE_VMA_END
-00004b4e A BIN_SIZE
+0000157c t validate	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/validate.h:24
+000015f4 t validate_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/validate.h:49
+0000166c T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/printf.c:101
+000016b4 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/main.c:24
+000024ec T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ec W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:434
+000024ee W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:439
+000024f4 t $x
+000024f4 T riscv_fully_connected_s16
+0000259c t $x
+0000259c T riscv_fully_connected_s8
+0000263c t $x
+0000263c T riscv_fully_connected_s8_get_buffer_size
+00002640 t $x
+00002640 T riscv_fully_connected_wrapper_s8
+00002690 t $x
+00002690 T riscv_fully_connected_s16_get_buffer_size
+00002694 t $x
+00002694 T riscv_fully_connected_per_channel_s8
+00002738 t $x
+00002738 T riscv_nn_vec_mat_mult_t_s8
+00003898 t $x
+00003898 T riscv_nn_vec_mat_mult_t_per_ch_s8
+00004334 t $x
+00004334 T riscv_nn_vec_mat_mult_t_s16
+000046a4 T malloc
+000046b4 T free
+000046c4 T memset
+0000476e T _free_r
+000047fe T _malloc_r
+000048ae T printf
+000048cc T puts
+00004900 T strlen
+00004960 t __vprintf_help
+0000499a T vprintf
+000049e6 T __print_integral
+00004a2e T __printf_impl
+00004ea0 T __int_to_poly
+00004ebe T __print_integral_poly
+00004f4e T __printf_float_impl
+0000534c T strcpy
+000053ca T strnlen
+000053e2 W _sbrk
+0000540c T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+0000543c T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+0000546c T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+00005474 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00005474 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00005474 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00005474 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00005482 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00005482 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00005482 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00005482 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000549c T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000549c T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000549c T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000549c T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000054a8 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+000054ac T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000054ac T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000054ac T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000054ac T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000054b6 T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000054b6 T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000054b6 T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000054b6 T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000054c0 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000054c0 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000054c0 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000054c0 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000055c4 T _RAMCODE_VMA_END
+0000c262 A BIN_SIZE
 00080000 D _DATA_VMA_START
-00080010 d fully_connected_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/biases_data.h:6
-00080028 d fully_connected_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/input_data.h:6
-00080068 d fully_connected_int16_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/biases_data.h:6
-000800c0 d fully_connected_int16_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/input_data.h:6
-000801bc d fully_connected_int16_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/output_ref_data.h:6
-000801e8 d fully_connected_int16_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/weights_data.h:6
-000804a0 d fully_connected_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/output_ref_data.h:6
-000804b4 d fully_connected_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/weights_data.h:6
-0008078c D __digits
-000807a4 d init_flag.4915
-000807a8 d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/clock.c:46
-000807b0 D _impure_ptr
-000807b4 D _DATA_VMA_END
-000807b8 S _BSS_VMA_START
-000807b8 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:44
-000807bc s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:49
-000807c0 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:34
-000807c4 s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:39
-000807c8 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:29
-000807cc s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
-000807d0 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
-000807d4 S __malloc_free_list
-000807d8 S __malloc_sbrk_start
-000807dc s __vprintf_buf
-000807e0 s __vprintf_buf_len
-000807e4 S __mculib_REENT_errno
-000807e8 S __printf_count
-000807ec s heap_end.2408
-000807f0 B _BSS_VMA_END
-000807f0 b impure_data
-000807f0 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../common/sdk_version.c:26
+00080010 d fc_int16_slow_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_int16_slow/biases_data.h:6
+00080068 d fc_int16_slow_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_int16_slow/input_data.h:6
 00080800 D __global_pointer$
-00080818 D _end
+00080d88 d fc_int16_slow_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_int16_slow/output_ref_data.h:6
+00080dcc d fc_int16_slow_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_int16_slow/weights_data.h:6
+000825dc d fc_per_ch_bias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_per_ch/bias.h:6
+00082634 d fc_per_ch_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_per_ch/input.h:6
+00082690 d fc_per_ch_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_per_ch/output.h:6
+000826a8 d fc_per_ch_output_multiplier	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_per_ch/output_multiplier.h:6
+00082700 d fc_per_ch_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_per_ch/output_shift.h:6
+00082758 d fc_per_ch_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fc_per_ch/weights.h:6
+00082f00 d fully_connected_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/biases_data.h:6
+00082f18 d fully_connected_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/input_data.h:6
+00082f58 d fully_connected_int16_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/biases_data.h:6
+00082fb0 d fully_connected_int16_big_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16_big/biases_data.h:6
+00083008 d fully_connected_int16_big_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16_big/input_data.h:6
+00084070 d fully_connected_int16_big_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16_big/output_ref_data.h:6
+000840b4 d fully_connected_int16_big_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16_big/weights_data.h:6
+00085ec8 d fully_connected_int16_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/input_data.h:6
+00085fc4 d fully_connected_int16_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/output_ref_data.h:6
+00085ff0 d fully_connected_int16_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_int16/weights_data.h:6
+000862a8 d fully_connected_mve_0_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_mve_0/biases_data.h:6
+000862cc d fully_connected_mve_0_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_mve_0/input_data.h:6
+000862dc d fully_connected_mve_0_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_mve_0/output_ref_data.h:6
+000862e8 d fully_connected_mve_0_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected_mve_0/weights_data.h:6
+00086378 d fully_connected_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/output_ref_data.h:6
+0008638c d fully_connected_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/../Include_ARM/fully_connected/weights_data.h:6
+00086b00 D __digits
+00086b18 d init_flag.4915
+00086b1c d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../drivers/clock.c:46
+00086b24 D _impure_ptr
+00086b28 S _BSS_VMA_START
+00086b28 D _DATA_VMA_END
+00086b28 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:44
+00086b2c s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:49
+00086b30 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:34
+00086b34 s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:39
+00086b38 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../vendor/common/exception.c:29
+00086b3c s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
+00086b40 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
+00086b44 s stack_limit	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../Debug_Demo/test_riscv_fully_connected_s16.c:23
+00086b48 S __malloc_free_list
+00086b4c S __malloc_sbrk_start
+00086b50 s __vprintf_buf
+00086b54 s __vprintf_buf_len
+00086b58 S __mculib_REENT_errno
+00086b5c S __printf_count
+00086b60 s heap_end.2408
+00086b64 b impure_data
+00086b68 B _BSS_VMA_END
+00086b68 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../common/sdk_version.c:26
+00086b90 D _end
 000a0000 A _STACK_TOP
 00100000 A FLASH_SIZE
 20000000 T BIN_BEGIN	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_fully_connected_Benchmark/Debug/../boot/cstartup_flash.S:59
@@ -252,4 +279,4 @@
 20000190 A _RETENTION_RESET_LMA_START
 200002e8 A _RETENTION_DATA_LMA_START
 20000350 A _RAMCODE_LMA_START
-20004378 A _DATA_LMA_START
+20005718 A _DATA_LMA_START

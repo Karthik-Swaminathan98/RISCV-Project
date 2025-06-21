@@ -1,2 +1,2 @@
    text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  17158	  17158	      0	   2106	     56	  19320	   4b78	RV_NN_fully_connected_Benchmark.adx
+  22178	  22178	      0	  27566	     64	  49808	   c290	RV_NN_fully_connected_Benchmark.adx

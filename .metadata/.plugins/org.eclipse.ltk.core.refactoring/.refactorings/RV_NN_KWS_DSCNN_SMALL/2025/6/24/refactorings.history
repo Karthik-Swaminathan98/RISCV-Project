@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;RV_NN_KWS_DSCNN_SMALL/Debug_Demo/deptwise_conv.c&apos; to &apos;kws_small.c&apos;" description="Rename resource &apos;deptwise_conv.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug_Demo/deptwise_conv.c" name="kws_small.c" stamp="1749752358098" updateReferences="true"/>&#x0A;&#x0A;</session>

@@ -115,7 +115,7 @@
 00002e70 T rf_start_stx
 00002eac T rf_set_chn
 00002f54 T _RAMCODE_VMA_END
-000115de A BIN_SIZE
+0001145a A BIN_SIZE
 00080000 D _DATA_VMA_START
 00080000 D myudb_txfifo	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:48
 0008000c D audio_i2s_48k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:965
@@ -131,113 +131,113 @@
 00080250 D config_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:48
 00080260 D page_program_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:46
 00080280 D cst_libm_sincosf
-000802b8 D FLASH_CNT	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:44
-000802bc d myudb_id	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:40
-000802c0 D adc_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:40
-000802c4 D aes_base_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:47
-000802c8 D analog_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:64
-000802cc D analog_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:49
-000802d0 D audio_i2s_adc_16k_dac_48k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:956
-000802d8 D audio_i2s_192k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:948
-000802e0 D audio_i2s_32k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:939
-000802e8 D audio_i2s_24k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:928
-000802f0 D audio_i2s_16k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:919
-000802f8 D audio_i2s_8k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:910
-00080300 D audio_dma_tx_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:75
-00080304 D audio_dma_rx_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:58
-00080308 D sys_clk
-0008030e d rxpara_flag	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:226
-00080310 D g_i2c_stop_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:66
-00080314 D i2c_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:44
-00080318 D i2c_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:29
-0008031c d mtime_clock_source	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/plmt.c:30
-00080320 D pwm_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:27
-00080324 D pspi_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:79
-00080328 D pspi_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:63
-0008032c D hspi_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:47
-00080330 D hspi_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:32
-00080334 D uart_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:74
-0008033c D uart_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:44
-00080344 d init_flag.4915
-00080348 D enter_cmd_scratch	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:51
-0008034c D config_write_buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:47
-00080350 D enter_cmd_trim	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_trim.c:25
-00080354 d rf_rx_dma_config
-00080358 d rf_tx_dma_config
-0008035c D _DATA_VMA_END
-00080360 S _BSS_VMA_START
-00080360 s tick_sync.8490
-00080364 s len.8436
-00080368 s len.8426
-0008036c s p.8427
-00080370 S myudb_hci_cmd_cb	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:370
-00080374 S myudb_fifo	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:53
-00080378 s control_request	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:44
-00080380 s myudb_g_stall	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:43
-00080384 s myudb_g_response_len	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:42
-00080388 s myudb_g_response	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:41
-0008038c s embase_offset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:48
-00080390 S audio_i2s_invert_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:52
-00080394 s s_state1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:60
-00080398 s s_state0	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:60
-0008039c s s_emi_rssi	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:59
-000803a0 s s_emi_rssibuf	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:58
-000803a4 s s_emi_rx_cnt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:57
-000803a8 S i2c_slave_rx_index
-000803a9 s i2c_dma_rx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:27
-000803aa s i2c_dma_tx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:26
-000803ab s s_pspi_rx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:30
-000803ac s s_pspi_tx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:29
-000803ad s s_hspi_rx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:28
-000803ae s s_hspi_tx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:27
-000803b0 s uart_tx_hword_index.4498
-000803b4 S uart_rx_byte_index
-000803b8 S uart_tx_byte_index
-000803bc s uart_dma_rev_size	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:109
-000803c4 s uart_dma_rx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:108
-000803c8 s uart_dma_tx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:107
-000803cc s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:49
-000803d0 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:44
-000803d4 s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:39
-000803d8 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:34
-000803dc s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:29
-000803e0 S config_read_buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:49
-000803e4 S g_chip_version
-000803e8 s g_pm_status_info
-000803ec S g_single_tong_freqoffset
-000803f0 S __mculib_REENT_errno
-000803f4 s __vprintf_buf_len
-000803f8 s __vprintf_buf
-000803fc S __printf_count
-00080400 b emi_rx_packet	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:53
-00080518 B read_buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:44
-00080618 B input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:21
+000802b4 D FLASH_CNT	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:44
+000802b8 d myudb_id	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:40
+000802bc D adc_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:40
+000802c0 D aes_base_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:47
+000802c4 D analog_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:64
+000802c8 D analog_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:49
+000802cc D audio_i2s_adc_16k_dac_48k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:956
+000802d4 D audio_i2s_192k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:948
+000802dc D audio_i2s_32k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:939
+000802e4 D audio_i2s_24k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:928
+000802ec D audio_i2s_16k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:919
+000802f4 D audio_i2s_8k_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:910
+000802fc D audio_dma_tx_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:75
+00080300 D audio_dma_rx_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:58
+00080304 D sys_clk
+0008030a d rxpara_flag	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:226
+0008030c D g_i2c_stop_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:66
+00080310 D i2c_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:44
+00080314 D i2c_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:29
+00080318 d mtime_clock_source	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/plmt.c:30
+0008031c D pwm_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:27
+00080320 D pspi_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:79
+00080324 D pspi_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:63
+00080328 D hspi_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:47
+0008032c D hspi_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:32
+00080330 D uart_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:74
+00080338 D uart_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:44
+00080340 d init_flag.4915
+00080344 D enter_cmd_scratch	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:51
+00080348 D config_write_buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:47
+0008034c D enter_cmd_trim	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_trim.c:25
+00080350 d rf_rx_dma_config
+00080354 d rf_tx_dma_config
+00080358 S _BSS_VMA_START
+00080358 D _DATA_VMA_END
+00080358 s tick_sync.8490
+0008035c s len.8436
+00080360 s len.8426
+00080364 s p.8427
+00080368 S myudb_hci_cmd_cb	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:370
+0008036c S myudb_fifo	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:53
+00080370 s control_request	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:44
+00080378 s myudb_g_stall	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:43
+0008037c s myudb_g_response_len	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:42
+00080380 s myudb_g_response	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:41
+00080384 s embase_offset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:48
+00080388 S audio_i2s_invert_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:52
+0008038c s s_state1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:60
+00080390 s s_state0	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:60
+00080394 s s_emi_rssi	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:59
+00080398 s s_emi_rssibuf	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:58
+0008039c s s_emi_rx_cnt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:57
+000803a0 S i2c_slave_rx_index
+000803a1 s i2c_dma_rx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:27
+000803a2 s i2c_dma_tx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:26
+000803a3 s s_pspi_rx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:30
+000803a4 s s_pspi_tx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:29
+000803a5 s s_hspi_rx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:28
+000803a6 s s_hspi_tx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:27
+000803a8 s uart_tx_hword_index.4498
+000803ac S uart_rx_byte_index
+000803b0 S uart_tx_byte_index
+000803b4 s uart_dma_rev_size	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:109
+000803bc s uart_dma_rx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:108
+000803c0 s uart_dma_tx_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:107
+000803c4 s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:49
+000803c8 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:44
+000803cc s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:39
+000803d0 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:34
+000803d4 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:29
+000803d8 S config_read_buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:49
+000803dc S g_chip_version
+000803e0 s g_pm_status_info
+000803e4 S g_single_tong_freqoffset
+000803e8 S __mculib_REENT_errno
+000803ec s __vprintf_buf_len
+000803f0 s __vprintf_buf
+000803f4 S __printf_count
+000803f8 b emi_rx_packet	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:53
+00080510 B read_buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:44
+00080610 B input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:20
 00080800 D __global_pointer$
-00080a18 B magnitude	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:22
-00080c18 B frequency_bin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:23
-00081018 B __StackLimit	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:18
-0008101c B buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:488
-0008115c B myudb_txfifo_b	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:47
-000822dc B g_adc_pre_scale	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:34
-000822dd B g_adc_vbat_divider	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:35
-000822de B adc_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:39
-000822e0 B audio_rx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:30
-000822e1 B audio_tx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:31
-000822e4 B g_audio_tx_dma_list_cfg	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:33
-000822f8 B g_audio_rx_dma_list_cfg	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:34
-0008230c B g_clk_32k_src
-00082310 B s7816_vcc_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:29
-00082314 B s7816_rst_time	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:32
-00082318 B s7816_rtx_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:30
-0008231c B s7816_rst_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:28
-00082320 B s7816_clock	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:31
-00082324 B para_buff
-00082364 B command_buff
-00082464 B par_addr
-00082478 B result_buff
-00082578 B _BSS_VMA_END
-00082578 D sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/sdk_version.c:26
-000825a0 D _end
+00080a10 B magnitude	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:21
+00080c10 B frequency_bin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:22
+00081010 B __StackLimit	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:18
+00081014 B buff	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:488
+00081154 B myudb_txfifo_b	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:47
+000822d4 B g_adc_pre_scale	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:34
+000822d5 B g_adc_vbat_divider	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:35
+000822d6 B adc_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:39
+000822d8 B audio_rx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:30
+000822d9 B audio_tx_dma_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:31
+000822dc B g_audio_tx_dma_list_cfg	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:33
+000822f0 B g_audio_rx_dma_list_cfg	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:34
+00082304 B g_clk_32k_src
+00082308 B s7816_vcc_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:29
+0008230c B s7816_rst_time	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:32
+00082310 B s7816_rtx_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:30
+00082314 B s7816_rst_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:28
+00082318 B s7816_clock	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:31
+0008231c B para_buff
+0008235c B command_buff
+0008245c B par_addr
+00082470 B result_buff
+00082570 B _BSS_VMA_END
+00082570 D sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/sdk_version.c:26
+00082598 D _end
 000a0000 A _STACK_TOP
 00100000 A FLASH_SIZE
 20000000 T BIN_BEGIN	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:59
@@ -264,479 +264,478 @@
 200002e8 A _RETENTION_DATA_LMA_START
 20000360 A _RAMCODE_LMA_START
 200030b8 T user_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/app.c:27
-2000319c T fill_stack_pattern_to_sp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:26
-200031b8 T measure_stack_usage	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:37
-200031dc T reset_cycle_count	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:53
-200031e4 T read_cycle_count	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:58
-200031ec T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:64
-200033dc T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033dc W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
-200033de W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:439
-200033e4 T bt_dbg_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/bt_debug/dbgport.c:26
-200034ac T bt_dbg_set_signal	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/bt_debug/dbgport.c:66
-20003624 T myudb_set_txfifo_local	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:63
-20003630 T myudb_set_txfifo	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:68
-20003638 T myudb_usb_send_response	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:74
-20003680 T myudb_usb_prepare_desc_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:89
-20003740 T myudb_usb_handle_in_class_intf_req	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:139
-20003760 T myudb_usb_handle_request	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:152
-20003860 T myudb_usb_handle_ctl_ep_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:216
-200038c8 T myudb_usb_handle_ctl_ep_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:231
-20003904 T myudb_usb_handle_ctl_ep_status	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:241
-20003924 T usb_send_str_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:270
-20003a48 T myudb_register_hci_cb	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:372
-20003a50 T myudb_usb_bulkout_ready	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:561
-20003a5c T myudb_usb_handle_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:519
-20003b5c T myudb_usb_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:566
-20003bc4 T myudb_usbdesc_get_language	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:140
-20003bd0 T myudb_usbdesc_get_vendor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:145
-20003be0 T myudb_usbdesc_get_product	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:149
-20003bf0 T myudb_usbdesc_get_serial	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:153
-20003c00 T myudb_usbdesc_get_device	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:157
-20003c10 T myudb_usbdesc_get_configuration	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:161
-20003c20 T adc_set_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:61
-20003c90 T adc_start_sample_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:80
-20003d28 T adc_get_sample_status_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:92
-20003d44 T adc_clr_sample_status_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:100
-20003d80 T adc_stop_sample_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:110
-20003d98 T adc_pin_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:120
-20003e98 T adc_set_diff_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:145
-20003ef0 T adc_set_gpio_calib_vref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:158
-20003efc T adc_set_gpio_two_point_calib_offset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:168
-20003f0c T adc_set_ref_voltage	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:178
-20003f9c T adc_set_sample_rate	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:200
-20004078 T adc_set_scale_factor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:231
-200040bc T adc_set_vbat_divider	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:241
-2000410c T adc_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:263
-200041d8 T adc_gpio_sample_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:290
-20004248 T adc_temperature_sample_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:306
-200042a8 T adc_battery_voltage_sample_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:328
-20004304 T adc_get_code_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:343
-20004350 T adc_get_code	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:372
-200043b8 T adc_calculate_voltage	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:393
-200043f4 T adc_calculate_temperature	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:416
-2000440c T aes_set_key_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:73
-200044d0 T aes_get_result	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:92
-20004500 T aes_encrypt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:108
-20004530 T aes_encrypt_bt_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:131
-20004650 T aes_decrypt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:184
-20004680 T aes_decrypt_bt_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:206
-200047a0 T aes_set_em_base_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:264
-200047d0 T analog_read_reg32_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:209
-200048ac T analog_write_reg32_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:232
-2000497c T analog_write_buff_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:342
-20004a60 T analog_read_buff_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:370
-20004b54 T analog_write_addr_data_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:404
-20004c64 T audio_set_mono_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:100
-20004c70 T audio_invert_i2s_lr_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:113
-20004c78 T audio_set_codec_mic_input_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:124
-20004c84 T audio_set_codec_in_path_a_d_gain	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:135
-20004ca4 T audio_set_codec_out_path_a_d_gain	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:147
-20004cc0 T audio_set_i2s_codec_m_s	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:163
-20004ccc T audio_set_output_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:175
-20004cd8 T audio_set_chn_wl	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:185
-20004d9c T audio_i2s_set_pin_mux	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:240
-20004e94 T audio_i2s_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:264
-20004ebc T audio_codec_active	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:277
-20004f08 T audio_codec_set_micbias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:293
-20004f3c T audio_set_codec_supply	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:315
-20004fd8 T audio_set_dmic_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:351
-200050f4 T audio_rx_dma_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:396
-20005120 T audio_rx_dma_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:406
-20005148 T audio_tx_dma_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:416
-20005174 T audio_tx_dma_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:426
-2000519c T audio_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:440
-20005274 T audio_rx_dma_add_list_element	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:463
-200052d4 T audio_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:482
-200053ac T audio_tx_dma_add_list_element	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:504
-2000540c T audio_i2c_codec_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:549
-20005438 T audio_i2c_codec_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:563
-2000545c T audio_i2c_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:576
-200054d0 T audio_codec_dac_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:628
-20005680 T audio_codec_adc_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:723
-200058e0 T audio_mux_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:878
-20005908 T audio_i2s_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:900
-2000593c T audio_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:521
-20005a28 T audio_init_i2c	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:598
-20005b14 T audio_rx_dma_chain_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1126
-20005b4c T audio_tx_dma_chain_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1141
-20005b84 T audio_set_ext_codec	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1178
-20005bbc T pwm_set	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1192
-20005c1c T audio_i2s_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1211
-20005c7c T audio_pause_out_path	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1230
-20005cac T audio_resume_out_path	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1240
-20005cd8 T audio_codec_dac_power_down	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1262
-20005d64 T audio_codec_dac_power_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1281
-20005dd4 T audio_codec_adc_power_down	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1300
-20005e50 T audio_codec_adc_power_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1320
-20005ec4 T clock_32k_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:73
-20005f38 T clock_kick_32k_xtal	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:94
-20006070 T clock_cal_32k_rc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:184
-2000614c T clock_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:370
-20006168 T rf_set_power_level_index_singletone	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:71
-200061f4 T rf_emi_tx_single_tone	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:99
-20006234 T rf_emi_stop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:115
-2000626c T rf_emi_tx_continue_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:127
-20006298 T rf_emi_tx_continue_update_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:149
-20006340 T emi_pn_gen	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:191
-2000635c T rf_continue_mode_run	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:206
-20006430 T rf_emi_rx_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:233
-200065b0 T rf_emi_rx_loop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:295
-2000661c T rf_emi_get_rxpkt_cnt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:321
-20006624 T rf_emi_get_rssi_avg	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:330
-2000662c T rf_phy_test_prbs9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:342
-2000667c T rf_emi_tx_burst_loop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:372
-200068f0 T rf_emi_tx_burst_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:484
-20006aa4 T rf_emi_reset_baseband	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:575
-20006ac8 T flash_plic_preempt_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:73
-20006adc T flash_read_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:282
-20006b04 T flash_dread	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:306
-20006b2c T flash_4read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:330
-20006b54 T flash_read_mid	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:565
-20006b80 T flash_read_uid	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:590
-20006bb0 T flash_read_mid_uid_with_check	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:688
-20006c48 T flash_erase_sector	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:258
-20006c70 t flash_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:345
-20006cd4 T flash_page_program	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:384
-20006ce4 T flash_quad_page_program	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:411
-20006cf4 T flash_read_status	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:430
-20006d24 T flash_write_status	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:454
-20006da0 T flash_read_otp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:488
-20006dc8 T flash_write_otp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:511
-20006e2c T flash_erase_otp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:543
-20006e54 T flash_set_xip_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:617
-20006e70 T flash_write_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:640
-20006e98 T flash_read_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:660
-20006ec8 T flash_get_vendor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:722
-20006f54 T gpio_input_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:65
-20006ffc T gpio_input_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:91
-200070b4 T gpio_set_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:118
-200070c8 T gpio_ds_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:135
-2000715c T gpio_ds_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:153
-200071fc T gpio_shutdown	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:171
-20007494 T gpio_set_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:261
-200075c8 T gpio_set_gpio2risc0_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:298
-200076f8 T gpio_set_gpio2risc1_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:335
-20007828 T gpio_set_up_down_res	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:372
-200078bc T gpio_set_pullup_res_30k	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:407
-20007968 T i2c_master_send_stop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:75
-20007980 T i2c_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:93
-20007af0 T i2c_master_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:160
-20007b18 T i2c_set_master_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:174
-20007b34 T i2c_slave_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:191
-20007b4c T i2c_master_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:208
-20007c14 T i2c_master_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:251
-20007cdc T i2c_master_write_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:292
-20007d34 T i2c_master_write_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:331
-20007dd4 T i2c_master_read_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:354
-20007e84 T i2c_slave_set_tx_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:378
-20007ef4 T i2c_slave_set_rx_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:393
-20007f6c T i2c_slave_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:407
-20007fb4 T i2c_slave_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:428
-20008004 T i2c_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:451
-2000802c T i2c_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:465
-20008058 T lpc_set_input_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/lpc.c:32
-20008104 T mdec_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/mdec.c:36
-20008138 T mdec_read_dat	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/mdec.c:46
-200081dc T mtime_clk_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/plmt.c:41
-20008210 T pwm_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:49
-20008338 T pwm_set_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:78
-2000835c T pwm_set_dma_buf	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:92
-200083b4 T pwm_ir_dma_mode_start	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:104
-200083dc T pwm_set_dma_chain_llp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:120
-200084a8 T pwm_set_tx_dma_add_list_element	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:144
-2000850c T s7816_set_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:41
-20008524 T s7816_set_time	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:51
-2000852c T s7816_set_rst_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:60
-200085b4 T s7816_set_vcc_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:74
-2000863c T s7816_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:92
-20008770 T s7816_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:125
-200087f0 T s7816_coldreset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:145
-20008884 T s7816_release_trig	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:160
-200088e4 T s7816_warmreset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:173
-20008954 T s7816_send_byte	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:186
-20008990 T hspi_set_pin_mux	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:100
-20008b08 T hspi_cs_pin_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:141
-20008b14 T hspi_cs_pin_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:151
-20008b94 T hspi_change_csn_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:169
-20008bac T pspi_set_pin_mux	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:180
-20008d30 T pspi_cs_pin_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:219
-20008d3c T pspi_cs_pin_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:229
-20008dbc T pspi_change_csn_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:247
-20008dd4 T hspi_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:258
-20008e08 T pspi_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:273
-20008e30 T spi_slave_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:285
-20008e68 T spi_master_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:310
-20008ebc T spi_slave_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:330
-20008efc T spi_set_dummy_cnt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:342
-20008f30 T spi_set_transmode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:353
-20008f60 T spi_set_normal_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:363
-20008fbc T spi_set_dual_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:378
-2000901c T hspi_set_quad_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:392
-2000904c T spi_set_3line_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:404
-200090ac T spi_set_io_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:421
-200090d8 T spi_master_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:446
-20009124 T hspi_master_config_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:461
-20009224 T pspi_master_config_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:509
-20009274 T hspi_set_address	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:528
-20009280 T spi_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:540
-200092d4 T spi_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:557
-20009328 T spi_master_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:573
-20009410 T spi_master_write_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:595
-20009564 T spi_master_write_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:620
-20009664 T spi_master_read_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:646
-20009764 T spi_master_write_read_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:673
-200098c0 T hspi_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:697
-200098e8 T hspi_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:712
-20009910 T pspi_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:726
-20009938 T pspi_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:741
-20009960 T spi_set_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:754
-200099e0 T spi_master_write_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:830
-20009ac0 T spi_master_write_read_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:860
-20009c1c T spi_master_write_dma_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:896
-20009d0c T spi_master_read_dma_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:927
-20009e14 T spi_master_write_read_dma_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:963
-20009f78 T hspi_master_write_xip_cmd_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:1037
-20009fc0 T spi_master_write_read_full_duplex	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:1057
-2000a188 T spi_master_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:1097
-2000a274 T timer_start	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:34
-2000a2ac T timer_stop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:54
-2000a2dc T timer_set_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:79
-2000a334 T timer_gpio_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:106
-2000a478 t uart_is_prime	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:737
-2000a4d0 t uart_set_fuc_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:762
-2000a6c0 T uart_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:165
-2000a7ac T uart_cal_div_and_bwpc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:221
-2000a940 T uart_set_rx_timeout	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:303
-2000a984 T uart_send_byte	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:317
-2000a9d8 T uart_read_byte	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:332
-2000aa0c T uart_tx_is_busy	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:345
-2000aa2c T uart_send_hword	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:356
-2000aa80 T uart_send_word	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:373
-2000aab8 T uart_set_rts_level	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:386
-2000ab08 T uart_set_cts_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:401
-2000ac00 T uart_set_rts_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:446
-2000acf8 T uart_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:492
-2000ad40 T uart_set_rtx_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:514
-2000ae5c T uart_send	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:565
-2000ae9c T uart_send_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:582
-2000af9c T uart_receive_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:612
-2000b07c T uart_get_dma_rev_data_len	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:629
-2000b0f4 T uart_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:653
-2000b128 T uart_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:668
-2000b15c T uart_cts_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:682
-2000b1c8 T uart_rts_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:707
-2000b288 T usbhw_disable_manual_interrupt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:31
-2000b29c T usbhw_enable_manual_interrupt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:40
-2000b2b4 T usbhw_write_ep	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:51
-2000b30c T usbhw_write_ctrl_ep_u16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:66
-2000b320 T usbhw_read_ctrl_ep_u16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:76
-2000b33c T flash_read_status_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:40
-2000b364 T flash_write_status_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:62
-2000b394 T flash_lock_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:83
-2000b3a8 T flash_unlock_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:101
-2000b3bc T flash_get_lock_block_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:119
-2000b3d0 T flash_read_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:143
-2000b3e0 T flash_write_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:167
-2000b3f0 T flash_erase_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:192
-2000b400 T flash_lock_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:214
-2000b414 T flash_read_status_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:40
-2000b43c T flash_write_status_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:62
-2000b46c T flash_get_lock_block_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:121
-2000b480 T flash_read_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:145
-2000b490 T flash_write_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:169
-2000b4a0 T flash_erase_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:194
-2000b4b0 T flash_lock_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:216
-2000b4c4 T flash_write_config_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:236
-2000b4f8 T flash_lock_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:83
-2000b518 T flash_unlock_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:102
-2000b534 T flash_read_status_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:40
-2000b55c T flash_write_status_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:62
-2000b58c T flash_get_lock_block_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:121
-2000b5a0 T flash_read_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:145
-2000b5b0 T flash_write_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:169
-2000b5c0 T flash_erase_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:194
-2000b5d0 T flash_lock_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:216
-2000b5e4 T flash_write_config_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:236
-2000b618 T flash_lock_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:83
-2000b638 T flash_unlock_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:102
-2000b654 T convert_addr2bus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:39
-2000b670 T para_buff_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:52
-2000b6ac T para_buff_have_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:71
-2000b6cc T result_buff_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:121
-2000b708 T result_buff_clear	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:140
-2000b718 T crc_16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:152
-2000b758 T para_buff_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:88
-2000b7fc T result_buff_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:182
-2000b8e0 T user_calib_adc_vref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/calibration/calibration.c:32
-2000ba5c T user_calib_freq_offset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/calibration/calibration.c:115
-2000baa0 T user_read_flash_value_calib	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/calibration/calibration.c:138
-2000bb78 T platform_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/common.c:27
-2000bb94 W mtime_irq_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:55
-2000bb98 W mswi_irq_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:63
-2000bb9c W except_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:71
-2000bbc8 T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/printf.c:101
-2000bc04 T audio_config_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_common.c:216
-2000bcd0 T flash_power_off_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_common.c:237
-2000bd20 T flash_scratch	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:253
-2000bd6c T flash_erase_chip	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:316
-2000bd88 T flash_check_scratch	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:274
-2000be64 T flash_trim	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_trim.c:172
-2000beec T flash_trim_check	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_trim.c:199
-2000bf6c t pm_sleep_wakeup.constprop.0
-2000bf88 T efuse_get_adc_calib_value
-2000bfc8 T sys_init
-2000c2ac T rf_update_internal_cap
-2000c2e0 T rf_set_power_level_index
-2000c350 T rf_set_power_level
-2000c3a8 T rf_pn_disable
-2000c3bc T rf_set_txmode
-2000c3e8 T rf_set_rx_dma
-2000c448 T rf_set_tx_dma
-2000c48c T rf_set_pri_2M_mode
-2000c5a8 T rf_set_pri_1M_mode
-2000c6c8 T rf_set_zigbee_250K_mode
-2000c7ec T rf_set_ble_125K_mode
-2000c8ec T rf_set_ble_500K_mode
-2000c9ec T rf_set_ble_2M_NO_PN_mode
-2000cae0 T rf_set_ble_1M_NO_PN_mode
-2000cbdc T rf_mode_init
-2000cc5c T sinf
-2000cde8 T ref__mathlib_rredf2
-2000cf34 T riscv_dsp_cfft_q15
-2000cf58 T riscv_dsp_cifft_q15
-2000cf7c T riscv_dsp_cfft_rd2_q15
-2000d308 T riscv_dsp_cifft_rd2_q15
-2000d708 T riscv_dsp_cfft_rd4_q15
-2000ddfc T riscv_dsp_cifft_rd4_q15
-2000e5d8 T riscv_dsp_cmag_q15
-2000e678 T riscv_dsp_sqrt_q15
-2000e724 T __udivdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:1318
-2000eac8 T __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
-2000f118 T __floatsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatsidf.c:36
-2000f194 T __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
-2000f2a4 T __truncdfsf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
-2000f5a4 T __errno
-2000f5ac T memcmp
-2000f5f0 T memcpy
-2000f662 T iprintf
-2000f662 T printf
-2000f680 T puts
-2000f6b4 T strlen
-2000f6de t __vprintf_help
-2000f718 T viprintf
-2000f718 T vprintf
-2000f760 T __print_integral
-2000f7ac T __printf_impl
-2000f7ac T __printf_impl_lite
-2000fc0a T __int_to_poly
-2000fc2a T __print_integral_poly
-2000fcb0 T __printf_float_impl
-200100b4 T strcpy
-200100ea T strnlen
-20010104 T memset
-2001018c T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
-200101bc T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
-200101ec T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
-200101f4 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-200101f4 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-200101f4 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-200101f4 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-20010202 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-20010202 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-20010202 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-20010202 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-2001021c T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-2001021c T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-2001021c T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-2001021c T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-20010228 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
-2001022c T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-2001022c T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-2001022c T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-2001022c T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-20010236 T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-20010236 T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-20010236 T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-20010236 T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-20010240 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-20010240 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-20010240 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-20010240 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-200104e8 r language_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:35
-200105b4 r vendor_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:43
-20010680 r product_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:51
-2001074c r serial_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:59
-20010818 r device_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:64
-2001082c r configuration_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:80
-20010874 r rf_power_Level_list
-200108ac R cst_libm_rredf
-200108c4 r twooverpi.0
-2001093c R riscv_dsp_cos_recip_table_q15_1024
-20010b3c R riscv_dsp_cos_table_q15_linear_1024
-20010d40 R riscv_dsp_cos_table_q15_1024
-20010f8c R __clz_tab
-2001108c R __digits
-20011260 A _DATA_LMA_START
+2000319c T fill_stack_pattern_to_sp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:25
+200031b8 T measure_stack_usage	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:35
+200031dc T reset_counters	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:47
+200031e8 T read_perf_counters	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:53
+200031f8 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../Debug_Demo/main.c:60
+20003394 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003394 W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:434
+20003396 W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../boot/cstartup_flash.S:439
+2000339c T bt_dbg_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/bt_debug/dbgport.c:26
+20003464 T bt_dbg_set_signal	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/bt_debug/dbgport.c:66
+200035dc T myudb_set_txfifo_local	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:63
+200035e8 T myudb_set_txfifo	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:68
+200035f0 T myudb_usb_send_response	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:74
+20003638 T myudb_usb_prepare_desc_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:89
+200036f8 T myudb_usb_handle_in_class_intf_req	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:139
+20003718 T myudb_usb_handle_request	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:152
+20003818 T myudb_usb_handle_ctl_ep_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:216
+20003880 T myudb_usb_handle_ctl_ep_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:231
+200038bc T myudb_usb_handle_ctl_ep_status	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:241
+200038dc T usb_send_str_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:270
+20003a00 T myudb_register_hci_cb	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:372
+20003a08 T myudb_usb_bulkout_ready	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:561
+20003a14 T myudb_usb_handle_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:519
+20003b14 T myudb_usb_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usb.c:566
+20003b7c T myudb_usbdesc_get_language	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:140
+20003b88 T myudb_usbdesc_get_vendor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:145
+20003b98 T myudb_usbdesc_get_product	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:149
+20003ba8 T myudb_usbdesc_get_serial	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:153
+20003bb8 T myudb_usbdesc_get_device	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:157
+20003bc8 T myudb_usbdesc_get_configuration	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:161
+20003bd8 T adc_set_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:61
+20003c48 T adc_start_sample_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:80
+20003ce0 T adc_get_sample_status_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:92
+20003cfc T adc_clr_sample_status_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:100
+20003d38 T adc_stop_sample_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:110
+20003d50 T adc_pin_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:120
+20003e50 T adc_set_diff_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:145
+20003ea8 T adc_set_gpio_calib_vref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:158
+20003eb4 T adc_set_gpio_two_point_calib_offset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:168
+20003ec4 T adc_set_ref_voltage	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:178
+20003f54 T adc_set_sample_rate	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:200
+20004030 T adc_set_scale_factor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:231
+20004074 T adc_set_vbat_divider	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:241
+200040c4 T adc_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:263
+20004190 T adc_gpio_sample_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:290
+20004200 T adc_temperature_sample_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:306
+20004260 T adc_battery_voltage_sample_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:328
+200042bc T adc_get_code_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:343
+20004308 T adc_get_code	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:372
+20004370 T adc_calculate_voltage	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:393
+200043ac T adc_calculate_temperature	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/adc.c:416
+200043c4 T aes_set_key_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:73
+20004488 T aes_get_result	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:92
+200044b8 T aes_encrypt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:108
+200044e8 T aes_encrypt_bt_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:131
+20004608 T aes_decrypt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:184
+20004638 T aes_decrypt_bt_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:206
+20004758 T aes_set_em_base_addr	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/aes.c:264
+20004788 T analog_read_reg32_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:209
+20004864 T analog_write_reg32_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:232
+20004934 T analog_write_buff_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:342
+20004a18 T analog_read_buff_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:370
+20004b0c T analog_write_addr_data_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/analog.c:404
+20004c1c T audio_set_mono_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:100
+20004c28 T audio_invert_i2s_lr_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:113
+20004c30 T audio_set_codec_mic_input_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:124
+20004c3c T audio_set_codec_in_path_a_d_gain	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:135
+20004c5c T audio_set_codec_out_path_a_d_gain	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:147
+20004c78 T audio_set_i2s_codec_m_s	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:163
+20004c84 T audio_set_output_chn	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:175
+20004c90 T audio_set_chn_wl	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:185
+20004d54 T audio_i2s_set_pin_mux	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:240
+20004e4c T audio_i2s_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:264
+20004e74 T audio_codec_active	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:277
+20004ec0 T audio_codec_set_micbias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:293
+20004ef4 T audio_set_codec_supply	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:315
+20004f90 T audio_set_dmic_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:351
+200050ac T audio_rx_dma_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:396
+200050d8 T audio_rx_dma_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:406
+20005100 T audio_tx_dma_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:416
+2000512c T audio_tx_dma_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:426
+20005154 T audio_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:440
+2000522c T audio_rx_dma_add_list_element	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:463
+2000528c T audio_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:482
+20005364 T audio_tx_dma_add_list_element	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:504
+200053c4 T audio_i2c_codec_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:549
+200053f0 T audio_i2c_codec_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:563
+20005414 T audio_i2c_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:576
+20005488 T audio_codec_dac_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:628
+20005638 T audio_codec_adc_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:723
+20005898 T audio_mux_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:878
+200058c0 T audio_i2s_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:900
+200058f4 T audio_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:521
+200059e0 T audio_init_i2c	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:598
+20005acc T audio_rx_dma_chain_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1126
+20005b04 T audio_tx_dma_chain_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1141
+20005b3c T audio_set_ext_codec	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1178
+20005b74 T pwm_set	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1192
+20005bd4 T audio_i2s_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1211
+20005c34 T audio_pause_out_path	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1230
+20005c64 T audio_resume_out_path	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1240
+20005c90 T audio_codec_dac_power_down	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1262
+20005d1c T audio_codec_dac_power_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1281
+20005d8c T audio_codec_adc_power_down	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1300
+20005e08 T audio_codec_adc_power_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/audio.c:1320
+20005e7c T clock_32k_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:73
+20005ef0 T clock_kick_32k_xtal	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:94
+20006028 T clock_cal_32k_rc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:184
+20006104 T clock_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/clock.c:370
+20006120 T rf_set_power_level_index_singletone	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:71
+200061ac T rf_emi_tx_single_tone	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:99
+200061ec T rf_emi_stop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:115
+20006224 T rf_emi_tx_continue_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:127
+20006250 T rf_emi_tx_continue_update_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:149
+200062f8 T emi_pn_gen	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:191
+20006314 T rf_continue_mode_run	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:206
+200063e8 T rf_emi_rx_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:233
+20006568 T rf_emi_rx_loop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:295
+200065d4 T rf_emi_get_rxpkt_cnt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:321
+200065dc T rf_emi_get_rssi_avg	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:330
+200065e4 T rf_phy_test_prbs9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:342
+20006634 T rf_emi_tx_burst_loop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:372
+200068a8 T rf_emi_tx_burst_setup	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:484
+20006a5c T rf_emi_reset_baseband	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/emi.c:575
+20006a80 T flash_plic_preempt_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:73
+20006a94 T flash_read_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:282
+20006abc T flash_dread	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:306
+20006ae4 T flash_4read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:330
+20006b0c T flash_read_mid	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:565
+20006b38 T flash_read_uid	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:590
+20006b68 T flash_read_mid_uid_with_check	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:688
+20006c00 T flash_erase_sector	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:258
+20006c28 t flash_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:345
+20006c8c T flash_page_program	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:384
+20006c9c T flash_quad_page_program	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:411
+20006cac T flash_read_status	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:430
+20006cdc T flash_write_status	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:454
+20006d58 T flash_read_otp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:488
+20006d80 T flash_write_otp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:511
+20006de4 T flash_erase_otp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:543
+20006e0c T flash_set_xip_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:617
+20006e28 T flash_write_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:640
+20006e50 T flash_read_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:660
+20006e80 T flash_get_vendor	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash.c:722
+20006f0c T gpio_input_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:65
+20006fb4 T gpio_input_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:91
+2000706c T gpio_set_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:118
+20007080 T gpio_ds_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:135
+20007114 T gpio_ds_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:153
+200071b4 T gpio_shutdown	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:171
+2000744c T gpio_set_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:261
+20007580 T gpio_set_gpio2risc0_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:298
+200076b0 T gpio_set_gpio2risc1_irq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:335
+200077e0 T gpio_set_up_down_res	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:372
+20007874 T gpio_set_pullup_res_30k	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/gpio.c:407
+20007920 T i2c_master_send_stop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:75
+20007938 T i2c_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:93
+20007aa8 T i2c_master_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:160
+20007ad0 T i2c_set_master_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:174
+20007aec T i2c_slave_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:191
+20007b04 T i2c_master_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:208
+20007bcc T i2c_master_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:251
+20007c94 T i2c_master_write_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:292
+20007cec T i2c_master_write_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:331
+20007d8c T i2c_master_read_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:354
+20007e3c T i2c_slave_set_tx_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:378
+20007eac T i2c_slave_set_rx_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:393
+20007f24 T i2c_slave_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:407
+20007f6c T i2c_slave_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:428
+20007fbc T i2c_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:451
+20007fe4 T i2c_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/i2c.c:465
+20008010 T lpc_set_input_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/lpc.c:32
+200080bc T mdec_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/mdec.c:36
+200080f0 T mdec_read_dat	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/mdec.c:46
+20008194 T mtime_clk_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/plmt.c:41
+200081c8 T pwm_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:49
+200082f0 T pwm_set_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:78
+20008314 T pwm_set_dma_buf	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:92
+2000836c T pwm_ir_dma_mode_start	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:104
+20008394 T pwm_set_dma_chain_llp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:120
+20008460 T pwm_set_tx_dma_add_list_element	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/pwm.c:144
+200084c4 T s7816_set_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:41
+200084dc T s7816_set_time	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:51
+200084e4 T s7816_set_rst_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:60
+2000856c T s7816_set_vcc_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:74
+200085f4 T s7816_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:92
+20008728 T s7816_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:125
+200087a8 T s7816_coldreset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:145
+2000883c T s7816_release_trig	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:160
+2000889c T s7816_warmreset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:173
+2000890c T s7816_send_byte	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/s7816.c:186
+20008948 T hspi_set_pin_mux	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:100
+20008ac0 T hspi_cs_pin_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:141
+20008acc T hspi_cs_pin_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:151
+20008b4c T hspi_change_csn_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:169
+20008b64 T pspi_set_pin_mux	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:180
+20008ce8 T pspi_cs_pin_en	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:219
+20008cf4 T pspi_cs_pin_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:229
+20008d74 T pspi_change_csn_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:247
+20008d8c T hspi_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:258
+20008dc0 T pspi_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:273
+20008de8 T spi_slave_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:285
+20008e20 T spi_master_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:310
+20008e74 T spi_slave_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:330
+20008eb4 T spi_set_dummy_cnt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:342
+20008ee8 T spi_set_transmode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:353
+20008f18 T spi_set_normal_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:363
+20008f74 T spi_set_dual_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:378
+20008fd4 T hspi_set_quad_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:392
+20009004 T spi_set_3line_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:404
+20009064 T spi_set_io_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:421
+20009090 T spi_master_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:446
+200090dc T hspi_master_config_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:461
+200091dc T pspi_master_config_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:509
+2000922c T hspi_set_address	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:528
+20009238 T spi_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:540
+2000928c T spi_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:557
+200092e0 T spi_master_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:573
+200093c8 T spi_master_write_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:595
+2000951c T spi_master_write_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:620
+2000961c T spi_master_read_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:646
+2000971c T spi_master_write_read_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:673
+20009878 T hspi_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:697
+200098a0 T hspi_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:712
+200098c8 T pspi_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:726
+200098f0 T pspi_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:741
+20009918 T spi_set_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:754
+20009998 T spi_master_write_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:830
+20009a78 T spi_master_write_read_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:860
+20009bd4 T spi_master_write_dma_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:896
+20009cc4 T spi_master_read_dma_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:927
+20009dcc T spi_master_write_read_dma_plus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:963
+20009f30 T hspi_master_write_xip_cmd_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:1037
+20009f78 T spi_master_write_read_full_duplex	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:1057
+2000a140 T spi_master_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/spi.c:1097
+2000a22c T timer_start	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:34
+2000a264 T timer_stop	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:54
+2000a294 T timer_set_mode	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:79
+2000a2ec T timer_gpio_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/timer.c:106
+2000a430 t uart_is_prime	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:737
+2000a488 t uart_set_fuc_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:762
+2000a678 T uart_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:165
+2000a764 T uart_cal_div_and_bwpc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:221
+2000a8f8 T uart_set_rx_timeout	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:303
+2000a93c T uart_send_byte	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:317
+2000a990 T uart_read_byte	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:332
+2000a9c4 T uart_tx_is_busy	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:345
+2000a9e4 T uart_send_hword	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:356
+2000aa38 T uart_send_word	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:373
+2000aa70 T uart_set_rts_level	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:386
+2000aac0 T uart_set_cts_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:401
+2000abb8 T uart_set_rts_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:446
+2000acb0 T uart_set_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:492
+2000acf8 T uart_set_rtx_pin	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:514
+2000ae14 T uart_send	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:565
+2000ae54 T uart_send_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:582
+2000af54 T uart_receive_dma	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:612
+2000b034 T uart_get_dma_rev_data_len	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:629
+2000b0ac T uart_set_tx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:653
+2000b0e0 T uart_set_rx_dma_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:668
+2000b114 T uart_cts_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:682
+2000b180 T uart_rts_config	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/uart.c:707
+2000b240 T usbhw_disable_manual_interrupt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:31
+2000b254 T usbhw_enable_manual_interrupt	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:40
+2000b26c T usbhw_write_ep	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:51
+2000b2c4 T usbhw_write_ctrl_ep_u16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:66
+2000b2d8 T usbhw_read_ctrl_ep_u16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/usbhw.c:76
+2000b2f4 T flash_read_status_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:40
+2000b31c T flash_write_status_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:62
+2000b34c T flash_lock_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:83
+2000b360 T flash_unlock_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:101
+2000b374 T flash_get_lock_block_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:119
+2000b388 T flash_read_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:143
+2000b398 T flash_write_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:167
+2000b3a8 T flash_erase_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:192
+2000b3b8 T flash_lock_otp_mid146085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid146085.c:214
+2000b3cc T flash_read_status_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:40
+2000b3f4 T flash_write_status_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:62
+2000b424 T flash_get_lock_block_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:121
+2000b438 T flash_read_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:145
+2000b448 T flash_write_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:169
+2000b458 T flash_erase_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:194
+2000b468 T flash_lock_otp_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:216
+2000b47c T flash_write_config_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:236
+2000b4b0 T flash_lock_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:83
+2000b4d0 T flash_unlock_mid156085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid156085.c:102
+2000b4ec T flash_read_status_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:40
+2000b514 T flash_write_status_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:62
+2000b544 T flash_get_lock_block_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:121
+2000b558 T flash_read_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:145
+2000b568 T flash_write_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:169
+2000b578 T flash_erase_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:194
+2000b588 T flash_lock_otp_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:216
+2000b59c T flash_write_config_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:236
+2000b5d0 T flash_lock_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:83
+2000b5f0 T flash_unlock_mid166085	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../drivers/flash/flash_mid166085.c:102
+2000b60c T convert_addr2bus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:39
+2000b628 T para_buff_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:52
+2000b664 T para_buff_have_data	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:71
+2000b684 T result_buff_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:121
+2000b6c0 T result_buff_clear	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:140
+2000b6d0 T crc_16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:152
+2000b710 T para_buff_read	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:88
+2000b7b4 T result_buff_write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/auto_test/pc_interface.c:182
+2000b898 T user_calib_adc_vref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/calibration/calibration.c:32
+2000ba14 T user_calib_freq_offset	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/calibration/calibration.c:115
+2000ba58 T user_read_flash_value_calib	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/calibration/calibration.c:138
+2000bb30 T platform_init	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/common.c:27
+2000bb4c W mtime_irq_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:55
+2000bb50 W mswi_irq_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:63
+2000bb54 W except_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/exception.c:71
+2000bb80 T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/printf.c:101
+2000bbbc T audio_config_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_common.c:216
+2000bc88 T flash_power_off_on	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_common.c:237
+2000bcd8 T flash_scratch	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:253
+2000bd24 T flash_erase_chip	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:316
+2000bd40 T flash_check_scratch	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_scratch.c:274
+2000be1c T flash_trim	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_trim.c:172
+2000bea4 T flash_trim_check	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../vendor/common/flash/puya_flash_trim.c:199
+2000bf24 t pm_sleep_wakeup.constprop.0
+2000bf40 T efuse_get_adc_calib_value
+2000bf80 T sys_init
+2000c264 T rf_update_internal_cap
+2000c298 T rf_set_power_level_index
+2000c308 T rf_set_power_level
+2000c360 T rf_pn_disable
+2000c374 T rf_set_txmode
+2000c3a0 T rf_set_rx_dma
+2000c400 T rf_set_tx_dma
+2000c444 T rf_set_pri_2M_mode
+2000c560 T rf_set_pri_1M_mode
+2000c680 T rf_set_zigbee_250K_mode
+2000c7a4 T rf_set_ble_125K_mode
+2000c8a4 T rf_set_ble_500K_mode
+2000c9a4 T rf_set_ble_2M_NO_PN_mode
+2000ca98 T rf_set_ble_1M_NO_PN_mode
+2000cb94 T rf_mode_init
+2000cc14 T sinf
+2000cda0 T ref__mathlib_rredf2
+2000ceec T riscv_dsp_cfft_q15
+2000cf10 T riscv_dsp_cifft_q15
+2000cf34 T riscv_dsp_cfft_rd2_q15
+2000d2c0 T riscv_dsp_cifft_rd2_q15
+2000d6c0 T riscv_dsp_cfft_rd4_q15
+2000ddb4 T riscv_dsp_cifft_rd4_q15
+2000e590 T riscv_dsp_cmag_q15
+2000e630 T riscv_dsp_sqrt_q15
+2000e6dc T __udivdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:1318
+2000ea80 T __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
+2000f0d0 T __floatsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatsidf.c:36
+2000f14c T __truncdfsf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
+2000f44c T __errno
+2000f454 T memcmp
+2000f498 T memcpy
+2000f50a T iprintf
+2000f50a T printf
+2000f528 T puts
+2000f55c T strlen
+2000f586 t __vprintf_help
+2000f5c0 T viprintf
+2000f5c0 T vprintf
+2000f608 T __print_integral
+2000f654 T __printf_impl
+2000f654 T __printf_impl_lite
+2000fab2 T __int_to_poly
+2000fad2 T __print_integral_poly
+2000fb58 T __printf_float_impl
+2000ff5c T strcpy
+2000ff92 T strnlen
+2000ffac T memset
+20010034 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+20010064 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+20010094 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+2001009c T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+2001009c T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+2001009c T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+2001009c T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+200100aa T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+200100aa T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+200100aa T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+200100aa T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+200100c4 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+200100c4 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+200100c4 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+200100c4 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+200100d0 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+200100d4 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+200100d4 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+200100d4 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+200100d4 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+200100de T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+200100de T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+200100de T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+200100de T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+200100e8 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+200100e8 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+200100e8 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+200100e8 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+20010380 r language_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:35
+2001044c r vendor_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:43
+20010518 r product_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:51
+200105e4 r serial_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:59
+200106b0 r device_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:64
+200106c4 r configuration_desc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/Debug/../common/usb_dbg/myudb_usbdesc.c:80
+2001070c r rf_power_Level_list
+20010744 R cst_libm_rredf
+2001075c r twooverpi.0
+200107d4 R riscv_dsp_cos_recip_table_q15_1024
+200109d4 R riscv_dsp_cos_table_q15_linear_1024
+20010bd8 R riscv_dsp_cos_table_q15_1024
+20010e24 R __clz_tab
+20010f24 R __digits
+200110e0 A _DATA_LMA_START

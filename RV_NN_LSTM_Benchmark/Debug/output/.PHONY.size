@@ -1,0 +1,2 @@
+   text	   code	 rodata	   data	    bss	    dec	    hex	filename
+  31584	  22864	   8720	    144	   1048	  32776	   8008	RV_NN_LSTM_Benchmark.adx

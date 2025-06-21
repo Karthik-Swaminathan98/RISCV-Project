@@ -87,6 +87,7 @@ Andes_DSP_q15_stack.adx: $(OBJS) $(USER_OBJS)
 	$(CROSS_COMPILE)gcc -Og -nostartfiles -static -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/drivers/lib" -L/cygdrive/C/Users/SwaminathanK/Downloads/ANDE/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/lib/mext-dsp/mno-fma -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot.link" -Wl,-Map -Wl,$(SECONDARY_OUTPUT_PATH)/map.txt -mext-dsp -ldsp -lm -fpack-struct -fshort-enums -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O3 -o "Andes_DSP_q15_stack.adx" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
+	$(MAKE) --no-print-directory post-build
 
 $(foreach subdir,$(SUBDIRS),$(wildcard $(subdir)/*.gcda) $(wildcard $(subdir)/*.gcno)): Andes_DSP_q15_stack.adx $(OBJS) $(USER_OBJS)
 ../gmon.sum ../gmon.out: Andes_DSP_q15_stack.adx $(OBJS) $(USER_OBJS)
@@ -127,9 +128,13 @@ clean:
 	-$(RM) $(GPROF_OUT)$(PWR_OUT)$(SIZE_OUTPUTS)$(READELF_OUTPUTS)$(EXECUTABLES)$(OBJDUMP_OUTPUTS)$(OBJS)$(SYMBOL_OUTPUTS)$(S_UPPER_DEPS)$(GCOV_OUT)$(C_DEPS)$(OBJCOPY_OUTPUTS) Andes_DSP_q15_stack.adx
 	-@echo ' '
 
+post-build:
+	-$(MAKE) function-analysis
+	-@echo ' '
+
 secondary-outputs: $(SYMBOL_OUTPUTS) $(READELF_OUTPUTS) $(OBJDUMP_OUTPUTS) $(OBJCOPY_OUTPUTS) $(SIZE_OUTPUTS)
 
 .PHONY: all clean dependents
-.SECONDARY:
+.SECONDARY: post-build
 
 -include ../makefile.targets

@@ -14,7 +14,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug">
+				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug" postbuildStep="$(MAKE) function-analysis">
 					<folderInfo id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905." name="/" resourcePath="">
 						<toolChain id="nds.nds32le-elf-mculib-v5f.exe.debug.1597492003" name="nds32le-elf-mculib-v5f" superClass="nds.nds32le-elf-mculib-v5f.exe.debug">
 							<targetPlatform id="target.nds32le-elf-mculib-v5f.platform.exe.debug.716446593" name="Debug Platform" superClass="target.nds32le-elf-mculib-v5f.platform.exe.debug"/>
@@ -75,6 +75,7 @@
 								<option id="nds.c.link.option.LTO.1602576828" name="Link Time Optimization (-flto)" superClass="nds.c.link.option.LTO" value="true" valueType="boolean"/>
 								<option id="nds.c.link.option.other.duplacitecompiler.1076422879" name="DuplaciteComplierOption" superClass="nds.c.link.option.other.duplacitecompiler" value="-mcmodel=medium -fno-jump-tables " valueType="string"/>
 								<option id="nds.c.link.option.removesections.627938702" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" value="true" valueType="boolean"/>
+								<option id="nds.c.link.option.map.615294639" superClass="nds.c.link.option.map" value="true" valueType="boolean"/>
 								<inputType id="tool.nds.c.linker.input.650120637" superClass="tool.nds.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -93,7 +94,9 @@
 							</tool>
 							<tool id="tool.nds32le-elf-mculib-v5f.nm.exe.debug.99603205" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v5f.nm.exe.debug"/>
 							<tool id="tool.nds32le-elf-mculib-v5f.readelf.exe.debug.2067378015" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v5f.readelf.exe.debug"/>
-							<tool id="tool.nds32le-elf-mculib-v5f.objdump.exe.debug.445635950" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v5f.objdump.exe.debug"/>
+							<tool id="tool.nds32le-elf-mculib-v5f.objdump.exe.debug.445635950" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v5f.objdump.exe.debug">
+								<option id="nds.objdump.option.disable.338294692" superClass="nds.objdump.option.disable" value="false" valueType="boolean"/>
+							</tool>
 							<tool id="tool.nds32le-elf-mculib-v5f.objcopy.exe.debug.1315392126" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v5f.objcopy.exe.debug">
 								<option id="nds.objcopy.option.disable.1208304799" name="Disable. (Do not auto-generate output file.)" superClass="nds.objcopy.option.disable" value="false" valueType="boolean"/>
 							</tool>

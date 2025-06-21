@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="riscv_convolve_wrapper_s8" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="riscv_convolve_wrapper_s8"/>
+			<item value="riscv_dsp_cmag_f32"/>
+			<item value="riscv_dsp_sqrt_q15"/>
+			<item value="riscv_dsp_cfft_q15"/>
+			<item value="riscv_dsp_cfft_rd2_q15"/>
+			<item value="riscv_dsp_cmplx_mag_q15"/>
+			<item value="invalid"/>
+			<item value="enable_cycle_counter"/>
+		</list>
+		<list key="replacehistory">
+			<item value="reset_cycle_count"/>
+			<item value="riscv"/>
+			<item value="nmsis"/>
+			<item value="reset_cycle_count();"/>
+			<item value="stack_limit"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="1590" key="DIALOG_X_ORIGIN"/>
+		<item value="164" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

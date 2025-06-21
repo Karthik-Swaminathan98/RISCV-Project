@@ -14,7 +14,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug">
+				<configuration artifactExtension="adx" artifactName="${ProjName}" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905" name="Debug" parent="config.nds32le-elf-mculib-v5f.exe.debug" postbuildStep="$(MAKE) function-analysis">
 					<folderInfo id="config.nds32le-elf-mculib-v5f.exe.debug.1879341905." name="/" resourcePath="">
 						<toolChain id="nds.nds32le-elf-mculib-v5f.exe.debug.1597492003" name="nds32le-elf-mculib-v5f" superClass="nds.nds32le-elf-mculib-v5f.exe.debug">
 							<option id="nds32le-elf-mculib-v5f.managedbuild.option.toolchain.RSE_CONNECT.1651084944" name="RSE_CONNECT" superClass="nds32le-elf-mculib-v5f.managedbuild.option.toolchain.RSE_CONNECT" value="ICE" valueType="string"/>
@@ -56,7 +56,7 @@
 								<inputType id="tool.nds.c.compiler.input.1898553034" superClass="tool.nds.c.compiler.input"/>
 							</tool>
 							<tool command="$(CROSS_COMPILE)gcc" id="tool.nds32le-elf-mculib-v5f.c.linker.exe.debug.1298538365" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v5f.c.linker.exe.debug">
-								<option defaultValue="-O0" id="nds.c.link.option.optimization.level.1554805374" name="Optimization Level" superClass="nds.c.link.option.optimization.level" value="-O3" valueType="string"/>
+								<option defaultValue="-O0" id="nds.c.link.option.optimization.level.1554805374" name="Optimization Level" superClass="nds.c.link.option.optimization.level" value="-Og" valueType="string"/>
 								<option defaultValue="true" id="nds32le-elf-mculib-v5f.c.link.option.noshared.base.318686271" name="No shared libraries (-static)" superClass="nds32le-elf-mculib-v5f.c.link.option.noshared.base" valueType="boolean"/>
 								<option id="nds.c.linker.option.apply_hw_dsp.507205223" name="Apply HW DSP" superClass="nds.c.linker.option.apply_hw_dsp" value="true" valueType="boolean"/>
 								<option id="nds.c.link.option.virtualhosting.2116298778" name="Virtual Hosting (-mvh)" superClass="nds.c.link.option.virtualhosting" value="false" valueType="boolean"/>
@@ -73,9 +73,9 @@
 									<listOptionValue builtIn="false" value="C:\Users\SwaminathanK\Downloads\ANDE\toolchains\nds32le-elf-mculib-v5f\riscv32-elf\lib\mext-dsp\mno-fma"/>
 								</option>
 								<option id="nds.c.link.option.ldflags.1424265999" name="Linker flags" superClass="nds.c.link.option.ldflags" value="-fpack-struct -fshort-enums -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O3" valueType="string"/>
-								<option id="nds.c.link.option.LTO.419473019" name="Link Time Optimization (-flto)" superClass="nds.c.link.option.LTO" value="true" valueType="boolean"/>
+								<option id="nds.c.link.option.LTO.419473019" name="Link Time Optimization (-flto)" superClass="nds.c.link.option.LTO" value="false" valueType="boolean"/>
 								<option id="nds.c.link.option.other.duplacitecompiler.801272296" name="DuplaciteComplierOption" superClass="nds.c.link.option.other.duplacitecompiler" value="-mcmodel=medium -g3 -fno-jump-tables " valueType="string"/>
-								<option id="nds.c.link.option.removesections.1909352875" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" value="true" valueType="boolean"/>
+								<option id="nds.c.link.option.removesections.1909352875" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" value="false" valueType="boolean"/>
 								<option id="nds.c.link.option.map.1836504094" name="Write a map file. (-Map)" superClass="nds.c.link.option.map" value="true" valueType="boolean"/>
 								<inputType id="tool.nds.c.linker.input.650120637" superClass="tool.nds.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

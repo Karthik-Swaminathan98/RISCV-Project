@@ -84,9 +84,10 @@ all: RV_NN_Convolution_Benchmark.adx secondary-outputs
 RV_NN_Convolution_Benchmark.adx: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Andes C Linker'
-	$(CROSS_COMPILE)gcc -O3 -nostartfiles -static -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/drivers/lib" -L"/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC" -flto -mcmodel=medium -fno-jump-tables -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,-Map -Wl,$(SECONDARY_OUTPUT_PATH)/map.txt -Wl,--gc-sections -mext-dsp -ldsp -lm -fpack-struct -fshort-enums -g3 -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O2 -Wl,--gc-sections -o "RV_NN_Convolution_Benchmark.adx" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(CROSS_COMPILE)gcc -O3 -nostartfiles -static -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/drivers/lib" -L"/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS/NMSIS/Library/NN/GCC" -flto -mcmodel=medium -fno-jump-tables -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,-Map -Wl,$(SECONDARY_OUTPUT_PATH)/map.txt -Wl,--gc-sections -mext-dsp -ldsp -lm -fpack-struct -fshort-enums -g3 -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O2 -Wl,--gc-sections -o "RV_NN_Convolution_Benchmark.adx" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
+	$(MAKE) --no-print-directory post-build
 
 $(foreach subdir,$(SUBDIRS),$(wildcard $(subdir)/*.gcda) $(wildcard $(subdir)/*.gcno)): RV_NN_Convolution_Benchmark.adx $(OBJS) $(USER_OBJS)
 ../gmon.sum ../gmon.out: RV_NN_Convolution_Benchmark.adx $(OBJS) $(USER_OBJS)
@@ -127,9 +128,13 @@ clean:
 	-$(RM) $(GPROF_OUT)$(PWR_OUT)$(SIZE_OUTPUTS)$(READELF_OUTPUTS)$(EXECUTABLES)$(OBJDUMP_OUTPUTS)$(OBJS)$(SYMBOL_OUTPUTS)$(S_UPPER_DEPS)$(GCOV_OUT)$(C_DEPS)$(OBJCOPY_OUTPUTS) RV_NN_Convolution_Benchmark.adx
 	-@echo ' '
 
+post-build:
+	-$(MAKE) function-analysis
+	-@echo ' '
+
 secondary-outputs: $(SYMBOL_OUTPUTS) $(READELF_OUTPUTS) $(OBJDUMP_OUTPUTS) $(OBJCOPY_OUTPUTS) $(SIZE_OUTPUTS)
 
 .PHONY: all clean dependents
-.SECONDARY:
+.SECONDARY: post-build
 
 -include ../makefile.targets

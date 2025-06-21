@@ -84,9 +84,10 @@ all: Andes_DSP_q15_benchmark.adx secondary-outputs
 Andes_DSP_q15_benchmark.adx: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Andes C Linker'
-	$(CROSS_COMPILE)gcc -O3 -nostartfiles -static -L/cygdrive/C/Users/SwaminathanK/Downloads/ANDE/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/lib/mext-dsp/mno-fma -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_benchmark/drivers/lib" -flto -mcmodel=medium -g3 -fno-jump-tables -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,--gc-sections -mext-dsp -ldsp -lm -fpack-struct -fshort-enums -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O3 -o "Andes_DSP_q15_benchmark.adx" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(CROSS_COMPILE)gcc -O3 -nostartfiles -static -L/cygdrive/C/Users/SwaminathanK/Downloads/ANDE/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/lib/mext-dsp/mno-fma -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_benchmark/drivers/lib" -flto -mcmodel=medium -g3 -fno-jump-tables -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,-Map -Wl,$(SECONDARY_OUTPUT_PATH)/map.txt -Wl,--gc-sections -mext-dsp -ldsp -lm -fpack-struct -fshort-enums -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O3 -o "Andes_DSP_q15_benchmark.adx" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
+	$(MAKE) --no-print-directory post-build
 
 $(foreach subdir,$(SUBDIRS),$(wildcard $(subdir)/*.gcda) $(wildcard $(subdir)/*.gcno)): Andes_DSP_q15_benchmark.adx $(OBJS) $(USER_OBJS)
 ../gmon.sum ../gmon.out: Andes_DSP_q15_benchmark.adx $(OBJS) $(USER_OBJS)
@@ -127,9 +128,13 @@ clean:
 	-$(RM) $(GPROF_OUT)$(PWR_OUT)$(SIZE_OUTPUTS)$(READELF_OUTPUTS)$(EXECUTABLES)$(OBJDUMP_OUTPUTS)$(OBJS)$(SYMBOL_OUTPUTS)$(S_UPPER_DEPS)$(GCOV_OUT)$(C_DEPS)$(OBJCOPY_OUTPUTS) Andes_DSP_q15_benchmark.adx
 	-@echo ' '
 
+post-build:
+	-$(MAKE) function-analysis
+	-@echo ' '
+
 secondary-outputs: $(SYMBOL_OUTPUTS) $(READELF_OUTPUTS) $(OBJDUMP_OUTPUTS) $(OBJCOPY_OUTPUTS) $(SIZE_OUTPUTS)
 
 .PHONY: all clean dependents
-.SECONDARY:
+.SECONDARY: post-build
 
 -include ../makefile.targets
