@@ -12,10 +12,12 @@
 #define M_PI           3.14159265358979323846
 #define Q15_SCALE      (32768)          // Scale factor for Q15 format
 #define FFT_SIZES_COUNT 6      // Total number of FFT sizes to test
-#define STACK_SIZE 0x1000   // Define stack size as 4096 bytes
 
+#define STACK_SIZE 0x1000
 extern uint32_t _STACK_TOP;
-uint32_t __StackLimit;       // To store the calculated stack limit
+uint32_t stack_limit;
+uint32_t stack_top;
+
 
 // Array of FFT sizes to test
 const int FFT_SIZES[FFT_SIZES_COUNT] = {32, 64, 128, 256, 512, 1024};
@@ -28,40 +30,41 @@ void generate_sine_wave_q15(q15_t* input, int N, float signal_freq, float sampli
     }
 }
 
-// Function to fill stack pattern
-void fill_stack_pattern_to_sp() {
+static void fill_stack_pattern_to_sp() {
     uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));  // Get current stack pointer
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
 
-    uint32_t *p = (uint32_t*)__StackLimit;      // Start from stack limit
+    uint32_t *p = (uint32_t*)stack_limit;
     while (p < sp) {
-        *p++ = 0xAAAAAAAA;  // Fill stack memory with the pattern
+        *p++ = 0xAAAAAAAA;
     }
 }
 
-// Function to measure stack usage
-uint32_t measure_stack_usage() {
+static uint32_t measure_stack_usage() {
     uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));  // Get current stack pointer
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
 
-    uint32_t *p = (uint32_t*)__StackLimit;      // Start from stack limit
+    uint32_t *p = (uint32_t*)stack_limit;
     while (p < sp) {
-        if (*p != 0xAAAAAAAA) {                 // Stop at the first non-pattern value
+        if (*p != 0xAAAAAAAA) {
             break;
         }
         p++;
     }
 
-    return ((uint32_t)sp - (uint32_t)p);        // Stack usage in bytes
+    return ((uint32_t)sp - (uint32_t)p);
 }
 
-// Functions to reset and read cycle counts (RISC-V processor)
-void reset_cycle_count() {
+// Reset performance counters
+static void reset_counters() {
     write_csr(NDS_MCYCLE, 0);
+    write_csr(NDS_MINSTRET, 0);
 }
 
-unsigned int read_cycle_count() {
-    return read_csr(NDS_MCYCLE);
+// Read both cycle and instruction counts
+static void read_perf_counters(unsigned int *cycles, unsigned int *instructions) {
+    *cycles = read_csr(NDS_MCYCLE);
+    *instructions = read_csr(NDS_MINSTRET);
 }
 
 extern void user_init(void);
@@ -70,13 +73,17 @@ int main(void) {
     PLATFORM_INIT;
     CLOCK_INIT;
     user_init();
+    core_interrupt_disable();
 
     // Get stack top and calculate stack limit
-    uint32_t stack_top = (uint32_t)&_STACK_TOP;  // Get stack top from linker script
-    __StackLimit = stack_top - STACK_SIZE;      // Calculate stack limit based on 4096-byte stack size
+    stack_top = (uint32_t)&_STACK_TOP;
+    stack_limit = stack_top - STACK_SIZE;
+    uint32_t clkFastfreq = sys_clk.cclk * 1e6;
+    printf("\n\r");
+    printf("CPU Clock Frequency: %lu Hz\n\r", clkFastfreq);
 
     // Validate stack_top and __StackLimit
-    if (__StackLimit >= stack_top) {
+    if (stack_limit >= stack_top) {
         printf("Error: Invalid stack limit calculation. Check linker script and STACK_SIZE.\n");
         return -1;
     }
@@ -103,33 +110,29 @@ int main(void) {
 
 		printf("FFT Size: %d\n\r", N);
 
-		// Fill stack with a known pattern
-		fill_stack_pattern_to_sp();
-
-        // Reset cycle count
-        reset_cycle_count();
-
-        // Start cycle count
-        unsigned int start_cycles = read_cycle_count();
+        reset_counters();
+        fill_stack_pattern_to_sp();
+        unsigned int start_cycles, start_inst, end_cycles, end_inst;
+        read_perf_counters(&start_cycles, &start_inst);
 
         // Perform FFT using Q15
         riscv_cfft_q15(&fft_instance, input, 0, 1);
 
-        // End cycle count
-        unsigned int end_cycles = read_cycle_count();
-
-        // Measure stack usage
+        read_perf_counters(&end_cycles, &end_inst);
+        uint32_t cycle_count = end_cycles - start_cycles;
+        uint32_t inst_count = end_inst - start_inst;
         uint32_t stack_used = measure_stack_usage();
-
-        // Calculate the total cycle count
-        unsigned int cycle_count = end_cycles - start_cycles;
+        float time_sec = (float)cycle_count / clkFastfreq;
+        float time_us = time_sec * 1e6f;
 
         // Calculate the magnitude of the FFT output using riscv_cmplx_mag_q15()
         riscv_cmplx_mag_q15(input, output, N);
 
         // Print results
-		printf("  Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
-		printf("  Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", inst_count);
+        printf("Execution Time (approx)     : %.3f us (%.6f s)\n\r", time_us, time_sec);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
 		printf("\n");
 
 		free(input);

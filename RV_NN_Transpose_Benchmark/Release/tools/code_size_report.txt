@@ -1,0 +1,27 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_transpose_s8
+    Own size: 680 bytes
+    Total size (with dependencies): 680 bytes
+    [*] Breakdown:
+        riscv_transpose_s8                     680 bytes
+------------------------------------------------------------
+[*] Function: riscv_transpose_conv_wrapper_s8
+    Own size: 444 bytes
+    Total size (with dependencies): 8128 bytes
+    [*] Breakdown:
+        riscv_nn_transpose_conv_row_s8_s32    2008 bytes
+        riscv_convolve_s8                     1912 bytes
+        riscv_nn_mat_mult_kernel_row_offset_s8_s16   1252 bytes
+        riscv_nn_mat_mult_kernel_s8_s16       1236 bytes
+        riscv_transpose_conv_s8               1144 bytes
+        riscv_transpose_conv_wrapper_s8        444 bytes
+        riscv_s8_to_s16_unordered_with_offset    132 bytes
+------------------------------------------------------------
+[*] Function: riscv_transpose_conv_s8_get_buffer_size
+    Own size: 102 bytes
+    Total size (with dependencies): 146 bytes
+    [*] Breakdown:
+        riscv_transpose_conv_s8_get_buffer_size    102 bytes
+        riscv_convolve_s8_get_buffer_size       44 bytes
+------------------------------------------------------------

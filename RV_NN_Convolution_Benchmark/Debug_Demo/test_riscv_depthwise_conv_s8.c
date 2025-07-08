@@ -1,11 +1,4 @@
-#include <stdlib.h>
-#include <riscv_nnfunctions.h>
-#include "validate.h"
-#include <math.h>
-#include <stdlib.h>
-#include <string.h>
-#include "core.h"
-#include "stimer.h"
+#include "main.h"
 #include "../TestData/depthwise_2/test_data.h"
 #include "../TestData/depthwise_dilation/test_data.h"
 #include "../TestData/depthwise_mult_batches/test_data.h"
@@ -22,44 +15,6 @@ static inline const int32_t *get_bias_address(const int32_t *bias, int32_t size)
         }
     }
     return return_bias;
-}
-
-static void reset_cycle_count() {
-    write_csr(NDS_MCYCLE, 0);
-}
-
-static unsigned int read_cycle_counter() {
-    return read_csr(NDS_MCYCLE);
-}
-
-#define STACK_SIZE 0x1000
-extern uint32_t _STACK_TOP;
-uint32_t stack_limit;
-uint32_t stack_top;
-
-static void fill_stack_pattern_to_sp() {
-    uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));
-
-    uint32_t *p = (uint32_t*)stack_limit;
-    while (p < sp) {
-        *p++ = 0xAAAAAAAA;
-    }
-}
-
-static uint32_t measure_stack_usage() {
-    uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));
-
-    uint32_t *p = (uint32_t*)stack_limit;
-    while (p < sp) {
-        if (*p != 0xAAAAAAAA) {
-            break;
-        }
-        p++;
-    }
-
-    return ((uint32_t)sp - (uint32_t)p);
 }
 
 void depthwise_2_riscv_depthwise_conv_s8(void)
@@ -110,13 +65,11 @@ void depthwise_2_riscv_depthwise_conv_s8(void)
     ctx.buf = malloc(buf_size);
     ctx.size = buf_size;
 
-	// Get stack top and calculate stack limit
-	stack_top = (uint32_t)&_STACK_TOP;
-	stack_limit = stack_top - STACK_SIZE;
-
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
-    uint32_t start_cycles = read_cycle_counter();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
+
     riscv_depthwise_conv_wrapper_s8(&ctx,
                                    &dw_conv_params,
                                    &quant_params,
@@ -128,9 +81,14 @@ void depthwise_2_riscv_depthwise_conv_s8(void)
                                    bias_data,
                                    &output_dims,
                                    output);
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf)
     {
@@ -141,8 +99,10 @@ void depthwise_2_riscv_depthwise_conv_s8(void)
     printf("\n\r");
     if (validate(output, output_ref, output_ref_size)) {
         printf("depthwise_2_riscv_depthwise_conv_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
     } else {
         printf("depthwise_2_riscv_depthwise_conv_s8 output validation FAILED\n\r");
     }
@@ -196,13 +156,11 @@ void depthwise_mult_batches_riscv_depthwise_conv_s8(void)
     ctx.buf = malloc(buf_size);
     ctx.size = buf_size;
 
-	// Get stack top and calculate stack limit
-	stack_top = (uint32_t)&_STACK_TOP;
-	stack_limit = stack_top - STACK_SIZE;
-
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
-    uint32_t start_cycles = read_cycle_counter();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
+
     riscv_depthwise_conv_wrapper_s8(&ctx,
                                    &dw_conv_params,
                                    &quant_params,
@@ -214,9 +172,14 @@ void depthwise_mult_batches_riscv_depthwise_conv_s8(void)
                                    bias_data,
                                    &output_dims,
                                    output);
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf)
     {
@@ -227,8 +190,10 @@ void depthwise_mult_batches_riscv_depthwise_conv_s8(void)
     printf("\n\r");
     if (validate(output, output_ref, output_ref_size)) {
         printf("depthwise_mult_batches_riscv_depthwise_conv_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
     } else {
         printf("depthwise_mult_batches_riscv_depthwise_conv_s8 output validation FAILED\n\r");
     }
@@ -282,13 +247,11 @@ void depthwise_dilation_riscv_depthwise_conv_s8(void)
     ctx.buf = malloc(buf_size);
     ctx.size = buf_size;
 
-	// Get stack top and calculate stack limit
-	stack_top = (uint32_t)&_STACK_TOP;
-	stack_limit = stack_top - STACK_SIZE;
-
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
-    uint32_t start_cycles = read_cycle_counter();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
+
     riscv_depthwise_conv_wrapper_s8(&ctx,
                                    &dw_conv_params,
                                    &quant_params,
@@ -300,9 +263,14 @@ void depthwise_dilation_riscv_depthwise_conv_s8(void)
                                    bias_data,
                                    &output_dims,
                                    output);
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf)
     {
@@ -313,8 +281,10 @@ void depthwise_dilation_riscv_depthwise_conv_s8(void)
     printf("\n\r");
     if (validate(output, output_ref, output_ref_size)) {
         printf("depthwise_dilation_riscv_depthwise_conv_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
     } else {
         printf("depthwise_dilation_riscv_depthwise_conv_s8 output validation FAILED\n\r");
     }

@@ -1,0 +1,33 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_fully_connected_s8
+    Own size: 158 bytes
+    Total size (with dependencies): 4604 bytes
+    [*] Breakdown:
+        riscv_nn_vec_mat_mult_t_s8            4446 bytes
+        riscv_fully_connected_s8               158 bytes
+------------------------------------------------------------
+[*] Function: riscv_fully_connected_per_channel_s8
+    Own size: 162 bytes
+    Total size (with dependencies): 2876 bytes
+    [*] Breakdown:
+        riscv_nn_vec_mat_mult_t_per_ch_s8     2714 bytes
+        riscv_fully_connected_per_channel_s8    162 bytes
+------------------------------------------------------------
+[*] Function: riscv_fully_connected_wrapper_s8
+    Own size: 78 bytes
+    Total size (with dependencies): 7558 bytes
+    [*] Breakdown:
+        riscv_nn_vec_mat_mult_t_s8            4446 bytes
+        riscv_nn_vec_mat_mult_t_per_ch_s8     2714 bytes
+        riscv_fully_connected_per_channel_s8    162 bytes
+        riscv_fully_connected_s8               158 bytes
+        riscv_fully_connected_wrapper_s8        78 bytes
+------------------------------------------------------------
+[*] Function: riscv_fully_connected_s16
+    Own size: 166 bytes
+    Total size (with dependencies): 1046 bytes
+    [*] Breakdown:
+        riscv_nn_vec_mat_mult_t_s16            880 bytes
+        riscv_fully_connected_s16              166 bytes
+------------------------------------------------------------

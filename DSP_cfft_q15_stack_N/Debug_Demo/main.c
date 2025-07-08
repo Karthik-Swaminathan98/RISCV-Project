@@ -7,89 +7,84 @@
 #include "riscv_dsp_transform_math.h"
 #include "riscv_dsp_complex_math.h"
 
-#define SAMPLING_FREQ 256   // Sampling frequency in Hz
-#define SINE_FREQ 50        // Frequency of the sine wave in Hz
+#define SAMPLING_FREQ 256   // Hz
+#define SINE_FREQ 50        // Hz
 #define M_PI 3.14159265358979323846
-#define Q15_SCALE (32768)   // Scaling factor for Q15 format
-#define STACK_SIZE 0x1000   // Define stack size as 4096 bytes
+#define Q15_SCALE (32768)   // For Q15 conversion
+#define STACK_SIZE 0x1000   // 4096 bytes stack
+//#define MCYCLE_FREQ_HZ 192000000UL  // mcycle clock frequency (adjust based on system)
 
 extern uint32_t _STACK_TOP;
-uint32_t __StackLimit;       // To store the calculated stack limit
+uint32_t __StackLimit;
 
-// Function to fill stack pattern
+// Fill pattern into stack
 void fill_stack_pattern_to_sp() {
     uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));  // Get current stack pointer
-
-    uint32_t *p = (uint32_t*)__StackLimit;      // Start from stack limit
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+    uint32_t *p = (uint32_t*)__StackLimit;
     while (p < sp) {
-        *p++ = 0xAAAAAAAA;  // Fill stack memory with the pattern
+        *p++ = 0xAAAAAAAA;
     }
 }
 
-// Function to measure stack usage
+// Measure used stack
 uint32_t measure_stack_usage() {
     uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));  // Get current stack pointer
-
-    uint32_t *p = (uint32_t*)__StackLimit;      // Start from stack limit
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+    uint32_t *p = (uint32_t*)__StackLimit;
     while (p < sp) {
-        if (*p != 0xAAAAAAAA) {                 // Stop at the first non-pattern value
-            break;
-        }
+        if (*p != 0xAAAAAAAA) break;
         p++;
     }
-
-    return ((uint32_t)sp - (uint32_t)p);        // Stack usage in bytes
+    return ((uint32_t)sp - (uint32_t)p);
 }
 
+// Generate sine wave
 void generate_sine_wave_q15(q15_t* input, int N, float signal_freq, float sampling_freq) {
     for (int i = 0; i < N; i++) {
         float32_t value = sinf(2 * M_PI * signal_freq * i / sampling_freq);
-        input[2 * i] = (q15_t)(value * Q15_SCALE); // Real part
-        input[2 * i + 1] = 0;                     // Imaginary part (set to 0)
+        input[2 * i] = (q15_t)(value * Q15_SCALE);
+        input[2 * i + 1] = 0;
     }
 }
-// Function to reset cycle count (RISC-V processor)
+
+// Reset and read mcycle
 void reset_cycle_count() {
     write_csr(NDS_MCYCLE, 0);
 }
-
-// Function to read cycle count (32-bit)
 unsigned int read_cycle_count() {
     return read_csr(NDS_MCYCLE);
 }
 
 extern void user_init(void);
 
+// Entry point
 int main(void) {
     PLATFORM_INIT;
     CLOCK_INIT;
     user_init();
 
-    // Get stack top and calculate stack limit
-    uint32_t stack_top = (uint32_t)&_STACK_TOP;  // Get stack top from linker script
-    __StackLimit = stack_top - STACK_SIZE;      // Calculate stack limit based on 4096-byte stack size
+    uint32_t stack_top = (uint32_t)&_STACK_TOP;
+    __StackLimit = stack_top - STACK_SIZE;
 
-    // Validate stack_top and __StackLimit
     if (__StackLimit >= stack_top) {
-        printf("Error: Invalid stack limit calculation. Check linker script and STACK_SIZE.\n");
+        printf("Error: Invalid stack range.\n");
         return -1;
     }
 
-    // FFT sizes to benchmark
     const int fft_sizes[] = {32, 64, 128, 256, 512, 1024};
     const int num_fft_sizes = sizeof(fft_sizes) / sizeof(fft_sizes[0]);
 
-    // Benchmark for each FFT size
     printf("Benchmarking FFT sizes...\n\r");
+    printf("  CPU Clock  : %u MHz (CCLK)\n\r", sys_clk.cclk);
+    //printf("  mcycle clock freq: %lu Hz\n\r", (unsigned long)MCYCLE_FREQ_HZ);
+
     for (int size_idx = 0; size_idx < num_fft_sizes; size_idx++) {
         int fft_size = fft_sizes[size_idx];
         int log2_fft_size = (int)(log2((double)fft_size));
 
-        // Allocate input arrays dynamically for the current FFT size
-        q15_t *input = (q15_t *)malloc(2 * fft_size * sizeof(q15_t));  // Interleaved input (real + imag)
-        q15_t *magnitude = (q15_t *)malloc(fft_size * sizeof(q15_t));  // Magnitude array
+        q15_t *input = (q15_t *)malloc(2 * fft_size * sizeof(q15_t));
+        q15_t *magnitude = (q15_t *)malloc(fft_size * sizeof(q15_t));
 
         if (!input || !magnitude) {
             printf("Memory allocation failed for FFT size %d\n", fft_size);
@@ -98,48 +93,39 @@ int main(void) {
             continue;
         }
 
-        // Generate a sine wave signal in Q15 format
-		generate_sine_wave_q15(input, fft_size, SINE_FREQ, SAMPLING_FREQ);
-
-        // Fill the stack with a pattern
+        generate_sine_wave_q15(input, fft_size, SINE_FREQ, SAMPLING_FREQ);
         fill_stack_pattern_to_sp();
 
-        // Reset cycle count
         reset_cycle_count();
-
-        // Start cycle count
         unsigned int start_cycles = read_cycle_count();
 
-        // Perform FFT using the Andes DSP library
         riscv_dsp_cfft_q15(input, log2_fft_size);
 
-        // End cycle count
         unsigned int end_cycles = read_cycle_count();
-
-        // Measure stack usage
-        uint32_t stack_usage = measure_stack_usage();
-
-        // Calculate the total cycle count
         unsigned int cycle_count = end_cycles - start_cycles;
 
-        // Perform magnitude calculation
+        uint32_t stack_usage = measure_stack_usage();
+//        float time_sec = (float)cycle_count / (float)sys_clk.cclk * 1e6f;
+//        float time_us = time_sec * 1e6f;
+        float mcycle_freq_hz = (float)sys_clk.cclk * 1e6f;  // Clock in Hz
+        float time_sec = (float)cycle_count / mcycle_freq_hz;
+        float time_us = time_sec * 1e6f;
+
+
         riscv_dsp_cmag_q15(input, magnitude, fft_size);
 
-        // Print results for the current FFT size
         printf("\nFFT Size: %d\n\r", fft_size);
-        printf("Cycle Count for D25F: %u\n\r", cycle_count);
-        printf("Stack Usage: %lu bytes\n\r", stack_usage);
+        printf("Cycle Count for D25F      : %u cycles\n\r", cycle_count);
+        printf("Execution Time (approx)   : %.2f us\n\r", time_us);
+        printf("Stack Usage               : %lu bytes\n\r", stack_usage);
 
-        // Free dynamically allocated memory
         free(input);
         free(magnitude);
     }
 
-    // Print stack information
-    uint32_t stack_size = stack_top - __StackLimit;
     printf("\nStack Top:    0x%08lX\n\r", stack_top);
     printf("Stack Limit:  0x%08lX\n\r", __StackLimit);
-    printf("Stack Size:   %lu bytes\n\r", stack_size);
+    printf("Stack Size:   %lu bytes\n\r", stack_top - __StackLimit);
 
     return 0;
 }

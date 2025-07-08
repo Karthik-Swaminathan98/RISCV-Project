@@ -50,7 +50,7 @@
 								<option id="nds.c.compiler.option.misc.use-cc.toolchain.1972901053" name="Compiler to use" superClass="nds.c.compiler.option.misc.use-cc.toolchain" value="nds.c.compiler.option.misc.use-cc.gcc" valueType="enumerated"/>
 								<option id="nds.c.compiler.option.apply_hw_dsp.174085224" name="Apply HW DSP options" superClass="nds.c.compiler.option.apply_hw_dsp" value="true" valueType="boolean"/>
 								<option id="nds.c.compiler.option.misc.other.998539383" name="Other flags" superClass="nds.c.compiler.option.misc.other" value="-mext-dsp -mabi=ilp32f  -c -fmessage-length=0  -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -std=c99 -fpack-struct -fshort-enums -fno-jump-tables -mcmodel=medium -Wno-nonnull-compare -Wall -Wextra -Wshadow -Werror " valueType="string"/>
-								<option id="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level.1011096835" name="Optimization Level" superClass="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level" value="nds.c.optimization.level.debugger" valueType="enumerated"/>
+								<option id="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level.1011096835" name="Optimization Level" superClass="nds32le-elf-mculib-v5f.c.compiler.exe.debug.option.optimization.level" value="nds.c.optimization.level.most" valueType="enumerated"/>
 								<option id="nds.c.compiler.option.optimization.removesections.function.802036679" name="Remove unused function sections (-ffunction-sections)" superClass="nds.c.compiler.option.optimization.removesections.function" value="true" valueType="boolean"/>
 								<option id="nds.c.compiler.option.optimization.removesections.data.1334661935" name="Remove unused data sections (-fdata-sections)" superClass="nds.c.compiler.option.optimization.removesections.data" value="true" valueType="boolean"/>
 								<option id="nds.c.compiler.option.optimization.lto.1664056305" name="Link Time Optimization (-flto)" superClass="nds.c.compiler.option.optimization.lto" value="true" valueType="boolean"/>
@@ -62,21 +62,22 @@
 								<option id="nds.c.linker.option.apply_hw_dsp.507205223" name="Apply HW DSP" superClass="nds.c.linker.option.apply_hw_dsp" value="true" valueType="boolean"/>
 								<option id="nds.c.link.option.virtualhosting.2116298778" name="Virtual Hosting (-mvh)" superClass="nds.c.link.option.virtualhosting" value="false" valueType="boolean"/>
 								<option id="nds.c.link.option.nostart.743598629" name="Do not use standard start files (-nostartfiles)" superClass="nds.c.link.option.nostart" value="true" valueType="boolean"/>
-								<option id="nds32le-elf-mculib-v5f.c.link.exe.debug.option.ldscript.1156320362" name="Linker Script (-T)" superClass="nds32le-elf-mculib-v5f.c.link.exe.debug.option.ldscript" value="C:\Users\SwaminathanK\Downloads\B91 SDK\chip\B91\link\flash_boot.link" valueType="string"/>
+								<option id="nds32le-elf-mculib-v5f.c.link.exe.debug.option.ldscript.1156320362" name="Linker Script (-T)" superClass="nds32le-elf-mculib-v5f.c.link.exe.debug.option.ldscript" value="C:\Users\SwaminathanK\Downloads\B91 SDK\chip\B91\link\flash_boot_ramcode.link" valueType="string"/>
 								<option id="nds.c.link.option.libs.1042768544" name="Libraries (-l)" superClass="nds.c.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="m"/>
-									<listOptionValue builtIn="false" value="nmsis_dsp_rv32imfcp"/>
+									<listOptionValue builtIn="false" value="nmsis_dsp_rv32imfc"/>
 									<listOptionValue builtIn="false" value="driver"/>
 									<listOptionValue builtIn="false" value="axon_driver_lib"/>
 								</option>
 								<option id="nds.c.link.option.paths.365840732" name="Library search path (-L)" superClass="nds.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/drivers/lib}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\SwaminathanK\Desktop\Thesis\DSP Library\NMSIS-master\NMSIS-master\NMSIS\Library\DSP\GCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\SwaminathanK\Desktop\Thesis\DSP Library\NMSIS-master\NMSIS\NMSIS\Library\DSP\GCC&quot;"/>
 								</option>
 								<option id="nds.c.link.option.ldflags.1424265999" name="Linker flags" superClass="nds.c.link.option.ldflags" value="-fpack-struct -fshort-enums -g3 -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -Wno-gnu-zero-variadic-macro-arguments  -O2 -Wl,--gc-sections" valueType="string"/>
 								<option id="nds.c.link.option.removesections.701690986" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" value="true" valueType="boolean"/>
 								<option id="nds.c.link.option.LTO.257698528" name="Link Time Optimization (-flto)" superClass="nds.c.link.option.LTO" value="true" valueType="boolean"/>
-								<option id="nds.c.link.option.other.duplacitecompiler.1255155889" name="DuplaciteComplierOption" superClass="nds.c.link.option.other.duplacitecompiler" value="-mcmodel=medium -g -fno-jump-tables " valueType="string"/>
+								<option id="nds.c.link.option.other.duplacitecompiler.1255155889" name="DuplaciteComplierOption" superClass="nds.c.link.option.other.duplacitecompiler" value="-mcmodel=medium -fno-jump-tables " valueType="string"/>
+								<option id="nds.c.link.option.map.1835133003" name="Write a map file. (-Map)" superClass="nds.c.link.option.map" value="true" valueType="boolean"/>
 								<inputType id="tool.nds.c.linker.input.650120637" superClass="tool.nds.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>

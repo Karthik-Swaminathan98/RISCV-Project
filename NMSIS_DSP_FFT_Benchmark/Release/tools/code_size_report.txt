@@ -1,0 +1,21 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_cfft_f32
+    Own size: 1708 bytes
+    Total size (with dependencies): 3286 bytes
+    [*] Breakdown:
+        riscv_cfft_f32                        1708 bytes
+        riscv_radix8_butterfly_f32            1496 bytes
+        riscv_bitreversal_32                    82 bytes
+------------------------------------------------------------
+[*] Function: riscv_cfft_q15
+    Own size: 302 bytes
+    Total size (with dependencies): 2124 bytes
+    [*] Breakdown:
+        riscv_radix4_butterfly_inverse_q15     650 bytes
+        riscv_radix4_butterfly_q15             646 bytes
+        riscv_cfft_q15                         302 bytes
+        riscv_cfft_radix4by2_inverse_q15       218 bytes
+        riscv_cfft_radix4by2_q15               218 bytes
+        riscv_bitreversal_16                    90 bytes
+------------------------------------------------------------

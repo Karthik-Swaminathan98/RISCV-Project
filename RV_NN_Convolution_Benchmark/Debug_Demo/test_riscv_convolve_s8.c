@@ -1,52 +1,8 @@
-#include <stdlib.h>
-#include <riscv_nnfunctions.h>
+#include "main.h"
 #include "../TestData/basic/test_data.h"
 #include "../TestData/conv_2x2_dilation/test_data.h"
 #include "../TestData/conv_3x3_dilation_5x5_input/test_data.h"
-#include "validate.h"
-#include <math.h>
-#include <stdlib.h>
-#include <string.h>
-#include "core.h"
-#include "stimer.h"
 
-static void reset_cycle_count() {
-    write_csr(NDS_MCYCLE, 0);
-}
-
-static unsigned int read_cycle_counter() {
-    return read_csr(NDS_MCYCLE);
-}
-
-#define STACK_SIZE 0x1000
-extern uint32_t _STACK_TOP;
-uint32_t stack_limit;
-uint32_t stack_top;
-
-static void fill_stack_pattern_to_sp() {
-    uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));
-
-    uint32_t *p = (uint32_t*)stack_limit;
-    while (p < sp) {
-        *p++ = 0xAAAAAAAA;
-    }
-}
-
-static uint32_t measure_stack_usage() {
-    uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));
-
-    uint32_t *p = (uint32_t*)stack_limit;
-    while (p < sp) {
-        if (*p != 0xAAAAAAAA) {
-            break;
-        }
-        p++;
-    }
-
-    return ((uint32_t)sp - (uint32_t)p);
-}
 void basic_riscv_convolve_s8(void)
 {
     int8_t output[BASIC_DST_SIZE] = {0};
@@ -97,13 +53,10 @@ void basic_riscv_convolve_s8(void)
     ctx.buf = malloc(buf_size);
     ctx.size = 0;
 
-	// Get stack top and calculate stack limit
-	stack_top = (uint32_t)&_STACK_TOP;
-	stack_limit = stack_top - STACK_SIZE;
-
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
-    uint32_t start_cycles = read_cycle_counter();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
     // Run convolution
     riscv_convolve_wrapper_s8(&ctx,
@@ -118,9 +71,13 @@ void basic_riscv_convolve_s8(void)
                             &output_dims,
                             output);
 
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf)
     {
@@ -131,8 +88,10 @@ void basic_riscv_convolve_s8(void)
     printf("\n\r");
     if (validate(output, output_ref, output_ref_size)) {
         printf("basic_riscv_convolve_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
     } else {
         printf("basic_riscv_convolve_s8 output validation FAILED\n\r");
     }
@@ -184,13 +143,11 @@ void conv_2x2_dilation_riscv_convolve_s8(void)
     int32_t buf_size = riscv_convolve_wrapper_s8_get_buffer_size(&conv_params, &input_dims, &filter_dims, &output_dims);
     ctx.buf = malloc(buf_size);
     ctx.size = 0;
-	// Get stack top and calculate stack limit
-	stack_top = (uint32_t)&_STACK_TOP;
-	stack_limit = stack_top - STACK_SIZE;
 
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
-    uint32_t start_cycles = read_cycle_counter();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
     riscv_convolve_wrapper_s8(&ctx,
                             &conv_params,
@@ -204,9 +161,13 @@ void conv_2x2_dilation_riscv_convolve_s8(void)
                             &output_dims,
                             output);
 
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf)
     {
@@ -217,8 +178,10 @@ void conv_2x2_dilation_riscv_convolve_s8(void)
     printf("\n\r");
     if (validate(output, output_ref, output_ref_size)) {
         printf("conv_2x2_dilation_riscv_convolve_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
     } else {
         printf("conv_2x2_dilation_riscv_convolve_s8 output validation FAILED\n\r");
     }
@@ -270,13 +233,11 @@ void conv_3x3_dilation_5x5_input_riscv_convolve_s8(void)
     int32_t buf_size = riscv_convolve_wrapper_s8_get_buffer_size(&conv_params, &input_dims, &filter_dims, &output_dims);
     ctx.buf = malloc(buf_size);
     ctx.size = 0;
-	// Get stack top and calculate stack limit
-	stack_top = (uint32_t)&_STACK_TOP;
-	stack_limit = stack_top - STACK_SIZE;
 
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
-    uint32_t start_cycles = read_cycle_counter();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
     riscv_convolve_wrapper_s8(&ctx,
                             &conv_params,
@@ -290,9 +251,13 @@ void conv_3x3_dilation_5x5_input_riscv_convolve_s8(void)
                             &output_dims,
                             output);
 
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf)
     {
@@ -303,8 +268,10 @@ void conv_3x3_dilation_5x5_input_riscv_convolve_s8(void)
     printf("\n\r");
     if (validate(output, output_ref, output_ref_size)) {
         printf("conv_3x3_dilation_5x5_input_riscv_convolve_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
     } else {
         printf("conv_3x3_dilation_5x5_input_riscv_convolve_s8 output validation FAILED\n\r");
     }

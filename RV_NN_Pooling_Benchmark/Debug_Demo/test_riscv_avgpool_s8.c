@@ -1,53 +1,7 @@
-#include <stdlib.h>
-#include <riscv_nnfunctions.h>
-//#include "../Include_riscv/dw_int16xint8/test_data.h"
-#include "validate.h"
-#include <math.h>
-#include <stdlib.h>
-#include <string.h>
-#include "core.h"
-#include "stimer.h"
+#include "main.h"
 #include "../TestData_ARM/avgpooling/test_data.h"
 #include "../TestData_ARM/avgpooling_1/test_data.h"
 #include "../TestData_ARM/avgpooling_2/test_data.h"
-
-static void reset_cycle_count() {
-    write_csr(NDS_MCYCLE, 0);
-}
-
-static unsigned int read_cycle_counter() {
-    return read_csr(NDS_MCYCLE);
-}
-
-#define STACK_SIZE 0x1000
-extern uint32_t _STACK_TOP;
-uint32_t stack_limit;
-uint32_t stack_top;
-
-static void fill_stack_pattern_to_sp() {
-    uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));
-
-    uint32_t *p = (uint32_t*)stack_limit;
-    while (p < sp) {
-        *p++ = 0xAAAAAAAA;
-    }
-}
-
-static uint32_t measure_stack_usage() {
-    uint32_t *sp;
-    __asm__ volatile ("mv %0, sp" : "=r" (sp));
-
-    uint32_t *p = (uint32_t*)stack_limit;
-    while (p < sp) {
-        if (*p != 0xAAAAAAAA) {
-            break;
-        }
-        p++;
-    }
-
-    return ((uint32_t)sp - (uint32_t)p);
-}
 
 void avgpooling_riscv_avgpool_s8(void)
 {
@@ -83,26 +37,21 @@ void avgpooling_riscv_avgpool_s8(void)
     ctx.size = riscv_avgpool_s8_get_buffer_size(AVGPOOLING_OUTPUT_W, AVGPOOLING_INPUT_C);
     ctx.buf = malloc(ctx.size);
 
-    // Get stack top and calculate stack limit
-    stack_top = (uint32_t)&_STACK_TOP;
-    stack_limit = stack_top - STACK_SIZE;
+    reset_counters();
+    fill_stack_pattern_to_sp();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
-    reset_cycle_count();
-
-	// Fill stack with a known pattern
-	fill_stack_pattern_to_sp();
-
-    // Measure cycles
-    uint32_t start_cycles_s8 = read_cycle_counter();
     riscv_avgpool_s8(&ctx, &pool_params, &input_dims, input_data, &filter_dims, &output_dims, output);
-    // Measure cycles
-    uint32_t end_cycles_s8 = read_cycle_counter();
 
-    // Measure stack usage
-    uint32_t stack_used_s8 = measure_stack_usage();
+    read_perf_counters(&end_cycles, &end_inst);
+    uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
 
-    // Calculate cycle count
-    uint32_t cycle_count_s8 = end_cycles_s8 - start_cycles_s8;
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
+
     if (ctx.buf)
     {
         // The caller is responsible to clear the scratch buffers for security reasons if applicable.
@@ -114,8 +63,10 @@ void avgpooling_riscv_avgpool_s8(void)
             avgpooling_output,
             AVGPOOLING_OUTPUT_W * AVGPOOLING_OUTPUT_H * AVGPOOLING_BATCH_SIZE * AVGPOOLING_OUTPUT_C)) {
 		printf("riscv_avgpool_s8 output validation PASSED\n\r");
-		printf("Stack Used for riscv_avgpool_s8: %lu bytes\n\r", (unsigned long)stack_used_s8);
-		printf("Cycle Count for riscv_avgpool_s8: %lu\n\r", (unsigned long)cycle_count_s8);
+        printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
 	} else {
 		printf("riscv_avgpool_s8 output validation FAILED\n\r");
 	}
@@ -154,19 +105,21 @@ void avgpooling_1_riscv_avgpool_s8(void)
     ctx.size = riscv_avgpool_s8_get_buffer_size(AVGPOOLING_1_OUTPUT_W, AVGPOOLING_1_INPUT_C);
     ctx.buf = malloc(ctx.size);
 
-    // Get stack top and calculate stack limit
-    stack_top = (uint32_t)&_STACK_TOP;
-    stack_limit = stack_top - STACK_SIZE;
-
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
-    uint32_t start_cycles = read_cycle_counter();
     riscv_nmsis_nn_status result = riscv_avgpool_s8(&ctx, &pool_params, &input_dims, input_data,
                                                 &filter_dims, &output_dims, output);
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf) {
         memset(ctx.buf, 0, ctx.size);
@@ -176,8 +129,10 @@ void avgpooling_1_riscv_avgpool_s8(void)
     if (result == RISCV_NMSIS_NN_SUCCESS && validate(output, avgpooling_1_output,
         AVGPOOLING_1_OUTPUT_W * AVGPOOLING_1_OUTPUT_H * AVGPOOLING_1_BATCH_SIZE * AVGPOOLING_1_OUTPUT_C)) {
         printf("avgpooling_1_riscv_avgpool_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);
     } else {
         printf("avgpooling_1_riscv_avgpool_s8 output validation FAILED\n\r");
     }
@@ -216,19 +171,21 @@ void avgpooling_2_riscv_avgpool_s8(void)
     ctx.size = riscv_avgpool_s8_get_buffer_size(AVGPOOLING_2_OUTPUT_W, AVGPOOLING_2_INPUT_C);
     ctx.buf = malloc(ctx.size);
 
-    // Get stack top and calculate stack limit
-    stack_top = (uint32_t)&_STACK_TOP;
-    stack_limit = stack_top - STACK_SIZE;
-
-    reset_cycle_count();
+    reset_counters();
     fill_stack_pattern_to_sp();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
-    uint32_t start_cycles = read_cycle_counter();
     riscv_nmsis_nn_status result = riscv_avgpool_s8(&ctx, &pool_params, &input_dims, input_data,
                                                 &filter_dims, &output_dims, output);
-    uint32_t end_cycles = read_cycle_counter();
-    uint32_t stack_used = measure_stack_usage();
+
+    read_perf_counters(&end_cycles, &end_inst);
     uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
     if (ctx.buf) {
         memset(ctx.buf, 0, ctx.size);
@@ -238,8 +195,10 @@ void avgpooling_2_riscv_avgpool_s8(void)
     if (result == RISCV_NMSIS_NN_SUCCESS && validate(output, avgpooling_2_output,
         AVGPOOLING_2_OUTPUT_W * AVGPOOLING_2_OUTPUT_H * AVGPOOLING_2_BATCH_SIZE * AVGPOOLING_2_OUTPUT_C)) {
         printf("avgpooling_2_riscv_avgpool_s8 output validation PASSED\n\r");
-        printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
         printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+        printf("Instruction Count: %lu\n\r", instr_count);
+        printf("Execution Time (approx): %.3f us \n\r", time_us);
+        printf("Stack Used: %lu bytes\n\r\n", (unsigned long)stack_used);;
     } else {
         printf("avgpooling_2_riscv_avgpool_s8 output validation FAILED\n\r");
     }

@@ -1,0 +1,15 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_cmplx_mag_f32
+    Own size: 536 bytes
+    Total size (with dependencies): 536 bytes
+    [*] Breakdown:
+        riscv_cmplx_mag_f32                    536 bytes
+------------------------------------------------------------
+[*] Function: riscv_cmplx_mag_q15
+    Own size: 230 bytes
+    Total size (with dependencies): 436 bytes
+    [*] Breakdown:
+        riscv_cmplx_mag_q15                    230 bytes
+        riscv_sqrt_q31                         206 bytes
+------------------------------------------------------------

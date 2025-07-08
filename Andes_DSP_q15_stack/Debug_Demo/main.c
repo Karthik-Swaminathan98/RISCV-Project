@@ -12,10 +12,15 @@
 #define M 8                 // Log2(N), since N = 256, M = 8
 #define M_PI 3.14159265358979323846
 #define Q15_SCALE (32768)   // Scaling factor for Q15 format
-#define STACK_SIZE 0x1000   // 4096 bytes stack size
 
-extern uint32_t _STACK_TOP;
-uint32_t __StackLimit;
+// Define stack-related parameters
+const uint32_t stack_top = 0x000A0000;       // Explicitly defined stack top
+const uint32_t stack_limit = 0x0009F000;    // Explicitly defined stack limit
+const uint32_t STACK_SIZE = 4096;           // Explicitly defined stack size (bytes)
+
+// Global variables for stack tracking
+//uint32_t stack_top = STACK_TOP;
+//uint32_t stack_limit = STACK_LIMIT;
 
 q15_t input[2 * N];
 q15_t magnitude[N];
@@ -25,7 +30,7 @@ float32_t frequency_bin[N];
 void fill_stack_pattern_to_sp() {
     uint32_t *sp;
     __asm__ volatile ("mv %0, sp" : "=r" (sp));
-    uint32_t *p = (uint32_t*)__StackLimit;
+    uint32_t *p = (uint32_t*)stack_limit;
     while (p < sp) {
         *p++ = 0xAAAAAAAA;
     }
@@ -35,7 +40,7 @@ void fill_stack_pattern_to_sp() {
 uint32_t measure_stack_usage() {
     uint32_t *sp;
     __asm__ volatile ("mv %0, sp" : "=r" (sp));
-    uint32_t *p = (uint32_t*)__StackLimit;
+    uint32_t *p = (uint32_t*)stack_limit;
     while (p < sp) {
         if (*p != 0xAAAAAAAA) break;
         p++;
@@ -62,10 +67,7 @@ int main(void) {
     CLOCK_INIT;
     user_init();
 
-    uint32_t stack_top = (uint32_t)&_STACK_TOP;
-    __StackLimit = stack_top - STACK_SIZE;
-
-    if (__StackLimit >= stack_top) {
+    if (stack_limit >= stack_top) {
         printf("Error: Invalid stack limit.\n");
         return -1;
     }
@@ -108,10 +110,9 @@ int main(void) {
     printf("Cycle Count for riscv_dsp_cfft_q15(): %lu\n\r", cycle_count);
     printf("Instruction Count for riscv_dsp_cfft_q15(): %lu\n\r", inst_count);
     printf("Stack Usage: %lu bytes\n\r", stack_usage);
-    uint32_t stack_size = stack_top - __StackLimit;
     printf("Stack Top:    0x%08lX\n\r", stack_top);
-    printf("Stack Limit:  0x%08lX\n\r", __StackLimit);
-    printf("Stack Size:   %lu bytes\n\r", stack_size);
+    printf("Stack Limit:  0x%08lX\n\r", stack_limit);
+    printf("Stack Size:   %lu bytes\n\r", STACK_SIZE);
 
     return 0;
 }

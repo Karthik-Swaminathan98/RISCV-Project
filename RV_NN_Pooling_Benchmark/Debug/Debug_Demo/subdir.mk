@@ -7,19 +7,22 @@ C_SRCS += \
 ../Debug_Demo/app.c \
 ../Debug_Demo/main.c \
 ../Debug_Demo/test_riscv_avgpool_s16.c \
-../Debug_Demo/test_riscv_avgpool_s8.c 
+../Debug_Demo/test_riscv_avgpool_s8.c \
+../Debug_Demo/utility.c 
 
 OBJS += \
 ./Debug_Demo/app.o \
 ./Debug_Demo/main.o \
 ./Debug_Demo/test_riscv_avgpool_s16.o \
-./Debug_Demo/test_riscv_avgpool_s8.o 
+./Debug_Demo/test_riscv_avgpool_s8.o \
+./Debug_Demo/utility.o 
 
 C_DEPS += \
 ./Debug_Demo/app.d \
 ./Debug_Demo/main.d \
 ./Debug_Demo/test_riscv_avgpool_s16.d \
-./Debug_Demo/test_riscv_avgpool_s8.d 
+./Debug_Demo/test_riscv_avgpool_s8.d \
+./Debug_Demo/utility.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

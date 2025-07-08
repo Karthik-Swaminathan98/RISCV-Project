@@ -1,15 +1,4 @@
-#include "app_config.h"
-#include "core.h"
-#include <math.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h> // For memcpy
-#include "riscv_math.h"
-#include "riscv_nnfunctions.h"
-
-#include "validate.h"
-
+#include "main.h"
 
 void transpose_default_riscv_transpose_s8();
 void transpose_3dim2_riscv_transpose_s8();
@@ -18,18 +7,24 @@ void transpose_conv_1_riscv_transpose_conv_s8();
 void transpose_conv_2_riscv_transpose_conv_s8();
 void transpose_conv_3_riscv_transpose_conv_s8();
 
-
-extern void user_init(void);
+uint32_t clkFastfreq = 0;;
 
 int main(void) {
     PLATFORM_INIT;
     CLOCK_INIT;
     user_init();
     delay_ms(20);
+    core_interrupt_disable();
 
-	printf("\n\r");
+    // Get the clock frequency
+    clkFastfreq = get_clk_fast_freq();
+
+    printf("\n\r");
     printf("-----Starting NMSIS-Transpose Functions benchmark-----\n\r");
     printf("\n\r");
+    printf("CPU Clock Frequency: %lu Hz\n\r", clkFastfreq);
+    printf("\n\r");
+
     printf("*****riscv Transpose S8*****\n\r");
     transpose_default_riscv_transpose_s8();
     transpose_3dim2_riscv_transpose_s8();

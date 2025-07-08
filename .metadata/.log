@@ -10145,3 +10145,1776 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.ui 2 2 2025-06-21 08:10:28.284
 !MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+!SESSION 2025-06-22 12:10:42.656 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-06-22 12:10:46.838
+!MESSAGE Both 'com.andestech.ide.ldsag' and 'com.andestech.ide.ldsag.xtext' register a package for 'http:///ide.andestech.com.ldsag/ldsag.ecore'
+
+!ENTRY org.eclipse.ui 2 2 2025-06-22 12:10:48.982
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.binutils, page: org.eclipse.linuxtools.binutils.preferences)
+
+!ENTRY org.eclipse.ui 2 2 2025-06-22 12:10:48.987
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 13:28:59.432
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-06-22 13:29:49.945
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:29:50.771
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:29:50.772
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:29:50.773
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:29:50.774
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 13:30:04.556
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 13:30:15.072
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-06-22 13:30:20.920
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:30:21.294
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:30:21.295
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:30:21.296
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-22 13:30:21.296
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 13:30:52.590
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 13:30:52.593
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 13:30:52.594
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 13:30:52.717
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-22 15:40:52.311
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-06-23 09:29:17.555
+!MESSAGE 14:55:52.498 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-23 09:31:25.850
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-06-23 09:31:46.704
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-23 09:31:47.603
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-23 09:31:47.604
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-23 09:31:47.605
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-23 09:31:47.605
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-23 09:32:34.844
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-23 09:32:34.846
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-23 09:32:34.847
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-23 09:32:34.974
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-23 11:28:45.790
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-06-24 15:25:12.438
+!MESSAGE 11:13:23.020 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 15:36:04.740
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-06-24 15:36:21.192
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-24 15:36:21.794
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-24 15:36:21.796
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-24 15:36:21.797
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-06-24 15:36:21.799
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 15:36:51.349
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 15:36:51.351
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 15:36:51.352
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 15:36:51.578
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-06-24 15:36:56.700
+!MESSAGE Connect to telent hostName:localhost, port:9,901 is failed.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-06-24 15:36:56.702
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:92)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 15:36:56.712
+!MESSAGE telnetClient.connect:  ISCN5CG3441T16/192.168.0.30 : 9,901
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 15:51:26.360
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-06-24 15:54:38.777
+!MESSAGE 15:51:25.961 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 16:00:12.795
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 16:15:20.880
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 16:15:20.882
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 16:15:20.883
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 16:15:21.148
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-06-24 16:46:57.917
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-06-28 09:51:22.844
+!MESSAGE 16:46:54.124 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY org.eclipse.ui 4 0 2025-06-28 09:51:36.383
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.andestech.ide.flash.ui.wizards.FlashDriverWizardDialog.setBurnerWizardOpened(FlashDriverWizardDialog.java:81)
+	at com.andestech.ide.flash.ui.wizards.FlashDriverWizardDialog.close(FlashDriverWizardDialog.java:73)
+	at org.eclipse.jface.wizard.WizardDialog.cancelPressed(WizardDialog.java:468)
+	at org.eclipse.jface.wizard.WizardDialog$1.widgetSelected(WizardDialog.java:321)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at com.andestech.ide.flash.ui.wizards.FlashDriverWizardDialog.open(FlashDriverWizardDialog.java:68)
+	at com.andestech.ide.flash.driver.ui.rse.commands.FlashBurnHandler.execute(FlashBurnHandler.java:265)
+	at com.andestech.ide.flash.driver.ui.rse.commands.FlashBurnHandler.execute(FlashBurnHandler.java:127)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:295)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:799)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:675)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:659)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:592)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.andestech.ide.deploy.AndesApplication.start(AndesApplication.java:86)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SESSION 2025-07-01 14:19:33.261 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-07-01 14:19:40.416
+!MESSAGE Both 'com.andestech.ide.ldsag' and 'com.andestech.ide.ldsag.xtext' register a package for 'http:///ide.andestech.com.ldsag/ldsag.ecore'
+
+!ENTRY org.eclipse.ui 2 2 2025-07-01 14:19:43.838
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.binutils, page: org.eclipse.linuxtools.binutils.preferences)
+
+!ENTRY org.eclipse.ui 2 2 2025-07-01 14:19:43.854
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+!SESSION 2025-07-02 11:04:06.777 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-07-02 11:04:14.570
+!MESSAGE Both 'com.andestech.ide.ldsag' and 'com.andestech.ide.ldsag.xtext' register a package for 'http:///ide.andestech.com.ldsag/ldsag.ecore'
+
+!ENTRY org.eclipse.ui 2 2 2025-07-02 11:04:18.216
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.binutils, page: org.eclipse.linuxtools.binutils.preferences)
+
+!ENTRY org.eclipse.ui 2 2 2025-07-02 11:04:18.227
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 11:50:48.069
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-02 11:54:01.682
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 11:54:02.821
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 11:54:02.834
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 11:54:02.850
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 11:54:02.866
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 11:54:42.848
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 11:54:42.857
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 11:54:42.862
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 11:54:43.747
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-02 11:54:49.964
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-02 11:54:49.971
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 12:00:49.376
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 12:05:45.289
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-02 12:06:15.309
+!MESSAGE 12:00:48.698 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-02 12:09:55.202
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 12:09:56.813
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 12:09:56.821
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 12:09:56.829
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-02 12:09:56.835
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 12:10:20.503
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 12:10:20.505
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 12:10:20.506
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 12:10:20.841
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-02 13:38:15.718
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-02 15:16:31.206
+!MESSAGE 13:38:13.267 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-02 16:13:21.764
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (38 sources, 131 headers) in 3.5 sec: 9,991 declarations; 25,463 references; 4 unresolved inclusions; 1 syntax errors; 4 unresolved names (0.011%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-02 16:14:44.910
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (38 sources, 178 headers) in 2.73 sec: 16,066 declarations; 34,974 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+!SESSION 2025-07-04 13:39:57.415 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-07-04 13:40:13.453
+!MESSAGE Both 'com.andestech.ide.ldsag' and 'com.andestech.ide.ldsag.xtext' register a package for 'http:///ide.andestech.com.ldsag/ldsag.ecore'
+
+!ENTRY org.eclipse.ui 2 2 2025-07-04 13:40:20.928
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.binutils, page: org.eclipse.linuxtools.binutils.preferences)
+
+!ENTRY org.eclipse.ui 2 2 2025-07-04 13:40:20.985
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:17:08.944
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-04 14:17:39.512
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 14:17:40.214
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 14:17:40.216
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 14:17:40.218
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 14:17:40.219
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:18:20.074
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:18:20.077
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:18:20.078
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:18:20.354
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-04 14:31:10.668
+!MESSAGE 14:31:05.576 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:45:47.760
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:45:47.762
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:45:47.763
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 14:45:48.083
+!MESSAGE After exec ICEman.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-04 14:48:21.772
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 133 headers) in 10.6 sec: 9,995 declarations; 25,413 references; 2 unresolved inclusions; 1 syntax errors; 4 unresolved names (0.011%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-04 15:00:17.322
+!MESSAGE Indexed 'Hello_World' (36 sources, 121 headers) in 8.01 sec: 9,091 declarations; 24,335 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-04 15:16:12.610
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 6.35 sec: 16,070 declarations; 34,923 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-04 16:03:22.037
+!MESSAGE 16:03:04.062 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 17:00:43.991
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-04 17:39:03.248
+!MESSAGE Indexed 'RV_NN_Transpose_Benchmark' (38 sources, 214 headers) in 2.46 sec: 16,165 declarations; 35,577 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 17:51:11.108
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-04 17:51:14.164
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 17:51:15.272
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 17:51:15.279
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 17:51:15.284
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-04 17:51:15.290
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 17:51:34.841
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 17:51:34.845
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 17:51:34.848
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 17:51:35.317
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-04 17:51:41.471
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-04 17:51:41.477
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 17:58:26.871
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-04 22:28:08.289
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-04 22:28:53.999
+!MESSAGE 17:58:22.334 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+!SESSION 2025-07-05 09:41:27.732 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-07-05 09:41:51.544
+!MESSAGE Both 'com.andestech.ide.ldsag' and 'com.andestech.ide.ldsag.xtext' register a package for 'http:///ide.andestech.com.ldsag/ldsag.ecore'
+
+!ENTRY org.eclipse.ui 2 2 2025-07-05 09:41:59.112
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.binutils, page: org.eclipse.linuxtools.binutils.preferences)
+
+!ENTRY org.eclipse.ui 2 2 2025-07-05 09:41:59.138
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 10:19:57.192
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 9.22 sec: 16,070 declarations; 34,921 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 10:20:22.447
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 4.38 sec: 16,070 declarations; 34,921 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 10:27:33.327
+!MESSAGE Indexed 'RV_NN_Convolution_Benchmark' (41 sources, 323 headers) in 3.26 sec: 16,475 declarations; 36,976 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 10:32:10.670
+!MESSAGE Indexed 'RV_NN_fully_connected_Benchmark' (39 sources, 247 headers) in 3.04 sec: 16,257 declarations; 35,744 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0038%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:36:56.544
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY org.eclipse.ui 4 0 2025-07-05 10:36:56.550
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at com.andestech.ide.tm.diagnosis.handlers.DiagnosisHandler.execute(DiagnosisHandler.java:67)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:295)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:799)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:675)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:659)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:592)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.andestech.ide.deploy.AndesApplication.start(AndesApplication.java:86)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: java.lang.NullPointerException
+	at com.andestech.ide.tm.rse.model.impl.IceUsbDeviceDetectService.getIceDevice(IceUsbDeviceDetectService.java:215)
+	at com.andestech.ide.tm.rse.model.impl.IceUsbDeviceDetectService.updateIceDropMenu(IceUsbDeviceDetectService.java:117)
+	at com.andestech.ide.tm.diagnosis.DiagnosisAddressDialog.updateIceSettingsUI(DiagnosisAddressDialog.java:255)
+	at com.andestech.ide.tm.rse.TmPlugin$1$1.run(TmPlugin.java:296)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 49 more
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-05 10:36:58.299
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 10:36:59.225
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 10:36:59.228
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 10:36:59.229
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 10:36:59.232
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:37:30.753
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:37:30.769
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:37:30.775
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:37:31.868
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 10:37:38.081
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 10:37:38.084
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 10:55:23.724
+!MESSAGE 10:55:18.350 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:57:27.719
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:57:27.720
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:57:27.722
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 10:57:28.033
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 10:57:34.174
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 10:57:34.181
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 11:01:06.485
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 6.76 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 11:01:50.554
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 7.9 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 11:41:09.770
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 2.1 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 12:40:49.432
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 2.59 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 12:44:48.873
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 2.74 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 12:48:36.750
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 12:48:44.054
+!MESSAGE 12:48:32.279 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 13:27:43.445
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 1.59 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 13:28:04.916
+!MESSAGE Indexed 'RV_NN_Activation_Benchmark' (39 sources, 179 headers) in 1.6 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 13:29:56.417
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-05 13:30:11.717
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 13:30:12.350
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 13:30:12.352
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 13:30:12.354
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 13:30:12.357
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 13:30:59.766
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 13:30:59.768
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 13:30:59.769
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 13:31:00.135
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 13:31:04.224
+!MESSAGE Connect to telent hostName:localhost, port:9,901 is failed.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 13:31:04.228
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:92)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 13:31:04.760
+!MESSAGE telnetClient.connect:  ISCN5CG3441T16/192.168.0.213 : 9,901
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 13:33:12.876
+!MESSAGE Indexed 'RV_NN_Convolution_Benchmark' (41 sources, 323 headers) in 2.72 sec: 16,475 declarations; 36,976 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 13:35:48.704
+!MESSAGE Indexed 'RV_NN_Convolution_Benchmark' (41 sources, 323 headers) in 2.6 sec: 16,475 declarations; 36,976 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 13:51:49.765
+!MESSAGE Indexed 'RV_NN_Convolution_Benchmark' (41 sources, 323 headers) in 2.73 sec: 16,475 declarations; 36,978 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 13:56:23.955
+!MESSAGE Indexed 'RV_NN_Convolution_Benchmark' (41 sources, 323 headers) in 3.21 sec: 16,475 declarations; 36,978 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 14:00:28.449
+!MESSAGE 13:59:58.912 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-05 14:00:33.363
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 14:00:34.128
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 14:00:34.131
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 14:00:34.134
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-05 14:00:34.136
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 14:01:00.751
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 14:01:00.754
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 14:01:00.757
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 14:01:01.087
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 14:16:32.473
+!MESSAGE 14:02:05.378 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 14:23:37.456
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 15:51:25.990
+!MESSAGE Indexed 'RV_NN_Convolution_Benchmark' (41 sources, 323 headers) in 2.06 sec: 16,475 declarations; 36,978 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 15:53:07.088
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 15:53:14.345
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 15:53:14.353
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 15:53:14.358
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 15:53:14.969
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 15:53:20.088
+!MESSAGE Connect to telent hostName:localhost, port:9,901 is failed.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 15:53:20.093
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:92)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 15:53:20.624
+!MESSAGE telnetClient.connect:  ISCN5CG3441T16/192.168.0.213 : 9,901
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 16:02:29.894
+!MESSAGE Indexed 'RV_NN_fully_connected_Benchmark' (39 sources, 247 headers) in 3.76 sec: 16,257 declarations; 35,746 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0038%)
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 16:19:40.695
+!MESSAGE 16:12:20.078 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 16:49:18.781
+!MESSAGE Indexed 'RV_NN_Pooling_Benchmark' (39 sources, 203 headers) in 4.76 sec: 16,161 declarations; 35,587 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 16:52:53.105
+!MESSAGE Indexed 'RV_NN_Softmax_Benchmark' (40 sources, 193 headers) in 4.66 sec: 16,121 declarations; 35,041 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:55:18.572
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:55:18.574
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:55:18.575
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:55:18.908
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 16:55:22.978
+!MESSAGE Connect to telent hostName:localhost, port:9,901 is failed.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 16:55:22.983
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:92)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:55:24.027
+!MESSAGE telnetClient.connect:  ISCN5CG3441T16/192.168.0.213 : 9,901
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 16:57:47.000
+!MESSAGE 16:57:21.227 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:59:30.454
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:59:30.457
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:59:30.459
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:59:30.849
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 16:59:35.462
+!MESSAGE Connect to telent hostName:localhost, port:9,901 is failed.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 16:59:35.467
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:92)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 16:59:36.006
+!MESSAGE telnetClient.connect:  ISCN5CG3441T16/192.168.0.213 : 9,901
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 17:01:40.559
+!MESSAGE 17:01:01.272 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 17:02:17.095
+!MESSAGE Indexed 'RV_NN_Pooling_Benchmark' (39 sources, 203 headers) in 4.58 sec: 16,161 declarations; 35,587 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:04:53.721
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:04:53.723
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:04:53.724
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:04:53.967
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 17:04:58.017
+!MESSAGE Connect to telent hostName:localhost, port:9,901 is failed.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-05 17:04:58.018
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:92)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:72)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:144)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:04:58.530
+!MESSAGE telnetClient.connect:  ISCN5CG3441T16/192.168.0.213 : 9,901
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 17:08:47.970
+!MESSAGE Indexed 'RV_NN_Pooling_Benchmark' (39 sources, 203 headers) in 3.52 sec: 16,161 declarations; 35,587 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 17:11:23.005
+!MESSAGE 17:11:19.483 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 17:16:46.686
+!MESSAGE Indexed 'RV_NN_Softmax_Benchmark' (40 sources, 193 headers) in 1.84 sec: 16,121 declarations; 35,041 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 17:17:06.686
+!MESSAGE Indexed 'RV_NN_Softmax_Benchmark' (40 sources, 193 headers) in 1.96 sec: 16,121 declarations; 35,041 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:20:22.633
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:20:22.637
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:20:22.640
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 17:20:22.903
+!MESSAGE After exec ICEman.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 17:27:01.863
+!MESSAGE Indexed 'RV_NN_Transpose_Benchmark' (39 sources, 215 headers) in 5.71 sec: 16,204 declarations; 35,609 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-05 17:30:25.080
+!MESSAGE Indexed 'RV_NN_Transpose_Benchmark' (39 sources, 215 headers) in 2.76 sec: 16,204 declarations; 35,609 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-05 21:53:39.326
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-05 22:06:32.270
+!MESSAGE 18:22:59.403 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: AICE ERROR! AICE is unplugged.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+!SESSION 2025-07-07 21:31:44.127 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-07-07 21:31:51.588
+!MESSAGE Both 'com.andestech.ide.ldsag' and 'com.andestech.ide.ldsag.xtext' register a package for 'http:///ide.andestech.com.ldsag/ldsag.ecore'
+
+!ENTRY org.eclipse.ui 2 2 2025-07-07 21:31:55.298
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.binutils, page: org.eclipse.linuxtools.binutils.preferences)
+
+!ENTRY org.eclipse.ui 2 2 2025-07-07 21:31:55.313
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-07 21:36:51.857
+!MESSAGE Indexed 'Andes_DSP_FFT_benchmark' (36 sources, 134 headers) in 5.66 sec: 10,130 declarations; 25,514 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+!SESSION 2025-07-08 09:18:58.477 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-07-08 09:19:06.796
+!MESSAGE Both 'com.andestech.ide.ldsag' and 'com.andestech.ide.ldsag.xtext' register a package for 'http:///ide.andestech.com.ldsag/ldsag.ecore'
+
+!ENTRY org.eclipse.ui 2 2 2025-07-08 09:19:10.576
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.binutils, page: org.eclipse.linuxtools.binutils.preferences)
+
+!ENTRY org.eclipse.ui 2 2 2025-07-08 09:19:10.589
+!MESSAGE Invalid preference category path: org.eclipse.linuxtools.profiling.provider.MainPreferencePage (bundle: org.eclipse.linuxtools.gcov.core, page: org.eclipse.linuxtools.gcov.core.preferences.colors)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 09:19:17.532
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-08 09:20:02.313
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 09:20:03.242
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 09:20:03.244
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 09:20:03.247
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 09:20:03.249
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 09:20:51.852
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 09:20:51.854
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 09:20:51.855
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 09:20:52.031
+!MESSAGE After exec ICEman.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 09:32:36.776
+!MESSAGE Indexed 'Andes_DSP_FFT_benchmark' (39 sources, 135 headers) in 4.75 sec: 10,219 declarations; 25,762 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 09:34:01.264
+!MESSAGE Indexed 'Andes_DSP_FFT_benchmark' (39 sources, 135 headers) in 2.03 sec: 10,219 declarations; 25,762 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 09:34:19.729
+!MESSAGE Indexed 'Andes_DSP_FFT_benchmark' (39 sources, 135 headers) in 1.5 sec: 10,219 declarations; 25,762 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 09:46:32.023
+!MESSAGE Indexed 'Andes_DSP_Mag_benchmark' (39 sources, 135 headers) in 1.44 sec: 10,219 declarations; 25,762 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.make.core 4 0 2025-07-08 10:09:46.127
+!MESSAGE NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.make.internal.core.BuildInfoFactory$BuildInfoProject.<init>(BuildInfoFactory.java:508)
+	at org.eclipse.cdt.make.internal.core.BuildInfoFactory.create(BuildInfoFactory.java:594)
+	at org.eclipse.cdt.make.core.MakeCorePlugin.createBuildInfo(MakeCorePlugin.java:156)
+	at org.eclipse.cdt.make.core.MakeBuilderUtil.getBuildDirectoryURI(MakeBuilderUtil.java:79)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.DefaultRunSIProvider.initialize(DefaultRunSIProvider.java:181)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.GCCSpecsRunSIProvider.initialize(GCCSpecsRunSIProvider.java:34)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.DefaultRunSIProvider.invokeProvider(DefaultRunSIProvider.java:107)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.jobs.CfgSCJobsUtil$1.run(CfgSCJobsUtil.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.jobs.CfgSCJobsUtil.getProviderScannerInfo(CfgSCJobsUtil.java:105)
+	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:206)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.loadPathInfo(CfgDiscoveredPathManager.java:298)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.getDiscoveredInfo(CfgDiscoveredPathManager.java:177)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ProfileInfoProvider.getEntryValues(ProfileInfoProvider.java:65)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildEntryStorage.getDiscoveredEntries(BuildEntryStorage.java:200)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildEntryStorage.putEntriesToLevel(BuildEntryStorage.java:190)
+	at org.eclipse.cdt.core.settings.model.util.AbstractEntryStorage.initCache(AbstractEntryStorage.java:71)
+	at org.eclipse.cdt.core.settings.model.util.AbstractEntryStorage.getEntries(AbstractEntryStorage.java:34)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildLanguageData.getEntries(BuildLanguageData.java:161)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.getEntriesToCopy(CDefaultLanguageData.java:101)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.createStore(CDefaultLanguageData.java:92)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.copySettingsFrom(CDefaultLanguageData.java:85)
+	at org.eclipse.cdt.internal.core.settings.model.CLanguageSettingCache.copySettingsFrom(CLanguageSettingCache.java:47)
+	at org.eclipse.cdt.internal.core.settings.model.CLanguageSettingCache.<init>(CLanguageSettingCache.java:36)
+	at org.eclipse.cdt.internal.core.settings.model.CFolderDescriptionCache.copyLanguageData(CFolderDescriptionCache.java:79)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultFolderData.copyDataFrom(CDefaultFolderData.java:56)
+	at org.eclipse.cdt.internal.core.settings.model.CFolderDescriptionCache.<init>(CFolderDescriptionCache.java:38)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.copyFolderData(CConfigurationDescriptionCache.java:235)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultConfigurationData.copySettingsFrom(CDefaultConfigurationData.java:113)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:150)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager.loadSettings(RefreshScopeManager.java:509)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1$1.visit(RefreshScopeManager.java:153)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1.resourceChanged(RefreshScopeManager.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:196)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:516)
+	at org.eclipse.ui.actions.CopyProjectOperation$1.run(CopyProjectOperation.java:166)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 10:09:48.300
+!MESSAGE Indexed 'NMSIS_DSP_FFT_benchmark' (39 sources, 135 headers) in 1.38 sec: 10,219 declarations; 25,762 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-08 10:29:39.763
+!MESSAGE 10:29:34.592 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 10:31:40.608
+!MESSAGE Indexed 'NMSIS_DSP_FFT_benchmark' (39 sources, 125 headers) in 1.4 sec: 12,230 declarations; 27,556 references; 26 unresolved inclusions; 860 syntax errors; 1,858 unresolved names (4.5%)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:32:58.099
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:32:58.101
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:32:58.102
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:32:58.306
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 1 2025-07-08 10:34:44.535
+!MESSAGE 10:34:28.362 ICE-ICE Error on Target [ADP-AE350-D25F-EAGLE-0106]
+!STACK 0
+java.lang.Exception: TARGET ERROR! Target is disconnected with AICE.
+
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessStatus.<init>(TargetProcessStatus.java:24)
+	at com.andestech.ide.tm.rse.model.impl.TargetProcessInfo.setErrorMessage(TargetProcessInfo.java:190)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.parseLine(ProcessConsole.java:210)
+	at com.andestech.ide.tm.rse.local.console.IceProcessConsole.parseLine(IceProcessConsole.java:63)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.writeLine(ProcessConsole.java:260)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole.access$1(ProcessConsole.java:250)
+	at com.andestech.ide.tm.rse.local.console.ProcessConsole$1.run(ProcessConsole.java:73)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:15.524
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:15.526
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:15.527
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:15.697
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:35:22.846
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:35:22.848
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:146)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:39.230
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:39.232
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:39.233
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:35:39.401
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:35:46.524
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:35:46.526
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:146)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-08 10:36:00.110
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:00.341
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:00.343
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:00.344
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:00.345
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:14.011
+!MESSAGE ICE Diagnostic has encountered a problem. assertion "number != GDB_REGNO_S0" failed: file "/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/openocd-0.10.0/src/target/riscv/riscv-013.c", line 1474, function: register_read_direct
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:36:33.287
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:36:38.804
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY org.eclipse.ui 4 0 2025-07-08 10:36:38.809
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at com.andestech.ide.tm.diagnosis.handlers.DiagnosisHandler.execute(DiagnosisHandler.java:67)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:295)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:799)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:675)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:659)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:592)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.andestech.ide.deploy.AndesApplication.start(AndesApplication.java:86)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: java.lang.NullPointerException
+	at com.andestech.ide.tm.rse.model.impl.IceUsbDeviceDetectService.getIceDevice(IceUsbDeviceDetectService.java:215)
+	at com.andestech.ide.tm.rse.model.impl.IceUsbDeviceDetectService.updateIceDropMenu(IceUsbDeviceDetectService.java:117)
+	at com.andestech.ide.tm.diagnosis.DiagnosisAddressDialog.updateIceSettingsUI(DiagnosisAddressDialog.java:255)
+	at com.andestech.ide.tm.rse.TmPlugin$1$1.run(TmPlugin.java:296)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 49 more
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-08 10:36:39.208
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:39.869
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:39.871
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:39.873
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:36:39.874
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:05.878
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:05.880
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:05.881
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:06.048
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:37:13.176
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:37:13.177
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:146)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:34.800
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:34.802
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:34.803
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:37:34.973
+!MESSAGE After exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:37:42.104
+!MESSAGE Failed to connect to the telnet port.
+
+!ENTRY com.andestech.ide.tm.rse 4 4 2025-07-08 10:37:42.105
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.andestech.ide.tm.rse.OpenOCDTelnetClient.<init>(OpenOCDTelnetClient.java:102)
+	at com.andestech.ide.tm.rse.model.impl.IceTargetProcessInfo.<init>(IceTargetProcessInfo.java:146)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.forkIce(LocalTargetResourceService.java:309)
+	at com.andestech.ide.tm.rse.local.LocalTargetResourceService.connectICE(LocalTargetResourceService.java:322)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.connectICE(RseFlashDriverRunnable.java:151)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.start(RseFlashDriverRunnable.java:52)
+	at com.andestech.ide.flash.driver.ui.FlashDriverRunnable.run(FlashDriverRunnable.java:29)
+	at com.andestech.ide.flash.driver.ui.rse.RseFlashDriverRunnable.run(RseFlashDriverRunnable.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-08 10:37:52.777
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:37:53.391
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:37:53.391
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:37:53.392
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:37:53.393
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:38:07.004
+!MESSAGE ICE Diagnostic has encountered a problem. assertion "number != GDB_REGNO_S0" failed: file "/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/openocd-0.10.0/src/target/riscv/riscv-013.c", line 1474, function: register_read_direct
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:38:18.952
+!MESSAGE connectDevice...false, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:38:24.464
+!MESSAGE connectDevice...true, IceDevice [vid=7420, pid=1, name=, argumentMap=null]
+
+!ENTRY com.andestech.ide.tm.diagnosis 1 -1 2025-07-08 10:38:36.533
+!MESSAGE [C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe, -Z, v5, -I, aice-mini-plus.cfg, --diagnosis]
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:38:37.158
+!MESSAGE ICE Diagnostic has encountered a problem. Open On-Chip Debugger 0.10.0+dev-g01d57cb (2020-09-04-11:32)
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:38:37.160
+!MESSAGE ICE Diagnostic has encountered a problem. Licensed under GNU GPL v2
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:38:37.161
+!MESSAGE ICE Diagnostic has encountered a problem. For bug reports, read
+
+!ENTRY com.andestech.ide.tm.diagnosis 4 4 2025-07-08 10:38:37.161
+!MESSAGE ICE Diagnostic has encountered a problem. 	http://openocd.org/doc/doxygen/bugs.html
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:38:52.834
+!MESSAGE Fork ICEman command:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice\ICEman.exe --bport=9900 --tport=9901 --port=9902:49151 -Z v5 -I aice-mini-plus.cfg -f "/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/_ICEman_/" 
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:38:52.836
+!MESSAGE Fork ICEman Working Directory:C:\Users\SwaminathanK\Downloads\Telink_IDE\ice
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:38:52.837
+!MESSAGE Before exec ICEman.
+
+!ENTRY com.andestech.ide.tm.rse 1 -1 2025-07-08 10:38:53.007
+!MESSAGE After exec ICEman.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 10:42:48.904
+!MESSAGE Indexed 'NMSIS_DSP_FFT_benchmark' (39 sources, 175 headers) in 1.7 sec: 14,831 declarations; 33,888 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 10:45:49.023
+!MESSAGE Indexed 'NMSIS_DSP_FFT_Benchmark' (39 sources, 179 headers) in 1.76 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 10:46:50.742
+!MESSAGE Indexed 'NMSIS_DSP_FFT_Benchmark' (39 sources, 179 headers) in 1.65 sec: 16,070 declarations; 34,925 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-07-08 11:31:46.603
+!MESSAGE Indexed 'NMSIS_DSP_Mag_Benchmark' (39 sources, 176 headers) in 1.9 sec: 14,856 declarations; 33,947 references; 0 unresolved inclusions; 1 syntax errors; 5 unresolved names (0.01%)

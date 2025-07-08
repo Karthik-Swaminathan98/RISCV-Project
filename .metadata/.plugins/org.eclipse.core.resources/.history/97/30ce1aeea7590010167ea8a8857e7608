@@ -1,0 +1,39 @@
+#include "main.h"
+
+// Function declarations from other modules
+void relu6_riscv_relu6_s8(void);
+void activ_riscv_nn_activation_s16(void);
+
+uint32_t clkFastfreq = 0;
+
+int main(void) {
+    PLATFORM_INIT;
+    CLOCK_INIT;
+    user_init();
+    delay_ms(20);
+    core_interrupt_disable();
+
+    // Get the clock frequency
+    clkFastfreq = get_clk_fast_freq();
+
+    printf("\n\r");
+    printf("-----Starting NMSIS-Activation Functions benchmark-----\n\r");
+    printf("\n\r");
+    //printf("CPU Clock Frequency: %lu Hz\n\r", clkFastfreq);
+    printf("\n\r");
+
+    // Run the benchmarks for relu6_s8
+    printf("***** RISCV RELU S8 *****\n\r");
+    relu6_riscv_relu6_s8();
+
+    // Run the benchmarks for NN activation s16
+    printf("\n\r");
+    printf("***** RISCV RELU S16 *****\n\r");
+    activ_riscv_nn_activation_s16();
+
+    printf("All tests are passed.\n\r");
+    delay_ms(20);
+    printf("Finish Activation Functions benchmark\n\r");
+    delay_ms(20);
+    return 0;
+}

@@ -1,19 +1,9 @@
-12:43:40 **** Build of configuration Debug for project Andes_DSP_q15_stack ****
+14:29:19 **** Incremental Build of configuration Debug for project Andes_DSP_q15_stack ****
 make all 
-Building file: ../Debug_Demo/app.c
-Invoking: Andes C Compiler
-riscv32-elf-gcc -DMCU_STARTUP_FLASH=1 -DMCU_CORE_B91=1 -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/drivers" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/drivers/reg_include" -I"/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/Andes DSP/include" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common/flash" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common/calibration" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/common" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common" -I"/cygdrive/C/Users/SwaminathanK/Downloads/Telink_IDE/ide//RDS/V3.2.3/toolchains/nds32le-elf-mculib-v5f/lib/gcc/riscv32-elf/7.4.0/include" -I"/cygdrive/C/Users/SwaminathanK/Downloads/Telink_IDE/ide//RDS/V3.2.3/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/include" -Og -mcmodel=medium -g3 -Wall -mcpu=d25f -mext-dsp -mext-dsp -mabi=ilp32f  -c -fmessage-length=0  -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -std=c99 -fpack-struct -fshort-enums -fno-jump-tables -mcmodel=medium -Wno-nonnull-compare -Wall -Wextra -Wshadow -Werror -MMD -MP -MF"Debug_Demo/app.d" -MT"Debug_Demo/app.d Debug_Demo/app.o" -o "Debug_Demo/app.o" "../Debug_Demo/app.c"
-Finished building: ../Debug_Demo/app.c
- 
 Building file: ../Debug_Demo/main.c
 Invoking: Andes C Compiler
 riscv32-elf-gcc -DMCU_STARTUP_FLASH=1 -DMCU_CORE_B91=1 -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/drivers" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/drivers/reg_include" -I"/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/Andes DSP/include" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common/flash" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common/calibration" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/common" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common" -I"/cygdrive/C/Users/SwaminathanK/Downloads/Telink_IDE/ide//RDS/V3.2.3/toolchains/nds32le-elf-mculib-v5f/lib/gcc/riscv32-elf/7.4.0/include" -I"/cygdrive/C/Users/SwaminathanK/Downloads/Telink_IDE/ide//RDS/V3.2.3/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/include" -Og -mcmodel=medium -g3 -Wall -mcpu=d25f -mext-dsp -mext-dsp -mabi=ilp32f  -c -fmessage-length=0  -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -std=c99 -fpack-struct -fshort-enums -fno-jump-tables -mcmodel=medium -Wno-nonnull-compare -Wall -Wextra -Wshadow -Werror -MMD -MP -MF"Debug_Demo/main.d" -MT"Debug_Demo/main.d Debug_Demo/main.o" -o "Debug_Demo/main.o" "../Debug_Demo/main.c"
 Finished building: ../Debug_Demo/main.c
- 
-Building file: ../vendor/common/common.c
-Invoking: Andes C Compiler
-riscv32-elf-gcc -DMCU_STARTUP_FLASH=1 -DMCU_CORE_B91=1 -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/drivers" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/drivers/reg_include" -I"/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/Andes DSP/include" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common/flash" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common/calibration" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/common" -I"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/Andes_DSP_q15_stack/vendor/common" -I"/cygdrive/C/Users/SwaminathanK/Downloads/Telink_IDE/ide//RDS/V3.2.3/toolchains/nds32le-elf-mculib-v5f/lib/gcc/riscv32-elf/7.4.0/include" -I"/cygdrive/C/Users/SwaminathanK/Downloads/Telink_IDE/ide//RDS/V3.2.3/toolchains/nds32le-elf-mculib-v5f/riscv32-elf/include" -Og -mcmodel=medium -g3 -Wall -mcpu=d25f -mext-dsp -mext-dsp -mabi=ilp32f  -c -fmessage-length=0  -fomit-frame-pointer -fno-strict-aliasing -fshort-wchar -fuse-ld=bfd -std=c99 -fpack-struct -fshort-enums -fno-jump-tables -mcmodel=medium -Wno-nonnull-compare -Wall -Wextra -Wshadow -Werror -MMD -MP -MF"vendor/common/common.d" -MT"vendor/common/common.d vendor/common/common.o" -o "vendor/common/common.o" "../vendor/common/common.c"
-Finished building: ../vendor/common/common.c
  
 Building target: Andes_DSP_q15_stack.adx
 Invoking: Andes C Linker
@@ -44,9 +34,9 @@ Finished building: output/Andes_DSP_q15_stack.bin
 Invoking: Size (section size listing)
 riscv32-elf-size  "Andes_DSP_q15_stack.adx" | tee output/.PHONY.size
    text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  69722	  65646	   4076	   1006	   8760	  79488	  13680	Andes_DSP_q15_stack.adx
+  69650	  65602	   4048	   1018	   8760	  79428	  13644	Andes_DSP_q15_stack.adx
 Finished building: output/.PHONY.size
  
 
-12:43:54 Build Finished (took 14s.235ms)
+14:29:41 Build Finished (took 22s.35ms)
 

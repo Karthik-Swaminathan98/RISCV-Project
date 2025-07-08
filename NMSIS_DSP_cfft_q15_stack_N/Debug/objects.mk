@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lm -lnmsis_dsp_rv32imfcp -ldriver -laxon_driver_lib
+LIBS := -lm -lnmsis_dsp_rv32imfc -ldriver -laxon_driver_lib
 

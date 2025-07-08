@@ -87,7 +87,7 @@ void platform_init(power_mode_e power_mode, vbat_type_e vbat_v);
 #define PLATFORM_INIT   platform_init(LDO_1P4_LDO_1P8, VBAT_MAX_VALUE_GREATER_THAN_3V6)
 #endif
 #ifndef CLOCK_INIT
-#define CLOCK_INIT		CCLK_24M_HCLK_24M_PCLK_24M
+#define CLOCK_INIT		CCLK_96M_HCLK_48M_PCLK_24M
 #endif
 #elif(MCU_CORE_B92)
 void platform_init(power_mode_e power_mode, vbat_type_e vbat_v, gpio_voltage_e gpio_v);

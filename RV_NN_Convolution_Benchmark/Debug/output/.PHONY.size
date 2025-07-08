@@ -1,2 +1,2 @@
    text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  43618	  43618	      0	  47838	     64	  91520	  16580	RV_NN_Convolution_Benchmark.adx
+  45958	  45958	      0	  47910	     64	  93932	  16eec	RV_NN_Convolution_Benchmark.adx

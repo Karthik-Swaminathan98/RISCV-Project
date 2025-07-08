@@ -1,0 +1,15 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_dsp_cmag_f32
+    Own size: 248 bytes
+    Total size (with dependencies): 248 bytes
+    [*] Breakdown:
+        riscv_dsp_cmag_f32                     248 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_cmag_q15
+    Own size: 160 bytes
+    Total size (with dependencies): 332 bytes
+    [*] Breakdown:
+        riscv_dsp_sqrt_q15                     172 bytes
+        riscv_dsp_cmag_q15                     160 bytes
+------------------------------------------------------------

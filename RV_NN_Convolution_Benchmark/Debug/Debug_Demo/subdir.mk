@@ -9,7 +9,8 @@ C_SRCS += \
 ../Debug_Demo/test_riscv_convolve_s16.c \
 ../Debug_Demo/test_riscv_convolve_s8.c \
 ../Debug_Demo/test_riscv_depthwise_conv_s16.c \
-../Debug_Demo/test_riscv_depthwise_conv_s8.c 
+../Debug_Demo/test_riscv_depthwise_conv_s8.c \
+../Debug_Demo/utility.c 
 
 OBJS += \
 ./Debug_Demo/app.o \
@@ -17,7 +18,8 @@ OBJS += \
 ./Debug_Demo/test_riscv_convolve_s16.o \
 ./Debug_Demo/test_riscv_convolve_s8.o \
 ./Debug_Demo/test_riscv_depthwise_conv_s16.o \
-./Debug_Demo/test_riscv_depthwise_conv_s8.o 
+./Debug_Demo/test_riscv_depthwise_conv_s8.o \
+./Debug_Demo/utility.o 
 
 C_DEPS += \
 ./Debug_Demo/app.d \
@@ -25,7 +27,8 @@ C_DEPS += \
 ./Debug_Demo/test_riscv_convolve_s16.d \
 ./Debug_Demo/test_riscv_convolve_s8.d \
 ./Debug_Demo/test_riscv_depthwise_conv_s16.d \
-./Debug_Demo/test_riscv_depthwise_conv_s8.d 
+./Debug_Demo/test_riscv_depthwise_conv_s8.d \
+./Debug_Demo/utility.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

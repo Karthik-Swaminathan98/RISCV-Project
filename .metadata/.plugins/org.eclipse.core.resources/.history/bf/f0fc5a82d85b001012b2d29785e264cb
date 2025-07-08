@@ -1,0 +1,34 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include "app_config.h"
+#include "core.h"
+#include "riscv_math.h"
+#include "riscv_nnfunctions.h"
+#include "clock.h"
+#include "validate.h"
+#include "stimer.h"
+
+extern void user_init(void);
+
+// Clock Frequency
+extern uint32_t clkFastfreq;
+
+// Stack Parameters (constants)
+extern const uint32_t stack_top;
+extern const uint32_t stack_limit;
+extern const uint32_t STACK_SIZE;
+
+// Utility Function Declarations
+uint32_t get_clk_fast_freq(void);
+void reset_counters(void);
+void read_perf_counters(unsigned int *cycles, unsigned int *instructions);
+void fill_stack_pattern_to_sp(void);
+uint32_t measure_stack_usage(void);
+
+#endif // MAIN_H

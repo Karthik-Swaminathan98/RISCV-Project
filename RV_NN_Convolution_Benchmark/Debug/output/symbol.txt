@@ -64,284 +64,291 @@
 000013dc t clock_init.constprop.10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../drivers/clock.c:370
 000013f4 t pm_sleep_wakeup.constprop.2	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:790
 0000140c t user_calib_adc_vref.constprop.9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/calibration/calibration.c:32
-00001508 t user_calib_freq_offset.constprop.8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/calibration/calibration.c:120
-00001560 t gpio_input_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../drivers/gpio.c:91
-0000157c t validate.lto_priv.13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:25
-0000157c t validate.lto_priv.14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:25
-000015f4 t validate_s16.lto_priv.15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:50
-000015f4 t validate_s16.lto_priv.16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:50
-0000166c t dw_int16xint8_dilation_riscv_depthwise_conv_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_depthwise_conv_s16.c:228
-00001828 t dw_int16xint8_riscv_depthwise_conv_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_depthwise_conv_s16.c:50
-000019e0 t conv_3x3_dilation_5x5_input_riscv_convolve_s8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_convolve_s8.c:227
-00001b94 t int16xint8_dilation_1_riscv_convolve_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_convolve_s16.c:142
-00001e00 T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/printf.c:101
-00001e48 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/main.c:28
-00002f30 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f30 W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
-00002f32 W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:439
-00002f38 t $x
-00002f38 T riscv_convolve_wrapper_s16
-00002f3c t $x
-00002f3c T riscv_convolve_wrapper_s8
-00003090 t $x
-00003090 T riscv_depthwise_conv_fast_s16_get_buffer_size
-000030a4 t $x
-000030a4 T riscv_depthwise_conv_wrapper_s16_get_buffer_size
-000030e4 t $x
-000030e4 T riscv_convolve_s16
-00003598 t $x
-00003598 T riscv_convolve_wrapper_s16_get_buffer_size
-000035ac t $x
-000035ac T riscv_convolve_1x1_s8_fast
-000038ec t $x
-000038ec T riscv_convolve_s8
-00004064 t $x
-00004064 T riscv_nn_mat_mult_kernel_s8_s16
-00004538 t $x
-00004538 T riscv_convolve_wrapper_s8_get_buffer_size
-000045c8 t $x
-000045c8 T riscv_nn_mat_mult_kernel_s16
-00004ee0 t $x
-00004ee0 T riscv_depthwise_conv_s8_opt_get_buffer_size
-00004ef4 t $x
-00004ef4 T riscv_depthwise_conv_wrapper_s8_get_buffer_size
-00004f48 t $x
-00004f48 T riscv_nn_mat_mult_kernel_row_offset_s8_s16
-0000542c t $x
-0000542c T riscv_convolve_1x1_s8
-00005550 t $x
-00005550 T riscv_depthwise_conv_wrapper_s8
-00005628 t $x
-00005628 T riscv_depthwise_conv_wrapper_s16
-000056bc t $x
-000056bc T riscv_convolve_1_x_n_s8
-00005710 t $x
-00005710 T riscv_nn_mat_mult_nt_t_s8
-00006454 t $x
-00006454 T riscv_s8_to_s16_unordered_with_offset
-000064d8 t $x
-000064d8 T riscv_depthwise_conv_s16
-00006900 t $x
-00006900 t depthwise_conv_s8_mult_4
-00006cc0 t $x
-00006cc0 T riscv_depthwise_conv_s8
-00007128 t $x
-00007128 T riscv_depthwise_conv_s8_opt
-00007808 t $x
-00007808 T riscv_depthwise_conv_3x3_s8
-00008ff0 t $x
-00008ff0 T riscv_depthwise_conv_fast_s16
-000098dc t $x
-000098dc T riscv_q7_to_q15_with_offset
-00009964 T memcpy
-00009a5e T memset
-00009b08 T malloc
-00009b18 T free
-00009b28 T _free_r
-00009bb8 T _malloc_r
-00009c68 T printf
-00009c86 T puts
-00009cbc T strlen
-00009d1c t __vprintf_help
-00009d56 T vprintf
-00009da2 T __print_integral
-00009dea T __printf_impl
-0000a25c T __int_to_poly
-0000a27a T __print_integral_poly
-0000a30a T __printf_float_impl
-0000a70c T strcpy
-0000a78a T strnlen
-0000a7a2 W _sbrk
-0000a7cc T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
-0000a7fc T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
-0000a82c T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
-0000a834 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-0000a834 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-0000a834 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-0000a834 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-0000a842 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-0000a842 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-0000a842 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-0000a842 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-0000a85c T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-0000a85c T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-0000a85c T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-0000a85c T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-0000a868 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
-0000a86c T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-0000a86c T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-0000a86c T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-0000a86c T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-0000a876 T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000a876 T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000a876 T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000a876 T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-0000a880 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-0000a880 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-0000a880 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-0000a880 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-0000a984 T _RAMCODE_VMA_END
-00016552 A BIN_SIZE
+00001508 t measure_stack_usage	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/utility.c:31
+00001544 t fill_stack_pattern_to_sp	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/utility.c:21
+0000156c t user_calib_freq_offset.constprop.8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/calibration/calibration.c:120
+000015c4 t gpio_input_dis	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../drivers/gpio.c:91
+000015e0 t reset_counters	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/utility.c:11
+000015ec t validate.lto_priv.13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:25
+000015ec t validate.lto_priv.14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:25
+00001664 t validate_s16.lto_priv.15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:50
+00001664 t validate_s16.lto_priv.16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/validate.h:50
+000016dc t dw_int16xint8_dilation_riscv_depthwise_conv_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_depthwise_conv_s16.c:190
+000018a4 t dw_int16xint8_riscv_depthwise_conv_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_depthwise_conv_s16.c:6
+00001a64 t conv_3x3_dilation_5x5_input_riscv_convolve_s8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_convolve_s8.c:190
+00001c20 t int16xint8_dilation_1_riscv_convolve_s16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_convolve_s16.c:99
+00001e50 T _write	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/printf.c:101
+00001e98 T main	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/main.c:18
+00002fd0 T default_irq_entry	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq1	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq10	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq11	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq12	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq13	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq14	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq15	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq16	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq17	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq18	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq19	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq2	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq20	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq21	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq22	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq23	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq24	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq25	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq26	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq27	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq28	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq29	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq3	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq30	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq31	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq32	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq33	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq34	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq35	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq36	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq37	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq38	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq39	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq4	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq40	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq41	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq42	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq43	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq44	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq45	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq46	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq47	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq48	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq49	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq5	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq50	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq51	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq52	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq53	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq54	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq55	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq56	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq57	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq58	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq59	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq6	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq60	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq61	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq62	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq63	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq7	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq8	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd0 W entry_irq9	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:434
+00002fd2 W trap_handler	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:439
+00002fd8 t $x
+00002fd8 T riscv_convolve_wrapper_s16
+00002fdc t $x
+00002fdc T riscv_convolve_wrapper_s8
+00003130 t $x
+00003130 T riscv_depthwise_conv_fast_s16_get_buffer_size
+00003144 t $x
+00003144 T riscv_depthwise_conv_wrapper_s16_get_buffer_size
+00003184 t $x
+00003184 T riscv_convolve_s16
+00003638 t $x
+00003638 T riscv_convolve_wrapper_s16_get_buffer_size
+0000364c t $x
+0000364c T riscv_convolve_1x1_s8_fast
+0000398c t $x
+0000398c T riscv_convolve_s8
+00004104 t $x
+00004104 T riscv_nn_mat_mult_kernel_s8_s16
+000045d8 t $x
+000045d8 T riscv_convolve_wrapper_s8_get_buffer_size
+00004668 t $x
+00004668 T riscv_nn_mat_mult_kernel_s16
+00004f80 t $x
+00004f80 T riscv_depthwise_conv_s8_opt_get_buffer_size
+00004f94 t $x
+00004f94 T riscv_depthwise_conv_wrapper_s8_get_buffer_size
+00004fe8 t $x
+00004fe8 T riscv_nn_mat_mult_kernel_row_offset_s8_s16
+000054cc t $x
+000054cc T riscv_convolve_1x1_s8
+000055f0 t $x
+000055f0 T riscv_depthwise_conv_wrapper_s8
+000056c8 t $x
+000056c8 T riscv_depthwise_conv_wrapper_s16
+0000575c t $x
+0000575c T riscv_convolve_1_x_n_s8
+000057b0 t $x
+000057b0 T riscv_nn_mat_mult_nt_t_s8
+000064f4 t $x
+000064f4 T riscv_s8_to_s16_unordered_with_offset
+00006578 t $x
+00006578 T riscv_depthwise_conv_s16
+000069a0 t $x
+000069a0 t depthwise_conv_s8_mult_4
+00006d60 t $x
+00006d60 T riscv_depthwise_conv_s8
+000071c8 t $x
+000071c8 T riscv_depthwise_conv_s8_opt
+000078a8 t $x
+000078a8 T riscv_depthwise_conv_3x3_s8
+00009090 t $x
+00009090 T riscv_depthwise_conv_fast_s16
+0000997c t $x
+0000997c T riscv_q7_to_q15_with_offset
+00009a04 T memcpy
+00009afe T memset
+00009ba8 T malloc
+00009bb8 T free
+00009bc8 T _free_r
+00009c58 T _malloc_r
+00009d08 T printf
+00009d26 T puts
+00009d5c T strlen
+00009dbc t __vprintf_help
+00009df6 T vprintf
+00009e42 T __print_integral
+00009e8a T __printf_impl
+0000a2fc T __int_to_poly
+0000a31a T __print_integral_poly
+0000a3ac T __printf_float_impl
+0000a7c0 T strcpy
+0000a83e T strnlen
+0000a858 T __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
+0000aea4 T __fixunsdfsi	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/fixunsdfsi.c:35
+0000af3c T __floatsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatsidf.c:36
+0000afb8 T __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
+0000b0c8 W _sbrk
+0000b0f0 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+0000b120 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+0000b150 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+0000b158 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000b158 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000b158 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000b158 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000b166 T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000b166 T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000b166 T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000b166 T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000b180 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000b180 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000b180 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000b180 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+0000b18c T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+0000b190 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0000b190 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0000b190 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0000b190 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+0000b19a T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0000b19a T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0000b19a T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0000b19a T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+0000b1a4 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0000b1a4 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0000b1a4 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0000b1a4 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+0000b2a8 T _RAMCODE_VMA_END
+00016eba A BIN_SIZE
 00080000 D _DATA_VMA_START
-00080010 d basic_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/input_data.h:6
-00080038 d basic_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/output_ref_data.h:6
-0008004c d conv_2x2_dilation_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/input_data.h:6
-00080114 d conv_2x2_dilation_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/output_ref_data.h:6
-0008015c d conv_2x2_dilation_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/weights_data.h:6
-00080180 d conv_3x3_dilation_5x5_input_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/input_data.h:6
-00080248 d conv_3x3_dilation_5x5_input_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/output_ref_data.h:6
-000803a8 d conv_3x3_dilation_5x5_input_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/weights_data.h:6
-000803cc d depthwise_2_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/biases_data.h:6
-000803f0 d depthwise_2_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/input_data.h:6
-0008044c d depthwise_2_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/output_mult_data.h:6
-00080470 d depthwise_2_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/output_ref_data.h:6
-000804c4 d depthwise_2_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/output_shift_data.h:6
-000804e8 d depthwise_2_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/weights_data.h:6
-00080554 d depthwise_dilation_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/input_data.h:6
-00080588 d depthwise_dilation_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/output_ref_data.h:6
-000805bc d depthwise_dilation_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/weights_data.h:6
-000805c8 d depthwise_mult_batches_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/biases_data.h:6
-000805d4 d depthwise_mult_batches_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/input_data.h:6
-00080630 d depthwise_mult_batches_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/output_mult_data.h:6
-0008063c d depthwise_mult_batches_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/output_ref_data.h:6
-00080660 d depthwise_mult_batches_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/output_shift_data.h:6
-0008066c d depthwise_mult_batches_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/weights_data.h:6
-00080688 d dw_int16xint8_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/biases_data.h:6
-000806c8 d dw_int16xint8_dilation_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/biases_data.h:6
-00080708 d dw_int16xint8_dilation_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/input_data.h:6
+00080020 d basic_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/input_data.h:6
+00080048 d basic_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/output_ref_data.h:6
+0008005c d conv_2x2_dilation_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/input_data.h:6
+00080124 d conv_2x2_dilation_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/output_ref_data.h:6
+0008016c d conv_2x2_dilation_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/weights_data.h:6
+00080190 d conv_3x3_dilation_5x5_input_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/input_data.h:6
+00080258 d conv_3x3_dilation_5x5_input_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/output_ref_data.h:6
+000803b8 d conv_3x3_dilation_5x5_input_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/weights_data.h:6
+000803dc d depthwise_2_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/biases_data.h:6
+00080400 d depthwise_2_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/input_data.h:6
+0008045c d depthwise_2_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/output_mult_data.h:6
+00080480 d depthwise_2_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/output_ref_data.h:6
+000804d4 d depthwise_2_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/output_shift_data.h:6
+000804f8 d depthwise_2_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_2/../../TestData/depthwise_2/weights_data.h:6
+00080564 d depthwise_dilation_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/input_data.h:6
+00080598 d depthwise_dilation_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/output_ref_data.h:6
+000805cc d depthwise_dilation_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/weights_data.h:6
+000805d8 d depthwise_mult_batches_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/biases_data.h:6
+000805e4 d depthwise_mult_batches_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/input_data.h:6
+00080640 d depthwise_mult_batches_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/output_mult_data.h:6
+0008064c d depthwise_mult_batches_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/output_ref_data.h:6
+00080670 d depthwise_mult_batches_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/output_shift_data.h:6
+0008067c d depthwise_mult_batches_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_mult_batches/weights_data.h:6
+00080698 d dw_int16xint8_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/biases_data.h:6
+000806d8 d dw_int16xint8_dilation_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/biases_data.h:6
+00080718 d dw_int16xint8_dilation_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/input_data.h:6
 00080800 D __global_pointer$
-00080870 d dw_int16xint8_dilation_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/output_mult_data.h:6
-00080890 d dw_int16xint8_dilation_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/output_ref_data.h:6
-00080b60 d dw_int16xint8_dilation_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/output_shift_data.h:6
-00080c44 d dw_int16xint8_dilation_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/weights_data.h:6
-00080cc4 d dw_int16xint8_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/input_data.h:6
-00080e30 d dw_int16xint8_mult4_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/biases_data.h:6
-00080e70 d dw_int16xint8_mult4_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/input_data.h:6
-00080ec0 d dw_int16xint8_mult4_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/output_mult_data.h:6
-00080ee0 d dw_int16xint8_mult4_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/output_ref_data.h:6
-00080ef0 d dw_int16xint8_mult4_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/output_shift_data.h:6
-00080f10 d dw_int16xint8_mult4_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/weights_data.h:6
-00080f70 d dw_int16xint8_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/output_mult_data.h:6
-00080f90 d dw_int16xint8_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/output_ref_data.h:6
-00081020 d dw_int16xint8_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/output_shift_data.h:6
-000810c8 d dw_int16xint8_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/weights_data.h:6
-00081128 d int16xint8_bias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/bias.h:6
-00081148 d int16xint8_dilation_1_bias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/bias.h:6
-00081158 d int16xint8_dilation_1_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/input.h:6
-00082158 d int16xint8_dilation_1_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/output.h:6
-00083000 d int16xint8_dilation_1_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/weights.h:6
-00083010 d int16xint8_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/input.h:6
-00085270 d int16xint8_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/output.h:6
-000852c0 d int16xint8_output_multiplier	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/output_multiplier.h:6
-000852d0 d int16xint8_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/output_shift.h:6
-000852e0 d int16xint8_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/weights.h:6
-000871d0 d int16xint8xint32_1_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/input.h:6
-00089430 d int16xint8xint32_1_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/output.h:6
-00089480 d int16xint8xint32_1_output_multiplier	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/output_multiplier.h:6
-00089490 d int16xint8xint32_1_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/output_shift.h:6
-000894a0 d int16xint8xint32_1_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/weights.h:6
-0008b9d0 D __digits
-0008b9e8 d init_flag.4915
-0008b9ec d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../drivers/clock.c:46
-0008b9f4 D _impure_ptr
-0008b9f8 d basic_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/biases_data.h:6
-0008b9fc d basic_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/output_mult_data.h:6
-0008ba00 d basic_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/output_shift_data.h:6
-0008ba04 d basic_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/weights_data.h:6
-0008ba0c d conv_2x2_dilation_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/biases_data.h:6
-0008ba14 d conv_2x2_dilation_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/output_mult_data.h:6
-0008ba1c d conv_2x2_dilation_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/output_shift_data.h:6
-0008ba24 d conv_3x3_dilation_5x5_input_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/biases_data.h:6
-0008ba2c d conv_3x3_dilation_5x5_input_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/output_mult_data.h:6
-0008ba34 d conv_3x3_dilation_5x5_input_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/output_shift_data.h:6
-0008ba3c d depthwise_dilation_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/biases_data.h:6
-0008ba40 d depthwise_dilation_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/output_mult_data.h:6
-0008ba44 d depthwise_dilation_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/output_shift_data.h:6
-0008ba48 d int16xint8_dilation_1_output_multiplier	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/output_multiplier.h:6
-0008ba50 d int16xint8_dilation_1_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/output_shift.h:6
-0008ba58 S _BSS_VMA_START
-0008ba58 D _DATA_VMA_END
-0008ba58 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:44
-0008ba5c s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:49
-0008ba60 s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:34
-0008ba64 s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:39
-0008ba68 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:29
-0008ba6c s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
-0008ba70 s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
-0008ba74 s stack_limit	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/test_riscv_convolve_s16.c:23
-0008ba78 S __malloc_free_list
-0008ba7c S __malloc_sbrk_start
-0008ba80 s __vprintf_buf
-0008ba84 s __vprintf_buf_len
-0008ba88 S __mculib_REENT_errno
-0008ba8c S __printf_count
-0008ba90 s heap_end.2408
-0008ba94 b impure_data
-0008ba98 B _BSS_VMA_END
-0008ba98 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../common/sdk_version.c:26
-0008bac0 D _end
+00080880 d dw_int16xint8_dilation_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/output_mult_data.h:6
+000808a0 d dw_int16xint8_dilation_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/output_ref_data.h:6
+00080b70 d dw_int16xint8_dilation_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/output_shift_data.h:6
+00080c98 d dw_int16xint8_dilation_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_dilation/weights_data.h:6
+00080d18 d dw_int16xint8_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/input_data.h:6
+00080e80 d dw_int16xint8_mult4_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/biases_data.h:6
+00080ec0 d dw_int16xint8_mult4_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/input_data.h:6
+00080f10 d dw_int16xint8_mult4_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/output_mult_data.h:6
+00080f30 d dw_int16xint8_mult4_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/output_ref_data.h:6
+00080f40 d dw_int16xint8_mult4_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/output_shift_data.h:6
+00080f60 d dw_int16xint8_mult4_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8_mult4/weights_data.h:6
+00080fc0 d dw_int16xint8_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/output_mult_data.h:6
+00080fe0 d dw_int16xint8_output_ref	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/output_ref_data.h:6
+00081070 d dw_int16xint8_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/output_shift_data.h:6
+00081118 d dw_int16xint8_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/dw_int16xint8/../../TestData/dw_int16xint8/weights_data.h:6
+00081178 d int16xint8_bias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/bias.h:6
+00081198 d int16xint8_dilation_1_bias	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/bias.h:6
+000811a8 d int16xint8_dilation_1_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/input.h:6
+000821a8 d int16xint8_dilation_1_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/output.h:6
+00083050 d int16xint8_dilation_1_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/weights.h:6
+00083060 d int16xint8_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/input.h:6
+000852c0 d int16xint8_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/output.h:6
+00085310 d int16xint8_output_multiplier	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/output_multiplier.h:6
+00085320 d int16xint8_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/output_shift.h:6
+00085330 d int16xint8_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8/../../TestData/int16xint8/weights.h:6
+00087220 d int16xint8xint32_1_input	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/input.h:6
+00089480 d int16xint8xint32_1_output	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/output.h:6
+000894d0 d int16xint8xint32_1_output_multiplier	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/output_multiplier.h:6
+000894e0 d int16xint8xint32_1_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/output_shift.h:6
+000894f0 d int16xint8xint32_1_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8xint32_1/weights.h:6
+0008b9d8 D __digits
+0008ba30 d init_flag.4915
+0008ba34 d sys_clk	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../drivers/clock.c:46
+0008ba3c D _impure_ptr
+0008ba40 d basic_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/biases_data.h:6
+0008ba44 d basic_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/output_mult_data.h:6
+0008ba48 d basic_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/output_shift_data.h:6
+0008ba4c d basic_weights	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/basic/../../TestData/basic/weights_data.h:6
+0008ba54 d conv_2x2_dilation_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/biases_data.h:6
+0008ba5c d conv_2x2_dilation_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/output_mult_data.h:6
+0008ba64 d conv_2x2_dilation_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_2x2_dilation/../../TestData/conv_2x2_dilation/output_shift_data.h:6
+0008ba6c d conv_3x3_dilation_5x5_input_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/biases_data.h:6
+0008ba74 d conv_3x3_dilation_5x5_input_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/output_mult_data.h:6
+0008ba7c d conv_3x3_dilation_5x5_input_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/conv_3x3_dilation_5x5_input/../../TestData/conv_3x3_dilation_5x5_input/output_shift_data.h:6
+0008ba84 d depthwise_dilation_biases	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/biases_data.h:6
+0008ba88 d depthwise_dilation_output_mult	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/output_mult_data.h:6
+0008ba8c d depthwise_dilation_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/depthwise_dilation/output_shift_data.h:6
+0008ba90 d int16xint8_dilation_1_output_multiplier	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/output_multiplier.h:6
+0008ba98 d int16xint8_dilation_1_output_shift	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/../TestData/int16xint8_dilation_1/output_shift.h:6
+0008baa0 S _BSS_VMA_START
+0008baa0 D _DATA_VMA_END
+0008baa0 s clkFastfreq	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../Debug_Demo/main.c:16
+0008baa4 s exception_mcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:44
+0008baa8 s exception_mdcause	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:49
+0008baac s exception_mepc	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:34
+0008bab0 s exception_mstatus	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:39
+0008bab4 s exception_mtval	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../vendor/common/exception.c:29
+0008bab8 s g_chip_version	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/sys.c:50
+0008babc s g_pm_status_info	D:/release_sdk/v2_3_0_2/telink_b91m_driver_src/chip/B91/drivers/lib/src/pm.c:44
+0008bac0 S __malloc_free_list
+0008bac4 S __malloc_sbrk_start
+0008bac8 s __vprintf_buf
+0008bacc s __vprintf_buf_len
+0008bad0 S __mculib_REENT_errno
+0008bad4 S __printf_count
+0008bad8 s heap_end.2408
+0008badc b impure_data
+0008bae0 B _BSS_VMA_END
+0008bae0 d sdk_version	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../common/sdk_version.c:26
+0008bb08 D _end
 000a0000 A _STACK_TOP
 00100000 A FLASH_SIZE
 20000000 T BIN_BEGIN	/cygdrive/c/Users/SwaminathanK/Workspace-Ande3/RV_NN_Convolution_Benchmark/Debug/../boot/cstartup_flash.S:59
@@ -367,4 +374,4 @@
 20000190 A _RETENTION_RESET_LMA_START
 200002e8 A _RETENTION_DATA_LMA_START
 20000350 A _RAMCODE_LMA_START
-2000aad8 A _DATA_LMA_START
+2000b3f8 A _DATA_LMA_START

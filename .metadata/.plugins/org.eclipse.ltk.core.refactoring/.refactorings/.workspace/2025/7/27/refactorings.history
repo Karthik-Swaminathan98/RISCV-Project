@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;RV_NN_Activation_Benchmark/Release_custom/RV_NN_Activation_Benchmark.adx&apos;" deleteContents="false" description="Delete resource &apos;RV_NN_Activation_Benchmark/Release_custom/RV_NN_Activation_Benchmark.adx&apos;" element1="/RV_NN_Activation_Benchmark/Release_custom/RV_NN_Activation_Benchmark.adx" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1751710229999"/>
+</session>

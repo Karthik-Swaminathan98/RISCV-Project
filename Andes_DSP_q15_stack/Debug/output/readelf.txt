@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x20000000
   Start of program headers:          52 (bytes into file)
-  Start of section headers:          689724 (bytes into file)
+  Start of section headers:          689680 (bytes into file)
   Flags:                             0x3, RVC, single-float ABI
   Size of this header:               52 (bytes)
   Size of program headers:           32 (bytes)
@@ -27,27 +27,27 @@ Section Headers:
   [ 3] .aes_data         NOBITS          00000158 002154 000020 00  WA  0   0  4
   [ 4] .retention_data   PROGBITS        00000178 002178 000074 00  WA  0   0  4
   [ 5] .ram_code         PROGBITS        00000200 002200 002d54 00  AX  0   0 256
-  [ 6] .text             PROGBITS        200030b8 0050b8 00d03c 00  AX  0   0  4
-  [ 7] .rodata           PROGBITS        200100f4 0120f4 000ecc 00   A  0   0  4
-  [ 8] .eh_frame         PROGBITS        20010fc0 012fc0 000120 00   A  0   0  4
-  [ 9] .data             PROGBITS        00080000 014000 000358 00  WA  0   0  8
-  [10] .sbss             NOBITS          00080358 014358 0000a0 00  WA  0   0  4
-  [11] .bss              NOBITS          000803f8 0153f8 002178 00  WA  0   0  4
-  [12] .sdk_version      PROGBITS        00082570 014570 000022 00  WA  0   0  4
-  [13] .debug_info       PROGBITS        00000000 014592 02c458 00      0   0  1
-  [14] .debug_abbrev     PROGBITS        00000000 0409ea 006397 00      0   0  1
-  [15] .debug_loc        PROGBITS        00000000 046d81 00f1dc 00      0   0  1
-  [16] .debug_aranges    PROGBITS        00000000 055f60 000830 00      0   0  8
-  [17] .debug_macro      PROGBITS        00000000 056790 00997c 00      0   0  1
-  [18] .debug_line       PROGBITS        00000000 06010c 01546d 00      0   0  1
-  [19] .debug_str        PROGBITS        00000000 075579 028cd6 01  MS  0   0  1
-  [20] .comment          PROGBITS        00000000 09e24f 000073 01  MS  0   0  1
-  [21] .riscv.attributes RISCV_ATTRIBUTE 00000000 09e2c2 00004a 00      0   0  1
-  [22] .debug_frame      PROGBITS        00000000 09e30c 002cf8 00      0   0  4
-  [23] .debug_ranges     PROGBITS        00000000 0a1008 000bc0 00      0   0  8
-  [24] .symtab           SYMTAB          00000000 0a1bc8 0033a0 10     25 204  4
-  [25] .strtab           STRTAB          00000000 0a4f68 0035b5 00      0   0  1
-  [26] .shstrtab         STRTAB          00000000 0a851d 00011d 00      0   0  1
+  [ 6] .text             PROGBITS        200030b8 0050b8 00d010 00  AX  0   0  4
+  [ 7] .rodata           PROGBITS        200100c8 0120c8 000eb0 00   A  0   0  4
+  [ 8] .eh_frame         PROGBITS        20010f80 012f80 000120 00   A  0   0  4
+  [ 9] .data             PROGBITS        00080000 014000 000364 00  WA  0   0  8
+  [10] .sbss             NOBITS          00080368 015368 0000a0 00  WA  0   0  4
+  [11] .bss              NOBITS          00080408 015368 002178 00  WA  0   0  4
+  [12] .sdk_version      PROGBITS        00082580 014580 000022 00  WA  0   0  4
+  [13] .debug_info       PROGBITS        00000000 0145a2 02c44f 00      0   0  1
+  [14] .debug_abbrev     PROGBITS        00000000 0409f1 006399 00      0   0  1
+  [15] .debug_loc        PROGBITS        00000000 046d8a 00f1dc 00      0   0  1
+  [16] .debug_aranges    PROGBITS        00000000 055f68 000830 00      0   0  8
+  [17] .debug_macro      PROGBITS        00000000 056798 009976 00      0   0  1
+  [18] .debug_line       PROGBITS        00000000 06010e 015443 00      0   0  1
+  [19] .debug_str        PROGBITS        00000000 075551 028cb8 01  MS  0   0  1
+  [20] .comment          PROGBITS        00000000 09e209 000073 01  MS  0   0  1
+  [21] .riscv.attributes RISCV_ATTRIBUTE 00000000 09e27c 00004a 00      0   0  1
+  [22] .debug_frame      PROGBITS        00000000 09e2c8 002cf4 00      0   0  4
+  [23] .debug_ranges     PROGBITS        00000000 0a0fc0 000ba8 00      0   0  8
+  [24] .symtab           SYMTAB          00000000 0a1b68 0033c0 10     25 204  4
+  [25] .strtab           STRTAB          00000000 0a4f28 0035c9 00      0   0  1
+  [26] .shstrtab         STRTAB          00000000 0a84f1 00011d 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),
@@ -62,11 +62,11 @@ Program Headers:
   LOAD           0x002000 0x00000000 0x20000190 0x00154 0x00178 RWE 0x1000
   LOAD           0x002178 0x00000178 0x200002e8 0x00074 0x00074 RW  0x1000
   LOAD           0x002200 0x00000200 0x20000360 0x02d54 0x02d54 R E 0x1000
-  LOAD           0x0050b8 0x200030b8 0x200030b8 0x0e028 0x0e028 R E 0x1000
-  LOAD           0x014000 0x00080000 0x200110e0 0x00358 0x003f8 RW  0x1000
-  LOAD           0x014570 0x00082570 0x20011438 0x00022 0x00022 RW  0x1000
-  LOAD           0x0153f8 0x000803f8 0x200114d8 0x00000 0x02178 RW  0x1000
-  RISCV_ATTRIBUT 0x09e2c2 0x00000000 0x00000000 0x0004a 0x00000 R   0x1
+  LOAD           0x0050b8 0x200030b8 0x200030b8 0x0dfe8 0x0dfe8 R E 0x1000
+  LOAD           0x014000 0x00080000 0x200110a0 0x00364 0x00364 RW  0x1000
+  LOAD           0x014580 0x00082580 0x20011404 0x00022 0x00022 RW  0x1000
+  LOAD           0x015368 0x00080368 0x20011408 0x00000 0x02218 RW  0x1000
+  RISCV_ATTRIBUT 0x09e27c 0x00000000 0x00000000 0x0004a 0x00000 R   0x1
 
  Section to Segment mapping:
   Segment Sections...
@@ -75,9 +75,9 @@ Program Headers:
    02     .retention_data 
    03     .ram_code 
    04     .text .rodata .eh_frame 
-   05     .data .sbss 
+   05     .data 
    06     .sdk_version 
-   07     .bss 
+   07     .sbss .bss 
    08     .riscv.attributes 
 
 There is no dynamic section in this file.
@@ -86,7 +86,7 @@ There are no relocations in this file.
 
 The decoding of unwind sections for machine type RISC-V is not currently supported.
 
-Symbol table '.symtab' contains 826 entries:
+Symbol table '.symtab' contains 828 entries:
    Num:    Value  Size Type    Bind   Vis      Ndx Name
      0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
      1: 20000000     0 SECTION LOCAL  DEFAULT    1 
@@ -95,12 +95,12 @@ Symbol table '.symtab' contains 826 entries:
      4: 00000178     0 SECTION LOCAL  DEFAULT    4 
      5: 00000200     0 SECTION LOCAL  DEFAULT    5 
      6: 200030b8     0 SECTION LOCAL  DEFAULT    6 
-     7: 200100f4     0 SECTION LOCAL  DEFAULT    7 
-     8: 20010fc0     0 SECTION LOCAL  DEFAULT    8 
+     7: 200100c8     0 SECTION LOCAL  DEFAULT    7 
+     8: 20010f80     0 SECTION LOCAL  DEFAULT    8 
      9: 00080000     0 SECTION LOCAL  DEFAULT    9 
-    10: 00080358     0 SECTION LOCAL  DEFAULT   10 
-    11: 000803f8     0 SECTION LOCAL  DEFAULT   11 
-    12: 00082570     0 SECTION LOCAL  DEFAULT   12 
+    10: 00080368     0 SECTION LOCAL  DEFAULT   10 
+    11: 00080408     0 SECTION LOCAL  DEFAULT   11 
+    12: 00082580     0 SECTION LOCAL  DEFAULT   12 
     13: 00000000     0 SECTION LOCAL  DEFAULT   13 
     14: 00000000     0 SECTION LOCAL  DEFAULT   14 
     15: 00000000     0 SECTION LOCAL  DEFAULT   15 
@@ -150,14 +150,14 @@ Symbol table '.symtab' contains 826 entries:
     59: 00000000     0 FILE    LOCAL  DEFAULT  ABS flash.c
     60: 00001080    76 FUNC    LOCAL  DEFAULT    5 flash_send_addr
     61: 00001114    88 FUNC    LOCAL  DEFAULT    5 flash_wait_done
-    62: 20006c28   100 FUNC    LOCAL  DEFAULT    6 flash_write
+    62: 20006bfc   100 FUNC    LOCAL  DEFAULT    6 flash_write
     63: 00000184     2 OBJECT  LOCAL  DEFAULT    4 s_flash_preempt_config
     64: 00000000     0 FILE    LOCAL  DEFAULT  ABS 
     65: 0000271c   196 FUNC    LOCAL  DEFAULT    5 pm_wait_bbpll_done
     66: 000027e0   416 FUNC    LOCAL  DEFAULT    5 pm_sleep_start
     67: 00002980   148 FUNC    LOCAL  DEFAULT    5 pm_stimer_recover
     68: 00002a14   868 FUNC    LOCAL  DEFAULT    5 pm_sleep_wakeup_ram.const
-    69: 2000bf24    26 FUNC    LOCAL  DEFAULT    6 pm_sleep_wakeup.constprop
+    69: 2000bef8    26 FUNC    LOCAL  DEFAULT    6 pm_sleep_wakeup.constprop
     70: 00000190     1 OBJECT  LOCAL  DEFAULT    4 g_pm_suspend_power_cfg
     71: 00000191     1 OBJECT  LOCAL  DEFAULT    4 g_pm_long_suspend
     72: 00000194    41 OBJECT  LOCAL  DEFAULT    4 pmcd
@@ -168,38 +168,38 @@ Symbol table '.symtab' contains 826 entries:
     77: 000001d4     1 OBJECT  LOCAL  DEFAULT    4 g_pm_tick_update_en
     78: 000001d8     4 OBJECT  LOCAL  DEFAULT    4 g_pm_r_delay_cycle
     79: 000001e0     8 OBJECT  LOCAL  DEFAULT    4 g_pm_longsleep_early_wake
-    80: 2001070c    30 OBJECT  LOCAL  DEFAULT    7 rf_power_Level_list
-    81: 000803e0     4 OBJECT  LOCAL  DEFAULT   10 g_pm_status_info
-    82: 00080350     4 OBJECT  LOCAL  DEFAULT    9 rf_rx_dma_config
-    83: 00080354     4 OBJECT  LOCAL  DEFAULT    9 rf_tx_dma_config
+    80: 200106c4    30 OBJECT  LOCAL  DEFAULT    7 rf_power_Level_list
+    81: 000803f0     4 OBJECT  LOCAL  DEFAULT   10 g_pm_status_info
+    82: 0008035c     4 OBJECT  LOCAL  DEFAULT    9 rf_rx_dma_config
+    83: 00080360     4 OBJECT  LOCAL  DEFAULT    9 rf_tx_dma_config
     84: 00000000     0 FILE    LOCAL  DEFAULT  ABS myudb_usb.c
-    85: 0008037c     2 OBJECT  LOCAL  DEFAULT   10 myudb_g_response_len
-    86: 00080380     4 OBJECT  LOCAL  DEFAULT   10 myudb_g_response
-    87: 00080370     8 OBJECT  LOCAL  DEFAULT   10 control_request
-    88: 00080378     4 OBJECT  LOCAL  DEFAULT   10 myudb_g_stall
-    89: 000802b8     2 OBJECT  LOCAL  DEFAULT    9 myudb_id
-    90: 00080364     4 OBJECT  LOCAL  DEFAULT   10 p.8427
-    91: 00080360     2 OBJECT  LOCAL  DEFAULT   10 len.8426
-    92: 0008035c     4 OBJECT  LOCAL  DEFAULT   10 len.8436
-    93: 00080358     4 OBJECT  LOCAL  DEFAULT   10 tick_sync.8490
+    85: 0008038c     2 OBJECT  LOCAL  DEFAULT   10 myudb_g_response_len
+    86: 00080390     4 OBJECT  LOCAL  DEFAULT   10 myudb_g_response
+    87: 00080380     8 OBJECT  LOCAL  DEFAULT   10 control_request
+    88: 00080388     4 OBJECT  LOCAL  DEFAULT   10 myudb_g_stall
+    89: 000802c4     2 OBJECT  LOCAL  DEFAULT    9 myudb_id
+    90: 00080374     4 OBJECT  LOCAL  DEFAULT   10 p.8427
+    91: 00080370     2 OBJECT  LOCAL  DEFAULT   10 len.8426
+    92: 0008036c     4 OBJECT  LOCAL  DEFAULT   10 len.8436
+    93: 00080368     4 OBJECT  LOCAL  DEFAULT   10 tick_sync.8490
     94: 00000000     0 FILE    LOCAL  DEFAULT  ABS analog.c
     95: 00000000     0 FILE    LOCAL  DEFAULT  ABS audio.c
     96: 00000000     0 FILE    LOCAL  DEFAULT  ABS plmt.c
-    97: 00080318     4 OBJECT  LOCAL  DEFAULT    9 mtime_clock_source
+    97: 00080324     4 OBJECT  LOCAL  DEFAULT    9 mtime_clock_source
     98: 00000000     0 FILE    LOCAL  DEFAULT  ABS spi.c
-    99: 000803a4     1 OBJECT  LOCAL  DEFAULT   10 s_pspi_tx_dma_chn
-   100: 000803a6     1 OBJECT  LOCAL  DEFAULT   10 s_hspi_tx_dma_chn
-   101: 000803a3     1 OBJECT  LOCAL  DEFAULT   10 s_pspi_rx_dma_chn
-   102: 000803a5     1 OBJECT  LOCAL  DEFAULT   10 s_hspi_rx_dma_chn
+    99: 000803b4     1 OBJECT  LOCAL  DEFAULT   10 s_pspi_tx_dma_chn
+   100: 000803b6     1 OBJECT  LOCAL  DEFAULT   10 s_hspi_tx_dma_chn
+   101: 000803b3     1 OBJECT  LOCAL  DEFAULT   10 s_pspi_rx_dma_chn
+   102: 000803b5     1 OBJECT  LOCAL  DEFAULT   10 s_hspi_rx_dma_chn
    103: 00000000     0 FILE    LOCAL  DEFAULT  ABS stimer.c
    104: 00000000     0 FILE    LOCAL  DEFAULT  ABS exception.c
-   105: 000803d4     4 OBJECT  LOCAL  DEFAULT   10 exception_mtval
-   106: 000803d0     4 OBJECT  LOCAL  DEFAULT   10 exception_mepc
-   107: 000803cc     4 OBJECT  LOCAL  DEFAULT   10 exception_mstatus
-   108: 000803c8     4 OBJECT  LOCAL  DEFAULT   10 exception_mcause
-   109: 000803c4     4 OBJECT  LOCAL  DEFAULT   10 exception_mdcause
+   105: 000803e4     4 OBJECT  LOCAL  DEFAULT   10 exception_mtval
+   106: 000803e0     4 OBJECT  LOCAL  DEFAULT   10 exception_mepc
+   107: 000803dc     4 OBJECT  LOCAL  DEFAULT   10 exception_mstatus
+   108: 000803d8     4 OBJECT  LOCAL  DEFAULT   10 exception_mcause
+   109: 000803d4     4 OBJECT  LOCAL  DEFAULT   10 exception_mdcause
    110: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf.c
-   111: 00080340     1 OBJECT  LOCAL  DEFAULT    9 init_flag.4915
+   111: 0008034c     1 OBJECT  LOCAL  DEFAULT    9 init_flag.4915
    112: 00000000     0 FILE    LOCAL  DEFAULT  ABS puya_common.c
    113: 00000000     0 FILE    LOCAL  DEFAULT  ABS puya_flash_scratch.c
    114: 00002018    92 FUNC    LOCAL  DEFAULT    5 flash_write_enable_cmd_te
@@ -223,41 +223,41 @@ Symbol table '.symtab' contains 826 entries:
    132: 00000000     0 FILE    LOCAL  DEFAULT  ABS dbgport.c
    133: 00000000     0 FILE    LOCAL  DEFAULT  ABS sdk_version.c
    134: 00000000     0 FILE    LOCAL  DEFAULT  ABS myudb_usbdesc.c
-   135: 20010380   202 OBJECT  LOCAL  DEFAULT    7 language_desc
-   136: 2001044c   202 OBJECT  LOCAL  DEFAULT    7 vendor_desc
-   137: 20010518   202 OBJECT  LOCAL  DEFAULT    7 product_desc
-   138: 200105e4   202 OBJECT  LOCAL  DEFAULT    7 serial_desc
-   139: 200106b0    18 OBJECT  LOCAL  DEFAULT    7 device_desc
-   140: 200106c4    55 OBJECT  LOCAL  DEFAULT    7 configuration_desc
+   135: 20010338   202 OBJECT  LOCAL  DEFAULT    7 language_desc
+   136: 20010404   202 OBJECT  LOCAL  DEFAULT    7 vendor_desc
+   137: 200104d0   202 OBJECT  LOCAL  DEFAULT    7 product_desc
+   138: 2001059c   202 OBJECT  LOCAL  DEFAULT    7 serial_desc
+   139: 20010668    18 OBJECT  LOCAL  DEFAULT    7 device_desc
+   140: 2001067c    55 OBJECT  LOCAL  DEFAULT    7 configuration_desc
    141: 00000000     0 FILE    LOCAL  DEFAULT  ABS aes.c
-   142: 00080384     4 OBJECT  LOCAL  DEFAULT   10 embase_offset
+   142: 00080394     4 OBJECT  LOCAL  DEFAULT   10 embase_offset
    143: 00000000     0 FILE    LOCAL  DEFAULT  ABS emi.c
-   144: 00080390     4 OBJECT  LOCAL  DEFAULT   10 s_state0
-   145: 0008038c     4 OBJECT  LOCAL  DEFAULT   10 s_state1
-   146: 0008030a     1 OBJECT  LOCAL  DEFAULT    9 rxpara_flag
-   147: 00080394     1 OBJECT  LOCAL  DEFAULT   10 s_emi_rssi
-   148: 00080398     4 OBJECT  LOCAL  DEFAULT   10 s_emi_rssibuf
-   149: 0008039c     4 OBJECT  LOCAL  DEFAULT   10 s_emi_rx_cnt
+   144: 000803a0     4 OBJECT  LOCAL  DEFAULT   10 s_state0
+   145: 0008039c     4 OBJECT  LOCAL  DEFAULT   10 s_state1
+   146: 00080316     1 OBJECT  LOCAL  DEFAULT    9 rxpara_flag
+   147: 000803a4     1 OBJECT  LOCAL  DEFAULT   10 s_emi_rssi
+   148: 000803a8     4 OBJECT  LOCAL  DEFAULT   10 s_emi_rssibuf
+   149: 000803ac     4 OBJECT  LOCAL  DEFAULT   10 s_emi_rx_cnt
    150: 00080074    48 OBJECT  LOCAL  DEFAULT    9 emi_ble_tx_packet
    151: 000800a4    48 OBJECT  LOCAL  DEFAULT    9 emi_zigbee_tx_packet
    152: 000800d4    48 OBJECT  LOCAL  DEFAULT    9 Private_TPLL_tx_packet
-   153: 000803f8   280 OBJECT  LOCAL  DEFAULT   11 emi_rx_packet
+   153: 00080408   280 OBJECT  LOCAL  DEFAULT   11 emi_rx_packet
    154: 00000000     0 FILE    LOCAL  DEFAULT  ABS gpio.c
    155: 00000000     0 FILE    LOCAL  DEFAULT  ABS i2c.c
-   156: 000803a2     1 OBJECT  LOCAL  DEFAULT   10 i2c_dma_tx_chn
-   157: 000803a1     1 OBJECT  LOCAL  DEFAULT   10 i2c_dma_rx_chn
+   156: 000803b2     1 OBJECT  LOCAL  DEFAULT   10 i2c_dma_tx_chn
+   157: 000803b1     1 OBJECT  LOCAL  DEFAULT   10 i2c_dma_rx_chn
    158: 00000000     0 FILE    LOCAL  DEFAULT  ABS lpc.c
    159: 00000000     0 FILE    LOCAL  DEFAULT  ABS mdec.c
    160: 00000000     0 FILE    LOCAL  DEFAULT  ABS pwm.c
    161: 00000000     0 FILE    LOCAL  DEFAULT  ABS s7816.c
    162: 00000000     0 FILE    LOCAL  DEFAULT  ABS timer.c
    163: 00000000     0 FILE    LOCAL  DEFAULT  ABS uart.c
-   164: 2000a430    88 FUNC    LOCAL  DEFAULT    6 uart_is_prime
-   165: 2000a488   496 FUNC    LOCAL  DEFAULT    6 uart_set_fuc_pin
-   166: 000803a8     2 OBJECT  LOCAL  DEFAULT   10 uart_tx_hword_index.4498
-   167: 000803c0     2 OBJECT  LOCAL  DEFAULT   10 uart_dma_tx_chn
-   168: 000803b4     8 OBJECT  LOCAL  DEFAULT   10 uart_dma_rev_size
-   169: 000803bc     2 OBJECT  LOCAL  DEFAULT   10 uart_dma_rx_chn
+   164: 2000a404    88 FUNC    LOCAL  DEFAULT    6 uart_is_prime
+   165: 2000a45c   496 FUNC    LOCAL  DEFAULT    6 uart_set_fuc_pin
+   166: 000803b8     2 OBJECT  LOCAL  DEFAULT   10 uart_tx_hword_index.4498
+   167: 000803d0     2 OBJECT  LOCAL  DEFAULT   10 uart_dma_tx_chn
+   168: 000803c4     8 OBJECT  LOCAL  DEFAULT   10 uart_dma_rev_size
+   169: 000803cc     2 OBJECT  LOCAL  DEFAULT   10 uart_dma_rx_chn
    170: 00000000     0 FILE    LOCAL  DEFAULT  ABS usbhw.c
    171: 00000000     0 FILE    LOCAL  DEFAULT  ABS flash_mid146085.c
    172: 00000000     0 FILE    LOCAL  DEFAULT  ABS flash_mid156085.c
@@ -267,7 +267,7 @@ Symbol table '.symtab' contains 826 entries:
    176: 00000000     0 FILE    LOCAL  DEFAULT  ABS common.c
    177: 00000000     0 FILE    LOCAL  DEFAULT  ABS sinf.c
    178: 00000000     0 FILE    LOCAL  DEFAULT  ABS ref_rredf.c
-   179: 2001075c    32 OBJECT  LOCAL  DEFAULT    7 twooverpi.0
+   179: 20010714    32 OBJECT  LOCAL  DEFAULT    7 twooverpi.0
    180: 00000000     0 FILE    LOCAL  DEFAULT  ABS riscv_dsp_cfft_q15.c
    181: 00000000     0 FILE    LOCAL  DEFAULT  ABS riscv_dsp_cfft_rd2_q15.c
    182: 00000000     0 FILE    LOCAL  DEFAULT  ABS riscv_dsp_cfft_rd4_q15.c
@@ -283,637 +283,639 @@ Symbol table '.symtab' contains 826 entries:
    192: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf.c
    193: 00000000     0 FILE    LOCAL  DEFAULT  ABS puts.c
    194: 00000000     0 FILE    LOCAL  DEFAULT  ABS vprintf.c
-   195: 2000f586    58 FUNC    LOCAL  DEFAULT    6 __vprintf_help
-   196: 000803ec     4 OBJECT  LOCAL  DEFAULT   10 __vprintf_buf_len
-   197: 000803f0     4 OBJECT  LOCAL  DEFAULT   10 __vprintf_buf
+   195: 2000f55a    58 FUNC    LOCAL  DEFAULT    6 __vprintf_help
+   196: 000803fc     4 OBJECT  LOCAL  DEFAULT   10 __vprintf_buf_len
+   197: 00080400     4 OBJECT  LOCAL  DEFAULT   10 __vprintf_buf
    198: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_data.c
    199: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_impl.c
    200: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_impl_float.c
    201: 00000000     0 FILE    LOCAL  DEFAULT  ABS strnlen.c
    202: 00000000     0 FILE    LOCAL  DEFAULT  ABS libgcc2.c
    203: 00000000     0 FILE    LOCAL  DEFAULT  ABS libgcc2.c
-   204: 20007080   148 FUNC    GLOBAL DEFAULT    6 gpio_ds_en
-   205: 20004190   112 FUNC    GLOBAL DEFAULT    6 adc_gpio_sample_init
-   206: 2000c298   110 FUNC    GLOBAL DEFAULT    6 rf_set_power_level_index
-   207: 2000c400    64 FUNC    GLOBAL DEFAULT    6 rf_set_tx_dma
-   208: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq55
-   209: 20003a14   256 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_irq
-   210: 00080344     3 OBJECT  GLOBAL DEFAULT    9 enter_cmd_scratch
-   211: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq13
-   212: 2000bb30    26 FUNC    GLOBAL DEFAULT    6 platform_init
-   213: 2000b47c    52 FUNC    GLOBAL DEFAULT    6 flash_write_config_mid156
-   214: 2000ff5c    54 FUNC    GLOBAL DEFAULT    6 strcpy
-   215: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq15
-   216: 20010064    46 FUNC    GLOBAL HIDDEN     6 __ashldi3
+   204: 20007054   148 FUNC    GLOBAL DEFAULT    6 gpio_ds_en
+   205: 20004164   112 FUNC    GLOBAL DEFAULT    6 adc_gpio_sample_init
+   206: 2000c26c   110 FUNC    GLOBAL DEFAULT    6 rf_set_power_level_index
+   207: 2000c3d4    64 FUNC    GLOBAL DEFAULT    6 rf_set_tx_dma
+   208: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq55
+   209: 200039e8   256 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_irq
+   210: 00080350     3 OBJECT  GLOBAL DEFAULT    9 enter_cmd_scratch
+   211: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq13
+   212: 2000bb04    26 FUNC    GLOBAL DEFAULT    6 platform_init
+   213: 2000b450    52 FUNC    GLOBAL DEFAULT    6 flash_write_config_mid156
+   214: 2000ff30    54 FUNC    GLOBAL DEFAULT    6 strcpy
+   215: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq15
+   216: 20010038    46 FUNC    GLOBAL HIDDEN     6 __ashldi3
    217: 000003ac   204 FUNC    GLOBAL DEFAULT    5 myudb_to_usb
-   218: 20005488   432 FUNC    GLOBAL DEFAULT    6 audio_codec_dac_config
-   219: 20004308   104 FUNC    GLOBAL DEFAULT    6 adc_get_code
-   220: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq27
-   221: 2000b514    48 FUNC    GLOBAL DEFAULT    6 flash_write_status_mid166
-   222: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq60
-   223: 20004c90   196 FUNC    GLOBAL DEFAULT    6 audio_set_chn_wl
+   218: 2000545c   432 FUNC    GLOBAL DEFAULT    6 audio_codec_dac_config
+   219: 200042dc   104 FUNC    GLOBAL DEFAULT    6 adc_get_code
+   220: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq27
+   221: 2000b4e8    48 FUNC    GLOBAL DEFAULT    6 flash_write_status_mid166
+   222: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq60
+   223: 20004c64   196 FUNC    GLOBAL DEFAULT    6 audio_set_chn_wl
    224: 0000092c    64 FUNC    GLOBAL DEFAULT    5 analog_write_reg16
-   225: 2000a9c4    32 FUNC    GLOBAL DEFAULT    6 uart_tx_is_busy
-   226: 2000951c   256 FUNC    GLOBAL DEFAULT    6 spi_master_write_plus
+   225: 2000a998    32 FUNC    GLOBAL DEFAULT    6 uart_tx_is_busy
+   226: 200094f0   256 FUNC    GLOBAL DEFAULT    6 spi_master_write_plus
    227: 00080054    11 OBJECT  GLOBAL DEFAULT    9 audio_i2s_codec_config
-   228: 200090dc   256 FUNC    GLOBAL DEFAULT    6 hspi_master_config_plus
-   229: 20003f54   220 FUNC    GLOBAL DEFAULT    6 adc_set_sample_rate
+   228: 200090b0   256 FUNC    GLOBAL DEFAULT    6 hspi_master_config_plus
+   229: 20003f28   220 FUNC    GLOBAL DEFAULT    6 adc_set_sample_rate
    230: 00000de4    96 FUNC    GLOBAL DEFAULT    5 clock_set_32k_tick
-   231: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq1
-   232: 2000b31c    48 FUNC    GLOBAL DEFAULT    6 flash_write_status_mid146
-   233: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq52
-   234: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq50
-   235: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq62
-   236: 2000f50a    30 FUNC    GLOBAL DEFAULT    6 printf
-   237: 00080800     0 NOTYPE  GLOBAL DEFAULT    9 __global_pointer$
-   238: 20008010   170 FUNC    GLOBAL DEFAULT    6 lpc_set_input_ref
-   239: 2001009c     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_8
-   240: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq58
-   241: 20004074    80 FUNC    GLOBAL DEFAULT    6 adc_set_vbat_divider
-   242: 00082308     4 OBJECT  GLOBAL DEFAULT   11 s7816_vcc_pin
-   243: 20009bd4   240 FUNC    GLOBAL DEFAULT    6 spi_master_write_dma_plus
-   244: 00080260    32 OBJECT  GLOBAL DEFAULT    9 page_program_addr
-   245: 2000aa70    80 FUNC    GLOBAL DEFAULT    6 uart_set_rts_level
-   246: 2000b5d0    32 FUNC    GLOBAL DEFAULT    6 flash_lock_mid166085
-   247: 2000b568    16 FUNC    GLOBAL DEFAULT    6 flash_write_otp_mid166085
-   248: 000802c0     4 OBJECT  GLOBAL DEFAULT    9 aes_base_addr
-   249: 200080f0   160 FUNC    GLOBAL DEFAULT    6 mdec_read_dat
-   250: 0000018c     4 OBJECT  GLOBAL DEFAULT    4 flash_read_page
-   251: 200100e8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_3
-   252: 20003cfc    60 FUNC    GLOBAL DEFAULT    6 adc_clr_sample_status_dma
-   253: 20007b04   200 FUNC    GLOBAL DEFAULT    6 i2c_master_write
-   254: 2000b2f4    40 FUNC    GLOBAL DEFAULT    6 flash_read_status_mid1460
-   255: 200058c0    52 FUNC    GLOBAL DEFAULT    6 audio_i2s_config
-   256: 000001ec     0 NOTYPE  GLOBAL DEFAULT    4 _RETENTION_DATA_VMA_END
-   257: 00080304     6 OBJECT  GLOBAL DEFAULT    9 sys_clk
-   258: 20008e74    64 FUNC    GLOBAL DEFAULT    6 spi_slave_init
-   259: 000009b8    64 FUNC    GLOBAL DEFAULT    5 analog_write_reg32
-   260: 20008ce8    12 FUNC    GLOBAL DEFAULT    6 pspi_cs_pin_en
-   261: 20004f90   284 FUNC    GLOBAL DEFAULT    6 audio_set_dmic_pin
-   262: 20006abc    40 FUNC    GLOBAL DEFAULT    6 flash_dread
-   263: 200100d4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_10
-   264: 20008fd4    48 FUNC    GLOBAL DEFAULT    6 hspi_set_quad_mode
-   265: 2000cf34   906 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cfft_rd2_q15
-   266: 2000b438    16 FUNC    GLOBAL DEFAULT    6 flash_read_otp_mid156085
-   267: 2000744c   308 FUNC    GLOBAL DEFAULT    6 gpio_set_irq
-   268: 200050ac    44 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_en
-   269: 20004030    68 FUNC    GLOBAL DEFAULT    6 adc_set_scale_factor
-   270: 20004200    96 FUNC    GLOBAL DEFAULT    6 adc_temperature_sample_in
-   271: 2001009c     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_11
-   272: 20005c90   140 FUNC    GLOBAL DEFAULT    6 audio_codec_dac_power_dow
-   273: 20007e3c   112 FUNC    GLOBAL DEFAULT    6 i2c_slave_set_tx_dma
-   274: 2000e590   158 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cmag_q15
-   275: 00001500    68 FUNC    GLOBAL DEFAULT    5 mtime_set_interval_ms
-   276: 2000f44c     6 FUNC    GLOBAL DEFAULT    6 __errno
-   277: 2000b424    20 FUNC    GLOBAL DEFAULT    6 flash_get_lock_block_mid1
-   278: 20006cdc   124 FUNC    GLOBAL DEFAULT    6 flash_write_status
-   279: 000822d8     1 OBJECT  GLOBAL DEFAULT   11 audio_rx_dma_chn
-   280: 2000aa38    56 FUNC    GLOBAL DEFAULT    6 uart_send_word
-   281: 2000f608    76 FUNC    GLOBAL DEFAULT    6 __print_integral
-   282: 2000c264    48 FUNC    GLOBAL DEFAULT    6 rf_update_internal_cap
-   283: 2000b388    16 FUNC    GLOBAL DEFAULT    6 flash_read_otp_mid146085
-   284: 2000ae14    64 FUNC    GLOBAL DEFAULT    6 uart_send
-   285: 0000167c   240 FUNC    GLOBAL DEFAULT    5 spi_set_rx_dma
-   286: 2000b2d8    24 FUNC    GLOBAL DEFAULT    6 usbhw_read_ctrl_ep_u16
-   287: 00080314     4 OBJECT  GLOBAL DEFAULT    9 i2c_tx_dma_config
-   288: 00000178     2 OBJECT  GLOBAL DEFAULT    4 g_adc_gpio_calib_vref
-   289: 2000f654  1118 FUNC    GLOBAL DEFAULT    6 __printf_impl_lite
-   290: 200031b8    36 FUNC    GLOBAL DEFAULT    6 measure_stack_usage
-   291: 20007aa8    40 FUNC    GLOBAL DEFAULT    6 i2c_master_init
-   292: 20008ee8    48 FUNC    GLOBAL DEFAULT    6 spi_set_transmode
-   293: 20006d58    40 FUNC    GLOBAL DEFAULT    6 flash_read_otp
-   294: 2000b3cc    40 FUNC    GLOBAL DEFAULT    6 flash_read_status_mid1560
-   295: 00000000     0 NOTYPE  GLOBAL DEFAULT    2 _RETENTION_RESET_VMA_STAR
-   296: 20004864   208 FUNC    GLOBAL DEFAULT    6 analog_write_reg32_dma
-   297: 2000339c   200 FUNC    GLOBAL DEFAULT    6 bt_dbg_set_pin
-   298: 20006250   168 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_continue_update
-   299: 20006568   108 FUNC    GLOBAL DEFAULT    6 rf_emi_rx_loop
-   300: 200058f4   236 FUNC    GLOBAL DEFAULT    6 audio_init
-   301: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq10
-   302: 2000b240    20 FUNC    GLOBAL DEFAULT    6 usbhw_disable_manual_inte
-   303: 20006b0c    44 FUNC    GLOBAL DEFAULT    6 flash_read_mid
-   304: 2000d6c0  1778 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cfft_rd4_q15
-   305: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq21
-   306: 2000b4ec    40 FUNC    GLOBAL DEFAULT    6 flash_read_status_mid1660
-   307: 2000856c   136 FUNC    GLOBAL DEFAULT    6 s7816_set_vcc_pin
-   308: 000802fc     4 OBJECT  GLOBAL DEFAULT    9 audio_dma_tx_config
-   309: 00000158     0 NOTYPE  GLOBAL DEFAULT    3 _AES_VMA_START
-   310: 2000b114   108 FUNC    GLOBAL DEFAULT    6 uart_cts_config
-   311: 00080320     4 OBJECT  GLOBAL DEFAULT    9 pspi_rx_dma_config
-   312: 2000cda0   330 FUNC    GLOBAL DEFAULT    6 ref__mathlib_rredf2
-   313: 2000abb8   248 FUNC    GLOBAL DEFAULT    6 uart_set_rts_pin
-   314: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq48
-   315: 2000b26c    88 FUNC    GLOBAL DEFAULT    6 usbhw_write_ep
-   316: 200092e0   232 FUNC    GLOBAL DEFAULT    6 spi_master_write
-   317: 20004488    48 FUNC    GLOBAL DEFAULT    6 aes_get_result
-   318: 2000bb50     4 FUNC    WEAK   DEFAULT    6 mswi_irq_handler
-   319: 200100e8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_2
-   320: 200038dc   292 FUNC    GLOBAL DEFAULT    6 usb_send_str_data
-   321: 20007874   170 FUNC    GLOBAL DEFAULT    6 gpio_set_pullup_res_30k
-   322: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq8
-   323: 20007fe4    40 FUNC    GLOBAL DEFAULT    6 i2c_set_rx_dma_config
-   324: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq33
-   325: 20003880    60 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_ctl_ep_d
-   326: 2000d2c0  1020 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cifft_rd2_q15
-   327: 200043c4   196 FUNC    GLOBAL DEFAULT    6 aes_set_key_data
-   328: 200031e8    16 FUNC    GLOBAL DEFAULT    6 read_perf_counters
-   329: 2000acf8   284 FUNC    GLOBAL DEFAULT    6 uart_set_rtx_pin
-   330: 0008231c    64 OBJECT  GLOBAL DEFAULT   11 para_buff
-   331: 20009f78   456 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_ful
-   332: 00082570     0 NOTYPE  GLOBAL DEFAULT   11 _BSS_VMA_END
-   333: 0000116c   456 FUNC    GLOBAL DEFAULT    5 flash_mspi_read_ram
-   334: 20003eb4    16 FUNC    GLOBAL DEFAULT    6 adc_set_gpio_two_point_ca
-   335: 2000f498   112 FUNC    GLOBAL DEFAULT    6 memcpy
-   336: 20003b7c    12 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_languag
-   337: 20009998   224 FUNC    GLOBAL DEFAULT    6 spi_master_write_dma
-   338: 0000017c     2 OBJECT  GLOBAL DEFAULT    4 g_adc_vref
-   339: 20000190     0 NOTYPE  GLOBAL DEFAULT  ABS _RETENTION_RESET_LMA_STAR
-   340: 000803e4     1 OBJECT  GLOBAL DEFAULT   10 g_single_tong_freqoffset
-   341: 2000706c    20 FUNC    GLOBAL DEFAULT    6 gpio_set_input
-   342: 2000b544    20 FUNC    GLOBAL DEFAULT    6 flash_get_lock_block_mid1
-   343: 2000f0d0   122 FUNC    GLOBAL HIDDEN     6 __floatsidf
-   344: 20008460    96 FUNC    GLOBAL DEFAULT    6 pwm_set_tx_dma_add_list_e
-   345: 00080280    28 OBJECT  GLOBAL DEFAULT    9 cst_libm_sincosf
-   346: 2000bf80   740 FUNC    GLOBAL DEFAULT    6 sys_init
-   347: 2000f654  1118 FUNC    GLOBAL DEFAULT    6 __printf_impl
-   348: 2000b628    60 FUNC    GLOBAL DEFAULT    6 para_buff_init
-   349: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq12
-   350: 2000f528    52 FUNC    GLOBAL DEFAULT    6 puts
-   351: 20006b38    48 FUNC    GLOBAL DEFAULT    6 flash_read_uid
-   352: 00001f38   224 FUNC    GLOBAL DEFAULT    5 flash_power_off_on_ram
-   353: 00001b78    48 FUNC    GLOBAL DEFAULT    5 mspi_as_mspi
-   354: 20008394   204 FUNC    GLOBAL DEFAULT    6 pwm_set_dma_chain_llp
-   355: 20004260    92 FUNC    GLOBAL DEFAULT    6 adc_battery_voltage_sampl
-   356: 20007ad0    28 FUNC    GLOBAL DEFAULT    6 i2c_set_master_clk
-   357: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq14
-   358: 00080060    18 OBJECT  GLOBAL DEFAULT    9 LineIn_To_I2S_CMD_TAB
-   359: 000822d4     1 OBJECT  GLOBAL DEFAULT   11 g_adc_pre_scale
-   360: 000802d4     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_192k_config
-   361: 20003e50    88 FUNC    GLOBAL DEFAULT    6 adc_set_diff_pin
-   362: 20010bd8   522 OBJECT  GLOBAL DEFAULT    7 riscv_dsp_cos_table_q15_1
-   363: 2000c8a4   254 FUNC    GLOBAL DEFAULT    6 rf_set_ble_500K_mode
-   364: 20010094     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_12
-   365: 2000b2c4    20 FUNC    GLOBAL DEFAULT    6 usbhw_write_ctrl_ep_u16
-   366: 2000b0e0    52 FUNC    GLOBAL DEFAULT    6 uart_set_rx_dma_config
-   367: 00080610  1024 OBJECT  GLOBAL DEFAULT   11 input
-   368: 2000b898   380 FUNC    GLOBAL DEFAULT    6 user_calib_adc_vref
-   369: 00081014   320 OBJECT  GLOBAL DEFAULT   11 buff
-   370: 20004638   288 FUNC    GLOBAL DEFAULT    6 aes_decrypt_bt_en
-   371: 20005b3c    56 FUNC    GLOBAL DEFAULT    6 audio_set_ext_codec
-   372: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq2
-   373: 20003b14   100 FUNC    GLOBAL DEFAULT    6 myudb_usb_init
-   374: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq51
-   375: 20004c78    12 FUNC    GLOBAL DEFAULT    6 audio_set_i2s_codec_m_s
-   376: 200100d4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_11
-   377: 2000971c   348 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_plu
-   378: 20004608    48 FUNC    GLOBAL DEFAULT    6 aes_decrypt
-   379: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq28
-   380: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq43
-   381: 200076b0   304 FUNC    GLOBAL DEFAULT    6 gpio_set_gpio2risc1_irq
-   382: 0000096c    76 FUNC    GLOBAL DEFAULT    5 analog_read_reg32
-   383: 200100c4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_1
-   384: 00001b44    52 FUNC    GLOBAL DEFAULT    5 mspi_as_gpio
-   385: 2000b34c    20 FUNC    GLOBAL DEFAULT    6 flash_lock_mid146085
-   386: 0008031c     4 OBJECT  GLOBAL DEFAULT    9 pwm_tx_dma_config
-   387: 200100e8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_0
-   388: 000802c4     4 OBJECT  GLOBAL DEFAULT    9 analog_rx_dma_config
-   389: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq20
-   390: 200100aa     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_7
-   391: 2000b4d0    26 FUNC    GLOBAL DEFAULT    6 flash_unlock_mid156085
-   392: 00080358     0 NOTYPE  GLOBAL DEFAULT   10 _BSS_VMA_START
-   393: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq63
-   394: 20005e08   112 FUNC    GLOBAL DEFAULT    6 audio_codec_adc_power_on
-   395: 00080358     0 NOTYPE  GLOBAL DEFAULT    9 _DATA_VMA_END
-   396: 20008acc   128 FUNC    GLOBAL DEFAULT    6 hspi_cs_pin_dis
-   397: 00000c14   264 FUNC    GLOBAL DEFAULT    5 audio_set_i2s_clock
-   398: 200082f0    36 FUNC    GLOBAL DEFAULT    6 pwm_set_dma_config
-   399: 2000aac0   248 FUNC    GLOBAL DEFAULT    6 uart_set_cts_pin
-   400: 2000cb94   126 FUNC    GLOBAL DEFAULT    6 rf_mode_init
-   401: 200109d4   514 OBJECT  GLOBAL DEFAULT    7 riscv_dsp_cos_table_q15_l
-   402: 20003c48   152 FUNC    GLOBAL DEFAULT    6 adc_start_sample_dma
-   403: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq46
-   404: 2000c9a4   242 FUNC    GLOBAL DEFAULT    6 rf_set_ble_2M_NO_PN_mode
-   405: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq31
-   406: 00082304     1 OBJECT  GLOBAL DEFAULT   11 g_clk_32k_src
-   407: 000014f0    16 FUNC    GLOBAL DEFAULT    5 mtime_set_cmp_value
-   408: 20003638   192 FUNC    GLOBAL DEFAULT    6 myudb_usb_prepare_desc_da
-   409: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq16
-   410: 20007bcc   200 FUNC    GLOBAL DEFAULT    6 i2c_master_read
-   411: 00100000     0 NOTYPE  GLOBAL DEFAULT  ABS FLASH_SIZE
-   412: 2000ba14    68 FUNC    GLOBAL DEFAULT    6 user_calib_freq_offset
-   413: 200100de     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_5
-   414: 0008235c   256 OBJECT  GLOBAL DEFAULT   11 command_buff
-   415: 200043ac    24 FUNC    GLOBAL DEFAULT    6 adc_calculate_temperature
-   416: 20006e50    48 FUNC    GLOBAL DEFAULT    6 flash_read_config
-   417: 0000017a     1 OBJECT  GLOBAL DEFAULT    4 g_adc_gpio_calib_vref_off
-   418: 000822d9     1 OBJECT  GLOBAL DEFAULT   11 audio_tx_dma_chn
-   419: 200098f0    40 FUNC    GLOBAL DEFAULT    6 pspi_set_rx_dma_config
-   420: 200098c8    40 FUNC    GLOBAL DEFAULT    6 pspi_set_tx_dma_config
-   421: 00080000     0 NOTYPE  GLOBAL DEFAULT    9 _DATA_VMA_START
-   422: 00081154  4480 OBJECT  GLOBAL DEFAULT   11 myudb_txfifo_b
-   423: 00000d1c    32 FUNC    GLOBAL DEFAULT    5 audio_change_sample_rate
-   424: 2000e6dc   930 FUNC    GLOBAL HIDDEN     6 __udivdi3
-   425: 00080a10   512 OBJECT  GLOBAL DEFAULT   11 magnitude
-   426: 20006a94    40 FUNC    GLOBAL DEFAULT    6 flash_read_data
-   427: 00080110   256 OBJECT  GLOBAL DEFAULT    9 program_buff
-   428: 200084dc     8 FUNC    GLOBAL DEFAULT    6 s7816_set_time
-   429: 00080000    12 OBJECT  GLOBAL DEFAULT    9 myudb_txfifo
-   430: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq53
-   431: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq11
-   432: 20004ef4   156 FUNC    GLOBAL DEFAULT    6 audio_set_codec_supply
-   433: 20004788   220 FUNC    GLOBAL DEFAULT    6 analog_read_reg32_dma
-   434: 2000522c    96 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_add_list_ele
-   435: 000803a0     1 OBJECT  GLOBAL DEFAULT   10 i2c_slave_rx_index
-   436: 20010744    24 OBJECT  GLOBAL DEFAULT    7 cst_libm_rredf
-   437: 20004934   228 FUNC    GLOBAL DEFAULT    6 analog_write_buff_dma
-   438: 20006a80    20 FUNC    GLOBAL DEFAULT    6 flash_plic_preempt_config
-   439: 000803d8     4 OBJECT  GLOBAL DEFAULT   10 config_read_buff
-   440: 00000154     0 NOTYPE  GLOBAL DEFAULT    2 _RETENTION_RESET_VMA_END
-   441: 0008000c    35 OBJECT  GLOBAL DEFAULT    9 audio_i2s_48k_config
-   442: 200080bc    52 FUNC    GLOBAL DEFAULT    6 mdec_init
-   443: 2000319c    28 FUNC    GLOBAL DEFAULT    6 fill_stack_pattern_to_sp
-   444: 2000ff92    24 FUNC    GLOBAL DEFAULT    6 strnlen
-   445: 200065dc     8 FUNC    GLOBAL DEFAULT    6 rf_emi_get_rssi_avg
-   446: 20009cc4   264 FUNC    GLOBAL DEFAULT    6 spi_master_read_dma_plus
-   447: 200100de     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_6
-   448: 200098a0    40 FUNC    GLOBAL DEFAULT    6 hspi_set_rx_dma_config
-   449: 00000478   108 FUNC    GLOBAL DEFAULT    5 myudb_usb_get_packet
-   450: 200044e8   288 FUNC    GLOBAL DEFAULT    6 aes_encrypt_bt_en
-   451: 200087a8   148 FUNC    GLOBAL DEFAULT    6 s7816_coldreset
-   452: 00080210    64 OBJECT  GLOBAL DEFAULT    9 plane_program_addr
-   453: 2000b6c0    16 FUNC    GLOBAL DEFAULT    6 result_buff_clear
-   454: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq5
-   455: 20006cac    48 FUNC    GLOBAL DEFAULT    6 flash_read_status
-   456: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq23
-   457: 20003396     0 NOTYPE  WEAK   DEFAULT    6 trap_handler
-   458: 00000188     4 OBJECT  GLOBAL DEFAULT    4 flash_write_page
-   459: 0008036c     4 OBJECT  GLOBAL DEFAULT   10 myudb_fifo
-   460: 20005100    44 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_en
-   461: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq34
-   462: 200091dc    80 FUNC    GLOBAL DEFAULT    6 pspi_master_config_plus
-   463: 2000b3a8    16 FUNC    GLOBAL DEFAULT    6 flash_erase_otp_mid146085
-   464: 20009a78   348 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_dma
-   465: 20006e0c    28 FUNC    GLOBAL DEFAULT    6 flash_set_xip_config
-   466: 2000b448    16 FUNC    GLOBAL DEFAULT    6 flash_write_otp_mid156085
-   467: 20010034    46 FUNC    GLOBAL HIDDEN     6 __lshrdi3
-   468: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq36
-   469: 2001009c     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_9
-   470: 2000c3a0    94 FUNC    GLOBAL DEFAULT    6 rf_set_rx_dma
-   471: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq44
-   472: 20006104    26 FUNC    GLOBAL DEFAULT    6 clock_init
-   473: 2000c680   288 FUNC    GLOBAL DEFAULT    6 rf_set_zigbee_250K_mode
-   474: 20007eac   120 FUNC    GLOBAL DEFAULT    6 i2c_slave_set_rx_dma
-   475: 20006a5c    34 FUNC    GLOBAL DEFAULT    6 rf_emi_reset_baseband
-   476: 000803ac     2 OBJECT  GLOBAL DEFAULT   10 uart_rx_byte_index
-   477: 0000176c   100 FUNC    GLOBAL DEFAULT    5 hspi_master_write_xip
-   478: 00001e58   224 FUNC    GLOBAL DEFAULT    5 flash_write_testmode
-   479: 2000f5c0    72 FUNC    GLOBAL DEFAULT    6 vprintf
-   480: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq45
-   481: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq26
-   482: 200100aa     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_4
-   483: 0008034c     3 OBJECT  GLOBAL DEFAULT    9 enter_cmd_trim
-   484: 20003718   256 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_request
-   485: 2000512c    40 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_dis
-   486: 2000a22c    56 FUNC    GLOBAL DEFAULT    6 timer_start
-   487: 0008245c    20 OBJECT  GLOBAL DEFAULT   11 par_addr
-   488: 000014e0    16 FUNC    GLOBAL DEFAULT    5 mtime_get_value
-   489: 0008230c     4 OBJECT  GLOBAL DEFAULT   11 s7816_rst_time
-   490: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq41
-   491: 20009004    96 FUNC    GLOBAL DEFAULT    6 spi_set_3line_mode
-   492: 00080104    12 OBJECT  GLOBAL DEFAULT    9 flash_support_mid
-   493: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq61
-   494: 200035e8     8 FUNC    GLOBAL DEFAULT    6 myudb_set_txfifo
-   495: 2000b034   120 FUNC    GLOBAL DEFAULT    6 uart_get_dma_rev_data_len
-   496: 2000889c   112 FUNC    GLOBAL DEFAULT    6 s7816_warmreset
-   497: 2000a678   236 FUNC    GLOBAL DEFAULT    6 uart_init
-   498: 200107d4   512 OBJECT  GLOBAL DEFAULT    7 riscv_dsp_cos_recip_table
-   499: 00001d2c   300 FUNC    GLOBAL DEFAULT    5 flash_read_testmode
-   500: 20000000     0 NOTYPE  GLOBAL DEFAULT    1 BIN_BEGIN
-   501: 20003bc8    14 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_configu
-   502: 20006d80   100 FUNC    GLOBAL DEFAULT    6 flash_write_otp
-   503: 00080328     4 OBJECT  GLOBAL DEFAULT    9 hspi_rx_dma_config
-   504: 20006b68   152 FUNC    GLOBAL DEFAULT    6 flash_read_mid_uid_with_c
-   505: 20008f74    96 FUNC    GLOBAL DEFAULT    6 spi_set_dual_mode
-   506: 200100c4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_3
-   507: 20004370    60 FUNC    GLOBAL DEFAULT    6 adc_calculate_voltage
-   508: 2000bd24    28 FUNC    GLOBAL DEFAULT    6 flash_erase_chip
-   509: 20004e4c    40 FUNC    GLOBAL DEFAULT    6 audio_i2s_set_pin
-   510: 2000b578    16 FUNC    GLOBAL DEFAULT    6 flash_erase_otp_mid166085
-   511: 20005898    40 FUNC    GLOBAL DEFAULT    6 audio_mux_config
-   512: 000017d0    98 FUNC    GLOBAL DEFAULT    5 hspi_master_read_xip
-   513: 20007580   304 FUNC    GLOBAL DEFAULT    6 gpio_set_gpio2risc0_irq
-   514: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq38
-   515: 00000304   168 FUNC    GLOBAL DEFAULT    5 usb_send_status_pkt
-   516: 000001dc     1 OBJECT  GLOBAL DEFAULT    4 g_plic_preempt_en
-   517: 000802f4     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_8k_config
-   518: 20006028   220 FUNC    GLOBAL DEFAULT    6 clock_cal_32k_rc
-   519: 2000b0ac    52 FUNC    GLOBAL DEFAULT    6 uart_set_tx_dma_config
-   520: 00000200     0 NOTYPE  GLOBAL DEFAULT    5 __vectors
-   521: 2000a8f8    68 FUNC    GLOBAL DEFAULT    6 uart_set_rx_timeout
-   522: 0001145a     0 NOTYPE  GLOBAL DEFAULT  ABS BIN_SIZE
-   523: 000802ec     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_16k_config
-   524: 20008ac0    12 FUNC    GLOBAL DEFAULT    6 hspi_cs_pin_en
-   525: 2000a764   404 FUNC    GLOBAL DEFAULT    6 uart_cal_div_and_bwpc
-   526: 200071b4   664 FUNC    GLOBAL DEFAULT    6 gpio_shutdown
-   527: 200084c4    24 FUNC    GLOBAL DEFAULT    6 s7816_set_clk
-   528: 200053f0    36 FUNC    GLOBAL DEFAULT    6 audio_i2c_codec_write
-   529: 2000928c    84 FUNC    GLOBAL DEFAULT    6 spi_read
-   530: 2000b374    20 FUNC    GLOBAL DEFAULT    6 flash_get_lock_block_mid1
-   531: 20008eb4    52 FUNC    GLOBAL DEFAULT    6 spi_set_dummy_cnt
-   532: 2000bd40   216 FUNC    GLOBAL DEFAULT    6 flash_check_scratch
-   533: 20010f24    16 OBJECT  GLOBAL DEFAULT    7 __digits
-   534: 2000b468    20 FUNC    GLOBAL DEFAULT    6 flash_lock_otp_mid156085
-   535: 00080368     4 OBJECT  GLOBAL DEFAULT   10 myudb_hci_cmd_cb
-   536: 20000360     0 NOTYPE  GLOBAL DEFAULT  ABS _RAMCODE_LMA_START
-   537: 000010cc    72 FUNC    GLOBAL DEFAULT    5 flash_send_cmd
-   538: 20008948   376 FUNC    GLOBAL DEFAULT    6 hspi_set_pin_mux
-   539: 20004b0c   270 FUNC    GLOBAL DEFAULT    6 analog_write_addr_data_dm
-   540: 00000158    32 OBJECT  GLOBAL DEFAULT    3 aes_data_buff
-   541: 20003ec4   144 FUNC    GLOBAL DEFAULT    6 adc_set_ref_voltage
-   542: 200038bc    32 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_ctl_ep_s
-   543: 000803f4     4 OBJECT  GLOBAL DEFAULT   10 __printf_count
-   544: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq59
-   545: 20008f18    92 FUNC    GLOBAL DEFAULT    6 spi_set_normal_mode
-   546: 2000a990    52 FUNC    GLOBAL DEFAULT    6 uart_read_byte
-   547: 00000182     1 OBJECT  GLOBAL DEFAULT    4 tl_24mrc_cal
-   548: 20003bd8   112 FUNC    GLOBAL DEFAULT    6 adc_set_dma_config
-   549: 2000bf40    60 FUNC    GLOBAL DEFAULT    6 efuse_get_adc_calib_value
-   550: 2000ddb4  2010 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cifft_rd4_q15
-   551: 2000af54   224 FUNC    GLOBAL DEFAULT    6 uart_receive_dma
-   552: 2000f454    68 FUNC    GLOBAL DEFAULT    6 memcmp
-   553: 20005ef0   312 FUNC    GLOBAL DEFAULT    6 clock_kick_32k_xtal
-   554: 00000894    72 FUNC    GLOBAL DEFAULT    5 analog_write_reg8
-   555: 20008314    88 FUNC    GLOBAL DEFAULT    6 pwm_set_dma_buf
-   556: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq6
-   557: 20007cec   160 FUNC    GLOBAL DEFAULT    6 i2c_master_write_dma
-   558: 2000ea80  1612 FUNC    GLOBAL HIDDEN     6 __muldf3
-   559: 2001009c     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_10
-   560: 000803e8     4 OBJECT  GLOBAL DEFAULT   10 __mculib_REENT_errno
-   561: 20003ce0    28 FUNC    GLOBAL DEFAULT    6 adc_get_sample_status_dma
-   562: 00001834    28 FUNC    GLOBAL DEFAULT    5 delay_us
-   563: 200110e0     0 NOTYPE  GLOBAL DEFAULT  ABS _DATA_LMA_START
-   564: 20004c84    12 FUNC    GLOBAL DEFAULT    6 audio_set_output_chn
-   565: 00082570    34 OBJECT  GLOBAL DEFAULT   12 sdk_version
-   566: 20006e28    40 FUNC    GLOBAL DEFAULT    6 flash_write_config
-   567: 2000fad2   134 FUNC    GLOBAL DEFAULT    6 __print_integral_poly
-   568: 20000000     0 NOTYPE  GLOBAL DEFAULT  ABS NDS_SAG_LMA_FLASH
-   569: 2000b3b8    18 FUNC    GLOBAL DEFAULT    6 flash_lock_otp_mid146085
-   570: 200100de     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_4
-   571: 200100d4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_8
-   572: 000803b0     2 OBJECT  GLOBAL DEFAULT   10 uart_tx_byte_index
-   573: 2000b398    16 FUNC    GLOBAL DEFAULT    6 flash_write_otp_mid146085
-   574: 2000b254    24 FUNC    GLOBAL DEFAULT    6 usbhw_enable_manual_inter
-   575: 00001c88   164 FUNC    GLOBAL DEFAULT    5 flash_exit_test_mode
-   576: 200100aa     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_6
-   577: 20007114   160 FUNC    GLOBAL DEFAULT    6 gpio_ds_dis
-   578: 2000c444   282 FUNC    GLOBAL DEFAULT    6 rf_set_pri_2M_mode
-   579: 00000af0   292 FUNC    GLOBAL DEFAULT    5 analog_write_buff
-   580: 20000000     0 NOTYPE  WEAK   DEFAULT    1 _RELAX_END_
-   581: 000014d0    16 FUNC    GLOBAL DEFAULT    5 mtime_set_value
-   582: 2000ffac   134 FUNC    GLOBAL DEFAULT    6 memset
-   583: 2000fb58  1028 FUNC    GLOBAL DEFAULT    6 __printf_float_impl
-   584: 200100d4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_9
-   585: 200100de     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_7
-   586: 200031f8   408 FUNC    GLOBAL DEFAULT    6 main
-   587: 20003394     0 NOTYPE  GLOBAL DEFAULT    6 default_irq_entry
-   588: 00001850    34 FUNC    GLOBAL DEFAULT    5 delay_ms
-   589: 2000c374    42 FUNC    GLOBAL DEFAULT    6 rf_set_txmode
-   590: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq3
-   591: 00001874   390 FUNC    GLOBAL DEFAULT    5 trap_entry
-   592: 0000017e     1 OBJECT  GLOBAL DEFAULT    4 g_adc_vref_offset
-   593: 20005c64    44 FUNC    GLOBAL DEFAULT    6 audio_resume_out_path
-   594: 20004d54   248 FUNC    GLOBAL DEFAULT    6 audio_i2s_set_pin_mux
-   595: 20004c1c    12 FUNC    GLOBAL DEFAULT    6 audio_set_mono_chn
-   596: 00000178     0 NOTYPE  GLOBAL DEFAULT    3 _AES_VMA_END
-   597: 200065e4    80 FUNC    GLOBAL DEFAULT    6 rf_phy_test_prbs9
-   598: 00000e44   570 FUNC    GLOBAL DEFAULT    5 clock_init_ram
-   599: 200065d4     8 FUNC    GLOBAL DEFAULT    6 rf_emi_get_rxpkt_cnt
-   600: 2000a140   234 FUNC    GLOBAL DEFAULT    6 spi_master_read
-   601: 20007aec    24 FUNC    GLOBAL DEFAULT    6 i2c_slave_init
-   602: 20008de8    56 FUNC    GLOBAL DEFAULT    6 spi_slave_set_pin
-   603: 2000f14c   768 FUNC    GLOBAL HIDDEN     6 __truncdfsf2
-   604: 200068a8   436 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_burst_setup
-   605: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq39
-   606: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq49
-   607: 20004a18   244 FUNC    GLOBAL DEFAULT    6 analog_read_buff_dma
-   608: 2000922c    12 FUNC    GLOBAL DEFAULT    6 hspi_set_address
-   609: 20008e20    84 FUNC    GLOBAL DEFAULT    6 spi_master_init
-   610: 20006120   140 FUNC    GLOBAL DEFAULT    6 rf_set_power_level_index_
-   611: 20004c3c    32 FUNC    GLOBAL DEFAULT    6 audio_set_codec_in_path_a
-   612: 000802c8     4 OBJECT  GLOBAL DEFAULT    9 analog_tx_dma_config
-   613: 20006634   628 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_burst_loop
-   614: 20009918   128 FUNC    GLOBAL DEFAULT    6 spi_set_dma
-   615: 20006c9c    16 FUNC    GLOBAL DEFAULT    6 flash_quad_page_program
-   616: 200031dc    12 FUNC    GLOBAL DEFAULT    6 reset_counters
-   617: 2000a2ec   320 FUNC    GLOBAL DEFAULT    6 timer_gpio_init
-   618: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq57
-   619: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq47
-   620: 00080c10  1024 OBJECT  GLOBAL DEFAULT   11 frequency_bin
-   621: 200002e8     0 NOTYPE  GLOBAL DEFAULT  ABS _RETENTION_DATA_LMA_START
-   622: 20005e7c   116 FUNC    GLOBAL DEFAULT    6 clock_32k_init
-   623: 00080330     8 OBJECT  GLOBAL DEFAULT    9 uart_rx_dma_config
-   624: 000004e4   772 FUNC    GLOBAL DEFAULT    5 myudb_mem_cmd
-   625: 20004c30    12 FUNC    GLOBAL DEFAULT    6 audio_set_codec_mic_input
-   626: 20003d50   256 FUNC    GLOBAL DEFAULT    6 adc_pin_config
-   627: 20000000     0 FUNC    GLOBAL DEFAULT    1 _RESET_ENTRY
-   628: 00000db4    48 FUNC    GLOBAL DEFAULT    5 clock_get_32k_tick
-   629: 00080310     4 OBJECT  GLOBAL DEFAULT    9 i2c_rx_dma_config
-   630: 20005638   608 FUNC    GLOBAL DEFAULT    6 audio_codec_adc_config
-   631: 000822d5     1 OBJECT  GLOBAL DEFAULT   11 g_adc_vbat_divider
-   632: 200084e4   136 FUNC    GLOBAL DEFAULT    6 s7816_set_rst_pin
-   633: 2000f50a    30 FUNC    GLOBAL DEFAULT    6 iprintf
-   634: 20006f0c   168 FUNC    GLOBAL DEFAULT    6 gpio_input_en
-   635: 00080510   256 OBJECT  GLOBAL DEFAULT   11 read_buff
-   636: 000007e8    88 FUNC    GLOBAL DEFAULT    5 myudb_hci_cmd_from_usb
-   637: 00000178     0 NOTYPE  GLOBAL DEFAULT    4 _RETENTION_DATA_VMA_START
-   638: 200053c4    44 FUNC    GLOBAL DEFAULT    6 audio_i2c_codec_read
-   639: 200035f0    72 FUNC    GLOBAL DEFAULT    6 myudb_usb_send_response
-   640: 20010e24   256 OBJECT  GLOBAL HIDDEN     7 __clz_tab
-   641: 20008dc0    40 FUNC    GLOBAL DEFAULT    6 pspi_set_pin
-   642: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq4
-   643: 000a0000     0 NOTYPE  GLOBAL DEFAULT  ABS _STACK_TOP
-   644: 00001334   296 FUNC    GLOBAL DEFAULT    5 flash_mspi_write_ram
-   645: 200050d8    40 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_dis
-   646: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq22
-   647: 00000844    80 FUNC    GLOBAL DEFAULT    5 analog_read_reg8
-   648: 20004c28     8 FUNC    GLOBAL DEFAULT    6 audio_invert_i2s_lr_clk
-   649: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq30
-   650: 2000b7b4   224 FUNC    GLOBAL DEFAULT    6 result_buff_write
-   651: 00000180     2 OBJECT  GLOBAL DEFAULT    4 g_adc_vbat_calib_vref
-   652: 200077e0   148 FUNC    GLOBAL DEFAULT    6 gpio_set_up_down_res
-   653: 20009090    76 FUNC    GLOBAL DEFAULT    6 spi_master_config
-   654: 20005154   216 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_config
-   655: 20007938   368 FUNC    GLOBAL DEFAULT    6 i2c_set_pin
-   656: 20005bd4    96 FUNC    GLOBAL DEFAULT    6 audio_i2s_init
-   657: 200040c4   204 FUNC    GLOBAL DEFAULT    6 adc_init
-   658: 200036f8    32 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_in_class
-   659: 000009f8   248 FUNC    GLOBAL DEFAULT    5 analog_read_buff
-   660: 2000a264    48 FUNC    GLOBAL DEFAULT    6 timer_stop
-   661: 00080300     4 OBJECT  GLOBAL DEFAULT    9 audio_dma_rx_config
-   662: 20008194    52 FUNC    GLOBAL DEFAULT    6 mtime_clk_init
-   663: 20006e80   138 FUNC    GLOBAL DEFAULT    6 flash_get_vendor
-   664: 20005414   116 FUNC    GLOBAL DEFAULT    6 audio_i2c_init
-   665: 000019fc   326 FUNC    GLOBAL DEFAULT    5 dr_putchar
-   666: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq42
-   667: 2000acb0    72 FUNC    GLOBAL DEFAULT    6 uart_set_pin
-   668: 200061ec    56 FUNC    GLOBAL DEFAULT    6 rf_emi_stop
-   669: 000822dc    20 OBJECT  GLOBAL DEFAULT   11 g_audio_tx_dma_list_cfg
-   670: 20005b74    96 FUNC    GLOBAL DEFAULT    6 pwm_set
-   671: 2000b4b0    32 FUNC    GLOBAL DEFAULT    6 flash_lock_mid156085
-   672: 20006314   212 FUNC    GLOBAL DEFAULT    6 rf_continue_mode_run
-   673: 20009064    44 FUNC    GLOBAL DEFAULT    6 spi_set_io_mode
-   674: 20003a00     8 FUNC    GLOBAL DEFAULT    6 myudb_register_hci_cb
-   675: 2000b558    16 FUNC    GLOBAL DEFAULT    6 flash_read_otp_mid166085
-   676: 20003a08    12 FUNC    GLOBAL DEFAULT    6 myudb_usb_bulkout_ready
-   677: 2000b60c    28 FUNC    GLOBAL DEFAULT    6 convert_addr2bus
-   678: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq24
-   679: 200063e8   384 FUNC    GLOBAL DEFAULT    6 rf_emi_rx_setup
-   680: 2000b180   192 FUNC    GLOBAL DEFAULT    6 uart_rts_config
-   681: 00002eac   168 FUNC    GLOBAL DEFAULT    5 rf_set_chn
-   682: 2000a93c    84 FUNC    GLOBAL DEFAULT    6 uart_send_byte
-   683: 20003ba8    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_serial
-   684: 2000cc14   396 FUNC    GLOBAL DEFAULT    6 sinf
-   685: 200100c4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_2
-   686: 00002f54     0 NOTYPE  GLOBAL DEFAULT    5 _RAMCODE_VMA_END
-   687: 20008cf4   128 FUNC    GLOBAL DEFAULT    6 pspi_cs_pin_dis
-   688: 20007f6c    80 FUNC    GLOBAL DEFAULT    6 i2c_slave_write
-   689: 20005c34    48 FUNC    GLOBAL DEFAULT    6 audio_pause_out_path
-   690: 0008032c     4 OBJECT  GLOBAL DEFAULT    9 hspi_tx_dma_config
-   691: 2000cf10    34 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cifft_q15
-   692: 20009238    84 FUNC    GLOBAL DEFAULT    6 spi_write
-   693: 200062f8    28 FUNC    GLOBAL DEFAULT    6 emi_pn_gen
-   694: 200081c8   296 FUNC    GLOBAL DEFAULT    6 pwm_set_pin
-   695: 00080324     4 OBJECT  GLOBAL DEFAULT    9 pspi_tx_dma_config
-   696: 0000145c   114 FUNC    GLOBAL DEFAULT    5 flash_set_xip_config_sram
-   697: 20005acc    56 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_chain_init
-   698: 00000000     0 NOTYPE  WEAK   DEFAULT  ABS _ITB_BASE_
-   699: 2000bb4c     4 FUNC    WEAK   DEFAULT    6 mtime_irq_handler
-   700: 200100aa     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_5
-   701: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq19
-   702: 000802bc     4 OBJECT  GLOBAL DEFAULT    9 adc_rx_dma_config
-   703: 2000e630   170 FUNC    GLOBAL DEFAULT    6 riscv_dsp_sqrt_q15
-   704: 2000bb80    58 FUNC    GLOBAL DEFAULT    6 _write
-   705: 20003bb8    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_device
-   706: 20009f30    72 FUNC    GLOBAL DEFAULT    6 hspi_master_write_xip_cmd
-   707: 20003818   104 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_ctl_ep_s
-   708: 20006224    44 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_continue_setup
-   709: 00082598     0 NOTYPE  GLOBAL DEFAULT   12 _end
-   710: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq17
-   711: 20009878    40 FUNC    GLOBAL DEFAULT    6 hspi_set_tx_dma_config
-   712: 2000890c    56 FUNC    GLOBAL DEFAULT    6 s7816_send_byte
-   713: 20007f24    72 FUNC    GLOBAL DEFAULT    6 i2c_slave_read
-   714: 20003ea8    12 FUNC    GLOBAL DEFAULT    6 adc_set_gpio_calib_vref
-   715: 200093c8   340 FUNC    GLOBAL DEFAULT    6 spi_master_write_read
-   716: 20006fb4   184 FUNC    GLOBAL DEFAULT    6 gpio_input_dis
-   717: 000822f0    20 OBJECT  GLOBAL DEFAULT   11 g_audio_rx_dma_list_cfg
-   718: 20004758    44 FUNC    GLOBAL DEFAULT    6 aes_set_em_base_addr
-   719: 2000c560   284 FUNC    GLOBAL DEFAULT    6 rf_set_pri_1M_mode
-   720: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq9
-   721: 20007920    24 FUNC    GLOBAL DEFAULT    6 i2c_master_send_stop
-   722: 200030b8   226 FUNC    GLOBAL DEFAULT    6 user_init
-   723: 20004c5c    28 FUNC    GLOBAL DEFAULT    6 audio_set_codec_out_path_
-   724: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq56
-   725: 20006c8c    16 FUNC    GLOBAL DEFAULT    6 flash_page_program
-   726: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq35
-   727: 20007fbc    40 FUNC    GLOBAL DEFAULT    6 i2c_set_tx_dma_config
-   728: 00081010     4 OBJECT  GLOBAL DEFAULT   11 __StackLimit
-   729: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq37
-   730: 000802dc     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_32k_config
-   731: 000001e8     4 OBJECT  GLOBAL DEFAULT    4 g_pm_mspi_cfg
-   732: 00000d3c   120 FUNC    GLOBAL DEFAULT    5 clock_cal_24m_rc
-   733: 20004e74    76 FUNC    GLOBAL DEFAULT    6 audio_codec_active
-   734: 00080348     4 OBJECT  GLOBAL DEFAULT    9 config_write_buff
-   735: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq54
-   736: 2000c360    18 FUNC    GLOBAL DEFAULT    6 rf_pn_disable
-   737: 20003b88    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_vendor
-   738: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq40
-   739: 00001ba8   224 FUNC    GLOBAL DEFAULT    5 flash_enter_test_mode
-   740: 20007d8c   176 FUNC    GLOBAL DEFAULT    6 i2c_master_read_dma
-   741: 20006ae4    40 FUNC    GLOBAL DEFAULT    6 flash_4read
-   742: 2000a9e4    84 FUNC    GLOBAL DEFAULT    6 uart_send_hword
-   743: 2000b360    20 FUNC    GLOBAL DEFAULT    6 flash_unlock_mid146085
-   744: 2000b458    16 FUNC    GLOBAL DEFAULT    6 flash_erase_otp_mid156085
-   745: 000802e4     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_24k_config
-   746: 20008d74    24 FUNC    GLOBAL DEFAULT    6 pspi_change_csn_pin
-   747: 2000bbbc   204 FUNC    GLOBAL DEFAULT    6 audio_config_on
-   748: 2000a294    88 FUNC    GLOBAL DEFAULT    6 timer_set_mode
-   749: 00002d78    88 FUNC    GLOBAL DEFAULT    5 plic_exit_critical_sec
-   750: 20006de4    40 FUNC    GLOBAL DEFAULT    6 flash_erase_otp
-   751: 2000ceec    34 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cfft_q15
-   752: 2000bcd8    76 FUNC    GLOBAL DEFAULT    6 flash_scratch
-   753: 000803dc     4 OBJECT  GLOBAL DEFAULT   10 g_chip_version
-   754: 20005d1c   112 FUNC    GLOBAL DEFAULT    6 audio_codec_dac_power_on
-   755: 000008dc    80 FUNC    GLOBAL DEFAULT    5 analog_read_reg16
-   756: 200100d0     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_12
-   757: 20008b64   388 FUNC    GLOBAL DEFAULT    6 pspi_set_pin_mux
-   758: 00000200     0 NOTYPE  GLOBAL DEFAULT    5 _RAMCODE_VMA_START
-   759: 2000961c   256 FUNC    GLOBAL DEFAULT    6 spi_master_read_plus
-   760: 2000c7a4   254 FUNC    GLOBAL DEFAULT    6 rf_set_ble_125K_mode
-   761: 00082470   256 OBJECT  GLOBAL DEFAULT   11 result_buff
-   762: 00082310     4 OBJECT  GLOBAL DEFAULT   11 s7816_rtx_pin
-   763: 200100c4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_0
-   764: 2000836c    40 FUNC    GLOBAL DEFAULT    6 pwm_ir_dma_mode_start
-   765: 20005d8c   124 FUNC    GLOBAL DEFAULT    6 audio_codec_adc_power_dow
-   766: 000802b4     4 OBJECT  GLOBAL DEFAULT    9 FLASH_CNT
-   767: 20005b04    56 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_chain_init
-   768: 2000f55c    40 FUNC    GLOBAL DEFAULT    6 strlen
-   769: 200042bc    76 FUNC    GLOBAL DEFAULT    6 adc_get_code_dma
-   770: 00002e30    64 FUNC    GLOBAL DEFAULT    5 rf_set_rxmode
-   771: 00080030    35 OBJECT  GLOBAL DEFAULT    9 audio_i2s_44k1_config
-   772: 2000bc88    78 FUNC    GLOBAL DEFAULT    6 flash_power_off_on
-   773: 2000ae54   256 FUNC    GLOBAL DEFAULT    6 uart_send_dma
-   774: 2000bea4   124 FUNC    GLOBAL DEFAULT    6 flash_trim_check
-   775: 2000b684    60 FUNC    GLOBAL DEFAULT    6 result_buff_init
-   776: 00082314     4 OBJECT  GLOBAL DEFAULT   11 s7816_rst_pin
-   777: 200085f4   308 FUNC    GLOBAL DEFAULT    6 s7816_init
-   778: 200059e0   236 FUNC    GLOBAL DEFAULT    6 audio_init_i2c
-   779: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq29
-   780: 2000b588    20 FUNC    GLOBAL DEFAULT    6 flash_lock_otp_mid166085
-   781: 00082318     1 OBJECT  GLOBAL DEFAULT   11 s7816_clock
-   782: 00080388     2 OBJECT  GLOBAL DEFAULT   10 audio_i2s_invert_config
-   783: 2000b6d0    64 FUNC    GLOBAL DEFAULT    6 crc_16
-   784: 20003464   374 FUNC    GLOBAL DEFAULT    6 bt_dbg_set_signal
-   785: 200061ac    64 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_single_tone
-   786: 2000b5f0    26 FUNC    GLOBAL DEFAULT    6 flash_unlock_mid166085
-   787: 000822d6     1 OBJECT  GLOBAL DEFAULT   11 adc_dma_chn
-   788: 2000b710   164 FUNC    GLOBAL DEFAULT    6 para_buff_read
-   789: 2000883c    96 FUNC    GLOBAL DEFAULT    6 s7816_release_trig
-   790: 20007c94    88 FUNC    GLOBAL DEFAULT    6 i2c_master_write_read
-   791: 200100e8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_1
-   792: 20009dcc   356 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_dma
-   793: 200035dc    12 FUNC    GLOBAL DEFAULT    6 myudb_set_txfifo_local
-   794: 20006c00    40 FUNC    GLOBAL DEFAULT    6 flash_erase_sector
-   795: 20003d38    24 FUNC    GLOBAL DEFAULT    6 adc_stop_sample_dma
-   796: 2000b3f4    48 FUNC    GLOBAL DEFAULT    6 flash_write_status_mid156
-   797: 00002e70    60 FUNC    GLOBAL DEFAULT    5 rf_start_stx
-   798: 00080250    16 OBJECT  GLOBAL DEFAULT    9 config_addr
-   799: 20004ec0    52 FUNC    GLOBAL DEFAULT    6 audio_codec_set_micbias
-   800: 2000ca98   248 FUNC    GLOBAL DEFAULT    6 rf_set_ble_1M_NO_PN_mode
-   801: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq7
-   802: 20008b4c    24 FUNC    GLOBAL DEFAULT    6 hspi_change_csn_pin
-   803: 0008030c     1 OBJECT  GLOBAL DEFAULT    9 g_i2c_stop_en
-   804: 20005364    96 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_add_list_ele
-   805: 2000b59c    52 FUNC    GLOBAL DEFAULT    6 flash_write_config_mid166
-   806: 2000528c   216 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_config
-   807: 00001548   308 FUNC    GLOBAL DEFAULT    5 spi_set_tx_dma
-   808: 2000b664    32 FUNC    GLOBAL DEFAULT    6 para_buff_have_data
-   809: 20008728   128 FUNC    GLOBAL DEFAULT    6 s7816_set_pin
-   810: 2000bb54    44 FUNC    WEAK   DEFAULT    6 except_handler
-   811: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq32
-   812: 00000000     0 FUNC    GLOBAL DEFAULT    2 _IRESET_ENTRY
-   813: 2000ba58   214 FUNC    GLOBAL DEFAULT    6 user_read_flash_value_cal
-   814: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq18
-   815: 2000be1c   136 FUNC    GLOBAL DEFAULT    6 flash_trim
-   816: 2000f5c0    72 FUNC    GLOBAL DEFAULT    6 viprintf
-   817: 2000c308    86 FUNC    GLOBAL DEFAULT    6 rf_set_power_level
-   818: 00002dd0    96 FUNC    GLOBAL DEFAULT    5 plic_enter_critical_sec
-   819: 000802cc     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_adc_16k_dac_48k
-   820: 2000fab2    32 FUNC    GLOBAL DEFAULT    6 __int_to_poly
-   821: 20003b98    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_product
-   822: 20003394     0 NOTYPE  WEAK   DEFAULT    6 entry_irq25
-   823: 20008d8c    52 FUNC    GLOBAL DEFAULT    6 hspi_set_pin
-   824: 200044b8    48 FUNC    GLOBAL DEFAULT    6 aes_encrypt
-   825: 00080338     8 OBJECT  GLOBAL DEFAULT    9 uart_tx_dma_config
+   231: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq1
+   232: 2000b2f0    48 FUNC    GLOBAL DEFAULT    6 flash_write_status_mid146
+   233: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq52
+   234: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq50
+   235: 000802b4     4 OBJECT  GLOBAL DEFAULT    9 STACK_SIZE
+   236: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq62
+   237: 2000f4de    30 FUNC    GLOBAL DEFAULT    6 printf
+   238: 00080800     0 NOTYPE  GLOBAL DEFAULT    9 __global_pointer$
+   239: 20007fe4   170 FUNC    GLOBAL DEFAULT    6 lpc_set_input_ref
+   240: 20010070     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_8
+   241: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq58
+   242: 20004048    80 FUNC    GLOBAL DEFAULT    6 adc_set_vbat_divider
+   243: 00082314     4 OBJECT  GLOBAL DEFAULT   11 s7816_vcc_pin
+   244: 20009ba8   240 FUNC    GLOBAL DEFAULT    6 spi_master_write_dma_plus
+   245: 00080260    32 OBJECT  GLOBAL DEFAULT    9 page_program_addr
+   246: 2000aa44    80 FUNC    GLOBAL DEFAULT    6 uart_set_rts_level
+   247: 2000b5a4    32 FUNC    GLOBAL DEFAULT    6 flash_lock_mid166085
+   248: 2000b53c    16 FUNC    GLOBAL DEFAULT    6 flash_write_otp_mid166085
+   249: 000802cc     4 OBJECT  GLOBAL DEFAULT    9 aes_base_addr
+   250: 200080c4   160 FUNC    GLOBAL DEFAULT    6 mdec_read_dat
+   251: 0000018c     4 OBJECT  GLOBAL DEFAULT    4 flash_read_page
+   252: 200100bc     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_3
+   253: 20003cd0    60 FUNC    GLOBAL DEFAULT    6 adc_clr_sample_status_dma
+   254: 20007ad8   200 FUNC    GLOBAL DEFAULT    6 i2c_master_write
+   255: 2000b2c8    40 FUNC    GLOBAL DEFAULT    6 flash_read_status_mid1460
+   256: 20005894    52 FUNC    GLOBAL DEFAULT    6 audio_i2s_config
+   257: 000001ec     0 NOTYPE  GLOBAL DEFAULT    4 _RETENTION_DATA_VMA_END
+   258: 00080310     6 OBJECT  GLOBAL DEFAULT    9 sys_clk
+   259: 20008e48    64 FUNC    GLOBAL DEFAULT    6 spi_slave_init
+   260: 000009b8    64 FUNC    GLOBAL DEFAULT    5 analog_write_reg32
+   261: 20008cbc    12 FUNC    GLOBAL DEFAULT    6 pspi_cs_pin_en
+   262: 20004f64   284 FUNC    GLOBAL DEFAULT    6 audio_set_dmic_pin
+   263: 20006a90    40 FUNC    GLOBAL DEFAULT    6 flash_dread
+   264: 200100a8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_10
+   265: 20008fa8    48 FUNC    GLOBAL DEFAULT    6 hspi_set_quad_mode
+   266: 2000cf08   906 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cfft_rd2_q15
+   267: 2000b40c    16 FUNC    GLOBAL DEFAULT    6 flash_read_otp_mid156085
+   268: 20007420   308 FUNC    GLOBAL DEFAULT    6 gpio_set_irq
+   269: 20005080    44 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_en
+   270: 20004004    68 FUNC    GLOBAL DEFAULT    6 adc_set_scale_factor
+   271: 200041d4    96 FUNC    GLOBAL DEFAULT    6 adc_temperature_sample_in
+   272: 20010070     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_11
+   273: 20005c64   140 FUNC    GLOBAL DEFAULT    6 audio_codec_dac_power_dow
+   274: 20007e10   112 FUNC    GLOBAL DEFAULT    6 i2c_slave_set_tx_dma
+   275: 2000e564   158 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cmag_q15
+   276: 00001500    68 FUNC    GLOBAL DEFAULT    5 mtime_set_interval_ms
+   277: 2000f420     6 FUNC    GLOBAL DEFAULT    6 __errno
+   278: 2000b3f8    20 FUNC    GLOBAL DEFAULT    6 flash_get_lock_block_mid1
+   279: 20006cb0   124 FUNC    GLOBAL DEFAULT    6 flash_write_status
+   280: 000822e4     1 OBJECT  GLOBAL DEFAULT   11 audio_rx_dma_chn
+   281: 2000aa0c    56 FUNC    GLOBAL DEFAULT    6 uart_send_word
+   282: 2000f5dc    76 FUNC    GLOBAL DEFAULT    6 __print_integral
+   283: 2000c238    48 FUNC    GLOBAL DEFAULT    6 rf_update_internal_cap
+   284: 2000b35c    16 FUNC    GLOBAL DEFAULT    6 flash_read_otp_mid146085
+   285: 2000ade8    64 FUNC    GLOBAL DEFAULT    6 uart_send
+   286: 0000167c   240 FUNC    GLOBAL DEFAULT    5 spi_set_rx_dma
+   287: 2000b2ac    24 FUNC    GLOBAL DEFAULT    6 usbhw_read_ctrl_ep_u16
+   288: 00080320     4 OBJECT  GLOBAL DEFAULT    9 i2c_tx_dma_config
+   289: 00000178     2 OBJECT  GLOBAL DEFAULT    4 g_adc_gpio_calib_vref
+   290: 2000f628  1118 FUNC    GLOBAL DEFAULT    6 __printf_impl_lite
+   291: 200031b8    36 FUNC    GLOBAL DEFAULT    6 measure_stack_usage
+   292: 20007a7c    40 FUNC    GLOBAL DEFAULT    6 i2c_master_init
+   293: 20008ebc    48 FUNC    GLOBAL DEFAULT    6 spi_set_transmode
+   294: 20006d2c    40 FUNC    GLOBAL DEFAULT    6 flash_read_otp
+   295: 2000b3a0    40 FUNC    GLOBAL DEFAULT    6 flash_read_status_mid1560
+   296: 00000000     0 NOTYPE  GLOBAL DEFAULT    2 _RETENTION_RESET_VMA_STAR
+   297: 20004838   208 FUNC    GLOBAL DEFAULT    6 analog_write_reg32_dma
+   298: 20003370   200 FUNC    GLOBAL DEFAULT    6 bt_dbg_set_pin
+   299: 20006224   168 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_continue_update
+   300: 2000653c   108 FUNC    GLOBAL DEFAULT    6 rf_emi_rx_loop
+   301: 200058c8   236 FUNC    GLOBAL DEFAULT    6 audio_init
+   302: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq10
+   303: 2000b214    20 FUNC    GLOBAL DEFAULT    6 usbhw_disable_manual_inte
+   304: 20006ae0    44 FUNC    GLOBAL DEFAULT    6 flash_read_mid
+   305: 2000d694  1778 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cfft_rd4_q15
+   306: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq21
+   307: 2000b4c0    40 FUNC    GLOBAL DEFAULT    6 flash_read_status_mid1660
+   308: 20008540   136 FUNC    GLOBAL DEFAULT    6 s7816_set_vcc_pin
+   309: 00080308     4 OBJECT  GLOBAL DEFAULT    9 audio_dma_tx_config
+   310: 00000158     0 NOTYPE  GLOBAL DEFAULT    3 _AES_VMA_START
+   311: 2000b0e8   108 FUNC    GLOBAL DEFAULT    6 uart_cts_config
+   312: 0008032c     4 OBJECT  GLOBAL DEFAULT    9 pspi_rx_dma_config
+   313: 2000cd74   330 FUNC    GLOBAL DEFAULT    6 ref__mathlib_rredf2
+   314: 2000ab8c   248 FUNC    GLOBAL DEFAULT    6 uart_set_rts_pin
+   315: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq48
+   316: 2000b240    88 FUNC    GLOBAL DEFAULT    6 usbhw_write_ep
+   317: 200092b4   232 FUNC    GLOBAL DEFAULT    6 spi_master_write
+   318: 2000445c    48 FUNC    GLOBAL DEFAULT    6 aes_get_result
+   319: 2000bb24     4 FUNC    WEAK   DEFAULT    6 mswi_irq_handler
+   320: 200100bc     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_2
+   321: 200038b0   292 FUNC    GLOBAL DEFAULT    6 usb_send_str_data
+   322: 20007848   170 FUNC    GLOBAL DEFAULT    6 gpio_set_pullup_res_30k
+   323: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq8
+   324: 20007fb8    40 FUNC    GLOBAL DEFAULT    6 i2c_set_rx_dma_config
+   325: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq33
+   326: 20003854    60 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_ctl_ep_d
+   327: 2000d294  1020 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cifft_rd2_q15
+   328: 20004398   196 FUNC    GLOBAL DEFAULT    6 aes_set_key_data
+   329: 200031e8    16 FUNC    GLOBAL DEFAULT    6 read_perf_counters
+   330: 2000accc   284 FUNC    GLOBAL DEFAULT    6 uart_set_rtx_pin
+   331: 00082328    64 OBJECT  GLOBAL DEFAULT   11 para_buff
+   332: 20009f4c   456 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_ful
+   333: 00082580     0 NOTYPE  GLOBAL DEFAULT   11 _BSS_VMA_END
+   334: 0000116c   456 FUNC    GLOBAL DEFAULT    5 flash_mspi_read_ram
+   335: 20003e88    16 FUNC    GLOBAL DEFAULT    6 adc_set_gpio_two_point_ca
+   336: 2000f46c   112 FUNC    GLOBAL DEFAULT    6 memcpy
+   337: 20003b50    12 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_languag
+   338: 2000996c   224 FUNC    GLOBAL DEFAULT    6 spi_master_write_dma
+   339: 0000017c     2 OBJECT  GLOBAL DEFAULT    4 g_adc_vref
+   340: 20000190     0 NOTYPE  GLOBAL DEFAULT  ABS _RETENTION_RESET_LMA_STAR
+   341: 000803f4     1 OBJECT  GLOBAL DEFAULT   10 g_single_tong_freqoffset
+   342: 20007040    20 FUNC    GLOBAL DEFAULT    6 gpio_set_input
+   343: 2000b518    20 FUNC    GLOBAL DEFAULT    6 flash_get_lock_block_mid1
+   344: 2000f0a4   122 FUNC    GLOBAL HIDDEN     6 __floatsidf
+   345: 20008434    96 FUNC    GLOBAL DEFAULT    6 pwm_set_tx_dma_add_list_e
+   346: 00080280    28 OBJECT  GLOBAL DEFAULT    9 cst_libm_sincosf
+   347: 2000bf54   740 FUNC    GLOBAL DEFAULT    6 sys_init
+   348: 2000f628  1118 FUNC    GLOBAL DEFAULT    6 __printf_impl
+   349: 2000b5fc    60 FUNC    GLOBAL DEFAULT    6 para_buff_init
+   350: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq12
+   351: 2000f4fc    52 FUNC    GLOBAL DEFAULT    6 puts
+   352: 20006b0c    48 FUNC    GLOBAL DEFAULT    6 flash_read_uid
+   353: 00001f38   224 FUNC    GLOBAL DEFAULT    5 flash_power_off_on_ram
+   354: 00001b78    48 FUNC    GLOBAL DEFAULT    5 mspi_as_mspi
+   355: 20008368   204 FUNC    GLOBAL DEFAULT    6 pwm_set_dma_chain_llp
+   356: 20004234    92 FUNC    GLOBAL DEFAULT    6 adc_battery_voltage_sampl
+   357: 20007aa4    28 FUNC    GLOBAL DEFAULT    6 i2c_set_master_clk
+   358: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq14
+   359: 00080060    18 OBJECT  GLOBAL DEFAULT    9 LineIn_To_I2S_CMD_TAB
+   360: 000822e0     1 OBJECT  GLOBAL DEFAULT   11 g_adc_pre_scale
+   361: 000802e0     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_192k_config
+   362: 20003e24    88 FUNC    GLOBAL DEFAULT    6 adc_set_diff_pin
+   363: 20010b90   522 OBJECT  GLOBAL DEFAULT    7 riscv_dsp_cos_table_q15_1
+   364: 2000c878   254 FUNC    GLOBAL DEFAULT    6 rf_set_ble_500K_mode
+   365: 20010068     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_12
+   366: 2000b298    20 FUNC    GLOBAL DEFAULT    6 usbhw_write_ctrl_ep_u16
+   367: 2000b0b4    52 FUNC    GLOBAL DEFAULT    6 uart_set_rx_dma_config
+   368: 00080620  1024 OBJECT  GLOBAL DEFAULT   11 input
+   369: 2000b86c   380 FUNC    GLOBAL DEFAULT    6 user_calib_adc_vref
+   370: 00081020   320 OBJECT  GLOBAL DEFAULT   11 buff
+   371: 2000460c   288 FUNC    GLOBAL DEFAULT    6 aes_decrypt_bt_en
+   372: 20005b10    56 FUNC    GLOBAL DEFAULT    6 audio_set_ext_codec
+   373: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq2
+   374: 20003ae8   100 FUNC    GLOBAL DEFAULT    6 myudb_usb_init
+   375: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq51
+   376: 20004c4c    12 FUNC    GLOBAL DEFAULT    6 audio_set_i2s_codec_m_s
+   377: 200100a8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_11
+   378: 200096f0   348 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_plu
+   379: 200045dc    48 FUNC    GLOBAL DEFAULT    6 aes_decrypt
+   380: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq28
+   381: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq43
+   382: 20007684   304 FUNC    GLOBAL DEFAULT    6 gpio_set_gpio2risc1_irq
+   383: 0000096c    76 FUNC    GLOBAL DEFAULT    5 analog_read_reg32
+   384: 20010098     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_1
+   385: 00001b44    52 FUNC    GLOBAL DEFAULT    5 mspi_as_gpio
+   386: 2000b320    20 FUNC    GLOBAL DEFAULT    6 flash_lock_mid146085
+   387: 00080328     4 OBJECT  GLOBAL DEFAULT    9 pwm_tx_dma_config
+   388: 200100bc     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_0
+   389: 000802d0     4 OBJECT  GLOBAL DEFAULT    9 analog_rx_dma_config
+   390: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq20
+   391: 2001007e     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_7
+   392: 2000b4a4    26 FUNC    GLOBAL DEFAULT    6 flash_unlock_mid156085
+   393: 00080368     0 NOTYPE  GLOBAL DEFAULT   10 _BSS_VMA_START
+   394: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq63
+   395: 20005ddc   112 FUNC    GLOBAL DEFAULT    6 audio_codec_adc_power_on
+   396: 00080364     0 NOTYPE  GLOBAL DEFAULT    9 _DATA_VMA_END
+   397: 20008aa0   128 FUNC    GLOBAL DEFAULT    6 hspi_cs_pin_dis
+   398: 00000c14   264 FUNC    GLOBAL DEFAULT    5 audio_set_i2s_clock
+   399: 200082c4    36 FUNC    GLOBAL DEFAULT    6 pwm_set_dma_config
+   400: 2000aa94   248 FUNC    GLOBAL DEFAULT    6 uart_set_cts_pin
+   401: 2000cb68   126 FUNC    GLOBAL DEFAULT    6 rf_mode_init
+   402: 2001098c   514 OBJECT  GLOBAL DEFAULT    7 riscv_dsp_cos_table_q15_l
+   403: 20003c1c   152 FUNC    GLOBAL DEFAULT    6 adc_start_sample_dma
+   404: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq46
+   405: 2000c978   242 FUNC    GLOBAL DEFAULT    6 rf_set_ble_2M_NO_PN_mode
+   406: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq31
+   407: 00082310     1 OBJECT  GLOBAL DEFAULT   11 g_clk_32k_src
+   408: 000014f0    16 FUNC    GLOBAL DEFAULT    5 mtime_set_cmp_value
+   409: 2000360c   192 FUNC    GLOBAL DEFAULT    6 myudb_usb_prepare_desc_da
+   410: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq16
+   411: 20007ba0   200 FUNC    GLOBAL DEFAULT    6 i2c_master_read
+   412: 00100000     0 NOTYPE  GLOBAL DEFAULT  ABS FLASH_SIZE
+   413: 2000b9e8    68 FUNC    GLOBAL DEFAULT    6 user_calib_freq_offset
+   414: 200100b2     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_5
+   415: 00082368   256 OBJECT  GLOBAL DEFAULT   11 command_buff
+   416: 20004380    24 FUNC    GLOBAL DEFAULT    6 adc_calculate_temperature
+   417: 20006e24    48 FUNC    GLOBAL DEFAULT    6 flash_read_config
+   418: 0000017a     1 OBJECT  GLOBAL DEFAULT    4 g_adc_gpio_calib_vref_off
+   419: 000822e5     1 OBJECT  GLOBAL DEFAULT   11 audio_tx_dma_chn
+   420: 200098c4    40 FUNC    GLOBAL DEFAULT    6 pspi_set_rx_dma_config
+   421: 2000989c    40 FUNC    GLOBAL DEFAULT    6 pspi_set_tx_dma_config
+   422: 00080000     0 NOTYPE  GLOBAL DEFAULT    9 _DATA_VMA_START
+   423: 00081160  4480 OBJECT  GLOBAL DEFAULT   11 myudb_txfifo_b
+   424: 00000d1c    32 FUNC    GLOBAL DEFAULT    5 audio_change_sample_rate
+   425: 2000e6b0   930 FUNC    GLOBAL HIDDEN     6 __udivdi3
+   426: 00080a20   512 OBJECT  GLOBAL DEFAULT   11 magnitude
+   427: 20006a68    40 FUNC    GLOBAL DEFAULT    6 flash_read_data
+   428: 00080110   256 OBJECT  GLOBAL DEFAULT    9 program_buff
+   429: 200084b0     8 FUNC    GLOBAL DEFAULT    6 s7816_set_time
+   430: 00080000    12 OBJECT  GLOBAL DEFAULT    9 myudb_txfifo
+   431: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq53
+   432: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq11
+   433: 20004ec8   156 FUNC    GLOBAL DEFAULT    6 audio_set_codec_supply
+   434: 2000475c   220 FUNC    GLOBAL DEFAULT    6 analog_read_reg32_dma
+   435: 20005200    96 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_add_list_ele
+   436: 000803b0     1 OBJECT  GLOBAL DEFAULT   10 i2c_slave_rx_index
+   437: 200106fc    24 OBJECT  GLOBAL DEFAULT    7 cst_libm_rredf
+   438: 20004908   228 FUNC    GLOBAL DEFAULT    6 analog_write_buff_dma
+   439: 20006a54    20 FUNC    GLOBAL DEFAULT    6 flash_plic_preempt_config
+   440: 000803e8     4 OBJECT  GLOBAL DEFAULT   10 config_read_buff
+   441: 00000154     0 NOTYPE  GLOBAL DEFAULT    2 _RETENTION_RESET_VMA_END
+   442: 0008000c    35 OBJECT  GLOBAL DEFAULT    9 audio_i2s_48k_config
+   443: 20008090    52 FUNC    GLOBAL DEFAULT    6 mdec_init
+   444: 2000319c    28 FUNC    GLOBAL DEFAULT    6 fill_stack_pattern_to_sp
+   445: 2000ff66    24 FUNC    GLOBAL DEFAULT    6 strnlen
+   446: 200065b0     8 FUNC    GLOBAL DEFAULT    6 rf_emi_get_rssi_avg
+   447: 20009c98   264 FUNC    GLOBAL DEFAULT    6 spi_master_read_dma_plus
+   448: 200100b2     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_6
+   449: 20009874    40 FUNC    GLOBAL DEFAULT    6 hspi_set_rx_dma_config
+   450: 00000478   108 FUNC    GLOBAL DEFAULT    5 myudb_usb_get_packet
+   451: 200044bc   288 FUNC    GLOBAL DEFAULT    6 aes_encrypt_bt_en
+   452: 2000877c   148 FUNC    GLOBAL DEFAULT    6 s7816_coldreset
+   453: 00080210    64 OBJECT  GLOBAL DEFAULT    9 plane_program_addr
+   454: 2000b694    16 FUNC    GLOBAL DEFAULT    6 result_buff_clear
+   455: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq5
+   456: 20006c80    48 FUNC    GLOBAL DEFAULT    6 flash_read_status
+   457: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq23
+   458: 2000336a     0 NOTYPE  WEAK   DEFAULT    6 trap_handler
+   459: 00000188     4 OBJECT  GLOBAL DEFAULT    4 flash_write_page
+   460: 0008037c     4 OBJECT  GLOBAL DEFAULT   10 myudb_fifo
+   461: 200050d4    44 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_en
+   462: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq34
+   463: 200091b0    80 FUNC    GLOBAL DEFAULT    6 pspi_master_config_plus
+   464: 2000b37c    16 FUNC    GLOBAL DEFAULT    6 flash_erase_otp_mid146085
+   465: 20009a4c   348 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_dma
+   466: 20006de0    28 FUNC    GLOBAL DEFAULT    6 flash_set_xip_config
+   467: 2000b41c    16 FUNC    GLOBAL DEFAULT    6 flash_write_otp_mid156085
+   468: 20010008    46 FUNC    GLOBAL HIDDEN     6 __lshrdi3
+   469: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq36
+   470: 20010070     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_9
+   471: 2000c374    94 FUNC    GLOBAL DEFAULT    6 rf_set_rx_dma
+   472: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq44
+   473: 200060d8    26 FUNC    GLOBAL DEFAULT    6 clock_init
+   474: 2000c654   288 FUNC    GLOBAL DEFAULT    6 rf_set_zigbee_250K_mode
+   475: 20007e80   120 FUNC    GLOBAL DEFAULT    6 i2c_slave_set_rx_dma
+   476: 20006a30    34 FUNC    GLOBAL DEFAULT    6 rf_emi_reset_baseband
+   477: 000803bc     2 OBJECT  GLOBAL DEFAULT   10 uart_rx_byte_index
+   478: 0000176c   100 FUNC    GLOBAL DEFAULT    5 hspi_master_write_xip
+   479: 00001e58   224 FUNC    GLOBAL DEFAULT    5 flash_write_testmode
+   480: 2000f594    72 FUNC    GLOBAL DEFAULT    6 vprintf
+   481: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq45
+   482: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq26
+   483: 2001007e     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_4
+   484: 00080358     3 OBJECT  GLOBAL DEFAULT    9 enter_cmd_trim
+   485: 200036ec   256 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_request
+   486: 20005100    40 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_dis
+   487: 2000a200    56 FUNC    GLOBAL DEFAULT    6 timer_start
+   488: 00082468    20 OBJECT  GLOBAL DEFAULT   11 par_addr
+   489: 000014e0    16 FUNC    GLOBAL DEFAULT    5 mtime_get_value
+   490: 00082318     4 OBJECT  GLOBAL DEFAULT   11 s7816_rst_time
+   491: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq41
+   492: 20008fd8    96 FUNC    GLOBAL DEFAULT    6 spi_set_3line_mode
+   493: 00080104    12 OBJECT  GLOBAL DEFAULT    9 flash_support_mid
+   494: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq61
+   495: 200035bc     8 FUNC    GLOBAL DEFAULT    6 myudb_set_txfifo
+   496: 2000b008   120 FUNC    GLOBAL DEFAULT    6 uart_get_dma_rev_data_len
+   497: 20008870   112 FUNC    GLOBAL DEFAULT    6 s7816_warmreset
+   498: 2000a64c   236 FUNC    GLOBAL DEFAULT    6 uart_init
+   499: 2001078c   512 OBJECT  GLOBAL DEFAULT    7 riscv_dsp_cos_recip_table
+   500: 00001d2c   300 FUNC    GLOBAL DEFAULT    5 flash_read_testmode
+   501: 20000000     0 NOTYPE  GLOBAL DEFAULT    1 BIN_BEGIN
+   502: 20003b9c    14 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_configu
+   503: 20006d54   100 FUNC    GLOBAL DEFAULT    6 flash_write_otp
+   504: 00080334     4 OBJECT  GLOBAL DEFAULT    9 hspi_rx_dma_config
+   505: 20006b3c   152 FUNC    GLOBAL DEFAULT    6 flash_read_mid_uid_with_c
+   506: 20008f48    96 FUNC    GLOBAL DEFAULT    6 spi_set_dual_mode
+   507: 20010098     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_3
+   508: 20004344    60 FUNC    GLOBAL DEFAULT    6 adc_calculate_voltage
+   509: 2000bcf8    28 FUNC    GLOBAL DEFAULT    6 flash_erase_chip
+   510: 20004e20    40 FUNC    GLOBAL DEFAULT    6 audio_i2s_set_pin
+   511: 000802b8     4 OBJECT  GLOBAL DEFAULT    9 stack_limit
+   512: 2000b54c    16 FUNC    GLOBAL DEFAULT    6 flash_erase_otp_mid166085
+   513: 2000586c    40 FUNC    GLOBAL DEFAULT    6 audio_mux_config
+   514: 000017d0    98 FUNC    GLOBAL DEFAULT    5 hspi_master_read_xip
+   515: 20007554   304 FUNC    GLOBAL DEFAULT    6 gpio_set_gpio2risc0_irq
+   516: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq38
+   517: 00000304   168 FUNC    GLOBAL DEFAULT    5 usb_send_status_pkt
+   518: 000001dc     1 OBJECT  GLOBAL DEFAULT    4 g_plic_preempt_en
+   519: 00080300     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_8k_config
+   520: 20005ffc   220 FUNC    GLOBAL DEFAULT    6 clock_cal_32k_rc
+   521: 2000b080    52 FUNC    GLOBAL DEFAULT    6 uart_set_tx_dma_config
+   522: 00000200     0 NOTYPE  GLOBAL DEFAULT    5 __vectors
+   523: 2000a8cc    68 FUNC    GLOBAL DEFAULT    6 uart_set_rx_timeout
+   524: 00011426     0 NOTYPE  GLOBAL DEFAULT  ABS BIN_SIZE
+   525: 000802f8     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_16k_config
+   526: 20008a94    12 FUNC    GLOBAL DEFAULT    6 hspi_cs_pin_en
+   527: 2000a738   404 FUNC    GLOBAL DEFAULT    6 uart_cal_div_and_bwpc
+   528: 20007188   664 FUNC    GLOBAL DEFAULT    6 gpio_shutdown
+   529: 20008498    24 FUNC    GLOBAL DEFAULT    6 s7816_set_clk
+   530: 200053c4    36 FUNC    GLOBAL DEFAULT    6 audio_i2c_codec_write
+   531: 20009260    84 FUNC    GLOBAL DEFAULT    6 spi_read
+   532: 2000b348    20 FUNC    GLOBAL DEFAULT    6 flash_get_lock_block_mid1
+   533: 20008e88    52 FUNC    GLOBAL DEFAULT    6 spi_set_dummy_cnt
+   534: 2000bd14   216 FUNC    GLOBAL DEFAULT    6 flash_check_scratch
+   535: 20010edc    16 OBJECT  GLOBAL DEFAULT    7 __digits
+   536: 2000b43c    20 FUNC    GLOBAL DEFAULT    6 flash_lock_otp_mid156085
+   537: 00080378     4 OBJECT  GLOBAL DEFAULT   10 myudb_hci_cmd_cb
+   538: 20000360     0 NOTYPE  GLOBAL DEFAULT  ABS _RAMCODE_LMA_START
+   539: 000010cc    72 FUNC    GLOBAL DEFAULT    5 flash_send_cmd
+   540: 2000891c   376 FUNC    GLOBAL DEFAULT    6 hspi_set_pin_mux
+   541: 20004ae0   270 FUNC    GLOBAL DEFAULT    6 analog_write_addr_data_dm
+   542: 00000158    32 OBJECT  GLOBAL DEFAULT    3 aes_data_buff
+   543: 20003e98   144 FUNC    GLOBAL DEFAULT    6 adc_set_ref_voltage
+   544: 20003890    32 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_ctl_ep_s
+   545: 00080404     4 OBJECT  GLOBAL DEFAULT   10 __printf_count
+   546: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq59
+   547: 20008eec    92 FUNC    GLOBAL DEFAULT    6 spi_set_normal_mode
+   548: 2000a964    52 FUNC    GLOBAL DEFAULT    6 uart_read_byte
+   549: 00000182     1 OBJECT  GLOBAL DEFAULT    4 tl_24mrc_cal
+   550: 20003bac   112 FUNC    GLOBAL DEFAULT    6 adc_set_dma_config
+   551: 2000bf14    60 FUNC    GLOBAL DEFAULT    6 efuse_get_adc_calib_value
+   552: 2000dd88  2010 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cifft_rd4_q15
+   553: 2000af28   224 FUNC    GLOBAL DEFAULT    6 uart_receive_dma
+   554: 2000f428    68 FUNC    GLOBAL DEFAULT    6 memcmp
+   555: 20005ec4   312 FUNC    GLOBAL DEFAULT    6 clock_kick_32k_xtal
+   556: 000802bc     4 OBJECT  GLOBAL DEFAULT    9 stack_top
+   557: 00000894    72 FUNC    GLOBAL DEFAULT    5 analog_write_reg8
+   558: 200082e8    88 FUNC    GLOBAL DEFAULT    6 pwm_set_dma_buf
+   559: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq6
+   560: 20007cc0   160 FUNC    GLOBAL DEFAULT    6 i2c_master_write_dma
+   561: 2000ea54  1612 FUNC    GLOBAL HIDDEN     6 __muldf3
+   562: 20010070     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_10
+   563: 000803f8     4 OBJECT  GLOBAL DEFAULT   10 __mculib_REENT_errno
+   564: 20003cb4    28 FUNC    GLOBAL DEFAULT    6 adc_get_sample_status_dma
+   565: 00001834    28 FUNC    GLOBAL DEFAULT    5 delay_us
+   566: 200110a0     0 NOTYPE  GLOBAL DEFAULT  ABS _DATA_LMA_START
+   567: 20004c58    12 FUNC    GLOBAL DEFAULT    6 audio_set_output_chn
+   568: 00082580    34 OBJECT  GLOBAL DEFAULT   12 sdk_version
+   569: 20006dfc    40 FUNC    GLOBAL DEFAULT    6 flash_write_config
+   570: 2000faa6   134 FUNC    GLOBAL DEFAULT    6 __print_integral_poly
+   571: 20000000     0 NOTYPE  GLOBAL DEFAULT  ABS NDS_SAG_LMA_FLASH
+   572: 2000b38c    18 FUNC    GLOBAL DEFAULT    6 flash_lock_otp_mid146085
+   573: 200100b2     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_4
+   574: 200100a8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_8
+   575: 000803c0     2 OBJECT  GLOBAL DEFAULT   10 uart_tx_byte_index
+   576: 2000b36c    16 FUNC    GLOBAL DEFAULT    6 flash_write_otp_mid146085
+   577: 2000b228    24 FUNC    GLOBAL DEFAULT    6 usbhw_enable_manual_inter
+   578: 00001c88   164 FUNC    GLOBAL DEFAULT    5 flash_exit_test_mode
+   579: 2001007e     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_6
+   580: 200070e8   160 FUNC    GLOBAL DEFAULT    6 gpio_ds_dis
+   581: 2000c418   282 FUNC    GLOBAL DEFAULT    6 rf_set_pri_2M_mode
+   582: 00000af0   292 FUNC    GLOBAL DEFAULT    5 analog_write_buff
+   583: 20000000     0 NOTYPE  WEAK   DEFAULT    1 _RELAX_END_
+   584: 000014d0    16 FUNC    GLOBAL DEFAULT    5 mtime_set_value
+   585: 2000ff80   134 FUNC    GLOBAL DEFAULT    6 memset
+   586: 2000fb2c  1028 FUNC    GLOBAL DEFAULT    6 __printf_float_impl
+   587: 200100a8     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_9
+   588: 200100b2     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_7
+   589: 200031f8   366 FUNC    GLOBAL DEFAULT    6 main
+   590: 20003368     0 NOTYPE  GLOBAL DEFAULT    6 default_irq_entry
+   591: 00001850    34 FUNC    GLOBAL DEFAULT    5 delay_ms
+   592: 2000c348    42 FUNC    GLOBAL DEFAULT    6 rf_set_txmode
+   593: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq3
+   594: 00001874   390 FUNC    GLOBAL DEFAULT    5 trap_entry
+   595: 0000017e     1 OBJECT  GLOBAL DEFAULT    4 g_adc_vref_offset
+   596: 20005c38    44 FUNC    GLOBAL DEFAULT    6 audio_resume_out_path
+   597: 20004d28   248 FUNC    GLOBAL DEFAULT    6 audio_i2s_set_pin_mux
+   598: 20004bf0    12 FUNC    GLOBAL DEFAULT    6 audio_set_mono_chn
+   599: 00000178     0 NOTYPE  GLOBAL DEFAULT    3 _AES_VMA_END
+   600: 200065b8    80 FUNC    GLOBAL DEFAULT    6 rf_phy_test_prbs9
+   601: 00000e44   570 FUNC    GLOBAL DEFAULT    5 clock_init_ram
+   602: 200065a8     8 FUNC    GLOBAL DEFAULT    6 rf_emi_get_rxpkt_cnt
+   603: 2000a114   234 FUNC    GLOBAL DEFAULT    6 spi_master_read
+   604: 20007ac0    24 FUNC    GLOBAL DEFAULT    6 i2c_slave_init
+   605: 20008dbc    56 FUNC    GLOBAL DEFAULT    6 spi_slave_set_pin
+   606: 2000f120   768 FUNC    GLOBAL HIDDEN     6 __truncdfsf2
+   607: 2000687c   436 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_burst_setup
+   608: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq39
+   609: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq49
+   610: 200049ec   244 FUNC    GLOBAL DEFAULT    6 analog_read_buff_dma
+   611: 20009200    12 FUNC    GLOBAL DEFAULT    6 hspi_set_address
+   612: 20008df4    84 FUNC    GLOBAL DEFAULT    6 spi_master_init
+   613: 200060f4   140 FUNC    GLOBAL DEFAULT    6 rf_set_power_level_index_
+   614: 20004c10    32 FUNC    GLOBAL DEFAULT    6 audio_set_codec_in_path_a
+   615: 000802d4     4 OBJECT  GLOBAL DEFAULT    9 analog_tx_dma_config
+   616: 20006608   628 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_burst_loop
+   617: 200098ec   128 FUNC    GLOBAL DEFAULT    6 spi_set_dma
+   618: 20006c70    16 FUNC    GLOBAL DEFAULT    6 flash_quad_page_program
+   619: 200031dc    12 FUNC    GLOBAL DEFAULT    6 reset_counters
+   620: 2000a2c0   320 FUNC    GLOBAL DEFAULT    6 timer_gpio_init
+   621: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq57
+   622: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq47
+   623: 00080c20  1024 OBJECT  GLOBAL DEFAULT   11 frequency_bin
+   624: 200002e8     0 NOTYPE  GLOBAL DEFAULT  ABS _RETENTION_DATA_LMA_START
+   625: 20005e50   116 FUNC    GLOBAL DEFAULT    6 clock_32k_init
+   626: 0008033c     8 OBJECT  GLOBAL DEFAULT    9 uart_rx_dma_config
+   627: 000004e4   772 FUNC    GLOBAL DEFAULT    5 myudb_mem_cmd
+   628: 20004c04    12 FUNC    GLOBAL DEFAULT    6 audio_set_codec_mic_input
+   629: 20003d24   256 FUNC    GLOBAL DEFAULT    6 adc_pin_config
+   630: 20000000     0 FUNC    GLOBAL DEFAULT    1 _RESET_ENTRY
+   631: 00000db4    48 FUNC    GLOBAL DEFAULT    5 clock_get_32k_tick
+   632: 0008031c     4 OBJECT  GLOBAL DEFAULT    9 i2c_rx_dma_config
+   633: 2000560c   608 FUNC    GLOBAL DEFAULT    6 audio_codec_adc_config
+   634: 000822e1     1 OBJECT  GLOBAL DEFAULT   11 g_adc_vbat_divider
+   635: 200084b8   136 FUNC    GLOBAL DEFAULT    6 s7816_set_rst_pin
+   636: 2000f4de    30 FUNC    GLOBAL DEFAULT    6 iprintf
+   637: 20006ee0   168 FUNC    GLOBAL DEFAULT    6 gpio_input_en
+   638: 00080520   256 OBJECT  GLOBAL DEFAULT   11 read_buff
+   639: 000007e8    88 FUNC    GLOBAL DEFAULT    5 myudb_hci_cmd_from_usb
+   640: 00000178     0 NOTYPE  GLOBAL DEFAULT    4 _RETENTION_DATA_VMA_START
+   641: 20005398    44 FUNC    GLOBAL DEFAULT    6 audio_i2c_codec_read
+   642: 200035c4    72 FUNC    GLOBAL DEFAULT    6 myudb_usb_send_response
+   643: 20010ddc   256 OBJECT  GLOBAL HIDDEN     7 __clz_tab
+   644: 20008d94    40 FUNC    GLOBAL DEFAULT    6 pspi_set_pin
+   645: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq4
+   646: 000a0000     0 NOTYPE  GLOBAL DEFAULT  ABS _STACK_TOP
+   647: 00001334   296 FUNC    GLOBAL DEFAULT    5 flash_mspi_write_ram
+   648: 200050ac    40 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_dis
+   649: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq22
+   650: 00000844    80 FUNC    GLOBAL DEFAULT    5 analog_read_reg8
+   651: 20004bfc     8 FUNC    GLOBAL DEFAULT    6 audio_invert_i2s_lr_clk
+   652: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq30
+   653: 2000b788   224 FUNC    GLOBAL DEFAULT    6 result_buff_write
+   654: 00000180     2 OBJECT  GLOBAL DEFAULT    4 g_adc_vbat_calib_vref
+   655: 200077b4   148 FUNC    GLOBAL DEFAULT    6 gpio_set_up_down_res
+   656: 20009064    76 FUNC    GLOBAL DEFAULT    6 spi_master_config
+   657: 20005128   216 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_config
+   658: 2000790c   368 FUNC    GLOBAL DEFAULT    6 i2c_set_pin
+   659: 20005ba8    96 FUNC    GLOBAL DEFAULT    6 audio_i2s_init
+   660: 20004098   204 FUNC    GLOBAL DEFAULT    6 adc_init
+   661: 200036cc    32 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_in_class
+   662: 000009f8   248 FUNC    GLOBAL DEFAULT    5 analog_read_buff
+   663: 2000a238    48 FUNC    GLOBAL DEFAULT    6 timer_stop
+   664: 0008030c     4 OBJECT  GLOBAL DEFAULT    9 audio_dma_rx_config
+   665: 20008168    52 FUNC    GLOBAL DEFAULT    6 mtime_clk_init
+   666: 20006e54   138 FUNC    GLOBAL DEFAULT    6 flash_get_vendor
+   667: 200053e8   116 FUNC    GLOBAL DEFAULT    6 audio_i2c_init
+   668: 000019fc   326 FUNC    GLOBAL DEFAULT    5 dr_putchar
+   669: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq42
+   670: 2000ac84    72 FUNC    GLOBAL DEFAULT    6 uart_set_pin
+   671: 200061c0    56 FUNC    GLOBAL DEFAULT    6 rf_emi_stop
+   672: 000822e8    20 OBJECT  GLOBAL DEFAULT   11 g_audio_tx_dma_list_cfg
+   673: 20005b48    96 FUNC    GLOBAL DEFAULT    6 pwm_set
+   674: 2000b484    32 FUNC    GLOBAL DEFAULT    6 flash_lock_mid156085
+   675: 200062e8   212 FUNC    GLOBAL DEFAULT    6 rf_continue_mode_run
+   676: 20009038    44 FUNC    GLOBAL DEFAULT    6 spi_set_io_mode
+   677: 200039d4     8 FUNC    GLOBAL DEFAULT    6 myudb_register_hci_cb
+   678: 2000b52c    16 FUNC    GLOBAL DEFAULT    6 flash_read_otp_mid166085
+   679: 200039dc    12 FUNC    GLOBAL DEFAULT    6 myudb_usb_bulkout_ready
+   680: 2000b5e0    28 FUNC    GLOBAL DEFAULT    6 convert_addr2bus
+   681: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq24
+   682: 200063bc   384 FUNC    GLOBAL DEFAULT    6 rf_emi_rx_setup
+   683: 2000b154   192 FUNC    GLOBAL DEFAULT    6 uart_rts_config
+   684: 00002eac   168 FUNC    GLOBAL DEFAULT    5 rf_set_chn
+   685: 2000a910    84 FUNC    GLOBAL DEFAULT    6 uart_send_byte
+   686: 20003b7c    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_serial
+   687: 2000cbe8   396 FUNC    GLOBAL DEFAULT    6 sinf
+   688: 20010098     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_2
+   689: 00002f54     0 NOTYPE  GLOBAL DEFAULT    5 _RAMCODE_VMA_END
+   690: 20008cc8   128 FUNC    GLOBAL DEFAULT    6 pspi_cs_pin_dis
+   691: 20007f40    80 FUNC    GLOBAL DEFAULT    6 i2c_slave_write
+   692: 20005c08    48 FUNC    GLOBAL DEFAULT    6 audio_pause_out_path
+   693: 00080338     4 OBJECT  GLOBAL DEFAULT    9 hspi_tx_dma_config
+   694: 2000cee4    34 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cifft_q15
+   695: 2000920c    84 FUNC    GLOBAL DEFAULT    6 spi_write
+   696: 200062cc    28 FUNC    GLOBAL DEFAULT    6 emi_pn_gen
+   697: 2000819c   296 FUNC    GLOBAL DEFAULT    6 pwm_set_pin
+   698: 00080330     4 OBJECT  GLOBAL DEFAULT    9 pspi_tx_dma_config
+   699: 0000145c   114 FUNC    GLOBAL DEFAULT    5 flash_set_xip_config_sram
+   700: 20005aa0    56 FUNC    GLOBAL DEFAULT    6 audio_rx_dma_chain_init
+   701: 00000000     0 NOTYPE  WEAK   DEFAULT  ABS _ITB_BASE_
+   702: 2000bb20     4 FUNC    WEAK   DEFAULT    6 mtime_irq_handler
+   703: 2001007e     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_5
+   704: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq19
+   705: 000802c8     4 OBJECT  GLOBAL DEFAULT    9 adc_rx_dma_config
+   706: 2000e604   170 FUNC    GLOBAL DEFAULT    6 riscv_dsp_sqrt_q15
+   707: 2000bb54    58 FUNC    GLOBAL DEFAULT    6 _write
+   708: 20003b8c    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_device
+   709: 20009f04    72 FUNC    GLOBAL DEFAULT    6 hspi_master_write_xip_cmd
+   710: 200037ec   104 FUNC    GLOBAL DEFAULT    6 myudb_usb_handle_ctl_ep_s
+   711: 200061f8    44 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_continue_setup
+   712: 000825a8     0 NOTYPE  GLOBAL DEFAULT   12 _end
+   713: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq17
+   714: 2000984c    40 FUNC    GLOBAL DEFAULT    6 hspi_set_tx_dma_config
+   715: 200088e0    56 FUNC    GLOBAL DEFAULT    6 s7816_send_byte
+   716: 20007ef8    72 FUNC    GLOBAL DEFAULT    6 i2c_slave_read
+   717: 20003e7c    12 FUNC    GLOBAL DEFAULT    6 adc_set_gpio_calib_vref
+   718: 2000939c   340 FUNC    GLOBAL DEFAULT    6 spi_master_write_read
+   719: 20006f88   184 FUNC    GLOBAL DEFAULT    6 gpio_input_dis
+   720: 000822fc    20 OBJECT  GLOBAL DEFAULT   11 g_audio_rx_dma_list_cfg
+   721: 2000472c    44 FUNC    GLOBAL DEFAULT    6 aes_set_em_base_addr
+   722: 2000c534   284 FUNC    GLOBAL DEFAULT    6 rf_set_pri_1M_mode
+   723: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq9
+   724: 200078f4    24 FUNC    GLOBAL DEFAULT    6 i2c_master_send_stop
+   725: 200030b8   226 FUNC    GLOBAL DEFAULT    6 user_init
+   726: 20004c30    28 FUNC    GLOBAL DEFAULT    6 audio_set_codec_out_path_
+   727: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq56
+   728: 20006c60    16 FUNC    GLOBAL DEFAULT    6 flash_page_program
+   729: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq35
+   730: 20007f90    40 FUNC    GLOBAL DEFAULT    6 i2c_set_tx_dma_config
+   731: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq37
+   732: 000802e8     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_32k_config
+   733: 000001e8     4 OBJECT  GLOBAL DEFAULT    4 g_pm_mspi_cfg
+   734: 00000d3c   120 FUNC    GLOBAL DEFAULT    5 clock_cal_24m_rc
+   735: 20004e48    76 FUNC    GLOBAL DEFAULT    6 audio_codec_active
+   736: 00080354     4 OBJECT  GLOBAL DEFAULT    9 config_write_buff
+   737: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq54
+   738: 2000c334    18 FUNC    GLOBAL DEFAULT    6 rf_pn_disable
+   739: 20003b5c    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_vendor
+   740: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq40
+   741: 00001ba8   224 FUNC    GLOBAL DEFAULT    5 flash_enter_test_mode
+   742: 20007d60   176 FUNC    GLOBAL DEFAULT    6 i2c_master_read_dma
+   743: 20006ab8    40 FUNC    GLOBAL DEFAULT    6 flash_4read
+   744: 2000a9b8    84 FUNC    GLOBAL DEFAULT    6 uart_send_hword
+   745: 2000b334    20 FUNC    GLOBAL DEFAULT    6 flash_unlock_mid146085
+   746: 2000b42c    16 FUNC    GLOBAL DEFAULT    6 flash_erase_otp_mid156085
+   747: 000802f0     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_24k_config
+   748: 20008d48    24 FUNC    GLOBAL DEFAULT    6 pspi_change_csn_pin
+   749: 2000bb90   204 FUNC    GLOBAL DEFAULT    6 audio_config_on
+   750: 2000a268    88 FUNC    GLOBAL DEFAULT    6 timer_set_mode
+   751: 00002d78    88 FUNC    GLOBAL DEFAULT    5 plic_exit_critical_sec
+   752: 20006db8    40 FUNC    GLOBAL DEFAULT    6 flash_erase_otp
+   753: 2000cec0    34 FUNC    GLOBAL DEFAULT    6 riscv_dsp_cfft_q15
+   754: 2000bcac    76 FUNC    GLOBAL DEFAULT    6 flash_scratch
+   755: 000803ec     4 OBJECT  GLOBAL DEFAULT   10 g_chip_version
+   756: 20005cf0   112 FUNC    GLOBAL DEFAULT    6 audio_codec_dac_power_on
+   757: 000008dc    80 FUNC    GLOBAL DEFAULT    5 analog_read_reg16
+   758: 200100a4     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_12
+   759: 20008b38   388 FUNC    GLOBAL DEFAULT    6 pspi_set_pin_mux
+   760: 00000200     0 NOTYPE  GLOBAL DEFAULT    5 _RAMCODE_VMA_START
+   761: 200095f0   256 FUNC    GLOBAL DEFAULT    6 spi_master_read_plus
+   762: 2000c778   254 FUNC    GLOBAL DEFAULT    6 rf_set_ble_125K_mode
+   763: 0008247c   256 OBJECT  GLOBAL DEFAULT   11 result_buff
+   764: 0008231c     4 OBJECT  GLOBAL DEFAULT   11 s7816_rtx_pin
+   765: 20010098     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_save_0
+   766: 20008340    40 FUNC    GLOBAL DEFAULT    6 pwm_ir_dma_mode_start
+   767: 20005d60   124 FUNC    GLOBAL DEFAULT    6 audio_codec_adc_power_dow
+   768: 000802c0     4 OBJECT  GLOBAL DEFAULT    9 FLASH_CNT
+   769: 20005ad8    56 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_chain_init
+   770: 2000f530    40 FUNC    GLOBAL DEFAULT    6 strlen
+   771: 20004290    76 FUNC    GLOBAL DEFAULT    6 adc_get_code_dma
+   772: 00002e30    64 FUNC    GLOBAL DEFAULT    5 rf_set_rxmode
+   773: 00080030    35 OBJECT  GLOBAL DEFAULT    9 audio_i2s_44k1_config
+   774: 2000bc5c    78 FUNC    GLOBAL DEFAULT    6 flash_power_off_on
+   775: 2000ae28   256 FUNC    GLOBAL DEFAULT    6 uart_send_dma
+   776: 2000be78   124 FUNC    GLOBAL DEFAULT    6 flash_trim_check
+   777: 2000b658    60 FUNC    GLOBAL DEFAULT    6 result_buff_init
+   778: 00082320     4 OBJECT  GLOBAL DEFAULT   11 s7816_rst_pin
+   779: 200085c8   308 FUNC    GLOBAL DEFAULT    6 s7816_init
+   780: 200059b4   236 FUNC    GLOBAL DEFAULT    6 audio_init_i2c
+   781: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq29
+   782: 2000b55c    20 FUNC    GLOBAL DEFAULT    6 flash_lock_otp_mid166085
+   783: 00082324     1 OBJECT  GLOBAL DEFAULT   11 s7816_clock
+   784: 00080398     2 OBJECT  GLOBAL DEFAULT   10 audio_i2s_invert_config
+   785: 2000b6a4    64 FUNC    GLOBAL DEFAULT    6 crc_16
+   786: 20003438   374 FUNC    GLOBAL DEFAULT    6 bt_dbg_set_signal
+   787: 20006180    64 FUNC    GLOBAL DEFAULT    6 rf_emi_tx_single_tone
+   788: 2000b5c4    26 FUNC    GLOBAL DEFAULT    6 flash_unlock_mid166085
+   789: 000822e2     1 OBJECT  GLOBAL DEFAULT   11 adc_dma_chn
+   790: 2000b6e4   164 FUNC    GLOBAL DEFAULT    6 para_buff_read
+   791: 20008810    96 FUNC    GLOBAL DEFAULT    6 s7816_release_trig
+   792: 20007c68    88 FUNC    GLOBAL DEFAULT    6 i2c_master_write_read
+   793: 200100bc     0 NOTYPE  GLOBAL HIDDEN     6 __riscv_restore_1
+   794: 20009da0   356 FUNC    GLOBAL DEFAULT    6 spi_master_write_read_dma
+   795: 200035b0    12 FUNC    GLOBAL DEFAULT    6 myudb_set_txfifo_local
+   796: 20006bd4    40 FUNC    GLOBAL DEFAULT    6 flash_erase_sector
+   797: 20003d0c    24 FUNC    GLOBAL DEFAULT    6 adc_stop_sample_dma
+   798: 2000b3c8    48 FUNC    GLOBAL DEFAULT    6 flash_write_status_mid156
+   799: 00002e70    60 FUNC    GLOBAL DEFAULT    5 rf_start_stx
+   800: 00080250    16 OBJECT  GLOBAL DEFAULT    9 config_addr
+   801: 20004e94    52 FUNC    GLOBAL DEFAULT    6 audio_codec_set_micbias
+   802: 2000ca6c   248 FUNC    GLOBAL DEFAULT    6 rf_set_ble_1M_NO_PN_mode
+   803: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq7
+   804: 20008b20    24 FUNC    GLOBAL DEFAULT    6 hspi_change_csn_pin
+   805: 00080318     1 OBJECT  GLOBAL DEFAULT    9 g_i2c_stop_en
+   806: 20005338    96 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_add_list_ele
+   807: 2000b570    52 FUNC    GLOBAL DEFAULT    6 flash_write_config_mid166
+   808: 20005260   216 FUNC    GLOBAL DEFAULT    6 audio_tx_dma_config
+   809: 00001548   308 FUNC    GLOBAL DEFAULT    5 spi_set_tx_dma
+   810: 2000b638    32 FUNC    GLOBAL DEFAULT    6 para_buff_have_data
+   811: 200086fc   128 FUNC    GLOBAL DEFAULT    6 s7816_set_pin
+   812: 2000bb28    44 FUNC    WEAK   DEFAULT    6 except_handler
+   813: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq32
+   814: 00000000     0 FUNC    GLOBAL DEFAULT    2 _IRESET_ENTRY
+   815: 2000ba2c   214 FUNC    GLOBAL DEFAULT    6 user_read_flash_value_cal
+   816: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq18
+   817: 2000bdf0   136 FUNC    GLOBAL DEFAULT    6 flash_trim
+   818: 2000f594    72 FUNC    GLOBAL DEFAULT    6 viprintf
+   819: 2000c2dc    86 FUNC    GLOBAL DEFAULT    6 rf_set_power_level
+   820: 00002dd0    96 FUNC    GLOBAL DEFAULT    5 plic_enter_critical_sec
+   821: 000802d8     7 OBJECT  GLOBAL DEFAULT    9 audio_i2s_adc_16k_dac_48k
+   822: 2000fa86    32 FUNC    GLOBAL DEFAULT    6 __int_to_poly
+   823: 20003b6c    16 FUNC    GLOBAL DEFAULT    6 myudb_usbdesc_get_product
+   824: 20003368     0 NOTYPE  WEAK   DEFAULT    6 entry_irq25
+   825: 20008d60    52 FUNC    GLOBAL DEFAULT    6 hspi_set_pin
+   826: 2000448c    48 FUNC    GLOBAL DEFAULT    6 aes_encrypt
+   827: 00080344     8 OBJECT  GLOBAL DEFAULT    9 uart_tx_dma_config
 
 No version information found in this file.
 Attribute Section: riscv

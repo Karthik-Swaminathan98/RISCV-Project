@@ -1,0 +1,45 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_convolve_wrapper_s8
+    Own size: 340 bytes
+    Total size (with dependencies): 9476 bytes
+    [*] Breakdown:
+        riscv_nn_mat_mult_nt_t_s8             3396 bytes
+        riscv_convolve_s8                     1912 bytes
+        riscv_nn_mat_mult_kernel_row_offset_s8_s16   1252 bytes
+        riscv_nn_mat_mult_kernel_s8_s16       1236 bytes
+        riscv_convolve_1x1_s8_fast             832 bytes
+        riscv_convolve_wrapper_s8              340 bytes
+        riscv_convolve_1x1_s8                  292 bytes
+        riscv_s8_to_s16_unordered_with_offset    132 bytes
+        riscv_convolve_1_x_n_s8                 84 bytes
+------------------------------------------------------------
+[*] Function: riscv_convolve_wrapper_s16
+    Own size: 2 bytes
+    Total size (with dependencies): 3532 bytes
+    [*] Breakdown:
+        riscv_nn_mat_mult_kernel_s16          2326 bytes
+        riscv_convolve_s16                    1204 bytes
+        riscv_convolve_wrapper_s16               2 bytes
+------------------------------------------------------------
+[*] Function: riscv_depthwise_conv_wrapper_s8
+    Own size: 216 bytes
+    Total size (with dependencies): 10332 bytes
+    [*] Breakdown:
+        riscv_depthwise_conv_3x3_s8           6118 bytes
+        riscv_depthwise_conv_s8_opt           1760 bytes
+        riscv_depthwise_conv_s8               1126 bytes
+        depthwise_conv_s8_mult_4               958 bytes
+        riscv_depthwise_conv_wrapper_s8        216 bytes
+        riscv_q7_to_q15_with_offset            136 bytes
+        riscv_depthwise_conv_s8_opt_get_buffer_size     18 bytes
+------------------------------------------------------------
+[*] Function: riscv_depthwise_conv_wrapper_s16
+    Own size: 148 bytes
+    Total size (with dependencies): 3512 bytes
+    [*] Breakdown:
+        riscv_depthwise_conv_fast_s16         2284 bytes
+        riscv_depthwise_conv_s16              1062 bytes
+        riscv_depthwise_conv_wrapper_s16       148 bytes
+        riscv_depthwise_conv_fast_s16_get_buffer_size     18 bytes
+------------------------------------------------------------

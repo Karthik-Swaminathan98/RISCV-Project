@@ -1,6 +1,6 @@
 .PHONY: function-analysis
 
-FUNCTIONS := riscv_fully_connected_s8 riscv_fully_connected_s8_get_buffer_size riscv_fully_connected_s16 riscv_fully_connected_s16_get_buffer_size
+FUNCTIONS := riscv_fully_connected_s8 riscv_fully_connected_per_channel_s8 riscv_fully_connected_wrapper_s8 riscv_fully_connected_s16
 
 function-analysis: output/objdump.txt output/map.txt
 	@echo "Running function size analysis..."

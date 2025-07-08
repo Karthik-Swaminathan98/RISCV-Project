@@ -1,32 +1,28 @@
-#include "app_config.h"
-#include "core.h"
-#include <math.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h> // For memcpy
-#include "riscv_math.h"
-#include "riscv_nnfunctions.h"
-
-#include "validate.h"
-
+#include "main.h"
 
 void softmax_riscv_softmax_s8();
 void softmax_invalid_diff_min_riscv_softmax_s8();
 void softmax_s16_riscv_softmax_s16();
 void softmax_s8_s16_riscv_softmax_s8_s16();
 
-
-extern void user_init(void);
+uint32_t clkFastfreq = 0;
 
 int main(void) {
     PLATFORM_INIT;
     CLOCK_INIT;
     user_init();
     delay_ms(20);
+    core_interrupt_disable();
 
-	printf("\n\r");
+    // Get the clock frequency
+    clkFastfreq = get_clk_fast_freq();
+
+    printf("\n\r");
     printf("-----Starting NMSIS-Softmax Functions benchmark-----\n\r");
+    printf("\n\r");
+    printf("CPU Clock Frequency: %lu Hz\n\r", clkFastfreq);
+    printf("\n\r");
+
     printf("*****RISCV Softmax Functions S8*****\n\r");
     softmax_riscv_softmax_s8();
     softmax_invalid_diff_min_riscv_softmax_s8();
