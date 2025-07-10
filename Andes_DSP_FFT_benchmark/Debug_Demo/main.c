@@ -2,6 +2,8 @@
 
 void benchmark_f32(void);
 void benchmark_q15(void);
+void benchmark_cifft_f32(void);
+void benchmark_cifft_q15(void);
 
 uint32_t clkFastfreq = 0;
 
@@ -28,6 +30,14 @@ int main(void) {
 
     printf("*****Benchmarking ANDES CFFT Q15*****\n\r");
     benchmark_q15();
+    printf("\n\r");
+
+    printf("*****Benchmarking ANDES CIFFT F32*****\n\r");
+    benchmark_cifft_f32();
+    printf("\n\r");
+
+    printf("*****Benchmarking ANDES CIFFT Q15*****\n\r");
+    benchmark_cifft_q15();
     printf("\n\r");
 
     printf("All tests are completed.\n\r");

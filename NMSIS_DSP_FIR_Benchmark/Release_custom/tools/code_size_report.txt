@@ -1,0 +1,14 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_relu6_s8
+    Own size: 34 bytes
+    Total size (with dependencies): 34 bytes
+    [*] Breakdown:
+        riscv_relu6_s8                          34 bytes
+------------------------------------------------------------
+[*] Function: riscv_nn_activation_s16
+    Own size: 360 bytes
+    Total size (with dependencies): 360 bytes
+    [*] Breakdown:
+        riscv_nn_activation_s16                360 bytes
+------------------------------------------------------------

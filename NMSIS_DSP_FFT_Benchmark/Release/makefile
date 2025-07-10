@@ -84,7 +84,7 @@ all: NMSIS_DSP_FFT_Benchmark.adx secondary-outputs
 NMSIS_DSP_FFT_Benchmark.adx: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Andes C Linker'
-	$(CROSS_COMPILE)gcc -Os -nostartfiles -static -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/NMSIS_DSP_FFT_Benchmark/drivers/lib" -L"/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC" -flto -mcmodel=medium -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fshort-wchar -fno-strict-aliasing -fomit-frame-pointer -fshort-enums -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,-Map -Wl,$(SECONDARY_OUTPUT_PATH)/map.txt -Wl,--gc-sections -mext-dsp -ldsp -lm -fuse-ld=bfd -o "NMSIS_DSP_FFT_Benchmark.adx" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(CROSS_COMPILE)gcc -O3 -nostartfiles -static -L"/cygdrive/C/Users/SwaminathanK/Workspace-Ande3/NMSIS_DSP_FFT_Benchmark/drivers/lib" -L"/cygdrive/C/Users/SwaminathanK/Desktop/Thesis/DSP Library/NMSIS-master/NMSIS-master/NMSIS/Library/DSP/GCC" -flto -mcmodel=medium -mcpu=d25f -ffunction-sections -fdata-sections -mext-dsp -mabi=ilp32f -fmessage-length=0 -fshort-wchar -fno-strict-aliasing -fomit-frame-pointer -fshort-enums -T"/cygdrive/C/Users/SwaminathanK/Downloads/B91 SDK/chip/B91/link/flash_boot_ramcode.link" -Wl,-Map -Wl,$(SECONDARY_OUTPUT_PATH)/map.txt -Wl,--gc-sections -mext-dsp -ldsp -lm -fuse-ld=bfd -o "NMSIS_DSP_FFT_Benchmark.adx" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

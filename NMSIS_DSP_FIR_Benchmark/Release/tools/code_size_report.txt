@@ -1,0 +1,14 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_fir_f32
+    Own size: 880 bytes
+    Total size (with dependencies): 880 bytes
+    [*] Breakdown:
+        riscv_fir_f32                          880 bytes
+------------------------------------------------------------
+[*] Function: riscv_fir_q15
+    Own size: 640 bytes
+    Total size (with dependencies): 640 bytes
+    [*] Breakdown:
+        riscv_fir_q15                          640 bytes
+------------------------------------------------------------

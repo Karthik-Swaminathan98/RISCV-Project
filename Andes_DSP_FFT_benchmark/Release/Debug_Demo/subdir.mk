@@ -8,6 +8,8 @@ C_SRCS += \
 ../Debug_Demo/main.c \
 ../Debug_Demo/test_andes_cfft_f32.c \
 ../Debug_Demo/test_andes_cfft_q15.c \
+../Debug_Demo/test_andes_cifft_f32.c \
+../Debug_Demo/test_andes_cifft_q15.c \
 ../Debug_Demo/utility.c 
 
 OBJS += \
@@ -15,6 +17,8 @@ OBJS += \
 ./Debug_Demo/main.o \
 ./Debug_Demo/test_andes_cfft_f32.o \
 ./Debug_Demo/test_andes_cfft_q15.o \
+./Debug_Demo/test_andes_cifft_f32.o \
+./Debug_Demo/test_andes_cifft_q15.o \
 ./Debug_Demo/utility.o 
 
 C_DEPS += \
@@ -22,6 +26,8 @@ C_DEPS += \
 ./Debug_Demo/main.d \
 ./Debug_Demo/test_andes_cfft_f32.d \
 ./Debug_Demo/test_andes_cfft_q15.d \
+./Debug_Demo/test_andes_cifft_f32.d \
+./Debug_Demo/test_andes_cifft_q15.d \
 ./Debug_Demo/utility.d 
 
 

@@ -1,0 +1,14 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_dsp_fir_f32
+    Own size: 230 bytes
+    Total size (with dependencies): 230 bytes
+    [*] Breakdown:
+        riscv_dsp_fir_f32                      230 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_fir_q15
+    Own size: 780 bytes
+    Total size (with dependencies): 780 bytes
+    [*] Breakdown:
+        riscv_dsp_fir_q15                      780 bytes
+------------------------------------------------------------

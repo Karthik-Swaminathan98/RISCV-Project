@@ -9,6 +9,11 @@
 #define TEST_LENGTH_SAMPLES  320
 #define BLOCK_SIZE           32
 
+uint32_t clkFastfreq = 0;
+const uint32_t stack_top = 0x000A0000;
+const uint32_t stack_limit = 0x0009F000;
+const uint32_t STACK_SIZE = 4096;
+
 // FIR Coefficients
 #define NUM_TAPS             29
 const float32_t firCoeffs32[NUM_TAPS] = {
@@ -129,14 +134,43 @@ float arm_snr_f32(const float *pRef, const float *pTest, uint32_t buffSize) {
     return SNR;
 }
 
-// Function to reset cycle count (RISC-V specific)
-void reset_cycle_count() {
-    write_csr(NDS_MCYCLE, 0);
+uint32_t get_clk_fast_freq(void) {
+    return sys_clk.cclk * 1e6;
 }
 
-// Function to read cycle count (RISC-V specific)
-unsigned int read_cycle_count() {
-    return read_csr(NDS_MCYCLE);
+void reset_counters() {
+    write_csr(NDS_MCYCLE, 0);
+    write_csr(NDS_MINSTRET, 0);
+}
+
+void read_perf_counters(unsigned int *cycles, unsigned int *instructions) {
+    *cycles = read_csr(NDS_MCYCLE);
+    *instructions = read_csr(NDS_MINSTRET);
+}
+
+void fill_stack_pattern_to_sp() {
+    uint32_t *sp;
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+
+    uint32_t *p = (uint32_t *)stack_limit;
+    while (p < sp) {
+        *p++ = 0xAAAAAAAA;
+    }
+}
+
+uint32_t measure_stack_usage() {
+    uint32_t *sp;
+    __asm__ volatile ("mv %0, sp" : "=r" (sp));
+
+    uint32_t *p = (uint32_t *)stack_limit;
+    while (p < sp) {
+        if (*p != 0xAAAAAAAA) {
+            break;
+        }
+        p++;
+    }
+
+    return ((uint32_t)sp - (uint32_t)p);
 }
 
 // Driver Initialization Function
@@ -149,6 +183,9 @@ int main() {
     user_init();
     printf("FIR Program for RISC-V DSP Library\n");
     delay_ms(20);
+    clkFastfreq = get_clk_fast_freq();
+    printf("CPU Clock Frequency: %lu Hz\n\r", clkFastfreq);
+    printf("\n\r");
 
 	riscv_dsp_fir_f32_t S;
 	S.coeff_size = NUM_TAPS;
@@ -162,11 +199,10 @@ int main() {
 	uint32_t blockSize = BLOCK_SIZE;
 	uint32_t numBlocks = TEST_LENGTH_SAMPLES / BLOCK_SIZE;
 
-	// Reset cycle count
-	reset_cycle_count();
-
-	// Start cycle count
-	unsigned int start_cycles = read_cycle_count();
+	fill_stack_pattern_to_sp();
+	reset_counters();
+    unsigned int start_cycles, start_inst, end_cycles, end_inst;
+    read_perf_counters(&start_cycles, &start_inst);
 
 	for (uint32_t i = 0; i < numBlocks; i++) {
 		riscv_dsp_fir_f32(&S, (float32_t *)&testInput_f32_1kHz_15kHz[i * blockSize],
@@ -175,11 +211,12 @@ int main() {
 	// Process the entire input signal in one call
 	//riscv_dsp_fir_f32(&S, (float32_t *)testInput_f32_1kHz_15kHz, testOutput, TEST_LENGTH_SAMPLES);
 
-	// End cycle count
-	unsigned int end_cycles = read_cycle_count();
-
-	// Calculate the total cycle count
-	unsigned int cycle_count = end_cycles - start_cycles;
+    read_perf_counters(&end_cycles, &end_inst);
+    uint32_t cycle_count = end_cycles - start_cycles;
+    uint32_t instr_count = end_inst - start_inst;
+    uint32_t stack_used = measure_stack_usage();
+    float time_sec = (float)cycle_count / clkFastfreq;
+    float time_us = time_sec * 1e6f;
 
 	printf("\nFIR Output vs. Reference Output:\n");
 	delay_ms(20);
@@ -199,7 +236,9 @@ int main() {
 		printf("FAILURE: SNR below threshold.\n");
 		delay_ms(20);
 	}
-	printf("Cycle Count for D25F: %u\n", cycle_count);
-	delay_ms(20);
+    printf("Cycle Count: %lu\n\r", (unsigned long)cycle_count);
+    printf("Estimated Instruction Count: %lu\n\r", instr_count);
+    printf("Execution Time (approx): %.3f us\n\r", time_us);
+    printf("Stack Used: %lu bytes\n\r", (unsigned long)stack_used);
 	return 0;
 }

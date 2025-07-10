@@ -1,2 +1,2 @@
    text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  12526	  12526	      0	   3502	   1568	  17596	   44bc	Andes_DSP_fir_f32.adx
+  14870	  14870	      0	   3714	   1568	  20152	   4eb8	Andes_DSP_fir_f32.adx
