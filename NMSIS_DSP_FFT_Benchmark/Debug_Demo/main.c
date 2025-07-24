@@ -25,11 +25,11 @@ int main(void) {
 
     // Perform benchmarks
     printf("*****Benchmarking NMSIS CFFT F32*****\n\r");
-    //benchmark_f32();
+    benchmark_f32();
     printf("\n\r");
 
     printf("*****Benchmarking NMSIS CFFT Q15*****\n\r");
-    //benchmark_q15();
+    benchmark_q15();
     printf("\n\r");
 
     printf("*****Benchmarking NMSIS ICFFT F32*****\n\r");
@@ -37,7 +37,7 @@ int main(void) {
     printf("\n\r");
 
     printf("*****Benchmarking NMSIS ICFFT Q15*****\n\r");
-    //benchmark_ifft_q15();
+    benchmark_ifft_q15();
     printf("\n\r");
 
     printf("All tests are completed.\n\r");

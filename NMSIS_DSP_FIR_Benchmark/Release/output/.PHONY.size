@@ -1,2 +1,2 @@
    text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  19410	  19410	      0	   1354	     64	  20828	   515c	NMSIS_DSP_FIR_Benchmark.adx
+  19410	  19410	      0	   1362	     64	  20836	   5164	NMSIS_DSP_FIR_Benchmark.adx

@@ -13,12 +13,12 @@ Program Header:
     LOAD off    0x00002200 vaddr 0x00000200 paddr 0x20000350 align 2**12
          filesz 0x000048f4 memsz 0x000048f4 flags r-x
     LOAD off    0x00007000 vaddr 0x00080000 paddr 0x20004c48 align 2**12
-         filesz 0x000004c4 memsz 0x000004c4 flags rw-
-    LOAD off    0x00007508 vaddr 0x00080508 paddr 0x2000510c align 2**12
+         filesz 0x000004cc memsz 0x000004cc flags rw-
+    LOAD off    0x00007510 vaddr 0x00080510 paddr 0x20005114 align 2**12
          filesz 0x00000022 memsz 0x00000022 flags rw-
-    LOAD off    0x000084c8 vaddr 0x000804c8 paddr 0x20005110 align 2**12
+    LOAD off    0x000084d0 vaddr 0x000804d0 paddr 0x20005118 align 2**12
          filesz 0x00000000 memsz 0x00000040 flags rw-
-0x70000000 off    0x00007573 vaddr 0x00000000 paddr 0x00000000 align 2**0
+0x70000000 off    0x0000757b vaddr 0x00000000 paddr 0x00000000 align 2**0
          filesz 0x00000040 memsz 0x00000000 flags r--
 
 Sections:
@@ -31,33 +31,33 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, DATA
   3 .ram_code     000048f4  00000200  20000350  00002200  2**8
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  4 .data         000004c4  00080000  20004c48  00007000  2**3
+  4 .data         000004cc  00080000  20004c48  00007000  2**3
                   CONTENTS, ALLOC, LOAD, DATA
-  5 .sbss         0000003c  000804c8  20005110  000084c8  2**2
+  5 .sbss         0000003c  000804d0  20005118  000084d0  2**2
                   ALLOC
-  6 .bss          00000004  00080504  2000514c  000084c8  2**2
+  6 .bss          00000004  0008050c  20005154  000084d0  2**2
                   ALLOC
-  7 .sdk_version  00000022  00080508  2000510c  00007508  2**2
+  7 .sdk_version  00000022  00080510  20005114  00007510  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .comment      00000049  00000000  00000000  0000752a  2**0
+  8 .comment      00000049  00000000  00000000  00007532  2**0
                   CONTENTS, READONLY
-  9 .riscv.attributes 00000040  00000000  00000000  00007573  2**0
+  9 .riscv.attributes 00000040  00000000  00000000  0000757b  2**0
                   CONTENTS, READONLY
- 10 .debug_info   00004620  00000000  00000000  000075b3  2**0
+ 10 .debug_info   00004620  00000000  00000000  000075bb  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_abbrev 000011b7  00000000  00000000  0000bbd3  2**0
+ 11 .debug_abbrev 000011b7  00000000  00000000  0000bbdb  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    00006cb8  00000000  00000000  0000cd8a  2**0
+ 12 .debug_loc    00006cb8  00000000  00000000  0000cd92  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_aranges 000001a0  00000000  00000000  00013a48  2**3
+ 13 .debug_aranges 000001a0  00000000  00000000  00013a50  2**3
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_ranges 00000818  00000000  00000000  00013be8  2**0
+ 14 .debug_ranges 00000818  00000000  00000000  00013bf0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_line   0000422c  00000000  00000000  00014400  2**0
+ 15 .debug_line   0000422c  00000000  00000000  00014408  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_str    000017ad  00000000  00000000  0001862c  2**0
+ 16 .debug_str    000017ad  00000000  00000000  00018634  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_frame  00000268  00000000  00000000  00019ddc  2**2
+ 17 .debug_frame  00000268  00000000  00000000  00019de4  2**2
                   CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 20000000 l    d  .vectors	00000000 .vectors
@@ -65,9 +65,9 @@ SYMBOL TABLE:
 00000158 l    d  .retention_data	00000000 .retention_data
 00000200 l    d  .ram_code	00000000 .ram_code
 00080000 l    d  .data	00000000 .data
-000804c8 l    d  .sbss	00000000 .sbss
-00080504 l    d  .bss	00000000 .bss
-00080508 l    d  .sdk_version	00000000 .sdk_version
+000804d0 l    d  .sbss	00000000 .sbss
+0008050c l    d  .bss	00000000 .bss
+00080510 l    d  .sdk_version	00000000 .sdk_version
 00000000 l    d  .comment	00000000 .comment
 00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
 00000000 l    d  .debug_info	00000000 .debug_info
@@ -155,17 +155,17 @@ SYMBOL TABLE:
 0008006c l     O .data	00000018 FIR_SIZES
 00080084 l     O .data	00000074 firCoeffs32
 000800f8 l     O .data	00000010 firCoeffsQ15
-000804c8 l     O .sbss	00000004 clkFastfreq
-000804cc l     O .sbss	00000004 exception_mcause
-000804d0 l     O .sbss	00000004 exception_mdcause
-000804d4 l     O .sbss	00000004 exception_mepc
-000804d8 l     O .sbss	00000004 exception_mstatus
-000804dc l     O .sbss	00000004 exception_mtval
-000804e0 l     O .sbss	00000004 g_chip_version
-000804e4 l     O .sbss	00000004 g_pm_status_info
-000804b4 l     O .data	00000001 init_flag.5287
-000804b8 l     O .data	00000006 sys_clk
-00080508 l     O .sdk_version	00000022 sdk_version
+000804d0 l     O .sbss	00000004 clkFastfreq
+000804d4 l     O .sbss	00000004 exception_mcause
+000804d8 l     O .sbss	00000004 exception_mdcause
+000804dc l     O .sbss	00000004 exception_mepc
+000804e0 l     O .sbss	00000004 exception_mstatus
+000804e4 l     O .sbss	00000004 exception_mtval
+000804e8 l     O .sbss	00000004 g_chip_version
+000804ec l     O .sbss	00000004 g_pm_status_info
+000804bc l     O .data	00000001 init_flag.5287
+000804c0 l     O .data	00000006 sys_clk
+00080510 l     O .sdk_version	00000022 sdk_version
 00000000 l    df *ABS*	00000000 riscv_fir_init_q15.c
 00001f50 l       .ram_code	00000000 $x
 00000000 l    df *ABS*	00000000 riscv_fir_f32.c
@@ -184,15 +184,15 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 strlen.c
 00000000 l    df *ABS*	00000000 vprintf.c
 0000288c l     F .ram_code	0000003a __vprintf_help
-000804f4 l     O .sbss	00000004 __vprintf_buf
-000804f8 l     O .sbss	00000004 __vprintf_buf_len
+000804fc l     O .sbss	00000004 __vprintf_buf
+00080500 l     O .sbss	00000004 __vprintf_buf_len
 00000000 l    df *ABS*	00000000 printf_impl.c
 00000000 l    df *ABS*	00000000 printf_impl_float.c
 00000000 l    df *ABS*	00000000 strcpy.c
 00000000 l    df *ABS*	00000000 strnlen.c
 00000000 l    df *ABS*	00000000 sinf.c
 00000000 l    df *ABS*	00000000 ref_rredf.c
-00080414 l     O .data	00000020 twooverpi.2618
+0008041c l     O .data	00000020 twooverpi.2618
 00000000 l    df *ABS*	00000000 divdf3.c
 00000000 l    df *ABS*	00000000 muldf3.c
 00000000 l    df *ABS*	00000000 fixunsdfsi.c
@@ -200,12 +200,12 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 extendsfdf2.c
 00000000 l    df *ABS*	00000000 truncdfsf2.c
 00000000 l    df *ABS*	00000000 _sbrk.c
-00080500 l     O .sbss	00000004 heap_end.2408
+00080508 l     O .sbss	00000004 heap_end.2408
 00000000 l    df *ABS*	00000000 libgcc2.c
 00000000 l    df *ABS*	00000000 libgcc2.c
 00000000 l    df *ABS*	00000000 printf_data.c
 00000000 l    df *ABS*	00000000 impure.c
-00080504 l     O .bss	00000000 impure_data
+0008050c l     O .bss	00000000 impure_data
 00001f48  w      .ram_code	00000000 entry_irq55
 00001f48  w      .ram_code	00000000 entry_irq13
 00003288 g     F .ram_code	0000007c strcpy
@@ -235,7 +235,7 @@ SYMBOL TABLE:
 000049f0 g       .ram_code	00000000 .hidden __riscv_restore_2
 00001f48  w      .ram_code	00000000 entry_irq8
 00001f48  w      .ram_code	00000000 entry_irq33
-00080508 g       .bss	00000000 _BSS_VMA_END
+00080510 g       .bss	00000000 _BSS_VMA_END
 20000190 g       *ABS*	00000000 _RETENTION_RESET_LMA_START
 00004488 g     F .ram_code	0000007a .hidden __floatsidf
 00080000 g     O .data	0000001c cst_libm_sincosf
@@ -256,9 +256,9 @@ SYMBOL TABLE:
 00001f48  w      .ram_code	00000000 entry_irq20
 00001f80  w    F .ram_code	00000370 riscv_fir_f32
 000049b2 g       .ram_code	00000000 .hidden __riscv_save_7
-000804c8 g       .sbss	00000000 _BSS_VMA_START
+000804d0 g       .sbss	00000000 _BSS_VMA_START
 00001f48  w      .ram_code	00000000 entry_irq63
-000804c4 g       .data	00000000 _DATA_VMA_END
+000804cc g       .data	00000000 _DATA_VMA_END
 00004504 g     F .ram_code	00000110 .hidden __extendsfdf2
 00001f48  w      .ram_code	00000000 entry_irq46
 00001f48  w      .ram_code	00000000 entry_irq31
@@ -269,7 +269,7 @@ SYMBOL TABLE:
 00004914  w    F .ram_code	00000028 _sbrk
 00001f48  w      .ram_code	00000000 entry_irq53
 00001f48  w      .ram_code	00000000 entry_irq11
-000803fc g     O .data	00000018 cst_libm_rredf
+00080404 g     O .data	00000018 cst_libm_rredf
 00000154 g       .retention_reset	00000000 _RETENTION_RESET_VMA_END
 00003306 g     F .ram_code	00000018 strnlen
 000049e6 g       .ram_code	00000000 .hidden __riscv_restore_6
@@ -295,16 +295,16 @@ SYMBOL TABLE:
 000049cc g       .ram_code	00000000 .hidden __riscv_save_3
 00001f48  w      .ram_code	00000000 entry_irq38
 00001100 g       .ram_code	00000000 __vectors
-0000512e g       *ABS*	00000000 BIN_SIZE
-000803cc g     O .data	00000010 __digits
+00005136 g       *ABS*	00000000 BIN_SIZE
+000803d4 g     O .data	00000010 __digits
 20000350 g       *ABS*	00000000 _RAMCODE_LMA_START
-000804fc g     O .sbss	00000004 __printf_count
+00080504 g     O .sbss	00000004 __printf_count
 00001f48  w      .ram_code	00000000 entry_irq59
 000035b8 g     F .ram_code	000007ea .hidden __divdf3
 00001f48  w      .ram_code	00000000 entry_irq6
 00003da4 g     F .ram_code	00000648 .hidden __muldf3
 000049a4 g       .ram_code	00000000 .hidden __riscv_save_10
-000804e8 g     O .sbss	00000004 __mculib_REENT_errno
+000804f0 g     O .sbss	00000004 __mculib_REENT_errno
 20004c48 g       *ABS*	00000000 _DATA_LMA_START
 00002de8 g     F .ram_code	00000092 __print_integral_poly
 20000000 g       *ABS*	00000000 NDS_SAG_LMA_FLASH
@@ -335,7 +335,7 @@ SYMBOL TABLE:
 000a0000 g       *ABS*	00000000 _STACK_TOP
 00001f48  w      .ram_code	00000000 entry_irq22
 00001f48  w      .ram_code	00000000 entry_irq30
-000804c0 g     O .data	00000004 _impure_ptr
+000804c8 g     O .data	00000004 _impure_ptr
 00001f48  w      .ram_code	00000000 entry_irq42
 00001f48  w      .ram_code	00000000 entry_irq24
 00003320 g     F .ram_code	0000015a sinf
@@ -345,7 +345,7 @@ SYMBOL TABLE:
 000049b2 g       .ram_code	00000000 .hidden __riscv_save_5
 00001f48  w      .ram_code	00000000 entry_irq19
 0000157c g     F .ram_code	00000048 _write
-00080530 g       .sdk_version	00000000 _end
+00080538 g       .sdk_version	00000000 _end
 00001f48  w      .ram_code	00000000 entry_irq17
 00001f48  w      .ram_code	00000000 entry_irq9
 0000231c  w    F .ram_code	00000280 riscv_fir_q15
@@ -360,8 +360,8 @@ SYMBOL TABLE:
 000049cc g       .ram_code	00000000 .hidden __riscv_save_0
 0000282c g     F .ram_code	0000005e strlen
 00001f48  w      .ram_code	00000000 entry_irq29
-000804f0 g     O .sbss	00000004 __malloc_sbrk_start
-000804ec g     O .sbss	00000004 __malloc_free_list
+000804f8 g     O .sbss	00000004 __malloc_sbrk_start
+000804f4 g     O .sbss	00000004 __malloc_free_list
 000049f0 g       .ram_code	00000000 .hidden __riscv_restore_1
 00001f48  w      .ram_code	00000000 entry_irq7
 00001f48  w      .ram_code	00000000 entry_irq32
@@ -379,7 +379,7 @@ Disassembly of section .vectors:
 20000000:	a025                	c.j	20000028 <_START>
 	...
 20000016:	0000                	unimp
-20000018:	512e                	c.lwsp	sp,232(sp)
+20000018:	5136                	c.lwsp	sp,108(sp)
 2000001a:	0000                	unimp
 2000001c:	0000                	unimp
 2000001e:	0000                	unimp
@@ -469,7 +469,7 @@ Disassembly of section .vectors:
 20000110:	e0080397          	auipc	t2,0xe0080
 20000114:	ef038393          	addi	t2,t2,-272 # 80000 <cst_libm_sincosf>
 20000118:	e0080e17          	auipc	t3,0xe0080
-2000011c:	3ace0e13          	addi	t3,t3,940 # 804c4 <_DATA_VMA_END>
+2000011c:	3b4e0e13          	addi	t3,t3,948 # 804cc <_DATA_VMA_END>
 
 20000120 <_DATA_INIT_BEGIN>:
 20000120:	01c3f963          	bgeu	t2,t3,20000132 <_ZERO_BSS>
@@ -482,9 +482,9 @@ Disassembly of section .vectors:
 20000132 <_ZERO_BSS>:
 20000132:	000002b7          	lui	t0,0x0
 20000136:	e0080397          	auipc	t2,0xe0080
-2000013a:	39238393          	addi	t2,t2,914 # 804c8 <_BSS_VMA_START>
+2000013a:	39a38393          	addi	t2,t2,922 # 804d0 <_BSS_VMA_START>
 2000013e:	e0080e17          	auipc	t3,0xe0080
-20000142:	3cae0e13          	addi	t3,t3,970 # 80508 <_BSS_VMA_END>
+20000142:	3d2e0e13          	addi	t3,t3,978 # 80510 <_BSS_VMA_END>
 
 20000146 <_ZERO_BSS_BEGIN>:
 20000146:	01c3f663          	bgeu	t2,t3,20000152 <_ZERO_AES>
@@ -588,9 +588,9 @@ Disassembly of section .retention_reset:
 000000d2 <_IZERO_BSS>:
   d2:	000002b7          	lui	t0,0x0
   d6:	00080397          	auipc	t2,0x80
-  da:	3f238393          	addi	t2,t2,1010 # 804c8 <_BSS_VMA_START>
+  da:	3fa38393          	addi	t2,t2,1018 # 804d0 <_BSS_VMA_START>
   de:	00080e17          	auipc	t3,0x80
-  e2:	42ae0e13          	addi	t3,t3,1066 # 80508 <_BSS_VMA_END>
+  e2:	432e0e13          	addi	t3,t3,1074 # 80510 <_BSS_VMA_END>
 
 000000e6 <_IZERO_BSS_BEGIN>:
   e6:	01c3f663          	bgeu	t2,t3,f2 <_IZERO_AES>
@@ -617,7 +617,7 @@ Disassembly of section .retention_reset:
  11a:	00080397          	auipc	t2,0x80
  11e:	ee638393          	addi	t2,t2,-282 # 80000 <cst_libm_sincosf>
  122:	00080e17          	auipc	t3,0x80
- 126:	3a2e0e13          	addi	t3,t3,930 # 804c4 <_DATA_VMA_END>
+ 126:	3aae0e13          	addi	t3,t3,938 # 804cc <_DATA_VMA_END>
 
 0000012a <_IDATA_INIT_BEGIN>:
  12a:	01c3f963          	bgeu	t2,t3,13c <_IMAIN_FUNC>
@@ -648,7 +648,7 @@ Disassembly of section .ram_code:
      204:	0004e737          	lui	a4,0x4e
      208:	2007a603          	lw	a2,512(a5) # 80140200 <_DATA_LMA_START+0x6013b5b8>
      20c:	801406b7          	lui	a3,0x80140
-     210:	20070713          	addi	a4,a4,512 # 4e200 <BIN_SIZE+0x490d2>
+     210:	20070713          	addi	a4,a4,512 # 4e200 <BIN_SIZE+0x490ca>
      214:	2006a783          	lw	a5,512(a3) # 80140200 <_DATA_LMA_START+0x6013b5b8>
      218:	8f91                	c.sub	a5,a2
      21a:	fef77de3          	bgeu	a4,a5,214 <delay_ms.constprop.12+0x14>
@@ -1164,7 +1164,7 @@ Disassembly of section .ram_code:
      880:	4525                	c.li	a0,9
      882:	3739                	c.jal	790 <analog_write_reg8>
      884:	0c000793          	li	a5,192
-     888:	cb9f940b          	addigp	s0,-840 # 804b8 <sys_clk>
+     888:	cc1f940b          	addigp	s0,-832 # 804c0 <sys_clk>
      88c:	00f41023          	sh	a5,0(s0)
      890:	08100513          	li	a0,129
      894:	4791                	c.li	a5,4
@@ -1289,7 +1289,7 @@ Disassembly of section .ram_code:
 
 00000a14 <pm_sleep_start>:
      a14:	1101                	c.addi	sp,-32
-     a16:	ce3fa72b          	lwgp	a4,-800 # 804e0 <g_chip_version>
+     a16:	cebfa72b          	lwgp	a4,-792 # 804e8 <g_chip_version>
      a1a:	000006b7          	lui	a3,0x0
      a1e:	ce06                	c.swsp	ra,28(sp)
      a20:	cc22                	c.swsp	s0,24(sp)
@@ -1409,7 +1409,7 @@ Disassembly of section .ram_code:
      bac:	cc22                	c.swsp	s0,24(sp)
      bae:	ce06                	c.swsp	ra,28(sp)
      bb0:	c84a                	c.swsp	s2,16(sp)
-     bb2:	cb5f948b          	addigp	s1,-844 # 804b4 <init_flag.5287>
+     bb2:	cbdf948b          	addigp	s1,-836 # 804bc <init_flag.5287>
      bb6:	842a                	c.mv	s0,a0
      bb8:	0004c783          	lbu	a5,0(s1)
      bbc:	0c17d25b          	beqc	a5,1,c80 <dr_putchar+0xd8>
@@ -1598,7 +1598,7 @@ Disassembly of section .ram_code:
      e14:	000276b7          	lui	a3,0x27
      e18:	40f507b3          	sub	a5,a0,a5
      e1c:	6c07a7db          	bfoz	a5,a5,27,0
-     e20:	10068693          	addi	a3,a3,256 # 27100 <BIN_SIZE+0x21fd2>
+     e20:	10068693          	addi	a3,a3,256 # 27100 <BIN_SIZE+0x21fca>
      e24:	00f6f863          	bgeu	a3,a5,e34 <pm_sleep_wakeup_ram.constprop.3+0x16c>
      e28:	00176713          	ori	a4,a4,1
      e2c:	02040823          	sb	zero,48(s0)
@@ -1705,9 +1705,9 @@ Disassembly of section .ram_code:
      f74:	06400513          	li	a0,100
      f78:	1f570423          	sb	s5,488(a4)
      f7c:	859ff0ef          	jal	ra,7d4 <analog_read_reg8>
-     f80:	ce5f970b          	addigp	a4,-796 # 804e4 <g_pm_status_info>
+     f80:	cedf970b          	addigp	a4,-788 # 804ec <g_pm_status_info>
      f84:	00a700a3          	sb	a0,1(a4)
-     f88:	ce5f978b          	addigp	a5,-796 # 804e4 <g_pm_status_info>
+     f88:	cedf978b          	addigp	a5,-788 # 804ec <g_pm_status_info>
      f8c:	00157c5b          	bbc	a0,1,fa4 <pm_sleep_wakeup_ram.constprop.3+0x2dc>
      f90:	80140637          	lui	a2,0x80140
      f94:	400006b7          	lui	a3,0x40000
@@ -1752,15 +1752,15 @@ Disassembly of section .ram_code:
     1000:	7c4026f3          	csrr	a3,mxstatus
     1004:	02074a63          	bltz	a4,1038 <trap_entry+0x64>
     1008:	34302773          	csrr	a4,mtval
-    100c:	ccefcfab          	swgp	a4,-804 # 804dc <exception_mtval>
+    100c:	ceefc3ab          	swgp	a4,-796 # 804e4 <exception_mtval>
     1010:	34102773          	csrr	a4,mepc
-    1014:	ccefcbab          	swgp	a4,-812 # 804d4 <exception_mepc>
+    1014:	ccefcfab          	swgp	a4,-804 # 804dc <exception_mepc>
     1018:	30002773          	csrr	a4,mstatus
-    101c:	ccefcdab          	swgp	a4,-808 # 804d8 <exception_mstatus>
+    101c:	ceefc1ab          	swgp	a4,-800 # 804e0 <exception_mstatus>
     1020:	34202773          	csrr	a4,mcause
-    1024:	ccefc7ab          	swgp	a4,-820 # 804cc <exception_mcause>
+    1024:	ccefcbab          	swgp	a4,-812 # 804d4 <exception_mcause>
     1028:	7c902773          	csrr	a4,mdcause
-    102c:	ccefc9ab          	swgp	a4,-816 # 804d0 <exception_mdcause>
+    102c:	ccefcdab          	swgp	a4,-808 # 804d8 <exception_mdcause>
     1030:	0001                	c.nop
     1032:	0001                	c.nop
     1034:	ffdff06f          	j	1030 <trap_entry+0x5c>
@@ -2360,7 +2360,7 @@ Disassembly of section .ram_code:
     16f8:	84aa                	c.mv	s1,a0
     16fa:	16047d5b          	bbc	s0,0,1874 <main+0x2b0>
     16fe:	0fe47593          	andi	a1,s0,254
-    1702:	ce5f940b          	addigp	s0,-796 # 804e4 <g_pm_status_info>
+    1702:	cedf940b          	addigp	s0,-788 # 804ec <g_pm_status_info>
     1706:	03800513          	li	a0,56
     170a:	1404f55b          	bbc	s1,0,1854 <main+0x290>
     170e:	4791                	c.li	a5,4
@@ -2390,7 +2390,7 @@ Disassembly of section .ram_code:
     176c:	801404b7          	lui	s1,0x80140
     1770:	1fd48783          	lb	a5,509(s1) # 801401fd <_DATA_LMA_START+0x6013b5b5>
     1774:	0ff7f793          	andi	a5,a5,255
-    1778:	ceffc1ab          	swgp	a5,-800 # 804e0 <g_chip_version>
+    1778:	ceffc5ab          	swgp	a5,-792 # 804e8 <g_chip_version>
     177c:	00244703          	lbu	a4,2(s0)
     1780:	04475c5b          	beqc	a4,4,17d8 <main+0x214>
     1784:	0ff00693          	li	a3,255
@@ -2460,7 +2460,7 @@ Disassembly of section .ram_code:
     1870:	ea9ff06f          	j	1718 <main+0x154>
     1874:	07f00513          	li	a0,127
     1878:	f5dfe0ef          	jal	ra,7d4 <analog_read_reg8>
-    187c:	ce5f940b          	addigp	s0,-796 # 804e4 <g_pm_status_info>
+    187c:	cedf940b          	addigp	s0,-788 # 804ec <g_pm_status_info>
     1880:	4005745b          	bbs	a0,0,1888 <main+0x2c4>
     1884:	6300006f          	j	1eb4 <main+0x8f0>
     1888:	0014f45b          	bbc	s1,1,1890 <main+0x2cc>
@@ -2533,7 +2533,7 @@ Disassembly of section .ram_code:
     198c:	0037f65b          	bbc	a5,3,1998 <main+0x3d4>
     1990:	300477f3          	csrrci	a5,mstatus,8
     1994:	0ff0000f          	fence
-    1998:	cbbfa50b          	lbugp	a0,-838 # 804ba <sys_clk+0x2>
+    1998:	cc3fa50b          	lbugp	a0,-830 # 804c2 <sys_clk+0x2>
     199c:	2ed020ef          	jal	ra,4488 <__floatsidf>
     19a0:	000807b7          	lui	a5,0x80
     19a4:	02078793          	addi	a5,a5,32 # 80020 <cst_libm_sincosf+0x20>
@@ -2541,21 +2541,21 @@ Disassembly of section .ram_code:
     19aa:	43d4                	c.lw	a3,4(a5)
     19ac:	00080a37          	lui	s4,0x80
     19b0:	3f4020ef          	jal	ra,3da4 <__muldf3>
-    19b4:	cc9f998b          	addigp	s3,-824 # 804c8 <_BSS_VMA_START>
+    19b4:	cd1f998b          	addigp	s3,-816 # 804d0 <_BSS_VMA_START>
     19b8:	239020ef          	jal	ra,43f0 <__fixunsdfsi>
     19bc:	00a9a023          	sw	a0,0(s3)
-    19c0:	33ca0513          	addi	a0,s4,828 # 8033c <firCoeffsQ15+0x244>
+    19c0:	340a0513          	addi	a0,s4,832 # 80340 <firCoeffsQ15+0x248>
     19c4:	615000ef          	jal	ra,27d8 <printf>
     19c8:	00080537          	lui	a0,0x80
     19cc:	17050513          	addi	a0,a0,368 # 80170 <firCoeffsQ15+0x78>
     19d0:	609000ef          	jal	ra,27d8 <printf>
-    19d4:	33ca0513          	addi	a0,s4,828
+    19d4:	340a0513          	addi	a0,s4,832
     19d8:	601000ef          	jal	ra,27d8 <printf>
     19dc:	0009a583          	lw	a1,0(s3)
     19e0:	00080537          	lui	a0,0x80
     19e4:	19c50513          	addi	a0,a0,412 # 8019c <firCoeffsQ15+0xa4>
     19e8:	5f1000ef          	jal	ra,27d8 <printf>
-    19ec:	33ca0513          	addi	a0,s4,828
+    19ec:	340a0513          	addi	a0,s4,832
     19f0:	5e9000ef          	jal	ra,27d8 <printf>
     19f4:	00080537          	lui	a0,0x80
     19f8:	1bc50513          	addi	a0,a0,444 # 801bc <firCoeffsQ15+0xc4>
@@ -2700,13 +2700,13 @@ Disassembly of section .ram_code:
     1bd0:	00080537          	lui	a0,0x80
     1bd4:	29c50513          	addi	a0,a0,668 # 8029c <firCoeffsQ15+0x1a4>
     1bd8:	401000ef          	jal	ra,27d8 <printf>
-    1bdc:	33ca0513          	addi	a0,s4,828
+    1bdc:	340a0513          	addi	a0,s4,832
     1be0:	3f9000ef          	jal	ra,27d8 <printf>
     1be4:	00080537          	lui	a0,0x80
-    1be8:	2c450513          	addi	a0,a0,708 # 802c4 <firCoeffsQ15+0x1cc>
+    1be8:	2c850513          	addi	a0,a0,712 # 802c8 <firCoeffsQ15+0x1d0>
     1bec:	3ed000ef          	jal	ra,27d8 <printf>
     1bf0:	00080537          	lui	a0,0x80
-    1bf4:	2ec50513          	addi	a0,a0,748 # 802ec <firCoeffsQ15+0x1f4>
+    1bf4:	2f050513          	addi	a0,a0,752 # 802f0 <firCoeffsQ15+0x1f8>
     1bf8:	3e1000ef          	jal	ra,27d8 <printf>
     1bfc:	000807b7          	lui	a5,0x80
     1c00:	0387a487          	flw	fs1,56(a5) # 80038 <cst_libm_sincosf+0x38>
@@ -2802,7 +2802,7 @@ Disassembly of section .ram_code:
     1d38:	00080537          	lui	a0,0x80
     1d3c:	85a2                	c.mv	a1,s0
     1d3e:	d017f7d3          	fcvt.s.wu	fa5,a5
-    1d42:	32050513          	addi	a0,a0,800 # 80320 <firCoeffsQ15+0x228>
+    1d42:	32450513          	addi	a0,a0,804 # 80324 <firCoeffsQ15+0x22c>
     1d46:	c43a                	c.swsp	a4,8(sp)
     1d48:	c236                	c.swsp	a3,4(sp)
     1d4a:	18f57553          	fdiv.s	fa0,fa0,fa5
@@ -2840,15 +2840,15 @@ Disassembly of section .ram_code:
     1dbc:	004a8a93          	addi	s5,s5,4
     1dc0:	e49a9ce3          	bne	s5,s1,1c18 <main+0x654>
     1dc4:	00080537          	lui	a0,0x80
-    1dc8:	34050513          	addi	a0,a0,832 # 80340 <firCoeffsQ15+0x248>
+    1dc8:	34450513          	addi	a0,a0,836 # 80344 <firCoeffsQ15+0x24c>
     1dcc:	20d000ef          	jal	ra,27d8 <printf>
-    1dd0:	33ca0513          	addi	a0,s4,828
+    1dd0:	340a0513          	addi	a0,s4,832
     1dd4:	205000ef          	jal	ra,27d8 <printf>
     1dd8:	00080537          	lui	a0,0x80
-    1ddc:	36850513          	addi	a0,a0,872 # 80368 <firCoeffsQ15+0x270>
+    1ddc:	37050513          	addi	a0,a0,880 # 80370 <firCoeffsQ15+0x278>
     1de0:	1f9000ef          	jal	ra,27d8 <printf>
     1de4:	00080537          	lui	a0,0x80
-    1de8:	38450513          	addi	a0,a0,900 # 80384 <firCoeffsQ15+0x28c>
+    1de8:	38c50513          	addi	a0,a0,908 # 8038c <firCoeffsQ15+0x294>
     1dec:	1ed000ef          	jal	ra,27d8 <printf>
     1df0:	50f6                	c.lwsp	ra,124(sp)
     1df2:	5466                	c.lwsp	s0,120(sp)
@@ -2870,7 +2870,7 @@ Disassembly of section .ram_code:
     1e12:	8082                	c.jr	ra
     1e14:	00080537          	lui	a0,0x80
     1e18:	008005b3          	add	a1,zero,s0
-    1e1c:	3a450513          	addi	a0,a0,932 # 803a4 <firCoeffsQ15+0x2ac>
+    1e1c:	3ac50513          	addi	a0,a0,940 # 803ac <firCoeffsQ15+0x2b4>
     1e20:	1b9000ef          	jal	ra,27d8 <printf>
     1e24:	01800533          	add	a0,zero,s8
     1e28:	03f000ef          	jal	ra,2666 <free>
@@ -2883,11 +2883,11 @@ Disassembly of section .ram_code:
     1e44:	cf5ff06f          	j	1b38 <main+0x574>
     1e48:	00080537          	lui	a0,0x80
     1e4c:	008005b3          	add	a1,zero,s0
-    1e50:	3a450513          	addi	a0,a0,932 # 803a4 <firCoeffsQ15+0x2ac>
+    1e50:	3ac50513          	addi	a0,a0,940 # 803ac <firCoeffsQ15+0x2b4>
     1e54:	185000ef          	jal	ra,27d8 <printf>
     1e58:	fd5ff06f          	j	1e2c <main+0x868>
     1e5c:	008005b3          	add	a1,zero,s0
-    1e60:	3a4d0513          	addi	a0,s10,932 # 803a4 <firCoeffsQ15+0x2ac>
+    1e60:	3acd0513          	addi	a0,s10,940 # 803ac <firCoeffsQ15+0x2b4>
     1e64:	175000ef          	jal	ra,27d8 <printf>
     1e68:	01800533          	add	a0,zero,s8
     1e6c:	7fa000ef          	jal	ra,2666 <free>
@@ -2899,7 +2899,7 @@ Disassembly of section .ram_code:
     1e84:	0009f937          	lui	s2,0x9f
     1e88:	ea9ff06f          	j	1d30 <main+0x76c>
     1e8c:	008005b3          	add	a1,zero,s0
-    1e90:	3a4d0513          	addi	a0,s10,932
+    1e90:	3acd0513          	addi	a0,s10,940
     1e94:	145000ef          	jal	ra,27d8 <printf>
     1e98:	fd9ff06f          	j	1e70 <main+0x8ac>
     1e9c:	02000793          	li	a5,32
@@ -2924,19 +2924,19 @@ Disassembly of section .ram_code:
     1ee8:	e20ff0ef          	jal	ra,1508 <user_calib_freq_offset.constprop.8>
     1eec:	9c1ff06f          	j	18ac <main+0x2e8>
     1ef0:	0007e537          	lui	a0,0x7e
-    1ef4:	0c050513          	addi	a0,a0,192 # 7e0c0 <BIN_SIZE+0x78f92>
+    1ef4:	0c050513          	addi	a0,a0,192 # 7e0c0 <BIN_SIZE+0x78f8a>
     1ef8:	d14ff0ef          	jal	ra,140c <user_calib_adc_vref.constprop.9>
     1efc:	0007e537          	lui	a0,0x7e
     1f00:	e08ff0ef          	jal	ra,1508 <user_calib_freq_offset.constprop.8>
     1f04:	9a9ff06f          	j	18ac <main+0x2e8>
     1f08:	0001e537          	lui	a0,0x1e
-    1f0c:	0c050513          	addi	a0,a0,192 # 1e0c0 <BIN_SIZE+0x18f92>
+    1f0c:	0c050513          	addi	a0,a0,192 # 1e0c0 <BIN_SIZE+0x18f8a>
     1f10:	cfcff0ef          	jal	ra,140c <user_calib_adc_vref.constprop.9>
     1f14:	0001e537          	lui	a0,0x1e
     1f18:	df0ff0ef          	jal	ra,1508 <user_calib_freq_offset.constprop.8>
     1f1c:	991ff06f          	j	18ac <main+0x2e8>
     1f20:	0000e537          	lui	a0,0xe
-    1f24:	0c050513          	addi	a0,a0,192 # e0c0 <BIN_SIZE+0x8f92>
+    1f24:	0c050513          	addi	a0,a0,192 # e0c0 <BIN_SIZE+0x8f8a>
     1f28:	ce4ff0ef          	jal	ra,140c <user_calib_adc_vref.constprop.9>
     1f2c:	0000e537          	lui	a0,0xe
     1f30:	dd8ff0ef          	jal	ra,1508 <user_calib_freq_offset.constprop.8>
@@ -2979,7 +2979,7 @@ Disassembly of section .ram_code:
 	...
 
 00001f80 <riscv_fir_f32>:
-    1f80:	00055283          	lhu	t0,0(a0) # e000 <BIN_SIZE+0x8ed2>
+    1f80:	00055283          	lhu	t0,0(a0) # e000 <BIN_SIZE+0x8eca>
     1f84:	7179                	c.addi16sp	sp,-48
     1f86:	00452383          	lw	t2,4(a0)
     1f8a:	00229f13          	slli	t5,t0,0x2
@@ -3538,21 +3538,21 @@ Disassembly of section .ram_code:
     2644:	388022ef          	jal	t0,49cc <__riscv_save_0>
     2648:	862e                	c.mv	a2,a1
     264a:	85aa                	c.mv	a1,a0
-    264c:	cc3fa52b          	lwgp	a0,-832 # 804c0 <_impure_ptr>
+    264c:	ccbfa52b          	lwgp	a0,-824 # 804c8 <_impure_ptr>
     2650:	201d                	c.jal	2676 <_calloc_r>
     2652:	39e0206f          	j	49f0 <__riscv_restore_0>
 
 00002656 <malloc>:
     2656:	376022ef          	jal	t0,49cc <__riscv_save_0>
     265a:	85aa                	c.mv	a1,a0
-    265c:	cc3fa52b          	lwgp	a0,-832 # 804c0 <_impure_ptr>
+    265c:	ccbfa52b          	lwgp	a0,-824 # 804c8 <_impure_ptr>
     2660:	20e1                	c.jal	2728 <_malloc_r>
     2662:	38e0206f          	j	49f0 <__riscv_restore_0>
 
 00002666 <free>:
     2666:	366022ef          	jal	t0,49cc <__riscv_save_0>
     266a:	85aa                	c.mv	a1,a0
-    266c:	cc3fa52b          	lwgp	a0,-832 # 804c0 <_impure_ptr>
+    266c:	ccbfa52b          	lwgp	a0,-824 # 804c8 <_impure_ptr>
     2670:	2025                	c.jal	2698 <_free_r>
     2672:	37e0206f          	j	49f0 <__riscv_restore_0>
 
@@ -3578,11 +3578,11 @@ Disassembly of section .ram_code:
     269e:	ffc58793          	addi	a5,a1,-4
     26a2:	00075363          	bgez	a4,26a8 <_free_r+0x10>
     26a6:	97ba                	c.add	a5,a4
-    26a8:	ceffa72b          	lwgp	a4,-788 # 804ec <__malloc_free_list>
+    26a8:	cf7fa72b          	lwgp	a4,-780 # 804f4 <__malloc_free_list>
     26ac:	85b6                	c.mv	a1,a3
     26ae:	e711                	c.bnez	a4,26ba <_free_r+0x22>
     26b0:	0007a223          	sw	zero,4(a5)
-    26b4:	ceffc7ab          	swgp	a5,-788 # 804ec <__malloc_free_list>
+    26b4:	ceffcbab          	swgp	a5,-780 # 804f4 <__malloc_free_list>
     26b8:	8082                	c.jr	ra
     26ba:	02e7f063          	bgeu	a5,a4,26da <_free_r+0x42>
     26be:	4390                	c.lw	a2,0(a5)
@@ -3593,7 +3593,7 @@ Disassembly of section .ram_code:
     26cc:	96b2                	c.add	a3,a2
     26ce:	c394                	c.sw	a3,0(a5)
     26d0:	c3d8                	c.sw	a4,4(a5)
-    26d2:	ceffc7ab          	swgp	a5,-788 # 804ec <__malloc_free_list>
+    26d2:	ceffcbab          	swgp	a5,-780 # 804f4 <__malloc_free_list>
     26d6:	8082                	c.jr	ra
     26d8:	8736                	c.mv	a4,a3
     26da:	4354                	c.lw	a3,4(a4)
@@ -3615,7 +3615,7 @@ Disassembly of section .ram_code:
     2704:	8082                	c.jr	ra
     2706:	00b7f663          	bgeu	a5,a1,2712 <_free_r+0x7a>
     270a:	4731                	c.li	a4,12
-    270c:	ceefc5ab          	swgp	a4,-792 # 804e8 <__mculib_REENT_errno>
+    270c:	ceefc9ab          	swgp	a4,-784 # 804f0 <__mculib_REENT_errno>
     2710:	8082                	c.jr	ra
     2712:	438c                	c.lw	a1,0(a5)
     2714:	00b78633          	add	a2,a5,a1
@@ -3636,8 +3636,8 @@ Disassembly of section .ram_code:
     2736:	06f4f263          	bgeu	s1,a5,279a <_malloc_r+0x72>
     273a:	44b1                	c.li	s1,12
     273c:	06b4e163          	bltu	s1,a1,279e <_malloc_r+0x76>
-    2740:	ceffa42b          	lwgp	s0,-788 # 804ec <__malloc_free_list>
-    2744:	cedf968b          	addigp	a3,-788 # 804ec <__malloc_free_list>
+    2740:	cf7fa42b          	lwgp	s0,-780 # 804f4 <__malloc_free_list>
+    2744:	cf5f968b          	addigp	a3,-780 # 804f4 <__malloc_free_list>
     2748:	87a2                	c.mv	a5,s0
     274a:	cf89                	c.beqz	a5,2764 <_malloc_r+0x3c>
     274c:	4398                	c.lw	a4,0(a5)
@@ -3649,7 +3649,7 @@ Disassembly of section .ram_code:
     275c:	00e78433          	add	s0,a5,a4
     2760:	c004                	c.sw	s1,0(s0)
     2762:	e821                	c.bnez	s0,27b2 <_malloc_r+0x8a>
-    2764:	cf1f940b          	addigp	s0,-784 # 804f0 <__malloc_sbrk_start>
+    2764:	cf9f940b          	addigp	s0,-776 # 804f8 <__malloc_sbrk_start>
     2768:	401c                	c.lw	a5,0(s0)
     276a:	e789                	c.bnez	a5,2774 <_malloc_r+0x4c>
     276c:	4501                	c.li	a0,0
@@ -3670,7 +3670,7 @@ Disassembly of section .ram_code:
     279a:	fa04d1e3          	bgez	s1,273c <_malloc_r+0x14>
     279e:	4731                	c.li	a4,12
     27a0:	4501                	c.li	a0,0
-    27a2:	ceefc5ab          	swgp	a4,-792 # 804e8 <__mculib_REENT_errno>
+    27a2:	ceefc9ab          	swgp	a4,-784 # 804f0 <__mculib_REENT_errno>
     27a6:	24a0206f          	j	49f0 <__riscv_restore_0>
     27aa:	43d8                	c.lw	a4,4(a5)
     27ac:	02f41063          	bne	s0,a5,27cc <_malloc_r+0xa4>
@@ -3765,11 +3765,11 @@ Disassembly of section .ram_code:
 
 0000288c <__vprintf_help>:
     288c:	140022ef          	jal	t0,49cc <__riscv_save_0>
-    2890:	cfffa7ab          	lwgp	a5,-772 # 804fc <__printf_count>
+    2890:	d07fa7ab          	lwgp	a5,-764 # 80504 <__printf_count>
     2894:	0785                	c.addi	a5,1
-    2896:	ceffcfab          	swgp	a5,-772 # 804fc <__printf_count>
-    289a:	cf9f940b          	addigp	s0,-776 # 804f8 <__vprintf_buf_len>
-    289e:	cf7fa5ab          	lwgp	a1,-780 # 804f4 <__vprintf_buf>
+    2896:	d0ffc3ab          	swgp	a5,-764 # 80504 <__printf_count>
+    289a:	d01f940b          	addigp	s0,-768 # 80500 <__vprintf_buf_len>
+    289e:	cfffa5ab          	lwgp	a1,-772 # 804fc <__vprintf_buf>
     28a2:	401c                	c.lw	a5,0(s0)
     28a4:	00178713          	addi	a4,a5,1
     28a8:	97ae                	c.add	a5,a1
@@ -3793,8 +3793,8 @@ Disassembly of section .ram_code:
     28d4:	00f10793          	addi	a5,sp,15
     28d8:	00003637          	lui	a2,0x3
     28dc:	9bc1                	c.andi	a5,-16
-    28de:	cf5f948b          	addigp	s1,-780 # 804f4 <__vprintf_buf>
-    28e2:	cf9f990b          	addigp	s2,-776 # 804f8 <__vprintf_buf_len>
+    28de:	cfdf948b          	addigp	s1,-772 # 804fc <__vprintf_buf>
+    28e2:	d01f990b          	addigp	s2,-768 # 80500 <__vprintf_buf_len>
     28e6:	88c60613          	addi	a2,a2,-1908 # 288c <__vprintf_help>
     28ea:	c09c                	c.sw	a5,0(s1)
     28ec:	00092023          	sw	zero,0(s2)
@@ -3803,7 +3803,7 @@ Disassembly of section .ram_code:
     28f6:	408c                	c.lw	a1,0(s1)
     28f8:	4505                	c.li	a0,1
     28fa:	c83fe0ef          	jal	ra,157c <_write>
-    28fe:	cfffa52b          	lwgp	a0,-772 # 804fc <__printf_count>
+    28fe:	d07fa52b          	lwgp	a0,-764 # 80504 <__printf_count>
     2902:	ff040113          	addi	sp,s0,-16
     2906:	40b2                	c.lwsp	ra,12(sp)
     2908:	4422                	c.lwsp	s0,8(sp)
@@ -3832,7 +3832,7 @@ Disassembly of section .ram_code:
     2934:	85a6                	c.mv	a1,s1
     2936:	8522                	c.mv	a0,s0
     2938:	2945                	c.jal	2de8 <__print_integral_poly>
-    293a:	bcdf978b          	addigp	a5,-1076 # 803cc <__digits>
+    293a:	bd5f978b          	addigp	a5,-1068 # 803d4 <__digits>
     293e:	00a46563          	bltu	s0,a0,2948 <__print_integral+0x36>
     2942:	6105                	c.addi16sp	sp,32
     2944:	0ac0206f          	j	49f0 <__riscv_restore_0>
@@ -3852,7 +3852,7 @@ Disassembly of section .ram_code:
     2968:	89b2                	c.mv	s3,a2
     296a:	01c10a13          	addi	s4,sp,28
     296e:	800b0b13          	addi	s6,s6,-2048 # 800 <analog_read_reg8+0x2c>
-    2972:	ce0fcfab          	swgp	zero,-772 # 804fc <__printf_count>
+    2972:	d00fc3ab          	swgp	zero,-764 # 80504 <__printf_count>
     2976:	c456                	c.swsp	s5,8(sp)
     2978:	00094503          	lbu	a0,0(s2)
     297c:	e509                	c.bnez	a0,2986 <__printf_impl+0x2c>
@@ -4147,7 +4147,7 @@ Disassembly of section .ram_code:
     2d00:	45a2                	c.lwsp	a1,8(sp)
     2d02:	5682                	c.lwsp	a3,32(sp)
     2d04:	00440493          	addi	s1,s0,4
-    2d08:	cfffa7ab          	lwgp	a5,-772 # 804fc <__printf_count>
+    2d08:	d07fa7ab          	lwgp	a5,-764 # 80504 <__printf_count>
     2d0c:	4018                	c.lw	a4,0(s0)
     2d0e:	0066f85b          	bbc	a3,6,2d1e <__printf_impl+0x3c4>
     2d12:	00f70023          	sb	a5,0(a4)
@@ -4324,7 +4324,7 @@ Disassembly of section .ram_code:
     2ef0:	00f92023          	sw	a5,0(s2)
     2ef4:	c69d                	c.beqz	a3,2f22 <__printf_float_impl+0xa8>
     2ef6:	000805b7          	lui	a1,0x80
-    2efa:	3dc58593          	addi	a1,a1,988 # 803dc <__digits+0x10>
+    2efa:	3e458593          	addi	a1,a1,996 # 803e4 <__digits+0x10>
     2efe:	855a                	c.mv	a0,s6
     2f00:	2661                	c.jal	3288 <strcpy>
     2f02:	050d                	c.addi	a0,3
@@ -4339,7 +4339,7 @@ Disassembly of section .ram_code:
     2f1c:	0014b493          	seqz	s1,s1
     2f20:	b771                	c.j	2eac <__printf_float_impl+0x32>
     2f22:	000805b7          	lui	a1,0x80
-    2f26:	3e058593          	addi	a1,a1,992 # 803e0 <__digits+0x14>
+    2f26:	3e858593          	addi	a1,a1,1000 # 803e8 <__digits+0x14>
     2f2a:	bfd1                	c.j	2efe <__printf_float_impl+0x84>
     2f2c:	e811                	c.bnez	s0,2f40 <__printf_float_impl+0xc6>
     2f2e:	00ad66b3          	or	a3,s10,a0
@@ -4456,7 +4456,7 @@ Disassembly of section .ram_code:
     3076:	4047f35b          	bbs	a5,4,307c <__printf_float_impl+0x202>
     307a:	157d                	c.addi	a0,-1
     307c:	46bd                	c.li	a3,15
-    307e:	bcdf970b          	addigp	a4,-1076 # 803cc <__digits>
+    307e:	bd5f970b          	addigp	a4,-1068 # 803d4 <__digits>
     3082:	1aab6f63          	bltu	s6,a0,3240 <__printf_float_impl+0x3c6>
     3086:	5c5c685b          	bnec	s8,69,3256 <__printf_float_impl+0x3dc>
     308a:	01850023          	sb	s8,0(a0)
@@ -4713,9 +4713,9 @@ Disassembly of section .ram_code:
     3370:	0ad76663          	bltu	a4,a3,341c <sinf+0xfc>
     3374:	00080737          	lui	a4,0x80
     3378:	000806b7          	lui	a3,0x80
-    337c:	3e46a587          	flw	fa1,996(a3) # 803e4 <__digits+0x18>
-    3380:	3fc72787          	flw	fa5,1020(a4) # 803fc <cst_libm_rredf>
-    3384:	bfdf970b          	addigp	a4,-1028 # 803fc <cst_libm_rredf>
+    337c:	3ec6a587          	flw	fa1,1004(a3) # 803ec <__digits+0x18>
+    3380:	40472787          	flw	fa5,1028(a4) # 80404 <cst_libm_rredf>
+    3384:	c05f970b          	addigp	a4,-1020 # 80404 <cst_libm_rredf>
     3388:	6710                	c.flw	fa2,8(a4)
     338a:	58f577c3          	fmadd.s	fa5,fa0,fa5,fa1
     338e:	6754                	c.flw	fa3,12(a4)
@@ -4756,7 +4756,7 @@ Disassembly of section .ram_code:
     3404:	00008067          	ret
     3408:	02100713          	li	a4,33
     340c:	f0000553          	fmv.w.x	fa0,zero
-    3410:	ceefc5ab          	swgp	a4,-792 # 804e8 <__mculib_REENT_errno>
+    3410:	ceefc9ab          	swgp	a4,-784 # 804f0 <__mculib_REENT_errno>
     3414:	18a57553          	fdiv.s	fa0,fa0,fa0
     3418:	00008067          	ret
     341c:	0068                	c.addi4spn	a0,sp,12
@@ -4772,7 +4772,7 @@ Disassembly of section .ram_code:
     343e:	b75d                	c.j	33e4 <sinf+0xc4>
     3440:	f0000553          	fmv.w.x	fa0,zero
     3444:	02100713          	li	a4,33
-    3448:	ceefc5ab          	swgp	a4,-792 # 804e8 <__mculib_REENT_errno>
+    3448:	ceefc9ab          	swgp	a4,-784 # 804f0 <__mculib_REENT_errno>
     344c:	18a57553          	fdiv.s	fa0,fa0,fa0
     3450:	f95ff06f          	j	33e4 <sinf+0xc4>
     3454:	00177693          	andi	a3,a4,1
@@ -4797,7 +4797,7 @@ Disassembly of section .ram_code:
     3488:	7975a7db          	bfoz	a5,a1,30,23
     348c:	f8878793          	addi	a5,a5,-120 # feffff88 <_DATA_LMA_START+0xdeffb340>
     3490:	4057d613          	srai	a2,a5,0x5
-    3494:	c15f968b          	addigp	a3,-1004 # 80414 <twooverpi.2618>
+    3494:	c1df968b          	addigp	a3,-996 # 8041c <twooverpi.2618>
     3498:	0cc688db          	lea.w	a7,a3,a2
     349c:	00859313          	slli	t1,a1,0x8
     34a0:	80000e37          	lui	t3,0x80000
@@ -4836,10 +4836,10 @@ Disassembly of section .ram_code:
     351c:	07b6                	c.slli	a5,0xd
     351e:	d006f6d3          	fcvt.s.w	fa3,a3
     3522:	000806b7          	lui	a3,0x80
-    3526:	3e86a587          	flw	fa1,1000(a3) # 803e8 <__digits+0x1c>
+    3526:	3f06a587          	flw	fa1,1008(a3) # 803f0 <__digits+0x1c>
     352a:	d017f753          	fcvt.s.wu	fa4,a5
     352e:	000807b7          	lui	a5,0x80
-    3532:	3ec7a607          	flw	fa2,1004(a5) # 803ec <__digits+0x20>
+    3532:	3f47a607          	flw	fa2,1012(a5) # 803f4 <__digits+0x20>
     3536:	d0177553          	fcvt.s.wu	fa0,a4
     353a:	6685                	c.lui	a3,0x1
     353c:	80068693          	addi	a3,a3,-2048 # 800 <analog_read_reg8+0x2c>
@@ -4856,14 +4856,14 @@ Disassembly of section .ram_code:
     3560:	00080737          	lui	a4,0x80
     3564:	68b7774b          	fnmsub.s	fa4,fa4,fa1,fa3
     3568:	70c57747          	fmsub.s	fa4,fa0,fa2,fa4
-    356c:	3f072507          	flw	fa0,1008(a4) # 803f0 <__digits+0x24>
+    356c:	3f872507          	flw	fa0,1016(a4) # 803f8 <__digits+0x24>
     3570:	00080737          	lui	a4,0x80
     3574:	f0078653          	fmv.w.x	fa2,a5
     3578:	10a77753          	fmul.s	fa4,fa4,fa0
-    357c:	3f472507          	flw	fa0,1012(a4) # 803f4 <__digits+0x28>
+    357c:	3fc72507          	flw	fa0,1020(a4) # 803fc <__digits+0x28>
     3580:	00080737          	lui	a4,0x80
     3584:	70a7f543          	fmadd.s	fa0,fa5,fa0,fa4
-    3588:	3f872787          	flw	fa5,1016(a4) # 803f8 <__digits+0x2c>
+    3588:	40072787          	flw	fa5,1024(a4) # 80400 <__digits+0x2c>
     358c:	50f67543          	fmadd.s	fa0,fa2,fa5,fa0
     3590:	0005d863          	bgez	a1,35a0 <ref__mathlib_rredf2+0x124>
     3594:	20a51553          	fneg.s	fa0,fa0
@@ -4922,7 +4922,7 @@ Disassembly of section .ram_code:
     3638:	433d                	c.li	t1,15
     363a:	8f42                	c.mv	t5,a6
     363c:	12f36063          	bltu	t1,a5,375c <__divdf3+0x1a4>
-    3640:	c35f930b          	addigp	t1,-972 # 80434 <twooverpi.2618+0x20>
+    3640:	c3df930b          	addigp	t1,-964 # 8043c <twooverpi.2618+0x20>
     3644:	0cf307db          	lea.w	a5,t1,a5
     3648:	439c                	c.lw	a5,0(a5)
     364a:	8782                	c.jr	a5
@@ -5051,7 +5051,7 @@ Disassembly of section .ram_code:
     37d8:	0742                	c.slli	a4,0x10
     37da:	69c1                	c.lui	s3,0x10
     37dc:	8f55                	c.or	a4,a3
-    37de:	fff98693          	addi	a3,s3,-1 # ffff <BIN_SIZE+0xaed1>
+    37de:	fff98693          	addi	a3,s3,-1 # ffff <BIN_SIZE+0xaec9>
     37e2:	00d478b3          	and	a7,s0,a3
     37e6:	01075613          	srli	a2,a4,0x10
     37ea:	031605b3          	mul	a1,a2,a7
@@ -5219,7 +5219,7 @@ Disassembly of section .ram_code:
     39ea:	000806b7          	lui	a3,0x80
     39ee:	4601                	c.li	a2,0
     39f0:	f79ff06f          	j	3968 <__divdf3+0x3b0>
-    39f4:	fd880713          	addi	a4,a6,-40 # ffd8 <BIN_SIZE+0xaeaa>
+    39f4:	fd880713          	addi	a4,a6,-40 # ffd8 <BIN_SIZE+0xaea2>
     39f8:	00e61733          	sll	a4,a2,a4
     39fc:	4601                	c.li	a2,0
     39fe:	b17d                	c.j	36ac <__divdf3+0xf4>
@@ -5563,7 +5563,7 @@ Disassembly of section .ram_code:
     3e22:	00d5ceb3          	xor	t4,a1,a3
     3e26:	001e0f93          	addi	t6,t3,1 # 80000001 <_DATA_LMA_START+0x5fffb3b9>
     3e2a:	16e8e363          	bltu	a7,a4,3f90 <__muldf3+0x1ec>
-    3e2e:	c75f988b          	addigp	a7,-908 # 80474 <twooverpi.2618+0x60>
+    3e2e:	c7df988b          	addigp	a7,-900 # 8047c <twooverpi.2618+0x60>
     3e32:	0ce8875b          	lea.w	a4,a7,a4
     3e36:	4318                	c.lw	a4,0(a4)
     3e38:	00070067          	jr	a4
@@ -5673,7 +5673,7 @@ Disassembly of section .ram_code:
     3f8a:	4841                	c.li	a6,16
     3f8c:	e95ff06f          	j	3e20 <__muldf3+0x7c>
     3f90:	6f41                	c.lui	t5,0x10
-    3f92:	ffff0713          	addi	a4,t5,-1 # ffff <BIN_SIZE+0xaed1>
+    3f92:	ffff0713          	addi	a4,t5,-1 # ffff <BIN_SIZE+0xaec9>
     3f96:	00e678b3          	and	a7,a2,a4
     3f9a:	01055393          	srli	t2,a0,0x10
     3f9e:	031385b3          	mul	a1,t2,a7
@@ -5688,7 +5688,7 @@ Disassembly of section .ram_code:
     3fbc:	00b47463          	bgeu	s0,a1,3fc4 <__muldf3+0x220>
     3fc0:	01e70733          	add	a4,a4,t5
     3fc4:	6b41                	c.lui	s6,0x10
-    3fc6:	fffb0f13          	addi	t5,s6,-1 # ffff <BIN_SIZE+0xaed1>
+    3fc6:	fffb0f13          	addi	t5,s6,-1 # ffff <BIN_SIZE+0xaec9>
     3fca:	01e7f5b3          	and	a1,a5,t5
     3fce:	02b38a33          	mul	s4,t2,a1
     3fd2:	0107d993          	srli	s3,a5,0x10
@@ -5706,7 +5706,7 @@ Disassembly of section .ram_code:
     3ffc:	0146f463          	bgeu	a3,s4,4004 <__muldf3+0x260>
     4000:	016383b3          	add	t2,t2,s6
     4004:	6b41                	c.lui	s6,0x10
-    4006:	fffb0413          	addi	s0,s6,-1 # ffff <BIN_SIZE+0xaed1>
+    4006:	fffb0413          	addi	s0,s6,-1 # ffff <BIN_SIZE+0xaec9>
     400a:	0102da13          	srli	s4,t0,0x10
     400e:	0082f7b3          	and	a5,t0,s0
     4012:	031a02b3          	mul	t0,s4,a7
@@ -5727,7 +5727,7 @@ Disassembly of section .ram_code:
     4042:	965a                	c.add	a2,s6
     4044:	02ba0ab3          	mul	s5,s4,a1
     4048:	6b41                	c.lui	s6,0x10
-    404a:	fffb0293          	addi	t0,s6,-1 # ffff <BIN_SIZE+0xaed1>
+    404a:	fffb0293          	addi	t0,s6,-1 # ffff <BIN_SIZE+0xaec9>
     404e:	005576b3          	and	a3,a0,t0
     4052:	06c2                	c.slli	a3,0x10
     4054:	0058f8b3          	and	a7,a7,t0
@@ -6149,7 +6149,7 @@ Disassembly of section .ram_code:
     4560:	af9685ff          	clz32	a1,a3
     4564:	47a9                	c.li	a5,10
     4566:	06b7db63          	bge	a5,a1,45dc <__extendsfdf2+0xd8>
-    456a:	ff558713          	addi	a4,a1,-11 # fff5 <BIN_SIZE+0xaec7>
+    456a:	ff558713          	addi	a4,a1,-11 # fff5 <BIN_SIZE+0xaebf>
     456e:	00e69733          	sll	a4,a3,a4
     4572:	4681                	c.li	a3,0
     4574:	38900793          	li	a5,905
@@ -6453,16 +6453,16 @@ Disassembly of section .ram_code:
     4912:	b5cd                	c.j	47f4 <__truncdfsf2+0x1e0>
 
 00004914 <_sbrk>:
-    4914:	d03fa72b          	lwgp	a4,-768 # 80500 <heap_end.2408>
-    4918:	d01f978b          	addigp	a5,-768 # 80500 <heap_end.2408>
+    4914:	d0bfa72b          	lwgp	a4,-760 # 80508 <heap_end.2408>
+    4918:	d09f978b          	addigp	a5,-760 # 80508 <heap_end.2408>
     491c:	e701                	c.bnez	a4,4924 <_sbrk+0x10>
-    491e:	d31f970b          	addigp	a4,-720 # 80530 <_end>
+    491e:	d39f970b          	addigp	a4,-712 # 80538 <_end>
     4922:	c398                	c.sw	a4,0(a5)
     4924:	4398                	c.lw	a4,0(a5)
     4926:	953a                	c.add	a0,a4
     4928:	00a17763          	bgeu	sp,a0,4936 <_sbrk+0x22>
     492c:	4731                	c.li	a4,12
-    492e:	ceefc5ab          	swgp	a4,-792 # 804e8 <__mculib_REENT_errno>
+    492e:	ceefc9ab          	swgp	a4,-784 # 804f0 <__mculib_REENT_errno>
     4932:	557d                	c.li	a0,-1
     4934:	8082                	c.jr	ra
     4936:	c388                	c.sw	a0,0(a5)
@@ -6636,7 +6636,7 @@ Disassembly of section .ram_code:
     4a90:	9b40                	exec.it	#868     !
     4a92:	9a0d                	c.andi	a2,-29
     4a94:	990c                	exec.it	#908     !
-    4a96:	970a980b          	addigp	a6,-77456 # 6d970 <BIN_SIZE+0x68842>
+    4a96:	970a980b          	addigp	a6,-77456 # 6d970 <BIN_SIZE+0x6883a>
     4a9a:	9609                	c.srai	a2,0x22
     4a9c:	9508                	exec.it	#898     !
     4a9e:	93069407          	flh	fs0,-1744(a3)

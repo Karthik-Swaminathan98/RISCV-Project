@@ -1,0 +1,7 @@
+.PHONY: function-analysis
+
+FUNCTIONS := riscv_sqrt_f32 riscv_sqrt_q15 riscv_atan2_f32 riscv_atan2_q15 riscv_sin_f32 riscv_cos_f32 riscv_sin_q15 riscv_cos_q15
+
+function-analysis: output/objdump.txt output/map.txt
+	@echo "Running function size analysis..."
+	python tools/function_size_riscv.py output/map.txt output/objdump.txt $(FUNCTIONS) > tools/code_size_report.txt || true

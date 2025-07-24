@@ -1,0 +1,47 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_sqrt_f32
+    [!] Not found in map file.
+
+[*] Function: riscv_sqrt_q15
+    Own size: 232 bytes
+    Total size (with dependencies): 232 bytes
+    [*] Breakdown:
+        riscv_sqrt_q15                         232 bytes
+------------------------------------------------------------
+[*] Function: riscv_atan2_f32
+    Own size: 606 bytes
+    Total size (with dependencies): 606 bytes
+    [*] Breakdown:
+        riscv_atan2_f32                        606 bytes
+------------------------------------------------------------
+[*] Function: riscv_atan2_q15
+    Own size: 876 bytes
+    Total size (with dependencies): 876 bytes
+    [*] Breakdown:
+        riscv_atan2_q15                        876 bytes
+------------------------------------------------------------
+[*] Function: riscv_sin_f32
+    Own size: 130 bytes
+    Total size (with dependencies): 130 bytes
+    [*] Breakdown:
+        riscv_sin_f32                          130 bytes
+------------------------------------------------------------
+[*] Function: riscv_cos_f32
+    Own size: 138 bytes
+    Total size (with dependencies): 138 bytes
+    [*] Breakdown:
+        riscv_cos_f32                          138 bytes
+------------------------------------------------------------
+[*] Function: riscv_sin_q15
+    Own size: 78 bytes
+    Total size (with dependencies): 78 bytes
+    [*] Breakdown:
+        riscv_sin_q15                           78 bytes
+------------------------------------------------------------
+[*] Function: riscv_cos_q15
+    Own size: 92 bytes
+    Total size (with dependencies): 92 bytes
+    [*] Breakdown:
+        riscv_cos_q15                           92 bytes
+------------------------------------------------------------

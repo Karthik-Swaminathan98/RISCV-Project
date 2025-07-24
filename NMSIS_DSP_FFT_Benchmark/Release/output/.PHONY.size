@@ -1,2 +1,2 @@
    text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  19902	  19902	      0	  88562	     64	 108528	  1a7f0	NMSIS_DSP_FFT_Benchmark.adx
+  29066	  29066	      0	 129926	     64	 159056	  26d50	NMSIS_DSP_FFT_Benchmark.adx

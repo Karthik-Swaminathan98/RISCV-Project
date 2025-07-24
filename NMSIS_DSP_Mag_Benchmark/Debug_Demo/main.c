@@ -16,7 +16,7 @@ int main(void) {
     clkFastfreq = get_clk_fast_freq();
 
     printf("\n\r");
-    printf("-----Starting NMSIS-Magnitude benchmark-----\n\r");
+    printf("-----Starting NMSIS-Magnitude benchmark------\n\r");
     printf("\n\r");
     printf("CPU Clock Frequency: %lu Hz\n\r", clkFastfreq);
     printf("\n\r");

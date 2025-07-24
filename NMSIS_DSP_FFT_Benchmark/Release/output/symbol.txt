@@ -68,213 +68,284 @@
 00001560 t gpio_input_dis
 0000157c T _write
 000015c4 T main
-00001f54 T default_irq_entry
-00001f54 W entry_irq1
-00001f54 W entry_irq10
-00001f54 W entry_irq11
-00001f54 W entry_irq12
-00001f54 W entry_irq13
-00001f54 W entry_irq14
-00001f54 W entry_irq15
-00001f54 W entry_irq16
-00001f54 W entry_irq17
-00001f54 W entry_irq18
-00001f54 W entry_irq19
-00001f54 W entry_irq2
-00001f54 W entry_irq20
-00001f54 W entry_irq21
-00001f54 W entry_irq22
-00001f54 W entry_irq23
-00001f54 W entry_irq24
-00001f54 W entry_irq25
-00001f54 W entry_irq26
-00001f54 W entry_irq27
-00001f54 W entry_irq28
-00001f54 W entry_irq29
-00001f54 W entry_irq3
-00001f54 W entry_irq30
-00001f54 W entry_irq31
-00001f54 W entry_irq32
-00001f54 W entry_irq33
-00001f54 W entry_irq34
-00001f54 W entry_irq35
-00001f54 W entry_irq36
-00001f54 W entry_irq37
-00001f54 W entry_irq38
-00001f54 W entry_irq39
-00001f54 W entry_irq4
-00001f54 W entry_irq40
-00001f54 W entry_irq41
-00001f54 W entry_irq42
-00001f54 W entry_irq43
-00001f54 W entry_irq44
-00001f54 W entry_irq45
-00001f54 W entry_irq46
-00001f54 W entry_irq47
-00001f54 W entry_irq48
-00001f54 W entry_irq49
-00001f54 W entry_irq5
-00001f54 W entry_irq50
-00001f54 W entry_irq51
-00001f54 W entry_irq52
-00001f54 W entry_irq53
-00001f54 W entry_irq54
-00001f54 W entry_irq55
-00001f54 W entry_irq56
-00001f54 W entry_irq57
-00001f54 W entry_irq58
-00001f54 W entry_irq59
-00001f54 W entry_irq6
-00001f54 W entry_irq60
-00001f54 W entry_irq61
-00001f54 W entry_irq62
-00001f54 W entry_irq63
-00001f54 W entry_irq7
-00001f54 W entry_irq8
-00001f54 W entry_irq9
-00001f56 W trap_handler
-00001f5c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:85
-00001f5c W riscv_cfft_init_4096_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:85
-00001f80 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:99
-00001f80 W riscv_cfft_init_2048_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:99
-00001fa8 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:113
-00001fa8 W riscv_cfft_init_1024_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:113
-00001fcc t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:127
-00001fcc W riscv_cfft_init_512_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:127
-00001ff0 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:141
-00001ff0 W riscv_cfft_init_256_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:141
-00002014 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:155
-00002014 W riscv_cfft_init_128_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:155
-00002038 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:169
-00002038 W riscv_cfft_init_64_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:169
-0000205c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:183
-0000205c W riscv_cfft_init_32_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:183
-00002080 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:197
-00002080 W riscv_cfft_init_16_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:197
-000020a4 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:232
-000020a4 T riscv_cfft_init_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:223
-0000211c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_bitreversal2.c:92
-0000211c W riscv_bitreversal_32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_bitreversal2.c:85
-00002170 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_f32.c:583
-00002170 W riscv_cfft_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_f32.c:578
-0000281c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix8_f32.c:57
-0000281c W riscv_radix8_butterfly_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix8_f32.c:52
-00002df4 T sinf
-00002f50 T ref__mathlib_rredf2
-0000308c T __gedf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/gedf2.c:35
-0000308c T __gtdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/gedf2.c:42
-00003154 T __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
-000037a0 T __fixunsdfsi	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/fixunsdfsi.c:35
-00003838 T __floatsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatsidf.c:36
-000038b4 T __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
-000039c4 T __truncdfsf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
-00003cc4 T malloc
-00003cd4 T free
-00003ce4 T memcpy
-00003dde T memset
-00003e88 T _free_r
-00003f18 T _malloc_r
-00003fc8 T printf
-00003fe6 T puts
-0000401c T strlen
-0000407c t __vprintf_help
-000040b6 T vprintf
-00004102 T __print_integral
-0000414a T __printf_impl
-000045ba T __int_to_poly
-000045d8 T __print_integral_poly
-00004668 T __printf_float_impl
-00004a68 T strcpy
-00004ae6 T strnlen
-00004afe W _sbrk
-00004b28 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
-00004b58 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
-00004b88 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
-00004b90 T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00004b90 T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00004b90 T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00004b90 T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
-00004b9e T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00004b9e T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00004b9e T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00004b9e T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
-00004bb8 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004bb8 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004bb8 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004bb8 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
-00004bc4 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
-00004bc8 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004bc8 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004bc8 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004bc8 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
-00004bd2 T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004bd2 T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004bd2 T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004bd2 T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
-00004bdc T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004bdc T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004bdc T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004bdc T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
-00004ce0 T _RAMCODE_VMA_END
-0001a7be A BIN_SIZE
+00002c08 T default_irq_entry
+00002c08 W entry_irq1
+00002c08 W entry_irq10
+00002c08 W entry_irq11
+00002c08 W entry_irq12
+00002c08 W entry_irq13
+00002c08 W entry_irq14
+00002c08 W entry_irq15
+00002c08 W entry_irq16
+00002c08 W entry_irq17
+00002c08 W entry_irq18
+00002c08 W entry_irq19
+00002c08 W entry_irq2
+00002c08 W entry_irq20
+00002c08 W entry_irq21
+00002c08 W entry_irq22
+00002c08 W entry_irq23
+00002c08 W entry_irq24
+00002c08 W entry_irq25
+00002c08 W entry_irq26
+00002c08 W entry_irq27
+00002c08 W entry_irq28
+00002c08 W entry_irq29
+00002c08 W entry_irq3
+00002c08 W entry_irq30
+00002c08 W entry_irq31
+00002c08 W entry_irq32
+00002c08 W entry_irq33
+00002c08 W entry_irq34
+00002c08 W entry_irq35
+00002c08 W entry_irq36
+00002c08 W entry_irq37
+00002c08 W entry_irq38
+00002c08 W entry_irq39
+00002c08 W entry_irq4
+00002c08 W entry_irq40
+00002c08 W entry_irq41
+00002c08 W entry_irq42
+00002c08 W entry_irq43
+00002c08 W entry_irq44
+00002c08 W entry_irq45
+00002c08 W entry_irq46
+00002c08 W entry_irq47
+00002c08 W entry_irq48
+00002c08 W entry_irq49
+00002c08 W entry_irq5
+00002c08 W entry_irq50
+00002c08 W entry_irq51
+00002c08 W entry_irq52
+00002c08 W entry_irq53
+00002c08 W entry_irq54
+00002c08 W entry_irq55
+00002c08 W entry_irq56
+00002c08 W entry_irq57
+00002c08 W entry_irq58
+00002c08 W entry_irq59
+00002c08 W entry_irq6
+00002c08 W entry_irq60
+00002c08 W entry_irq61
+00002c08 W entry_irq62
+00002c08 W entry_irq63
+00002c08 W entry_irq7
+00002c08 W entry_irq8
+00002c08 W entry_irq9
+00002c0a W trap_handler
+00002c10 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/ComplexMathFunctions/riscv_cmplx_mag_f32.c:77
+00002c10 W riscv_cmplx_mag_f32	/home/elias/NMSIS/NMSIS/DSP/Source/ComplexMathFunctions/riscv_cmplx_mag_f32.c:73
+00002de8 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/ComplexMathFunctions/riscv_cmplx_mag_q15.c:59
+00002de8 W riscv_cmplx_mag_q15	/home/elias/NMSIS/NMSIS/DSP/Source/ComplexMathFunctions/riscv_cmplx_mag_q15.c:55
+00002ed0 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_sqrt_q31.c:62
+00002ed0 W riscv_sqrt_q31	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_sqrt_q31.c:53
+00002fa0 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_q15.c:140
+00002fa0 W riscv_cfft_radix4by2_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_q15.c:136
+0000307c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_q15.c:264
+0000307c W riscv_cfft_radix4by2_inverse_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_q15.c:260
+00003158 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_q15.c:84
+00003158 W riscv_cfft_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_q15.c:79
+00003288 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix4_q15.c:208
+00003288 W riscv_radix4_butterfly_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix4_q15.c:157
+00003510 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix4_q15.c:1394
+00003510 W riscv_radix4_butterfly_inverse_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix4_q15.c:1355
+0000379c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:85
+0000379c W riscv_cfft_init_4096_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:85
+000037c0 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:99
+000037c0 W riscv_cfft_init_2048_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:99
+000037e8 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:113
+000037e8 W riscv_cfft_init_1024_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:113
+0000380c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:127
+0000380c W riscv_cfft_init_512_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:127
+00003830 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:141
+00003830 W riscv_cfft_init_256_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:141
+00003854 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:155
+00003854 W riscv_cfft_init_128_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:155
+00003878 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:169
+00003878 W riscv_cfft_init_64_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:169
+0000389c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:183
+0000389c W riscv_cfft_init_32_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:183
+000038c0 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:197
+000038c0 W riscv_cfft_init_16_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:197
+000038e4 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:232
+000038e4 T riscv_cfft_init_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_f32.c:223
+0000395c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:88
+0000395c W riscv_cfft_init_4096_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:88
+00003980 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:101
+00003980 W riscv_cfft_init_2048_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:101
+000039a8 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:114
+000039a8 W riscv_cfft_init_1024_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:114
+000039cc t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:127
+000039cc W riscv_cfft_init_512_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:127
+000039f0 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:140
+000039f0 W riscv_cfft_init_256_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:140
+00003a14 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:153
+00003a14 W riscv_cfft_init_128_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:153
+00003a38 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:166
+00003a38 W riscv_cfft_init_64_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:166
+00003a5c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:179
+00003a5c W riscv_cfft_init_32_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:179
+00003a80 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:192
+00003a80 W riscv_cfft_init_16_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:192
+00003aa4 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:226
+00003aa4 W riscv_cfft_init_q15	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_init_q15.c:217
+00003b1c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_bitreversal2.c:92
+00003b1c W riscv_bitreversal_32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_bitreversal2.c:85
+00003b70 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_bitreversal2.c:132
+00003b70 W riscv_bitreversal_16	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_bitreversal2.c:124
+00003bcc t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_f32.c:583
+00003bcc W riscv_cfft_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_f32.c:578
+00004278 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix8_f32.c:57
+00004278 W riscv_radix8_butterfly_f32	/home/elias/NMSIS/NMSIS/DSP/Source/TransformFunctions/riscv_cfft_radix8_f32.c:52
+00004850 T sinf
+000049ac T sqrtf
+00004a54 T __ieee754_sqrtf
+00004b24 T ref__mathlib_rredf2
+00004c60 T matherr
+00004c64 T __divdf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/divdf3.c:35
+00005450 T __gedf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/gedf2.c:35
+00005450 T __gtdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/gedf2.c:42
+00005518 T __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
+00005b64 T __fixunsdfsi	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/fixunsdfsi.c:35
+00005bfc T __floatsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatsidf.c:36
+00005c78 T __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
+00005d88 T __truncdfsf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
+00006088 T malloc
+00006098 T free
+000060a8 T memcpy
+000061a2 T memset
+0000624c T _free_r
+000062dc T _malloc_r
+0000638c T printf
+000063aa T puts
+000063e0 T strlen
+00006440 t __vprintf_help
+0000647a T vprintf
+000064c6 T __print_integral
+0000650e T __printf_impl
+00006980 T __int_to_poly
+0000699e T __print_integral_poly
+00006a2e T __printf_float_impl
+00006e34 T strcpy
+00006eb2 T strnlen
+00006eca W _sbrk
+00006ef4 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+00006f24 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+00006f54 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+00006f5c T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00006f5c T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00006f5c T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00006f5c T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+00006f6a T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00006f6a T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00006f6a T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00006f6a T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+00006f84 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+00006f84 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+00006f84 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+00006f84 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+00006f90 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+00006f94 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00006f94 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00006f94 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00006f94 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+00006f9e T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00006f9e T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00006f9e T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00006f9e T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+00006fa8 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00006fa8 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00006fa8 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+00006fa8 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000070ac T _RAMCODE_VMA_END
+00026d22 A BIN_SIZE
 00080000 D _DATA_VMA_START
 00080000 D cst_libm_sincosf
-00080074 d FFT_SIZES
-000803c4 D riscvBitRevIndexTable4096
+0008007c d FFT_SIZES
+00080634 D sqrt_initial_lut_q31
+000806b4 D riscvBitRevIndexTable_fixed_4096
 00080800 D __global_pointer$
-00082344 D riscvBitRevIndexTable2048
-00084104 D riscvBitRevIndexTable1024
-00084f14 D riscvBitRevIndexTable512
-00085294 D riscvBitRevIndexTable256
-00085604 D riscvBitRevIndexTable128
-000857a4 D riscvBitRevIndexTable64
-00085814 D riscvBitRevIndexTable32
-00085874 D riscvBitRevIndexTable16
-0008589c D twiddleCoef_4096
-0008d89c D twiddleCoef_2048
-0009189c D twiddleCoef_1024
-0009389c D twiddleCoef_512
-0009489c D twiddleCoef_256
-0009509c D twiddleCoef_128
-0009549c D twiddleCoef_64
-0009569c D twiddleCoef_32
-0009579c D twiddleCoef_16
-00095820 D riscv_cfft_sR_f32_len4096
-00095830 D riscv_cfft_sR_f32_len2048
-00095840 D riscv_cfft_sR_f32_len1024
-00095850 D riscv_cfft_sR_f32_len512
-00095860 D riscv_cfft_sR_f32_len256
-00095870 D riscv_cfft_sR_f32_len128
-00095880 D riscv_cfft_sR_f32_len64
-00095890 D riscv_cfft_sR_f32_len32
-000958a0 D riscv_cfft_sR_f32_len16
-000958cc D cst_libm_rredf
-000958e4 d twooverpi.2618
-00095944 D __digits
-0009595c d init_flag.5287
-00095960 d sys_clk
-00095968 D _impure_ptr
-0009596c D _DATA_VMA_END
-00095970 S _BSS_VMA_START
-00095970 s clkFastfreq
-00095974 s exception_mcause
-00095978 s exception_mdcause
-0009597c s exception_mepc
-00095980 s exception_mstatus
-00095984 s exception_mtval
-00095988 s g_chip_version
-0009598c s g_pm_status_info
-00095990 S __mculib_REENT_errno
-00095994 S __malloc_free_list
-00095998 S __malloc_sbrk_start
-0009599c s __vprintf_buf
-000959a0 s __vprintf_buf_len
-000959a4 S __printf_count
-000959a8 s heap_end.2408
-000959ac b impure_data
-000959b0 B _BSS_VMA_END
-000959b0 d sdk_version
-000959d8 D _end
+00082634 D riscvBitRevIndexTable_fixed_2048
+000835b4 D riscvBitRevIndexTable_fixed_1024
+00083d74 D riscvBitRevIndexTable_fixed_512
+00084134 D riscvBitRevIndexTable_fixed_256
+00084314 D riscvBitRevIndexTable_fixed_128
+000843f4 D riscvBitRevIndexTable_fixed_64
+00084464 D riscvBitRevIndexTable_fixed_32
+00084494 D riscvBitRevIndexTable_fixed_16
+000844ac D riscvBitRevIndexTable4096
+0008642c D riscvBitRevIndexTable2048
+000881ec D riscvBitRevIndexTable1024
+00088ffc D riscvBitRevIndexTable512
+0008937c D riscvBitRevIndexTable256
+000896ec D riscvBitRevIndexTable128
+0008988c D riscvBitRevIndexTable64
+000898fc D riscvBitRevIndexTable32
+0008995c D riscvBitRevIndexTable16
+00089984 D twiddleCoef_4096_q15
+0008c984 D twiddleCoef_2048_q15
+0008e184 D twiddleCoef_1024_q15
+0008ed84 D twiddleCoef_512_q15
+0008f384 D twiddleCoef_256_q15
+0008f684 D twiddleCoef_128_q15
+0008f804 D twiddleCoef_64_q15
+0008f8c4 D twiddleCoef_32_q15
+0008f924 D twiddleCoef_16_q15
+0008f954 D twiddleCoef_4096
+00097954 D twiddleCoef_2048
+0009b954 D twiddleCoef_1024
+0009d954 D twiddleCoef_512
+0009e954 D twiddleCoef_256
+0009f154 D twiddleCoef_128
+0009f554 D twiddleCoef_64
+0009f754 D twiddleCoef_32
+0009f854 D twiddleCoef_16
+0009f8d8 D riscv_cfft_sR_q15_len4096
+0009f8e8 D riscv_cfft_sR_q15_len2048
+0009f8f8 D riscv_cfft_sR_q15_len1024
+0009f908 D riscv_cfft_sR_q15_len512
+0009f918 D riscv_cfft_sR_q15_len256
+0009f928 D riscv_cfft_sR_q15_len128
+0009f938 D riscv_cfft_sR_q15_len64
+0009f948 D riscv_cfft_sR_q15_len32
+0009f958 D riscv_cfft_sR_q15_len16
+0009f968 D riscv_cfft_sR_f32_len4096
+0009f978 D riscv_cfft_sR_f32_len2048
+0009f988 D riscv_cfft_sR_f32_len1024
+0009f998 D riscv_cfft_sR_f32_len512
+0009f9a8 D riscv_cfft_sR_f32_len256
+0009f9b8 D riscv_cfft_sR_f32_len128
+0009f9c8 D riscv_cfft_sR_f32_len64
+0009f9d8 D riscv_cfft_sR_f32_len32
+0009f9e8 D riscv_cfft_sR_f32_len16
+0009fa1c D cst_libm_rredf
+0009fa34 d twooverpi.2618
+0009fad4 D __digits
+0009faec d init_flag.5287
+0009faf0 d sys_clk
+0009faf8 D __fdlib_version
+0009fafc D _impure_ptr
+0009fb00 S _BSS_VMA_START
+0009fb00 D _DATA_VMA_END
+0009fb00 s clkFastfreq
+0009fb04 s exception_mcause
+0009fb08 s exception_mdcause
+0009fb0c s exception_mepc
+0009fb10 s exception_mstatus
+0009fb14 s exception_mtval
+0009fb18 s g_chip_version
+0009fb1c s g_pm_status_info
+0009fb20 S __mculib_REENT_errno
+0009fb24 S __malloc_free_list
+0009fb28 S __malloc_sbrk_start
+0009fb2c s __vprintf_buf
+0009fb30 s __vprintf_buf_len
+0009fb34 S __printf_count
+0009fb38 s heap_end.2408
+0009fb3c b impure_data
+0009fb40 B _BSS_VMA_END
+0009fb40 d sdk_version
+0009fb68 D _end
 000a0000 A _STACK_TOP
 00100000 A FLASH_SIZE
 20000000 T BIN_BEGIN
@@ -300,4 +371,4 @@
 20000190 A _RETENTION_RESET_LMA_START
 200002e8 A _RETENTION_DATA_LMA_START
 20000350 A _RAMCODE_LMA_START
-20004e30 A _DATA_LMA_START
+20007200 A _DATA_LMA_START

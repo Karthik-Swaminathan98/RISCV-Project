@@ -1,0 +1,52 @@
+[*] Analyzing file: output/map.txt
+
+[*] Function: riscv_dsp_sqrt_f32
+    Own size: 28 bytes
+    Total size (with dependencies): 28 bytes
+    [*] Breakdown:
+        riscv_dsp_sqrt_f32                      28 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_sqrt_q15
+    Own size: 172 bytes
+    Total size (with dependencies): 172 bytes
+    [*] Breakdown:
+        riscv_dsp_sqrt_q15                     172 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_atan2_f32
+    Own size: 228 bytes
+    Total size (with dependencies): 228 bytes
+    [*] Breakdown:
+        riscv_dsp_atan2_f32                    228 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_atan2_q15
+    Own size: 148 bytes
+    Total size (with dependencies): 148 bytes
+    [*] Breakdown:
+        riscv_dsp_atan2_q15                    148 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_sin_f32
+    Own size: 4 bytes
+    Total size (with dependencies): 332 bytes
+    [*] Breakdown:
+        ref__mathlib_rredf2                    328 bytes
+        riscv_dsp_sin_f32                        4 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_cos_f32
+    Own size: 4 bytes
+    Total size (with dependencies): 332 bytes
+    [*] Breakdown:
+        ref__mathlib_rredf2                    328 bytes
+        riscv_dsp_cos_f32                        4 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_sin_q15
+    Own size: 122 bytes
+    Total size (with dependencies): 122 bytes
+    [*] Breakdown:
+        riscv_dsp_sin_q15                      122 bytes
+------------------------------------------------------------
+[*] Function: riscv_dsp_cos_q15
+    Own size: 114 bytes
+    Total size (with dependencies): 114 bytes
+    [*] Breakdown:
+        riscv_dsp_cos_q15                      114 bytes
+------------------------------------------------------------

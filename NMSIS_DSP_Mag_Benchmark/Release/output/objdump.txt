@@ -2392,7 +2392,7 @@ Disassembly of section .ram_code:
     13f8:	32c50513          	addi	a0,a0,812 # 8032c <FFT_SIZES+0x2bc>
     13fc:	8010                	exec.it	#1     !
     13fe:	4492                	c.lwsp	s1,4(sp)
-    1400:	11c48513          	addi	a0,s1,284
+    1400:	35448513          	addi	a0,s1,852
     1404:	8010                	exec.it	#1     !
     1406:	00080537          	lui	a0,0x80
     140a:	35850513          	addi	a0,a0,856 # 80358 <FFT_SIZES+0x2e8>
@@ -6302,7 +6302,7 @@ Disassembly of section .ram_code:
     4034:	30e40783          	lb	a5,782(s0)
     4038:	098030ef          	jal	ra,70d0 <_RAMCODE_VMA_END+0x2fc4>
     403c:	20a70783          	lb	a5,522(a4)
-    4040:	11c40513          	addi	a0,s0,284
+    4040:	35440513          	addi	a0,s0,852
     4044:	80140637          	lui	a2,0x80140
     4048:	20f70523          	sb	a5,522(a4)
     404c:	fee78fa3          	sb	a4,-1(a5)

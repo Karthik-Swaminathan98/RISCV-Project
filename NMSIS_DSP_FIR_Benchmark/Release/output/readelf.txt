@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x20000000
   Start of program headers:          52 (bytes into file)
-  Start of section headers:          115840 (bytes into file)
+  Start of section headers:          115848 (bytes into file)
   Flags:                             0x3, RVC, single-float ABI
   Size of this header:               52 (bytes)
   Size of program headers:           32 (bytes)
@@ -26,23 +26,23 @@ Section Headers:
   [ 2] .retention_reset  PROGBITS        00000000 002000 000154 00  AX  0   0  4
   [ 3] .retention_data   PROGBITS        00000158 002158 000064 00  WA  0   0  4
   [ 4] .ram_code         PROGBITS        00000200 002200 0048f4 00  AX  0   0 256
-  [ 5] .data             PROGBITS        00080000 007000 0004c4 00  WA  0   0  8
-  [ 6] .sbss             NOBITS          000804c8 0084c8 00003c 00  WA  0   0  4
-  [ 7] .bss              NOBITS          00080504 0084c8 000004 00  WA  0   0  4
-  [ 8] .sdk_version      PROGBITS        00080508 007508 000022 00  WA  0   0  4
-  [ 9] .comment          PROGBITS        00000000 00752a 000049 01  MS  0   0  1
-  [10] .riscv.attributes RISCV_ATTRIBUTE 00000000 007573 000040 00      0   0  1
-  [11] .debug_info       PROGBITS        00000000 0075b3 004620 00      0   0  1
-  [12] .debug_abbrev     PROGBITS        00000000 00bbd3 0011b7 00      0   0  1
-  [13] .debug_loc        PROGBITS        00000000 00cd8a 006cb8 00      0   0  1
-  [14] .debug_aranges    PROGBITS        00000000 013a48 0001a0 00      0   0  8
-  [15] .debug_ranges     PROGBITS        00000000 013be8 000818 00      0   0  1
-  [16] .debug_line       PROGBITS        00000000 014400 00422c 00      0   0  1
-  [17] .debug_str        PROGBITS        00000000 01862c 0017ad 01  MS  0   0  1
-  [18] .debug_frame      PROGBITS        00000000 019ddc 000268 00      0   0  4
-  [19] .symtab           SYMTAB          00000000 01a044 001370 10     20 147  4
-  [20] .strtab           STRTAB          00000000 01b3b4 000fdd 00      0   0  1
-  [21] .shstrtab         STRTAB          00000000 01c391 0000ee 00      0   0  1
+  [ 5] .data             PROGBITS        00080000 007000 0004cc 00  WA  0   0  8
+  [ 6] .sbss             NOBITS          000804d0 0084d0 00003c 00  WA  0   0  4
+  [ 7] .bss              NOBITS          0008050c 0084d0 000004 00  WA  0   0  4
+  [ 8] .sdk_version      PROGBITS        00080510 007510 000022 00  WA  0   0  4
+  [ 9] .comment          PROGBITS        00000000 007532 000049 01  MS  0   0  1
+  [10] .riscv.attributes RISCV_ATTRIBUTE 00000000 00757b 000040 00      0   0  1
+  [11] .debug_info       PROGBITS        00000000 0075bb 004620 00      0   0  1
+  [12] .debug_abbrev     PROGBITS        00000000 00bbdb 0011b7 00      0   0  1
+  [13] .debug_loc        PROGBITS        00000000 00cd92 006cb8 00      0   0  1
+  [14] .debug_aranges    PROGBITS        00000000 013a50 0001a0 00      0   0  8
+  [15] .debug_ranges     PROGBITS        00000000 013bf0 000818 00      0   0  1
+  [16] .debug_line       PROGBITS        00000000 014408 00422c 00      0   0  1
+  [17] .debug_str        PROGBITS        00000000 018634 0017ad 01  MS  0   0  1
+  [18] .debug_frame      PROGBITS        00000000 019de4 000268 00      0   0  4
+  [19] .symtab           SYMTAB          00000000 01a04c 001370 10     20 147  4
+  [20] .strtab           STRTAB          00000000 01b3bc 000fdd 00      0   0  1
+  [21] .shstrtab         STRTAB          00000000 01c399 0000ee 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),
@@ -56,10 +56,10 @@ Program Headers:
   LOAD           0x001000 0x20000000 0x20000000 0x0018a 0x0018a R E 0x1000
   LOAD           0x002000 0x00000000 0x20000190 0x001bc 0x001bc RWE 0x1000
   LOAD           0x002200 0x00000200 0x20000350 0x048f4 0x048f4 R E 0x1000
-  LOAD           0x007000 0x00080000 0x20004c48 0x004c4 0x004c4 RW  0x1000
-  LOAD           0x007508 0x00080508 0x2000510c 0x00022 0x00022 RW  0x1000
-  LOAD           0x0084c8 0x000804c8 0x20005110 0x00000 0x00040 RW  0x1000
-  RISCV_ATTRIBUT 0x007573 0x00000000 0x00000000 0x00040 0x00000 R   0x1
+  LOAD           0x007000 0x00080000 0x20004c48 0x004cc 0x004cc RW  0x1000
+  LOAD           0x007510 0x00080510 0x20005114 0x00022 0x00022 RW  0x1000
+  LOAD           0x0084d0 0x000804d0 0x20005118 0x00000 0x00040 RW  0x1000
+  RISCV_ATTRIBUT 0x00757b 0x00000000 0x00000000 0x00040 0x00000 R   0x1
 
  Section to Segment mapping:
   Segment Sections...
@@ -85,9 +85,9 @@ Symbol table '.symtab' contains 311 entries:
      3: 00000158     0 SECTION LOCAL  DEFAULT    3 
      4: 00000200     0 SECTION LOCAL  DEFAULT    4 
      5: 00080000     0 SECTION LOCAL  DEFAULT    5 
-     6: 000804c8     0 SECTION LOCAL  DEFAULT    6 
-     7: 00080504     0 SECTION LOCAL  DEFAULT    7 
-     8: 00080508     0 SECTION LOCAL  DEFAULT    8 
+     6: 000804d0     0 SECTION LOCAL  DEFAULT    6 
+     7: 0008050c     0 SECTION LOCAL  DEFAULT    7 
+     8: 00080510     0 SECTION LOCAL  DEFAULT    8 
      9: 00000000     0 SECTION LOCAL  DEFAULT    9 
     10: 00000000     0 SECTION LOCAL  DEFAULT   10 
     11: 00000000     0 SECTION LOCAL  DEFAULT   11 
@@ -175,17 +175,17 @@ Symbol table '.symtab' contains 311 entries:
     93: 0008006c    24 OBJECT  LOCAL  DEFAULT    5 FIR_SIZES
     94: 00080084   116 OBJECT  LOCAL  DEFAULT    5 firCoeffs32
     95: 000800f8    16 OBJECT  LOCAL  DEFAULT    5 firCoeffsQ15
-    96: 000804c8     4 OBJECT  LOCAL  DEFAULT    6 clkFastfreq
-    97: 000804cc     4 OBJECT  LOCAL  DEFAULT    6 exception_mcause
-    98: 000804d0     4 OBJECT  LOCAL  DEFAULT    6 exception_mdcause
-    99: 000804d4     4 OBJECT  LOCAL  DEFAULT    6 exception_mepc
-   100: 000804d8     4 OBJECT  LOCAL  DEFAULT    6 exception_mstatus
-   101: 000804dc     4 OBJECT  LOCAL  DEFAULT    6 exception_mtval
-   102: 000804e0     4 OBJECT  LOCAL  DEFAULT    6 g_chip_version
-   103: 000804e4     4 OBJECT  LOCAL  DEFAULT    6 g_pm_status_info
-   104: 000804b4     1 OBJECT  LOCAL  DEFAULT    5 init_flag.5287
-   105: 000804b8     6 OBJECT  LOCAL  DEFAULT    5 sys_clk
-   106: 00080508    34 OBJECT  LOCAL  DEFAULT    8 sdk_version
+    96: 000804d0     4 OBJECT  LOCAL  DEFAULT    6 clkFastfreq
+    97: 000804d4     4 OBJECT  LOCAL  DEFAULT    6 exception_mcause
+    98: 000804d8     4 OBJECT  LOCAL  DEFAULT    6 exception_mdcause
+    99: 000804dc     4 OBJECT  LOCAL  DEFAULT    6 exception_mepc
+   100: 000804e0     4 OBJECT  LOCAL  DEFAULT    6 exception_mstatus
+   101: 000804e4     4 OBJECT  LOCAL  DEFAULT    6 exception_mtval
+   102: 000804e8     4 OBJECT  LOCAL  DEFAULT    6 g_chip_version
+   103: 000804ec     4 OBJECT  LOCAL  DEFAULT    6 g_pm_status_info
+   104: 000804bc     1 OBJECT  LOCAL  DEFAULT    5 init_flag.5287
+   105: 000804c0     6 OBJECT  LOCAL  DEFAULT    5 sys_clk
+   106: 00080510    34 OBJECT  LOCAL  DEFAULT    8 sdk_version
    107: 00000000     0 FILE    LOCAL  DEFAULT  ABS riscv_fir_init_q15.c
    108: 00001f50     0 NOTYPE  LOCAL  DEFAULT    4 $x
    109: 00000000     0 FILE    LOCAL  DEFAULT  ABS riscv_fir_f32.c
@@ -204,15 +204,15 @@ Symbol table '.symtab' contains 311 entries:
    122: 00000000     0 FILE    LOCAL  DEFAULT  ABS strlen.c
    123: 00000000     0 FILE    LOCAL  DEFAULT  ABS vprintf.c
    124: 0000288c    58 FUNC    LOCAL  DEFAULT    4 __vprintf_help
-   125: 000804f4     4 OBJECT  LOCAL  DEFAULT    6 __vprintf_buf
-   126: 000804f8     4 OBJECT  LOCAL  DEFAULT    6 __vprintf_buf_len
+   125: 000804fc     4 OBJECT  LOCAL  DEFAULT    6 __vprintf_buf
+   126: 00080500     4 OBJECT  LOCAL  DEFAULT    6 __vprintf_buf_len
    127: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_impl.c
    128: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_impl_float.c
    129: 00000000     0 FILE    LOCAL  DEFAULT  ABS strcpy.c
    130: 00000000     0 FILE    LOCAL  DEFAULT  ABS strnlen.c
    131: 00000000     0 FILE    LOCAL  DEFAULT  ABS sinf.c
    132: 00000000     0 FILE    LOCAL  DEFAULT  ABS ref_rredf.c
-   133: 00080414    32 OBJECT  LOCAL  DEFAULT    5 twooverpi.2618
+   133: 0008041c    32 OBJECT  LOCAL  DEFAULT    5 twooverpi.2618
    134: 00000000     0 FILE    LOCAL  DEFAULT  ABS divdf3.c
    135: 00000000     0 FILE    LOCAL  DEFAULT  ABS muldf3.c
    136: 00000000     0 FILE    LOCAL  DEFAULT  ABS fixunsdfsi.c
@@ -220,12 +220,12 @@ Symbol table '.symtab' contains 311 entries:
    138: 00000000     0 FILE    LOCAL  DEFAULT  ABS extendsfdf2.c
    139: 00000000     0 FILE    LOCAL  DEFAULT  ABS truncdfsf2.c
    140: 00000000     0 FILE    LOCAL  DEFAULT  ABS _sbrk.c
-   141: 00080500     4 OBJECT  LOCAL  DEFAULT    6 heap_end.2408
+   141: 00080508     4 OBJECT  LOCAL  DEFAULT    6 heap_end.2408
    142: 00000000     0 FILE    LOCAL  DEFAULT  ABS libgcc2.c
    143: 00000000     0 FILE    LOCAL  DEFAULT  ABS libgcc2.c
    144: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf_data.c
    145: 00000000     0 FILE    LOCAL  DEFAULT  ABS impure.c
-   146: 00080504     0 OBJECT  LOCAL  DEFAULT    7 impure_data
+   146: 0008050c     0 OBJECT  LOCAL  DEFAULT    7 impure_data
    147: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq55
    148: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq13
    149: 00003288   124 FUNC    GLOBAL DEFAULT    4 strcpy
@@ -255,7 +255,7 @@ Symbol table '.symtab' contains 311 entries:
    173: 000049f0     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_restore_2
    174: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq8
    175: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq33
-   176: 00080508     0 NOTYPE  GLOBAL DEFAULT    7 _BSS_VMA_END
+   176: 00080510     0 NOTYPE  GLOBAL DEFAULT    7 _BSS_VMA_END
    177: 20000190     0 NOTYPE  GLOBAL DEFAULT  ABS _RETENTION_RESET_LMA_STAR
    178: 00004488   122 FUNC    GLOBAL HIDDEN     4 __floatsidf
    179: 00080000    28 OBJECT  GLOBAL DEFAULT    5 cst_libm_sincosf
@@ -276,9 +276,9 @@ Symbol table '.symtab' contains 311 entries:
    194: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq20
    195: 00001f80   880 FUNC    WEAK   DEFAULT    4 riscv_fir_f32
    196: 000049b2     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_save_7
-   197: 000804c8     0 NOTYPE  GLOBAL DEFAULT    6 _BSS_VMA_START
+   197: 000804d0     0 NOTYPE  GLOBAL DEFAULT    6 _BSS_VMA_START
    198: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq63
-   199: 000804c4     0 NOTYPE  GLOBAL DEFAULT    5 _DATA_VMA_END
+   199: 000804cc     0 NOTYPE  GLOBAL DEFAULT    5 _DATA_VMA_END
    200: 00004504   272 FUNC    GLOBAL HIDDEN     4 __extendsfdf2
    201: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq46
    202: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq31
@@ -289,7 +289,7 @@ Symbol table '.symtab' contains 311 entries:
    207: 00004914    40 FUNC    WEAK   DEFAULT    4 _sbrk
    208: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq53
    209: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq11
-   210: 000803fc    24 OBJECT  GLOBAL DEFAULT    5 cst_libm_rredf
+   210: 00080404    24 OBJECT  GLOBAL DEFAULT    5 cst_libm_rredf
    211: 00000154     0 NOTYPE  GLOBAL DEFAULT    2 _RETENTION_RESET_VMA_END
    212: 00003306    24 FUNC    GLOBAL DEFAULT    4 strnlen
    213: 000049e6     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_restore_6
@@ -315,16 +315,16 @@ Symbol table '.symtab' contains 311 entries:
    233: 000049cc     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_save_3
    234: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq38
    235: 00001100     0 NOTYPE  GLOBAL DEFAULT    4 __vectors
-   236: 0000512e     0 NOTYPE  GLOBAL DEFAULT  ABS BIN_SIZE
-   237: 000803cc    16 OBJECT  GLOBAL DEFAULT    5 __digits
+   236: 00005136     0 NOTYPE  GLOBAL DEFAULT  ABS BIN_SIZE
+   237: 000803d4    16 OBJECT  GLOBAL DEFAULT    5 __digits
    238: 20000350     0 NOTYPE  GLOBAL DEFAULT  ABS _RAMCODE_LMA_START
-   239: 000804fc     4 OBJECT  GLOBAL DEFAULT    6 __printf_count
+   239: 00080504     4 OBJECT  GLOBAL DEFAULT    6 __printf_count
    240: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq59
    241: 000035b8  2026 FUNC    GLOBAL HIDDEN     4 __divdf3
    242: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq6
    243: 00003da4  1608 FUNC    GLOBAL HIDDEN     4 __muldf3
    244: 000049a4     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_save_10
-   245: 000804e8     4 OBJECT  GLOBAL DEFAULT    6 __mculib_REENT_errno
+   245: 000804f0     4 OBJECT  GLOBAL DEFAULT    6 __mculib_REENT_errno
    246: 20004c48     0 NOTYPE  GLOBAL DEFAULT  ABS _DATA_LMA_START
    247: 00002de8   146 FUNC    GLOBAL DEFAULT    4 __print_integral_poly
    248: 20000000     0 NOTYPE  GLOBAL DEFAULT  ABS NDS_SAG_LMA_FLASH
@@ -355,7 +355,7 @@ Symbol table '.symtab' contains 311 entries:
    273: 000a0000     0 NOTYPE  GLOBAL DEFAULT  ABS _STACK_TOP
    274: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq22
    275: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq30
-   276: 000804c0     4 OBJECT  GLOBAL DEFAULT    5 _impure_ptr
+   276: 000804c8     4 OBJECT  GLOBAL DEFAULT    5 _impure_ptr
    277: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq42
    278: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq24
    279: 00003320   346 FUNC    GLOBAL DEFAULT    4 sinf
@@ -365,7 +365,7 @@ Symbol table '.symtab' contains 311 entries:
    283: 000049b2     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_save_5
    284: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq19
    285: 0000157c    72 FUNC    GLOBAL DEFAULT    4 _write
-   286: 00080530     0 NOTYPE  GLOBAL DEFAULT    8 _end
+   286: 00080538     0 NOTYPE  GLOBAL DEFAULT    8 _end
    287: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq17
    288: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq9
    289: 0000231c   640 FUNC    WEAK   DEFAULT    4 riscv_fir_q15
@@ -380,8 +380,8 @@ Symbol table '.symtab' contains 311 entries:
    298: 000049cc     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_save_0
    299: 0000282c    94 FUNC    GLOBAL DEFAULT    4 strlen
    300: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq29
-   301: 000804f0     4 OBJECT  GLOBAL DEFAULT    6 __malloc_sbrk_start
-   302: 000804ec     4 OBJECT  GLOBAL DEFAULT    6 __malloc_free_list
+   301: 000804f8     4 OBJECT  GLOBAL DEFAULT    6 __malloc_sbrk_start
+   302: 000804f4     4 OBJECT  GLOBAL DEFAULT    6 __malloc_free_list
    303: 000049f0     0 NOTYPE  GLOBAL HIDDEN     4 __riscv_restore_1
    304: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq7
    305: 00001f48     0 NOTYPE  WEAK   DEFAULT    4 entry_irq32

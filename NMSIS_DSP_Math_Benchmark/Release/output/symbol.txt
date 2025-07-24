@@ -1,0 +1,254 @@
+00000000 T _IRESET_ENTRY
+00000000 W _ITB_BASE_
+00000000 T _RETENTION_RESET_VMA_START
+00000022 t _ISTART
+0000002a t _ISWS_USB_DIS
+00000040 a irqno
+00000088 t _WAKEUP_FLASH
+000000a2 t _MSPI_WAIT
+000000bc t _WAIT_EFUSE_LOAD_AND_FLASH_WAKEUP_FINISH
+000000c2 t _MULTI_ADDRESS_BEGIN
+000000d2 t _IZERO_BSS
+000000e6 t _IZERO_BSS_BEGIN
+000000f2 t _IZERO_AES
+00000106 t _IZERO_AES_BEGIN
+00000112 t _IDATA_INIT
+00000112 t _IFILL_STK
+0000012a t _IDATA_INIT_BEGIN
+0000013c t _IMAIN_FUNC
+00000152 t _IEND
+00000154 T _RETENTION_RESET_VMA_END
+00000158 D _AES_VMA_END
+00000158 D _AES_VMA_START
+00000158 D _RETENTION_DATA_VMA_START
+00000158 d flash_read_page
+0000015c d g_pm_long_suspend
+00000160 d pmcd
+0000018c d g_pm_tick_32k_calib
+00000190 d g_pm_tick_cur
+00000194 d g_plic_preempt_en
+00000198 d s_flash_preempt_config
+0000019a d g_pm_suspend_power_cfg
+0000019c d g_pm_early_wakeup_time_us
+000001a4 d g_pm_tick_32k_cur
+000001a8 d g_pm_tick_update_en
+000001ac d g_pm_r_delay_cycle
+000001b0 d g_pm_longsleep_early_wakeup_time_us
+000001b8 D g_pm_mspi_cfg
+000001bc D _RETENTION_DATA_VMA_END
+00000200 T _RAMCODE_VMA_START
+00000200 t delay_ms.constprop.12
+00000220 t flash_send_addr
+00000264 t flash_send_cmd
+000002ac t clock_set_32k_tick
+0000030c t analog_read_reg32.constprop.4
+00000358 t clock_get_32k_tick
+0000037c t pm_stimer_recover
+0000040c t plic_exit_critical_sec
+00000464 t plic_enter_critical_sec
+000004c4 t flash_mspi_read_ram
+00000644 t flash_mspi_read_ram.constprop.7
+00000790 t analog_write_reg8
+000007d4 t analog_read_reg8
+00000820 t clock_init_ram.constprop.11
+00000960 t pm_wait_bbpll_done
+00000a14 t pm_sleep_start
+00000ba8 t dr_putchar
+00000cc8 t pm_sleep_wakeup_ram.constprop.3
+00000fd4 T trap_entry
+00001100 T __vectors
+00001204 t flash_read_uid.constprop.6
+0000122c t flash_read_mid
+00001254 t flash_read_mid_uid_with_check
+000013bc t flash_dread
+000013dc t clock_init.constprop.10
+000013f4 t pm_sleep_wakeup.constprop.2
+0000140c t user_calib_adc_vref.constprop.9
+00001508 t user_calib_freq_offset.constprop.8
+00001560 t gpio_input_dis
+0000157c T _write
+000015c4 T main
+000020d4 T default_irq_entry
+000020d4 W entry_irq1
+000020d4 W entry_irq10
+000020d4 W entry_irq11
+000020d4 W entry_irq12
+000020d4 W entry_irq13
+000020d4 W entry_irq14
+000020d4 W entry_irq15
+000020d4 W entry_irq16
+000020d4 W entry_irq17
+000020d4 W entry_irq18
+000020d4 W entry_irq19
+000020d4 W entry_irq2
+000020d4 W entry_irq20
+000020d4 W entry_irq21
+000020d4 W entry_irq22
+000020d4 W entry_irq23
+000020d4 W entry_irq24
+000020d4 W entry_irq25
+000020d4 W entry_irq26
+000020d4 W entry_irq27
+000020d4 W entry_irq28
+000020d4 W entry_irq29
+000020d4 W entry_irq3
+000020d4 W entry_irq30
+000020d4 W entry_irq31
+000020d4 W entry_irq32
+000020d4 W entry_irq33
+000020d4 W entry_irq34
+000020d4 W entry_irq35
+000020d4 W entry_irq36
+000020d4 W entry_irq37
+000020d4 W entry_irq38
+000020d4 W entry_irq39
+000020d4 W entry_irq4
+000020d4 W entry_irq40
+000020d4 W entry_irq41
+000020d4 W entry_irq42
+000020d4 W entry_irq43
+000020d4 W entry_irq44
+000020d4 W entry_irq45
+000020d4 W entry_irq46
+000020d4 W entry_irq47
+000020d4 W entry_irq48
+000020d4 W entry_irq49
+000020d4 W entry_irq5
+000020d4 W entry_irq50
+000020d4 W entry_irq51
+000020d4 W entry_irq52
+000020d4 W entry_irq53
+000020d4 W entry_irq54
+000020d4 W entry_irq55
+000020d4 W entry_irq56
+000020d4 W entry_irq57
+000020d4 W entry_irq58
+000020d4 W entry_irq59
+000020d4 W entry_irq6
+000020d4 W entry_irq60
+000020d4 W entry_irq61
+000020d4 W entry_irq62
+000020d4 W entry_irq63
+000020d4 W entry_irq7
+000020d4 W entry_irq8
+000020d4 W entry_irq9
+000020d6 W trap_handler
+000020dc t $x	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_cos_f32.c:82
+000020dc W riscv_cos_f32	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_cos_f32.c:71
+00002168 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_sin_q15.c:59
+00002168 W riscv_sin_q15	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_sin_q15.c:50
+000021b8 t $x	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_sin_f32.c:83
+000021b8 W riscv_sin_f32	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_sin_f32.c:72
+0000223c t $x	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_cos_q15.c:59
+0000223c W riscv_cos_q15	/home/elias/NMSIS/NMSIS/DSP/Source/FastMathFunctions/riscv_cos_q15.c:50
+00002298 T __divdf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/divdf3.c:35
+00002a84 T __muldf3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/muldf3.c:35
+000030d0 T __fixdfsi	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/fixdfsi.c:35
+00003198 T __fixunsdfsi	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/fixunsdfsi.c:35
+00003230 T __floatsidf	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/floatsidf.c:36
+000032ac T __extendsfdf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/extendsfdf2.c:37
+000033bc T __truncdfsf2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
+000036bc T malloc
+000036cc T free
+000036dc T memset
+00003786 T _free_r
+00003816 T _malloc_r
+000038c6 T printf
+000038e4 T puts
+00003918 T strlen
+00003978 t __vprintf_help
+000039b2 T vprintf
+000039fe T __print_integral
+00003a46 T __printf_impl
+00003eb6 T __int_to_poly
+00003ed4 T __print_integral_poly
+00003f64 T __printf_float_impl
+00004364 T strcpy
+000043e2 T strnlen
+000043fa W _sbrk
+00004424 T __lshrdi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:404
+00004454 T __ashldi3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/libgcc2.c:432
+00004484 T __riscv_save_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:336
+0000448c T __riscv_save_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000448c T __riscv_save_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000448c T __riscv_save_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000448c T __riscv_save_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:348
+0000449a T __riscv_save_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000449a T __riscv_save_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000449a T __riscv_save_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+0000449a T __riscv_save_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:371
+000044b4 T __riscv_save_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000044b4 T __riscv_save_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000044b4 T __riscv_save_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000044b4 T __riscv_save_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:404
+000044c0 T __riscv_restore_12	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:432
+000044c4 T __riscv_restore_10	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000044c4 T __riscv_restore_11	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000044c4 T __riscv_restore_8	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000044c4 T __riscv_restore_9	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:442
+000044ce T __riscv_restore_4	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000044ce T __riscv_restore_5	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000044ce T __riscv_restore_6	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000044ce T __riscv_restore_7	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:462
+000044d8 T __riscv_restore_0	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000044d8 T __riscv_restore_1	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000044d8 T __riscv_restore_2	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000044d8 T __riscv_restore_3	/cygdrive/d/Jenkins/workspace/build-system-3/source-packages/gcc-7.4.0-riscv-bsp-v5_1_0-branch/libgcc/config/riscv/save-restore.S:485
+000045dc T _RAMCODE_VMA_END
+000056b2 A BIN_SIZE
+00080000 D _DATA_VMA_START
+00080048 d FIR_SIZES
+000802b0 D sinTable_q15
+000806b4 D sinTable_f32
+00080800 D __global_pointer$
+00080f38 D __digits
+00080f50 d init_flag.5287
+00080f54 d sys_clk
+00080f5c D _impure_ptr
+00080f60 S _BSS_VMA_START
+00080f60 D _DATA_VMA_END
+00080f60 s clkFastfreq
+00080f64 s exception_mcause
+00080f68 s exception_mdcause
+00080f6c s exception_mepc
+00080f70 s exception_mstatus
+00080f74 s exception_mtval
+00080f78 s g_chip_version
+00080f7c s g_pm_status_info
+00080f80 S __malloc_free_list
+00080f84 S __malloc_sbrk_start
+00080f88 s __vprintf_buf
+00080f8c s __vprintf_buf_len
+00080f90 S __mculib_REENT_errno
+00080f94 S __printf_count
+00080f98 s heap_end.2408
+00080f9c b impure_data
+00080fa0 B _BSS_VMA_END
+00080fa0 d sdk_version
+00080fc8 D _end
+000a0000 A _STACK_TOP
+00100000 A FLASH_SIZE
+20000000 T BIN_BEGIN
+20000000 A NDS_SAG_LMA_FLASH
+20000000 W _RELAX_END_
+20000000 T _RESET_ENTRY
+20000028 t _START
+2000008e t _RETENTION_RESET_INIT
+200000a6 t _RETENTION_RESET_BEGIN
+200000b8 t _RETENTION_DATA_INIT
+200000cc t _RETENTION_DATA_INIT_BEGIN
+200000de t _RAMCODE_INIT
+200000f6 t _RAMCODE_INIT_BEGIN
+20000108 t _DATA_INIT
+20000120 t _DATA_INIT_BEGIN
+20000132 t _ZERO_BSS
+20000146 t _ZERO_BSS_BEGIN
+20000152 t _ZERO_AES
+20000166 t _ZERO_AES_BEGIN
+20000172 t _FILL_STK
+20000172 t _MAIN_FUNC
+20000188 t _END
+20000190 A _RETENTION_RESET_LMA_START
+200002e8 A _RETENTION_DATA_LMA_START
+20000350 A _RAMCODE_LMA_START
+20004730 A _DATA_LMA_START
