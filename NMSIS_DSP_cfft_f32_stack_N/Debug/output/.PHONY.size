@@ -1,2 +1,0 @@
-   text	   code	 rodata	   data	    bss	    dec	    hex	filename
- 110068	  21936	  88132	    182	     64	 110314	  1aeea	NMSIS_DSP_cfft_f32_stack_N.adx

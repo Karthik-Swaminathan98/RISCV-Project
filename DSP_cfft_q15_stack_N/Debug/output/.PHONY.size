@@ -1,2 +1,0 @@
-   text	   code	 rodata	   data	    bss	    dec	    hex	filename
-  32416	  26436	   5980	    178	     64	  32658	   7f92	DSP_cfft_q15_stack_N.adx
