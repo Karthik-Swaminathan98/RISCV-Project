@@ -13,6 +13,7 @@ Full cross-architecture analysis: [arm-riscv-benchmark-results](https://github.c
 ![Platform](https://img.shields.io/badge/platform-RISC--V%20Andes%20D25F-informational)
 ![Libraries](https://img.shields.io/badge/libraries-NMSIS--DSP%20%7C%20NMSIS--NN%20%7C%20Andes--DSP-orange)
 ![Board](https://img.shields.io/badge/board-Telink%20B91-lightgrey)
+![Thesis](https://img.shields.io/badge/thesis-TU%20Chemnitz%20%2F%20Infineon%202025-green)
 
 ---
 
