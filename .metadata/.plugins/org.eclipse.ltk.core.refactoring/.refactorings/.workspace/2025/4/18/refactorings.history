@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Andes_DSP_q15_stack_N&apos; to &apos;DSP_cfft_q15_stack_N&apos;" description="Rename resource &apos;Andes_DSP_q15_stack_N&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Andes_DSP_q15_stack_N" name="DSP_cfft_q15_stack_N" stamp="1745924552750" updateReferences="true"/>
-</session>

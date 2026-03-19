@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;RV_NN_Softmax_Benchmark/TestData&apos; to &apos;TestData_ARM&apos;" description="Rename resource &apos;TestData&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="TestData" name="TestData_ARM" stamp="1747513788675" updateReferences="true"/>
-</session>

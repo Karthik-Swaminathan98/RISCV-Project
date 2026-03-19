@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;RV_NN_Convolution_Benchmark/Include_ARM&apos; to &apos;TestData&apos;" description="Rename resource &apos;Include_ARM&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Include_ARM" name="TestData" stamp="1748805380823" updateReferences="true"/>
-</session>
