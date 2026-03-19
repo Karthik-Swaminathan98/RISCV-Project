@@ -242,7 +242,7 @@ Full results with all metrics: [arm-riscv-benchmark-results](https://github.com/
 |---|---|
 | [ARM-Project](https://github.com/Karthik-Swaminathan98/ARM-Project) | ARM Cortex-M4 counterpart — CMSIS-DSP/NN benchmarks on PSoC6 |
 | [arm-riscv-benchmark-results](https://github.com/Karthik-Swaminathan98/arm-riscv-benchmark-results) | Full cross-architecture results — DSP, NN, and model inference |
-| [embedded-benchmark-analysis](https://github.com/Karthik-Swaminathan98/embedded-benchmark-analysis) | Python scripts for objdump call-graph and code-size analysis |
+| [mcu-function-size-analyser](https://github.com/Karthik-Swaminathan98/mcu-function-size-analyser) | Python tool — dependency-aware function code size analyser |
 
 ---
 
