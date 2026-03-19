@@ -7,7 +7,7 @@ Part of a Master's thesis at **TU Chemnitz** in collaboration with
 **Infineon Technologies**, Dresden (2025).
 
 Companion ARM repo: [ARM-Project](https://github.com/Karthik-Swaminathan98/ARM-Project)  
-Full cross-architecture analysis: [arm-riscv-dsp-benchmark](https://github.com/Karthik-Swaminathan98/arm-riscv-dsp-benchmark)
+Full cross-architecture analysis: [arm-riscv-benchmark-results](https://github.com/Karthik-Swaminathan98/arm-riscv-benchmark-results)
 
 ![Language](https://img.shields.io/badge/language-C-blue)
 ![Platform](https://img.shields.io/badge/platform-RISC--V%20Andes%20D25F-informational)
@@ -207,30 +207,7 @@ Values > 1.0 = RISC-V outperforms ARM CMSIS.
 | Convolution S16 (NMSIS) | 1.25× | comparable |
 | Softmax S16 (NMSIS) | 1.15× | 1.79× less stack |
 
-Full results with all metrics: [arm-riscv-dsp-benchmark/results](https://github.com/Karthik-Swaminathan98/arm-riscv-dsp-benchmark)
-
----
-
-## Repository structure
-
-```
-RISCV-Project/
-├── dsp/
-│   ├── transform/          # FFT F32 / Q15 benchmarks
-│   ├── filtering/          # FIR F32 / Q15 benchmarks
-│   ├── magnitude/          # Complex magnitude F32 / Q15
-│   └── fast_math/          # sqrt, atan2, sin, cos
-├── nn/
-│   ├── activation/         # ReLU6 S8 / activation S16
-│   ├── convolution/        # Conv wrapper S8 / S16
-│   ├── fully_connected/    # FC S8 / S16
-│   ├── pooling/            # AvgPool S8 / S16
-│   └── softmax/            # Softmax S8 / S16
-└── common/
-    ├── csr_counter.h       # NDS_MCYCLE / NDS_MINSTRET reader
-    ├── stack_paint.c       # Stack usage measurement
-    └── benchmark_loop.h   # Shared benchmark harness
-```
+Full results with all metrics: [arm-riscv-benchmark-results](https://github.com/Karthik-Swaminathan98/arm-riscv-benchmark-results)
 
 ---
 
@@ -243,7 +220,7 @@ RISCV-Project/
 - TLSR9 DEV KEY programmer (JTAG)
 
 **Steps:**
-1. Open AndeSight RDS → Import project from any `dsp/` or `nn/` subfolder
+1. Open AndeSight RDS → Import project from any benchmark folder (e.g. `RV_NN_Convolution_Benchmark`)
 2. Select Release configuration
 3. Build → Flash via TLSR9 DEV KEY USB
 4. Open serial terminal at 115200 baud to read output
@@ -264,7 +241,7 @@ RISCV-Project/
 | Repo | Description |
 |---|---|
 | [ARM-Project](https://github.com/Karthik-Swaminathan98/ARM-Project) | ARM Cortex-M4 counterpart — CMSIS-DSP/NN benchmarks on PSoC6 |
-| [arm-riscv-dsp-benchmark](https://github.com/Karthik-Swaminathan98/arm-riscv-dsp-benchmark) | Cross-architecture comparison and full results |
+| [arm-riscv-benchmark-results](https://github.com/Karthik-Swaminathan98/arm-riscv-benchmark-results) | Full cross-architecture results — DSP, NN, and model inference |
 | [embedded-benchmark-analysis](https://github.com/Karthik-Swaminathan98/embedded-benchmark-analysis) | Python scripts for objdump call-graph and code-size analysis |
 
 ---
