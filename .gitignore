@@ -1,0 +1,26 @@
+# AndeSight / Eclipse CDT workspace files
+.metadata/
+_ICEman_/
+RemoteSystemsTempFiles/
+*.pdom
+*.sc
+*.log
+*.lock
+.bak_*
+dialog_settings.xml
+specs.c
+specs.cpp
+
+# Build output - compiled binaries
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.o
+*.a
+*.map
+*.d
+
+# Eclipse project files - keep .project and .cproject as they show structure
+.settings/
